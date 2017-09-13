@@ -1,0 +1,6 @@
+activeuserprofiles=SYCCB-11-B150;Team
+eclipse.preferences.version=1
+org.eclipse.rse.systemtype.linux.systemType.enabled=false
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=jlee465
+org.eclipse.rse.systemtype.unix.systemType.enabled=false
+org.eclipse.rse.systemtype.windows.systemType.enabled=false

@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+remoteHelpHost=www-01.ibm.com,www-01.ibm.com
+remoteHelpICEnabled=true,true
+remoteHelpName=IBM i,IBM Rational Developer for i
+remoteHelpOn=true
+remoteHelpPath=/support/knowledgecenter/ssw_ibm_i_72,/support/knowledgecenter/SSAE4W_9.5.0
+remoteHelpPort=80,80
+remoteHelpPreferred=true
+remoteHelpProtocol=http,http
+scope=

@@ -1,0 +1,60 @@
+Wed Sep 13 16:21:24 EDT 2017
+ERROR org.eclipse.rse.ui  QSYSCommandService::getUserPreferencesIFSDirectory exception 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+--------------------------------------------
+Wed Sep 13 16:28:06 EDT 2017
+ERROR org.eclipse.rse.ui  QSYSCommandService::getUserPreferencesIFSDirectory exception 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+--------------------------------------------
+Wed Sep 13 16:31:49 EDT 2017
+ERROR org.eclipse.rse.ui  QSYSCommandService::getUserPreferencesIFSDirectory exception 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+--------------------------------------------
+Wed Sep 13 16:33:16 EDT 2017
+ERROR org.eclipse.rse.ui  QSYSCommandService::getUserPreferencesIFSDirectory exception 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+--------------------------------------------
+Wed Sep 13 16:46:03 EDT 2017
+ERROR org.eclipse.rse.ui  QSYSCommandService::getUserPreferencesIFSDirectory exception 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+--------------------------------------------

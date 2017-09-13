@@ -1,0 +1,15 @@
+DT433A11
+*LIB
+PROD-CUR
+QSYS
+
+QGPL
+*LIB
+PROD-USR
+QSYS
+General Purpose Library
+QTEMP
+*LIB
+TEST-USR
+QSYS
+

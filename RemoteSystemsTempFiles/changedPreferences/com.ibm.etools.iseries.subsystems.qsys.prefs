@@ -1,0 +1,4 @@
+# 
+#Wed Sep 13 15:15:04 EDT 2017
+com.ibm.etools.iseries.subsystems.qsys.newdebugstartup=99
+com.ibm.etools.iseries.subsystems.qsys.filterOutCompilerSrvpgms=99

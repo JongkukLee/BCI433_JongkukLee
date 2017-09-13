@@ -1,0 +1,11 @@
+# 
+#Wed Sep 13 16:18:07 EDT 2017
+remoteHelpICEnabled=true,true
+remoteHelpOn=true
+remoteHelpHost=www-01.ibm.com,www-01.ibm.com
+remoteHelpPath=/support/knowledgecenter/ssw_ibm_i_72,/support/knowledgecenter/SSAE4W_9.5.0
+remoteHelpName=IBM i,IBM Rational Developer for i
+remoteHelpPort=80,80
+remoteHelpProtocol=http,http
+remoteHelpPreferred=true
+scope=

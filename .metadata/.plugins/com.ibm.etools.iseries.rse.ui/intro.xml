@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+        Licensed Materials - Property of IBM
+     IBM Rational Developer for System i
+     5724-T82
+
+     IBM WebSphere Development Studio for System i feature:
+     IBM Rational Developer for System i
+     5761-WDS
+
+     © Copyright IBM Corporation 2000, 2008. All rights reserved.
+     U.S. Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<cheatsheet title="IBM i Remote System Explorer Getting Started">
+<intro>
+<description>
+Welcome to the Remote System Explorer (RSE). The RSE provides an integrated development
+environment for IBM i programmers. It allows you to work with your libraries, objects, members, jobs and IFS files, as well as
+edit source members, compile programs and debug applications.
+<br/><br/>
+We recommend that you follow the steps below to quickly get started using the RSE.  This overview is meant to help you find
+some of the key features of the RSE.  Each step also includes a link to additional information in the on-line help.  There are also
+PDM to RSE and an SEU to LPEX transition guides available in the on-line help with more information on how to move from green
+screen programming tools to the RSE.
+<br/><br/>
+The topics below assume you are in the Remote System Explorer perspective with the default Workbench layout.  Look in title bar for this Window to see which
+perspective you currently have open.  If this is not the Remote System Explorer then select Window > Open Perspective > Other
+and select the Remote System Explorer from the list.
+<br/><br/>
+You can click the help (?) button to view more information on each step in the on-line help.
+</description>
+</intro>
+
+<item title="Creating a Connection to Your IBM i server" href="/com.ibm.etools.iseries.rse.doc/topics/cbegin.html" skip="true">
+<description>
+The first step in using the RSE is to create a connection to your IBM i server.<br/><br/>
+1. Locate the Remote Systems view.  By default this is located on the left hand side of the Workbench.<br/>
+2. Expand the <b>New Connection</b> entry in the tree, and then double-click <b>IBM i</b><br/>
+3. Enter the TCP/IP <b>Host name</b> and a <b>Connection name</b> for this connection.  The Connection name can be any name you want to
+associate with this connection and will appear in the Remote Systems view.  Click Finish.<br/>
+4. Your connection now appears in the Remote Systems view.
+<br/><br/>
+When you expand your connection you will see entries under the connection that allow you to access different IBM i resources.  These entries
+are called subsystems in the RSE (they are not related to IBM i job subsystems).  The Objects subsystem allows you to access and
+work with your libraries, objects and members.
+</description>
+</item>
+
+<item title="Managing your Library List" href="/com.ibm.etools.iseries.rse.doc/topics/tmanagelist.html" skip="true">
+<description>
+Expand the <b>Library list</b> filter below the Objects subsystem to see the library list being used by the RSE
+connection.  The library list for the RSE connection is set based on the job description that is associated with your
+user profile.  You can customize the library list in one of two ways: using the pop-up menu actions for the library list or
+using the Initial Library List property page for the subsystem.
+<br/><br/>
+Using the pop-up menu actions for the library list filter is equivalent to using the EDTLIBL CL command.  The changes you make are
+only in effect until the RSE connection is disconnected.  Right-click on the Library List filter to run actions such as <b>Add Library
+List Entry</b> and <b>Change Current Library</b>.  Right-click on any library under the library list filter to run actions to remove the
+selected library from the library list or move the library up or down within the library list.
+<br/><br/>
+A more permanent solution for modifying your library list is to use the <b>Initial Library List</b> property page for the Objects subsystem.
+Changes made here will always be added to the library list for the RSE connection (in addition to the libraries from the job description).
+To set these; right-click on Objects and select Properties from the pop-up menu.  Select the Initial Library List page in the Properties
+dialog.  Note: these changes only take effect the next time the RSE connection is connected.
+<br/><br/>
+Each RSE connection has its own library list.  If you are working on multiple projects which require different library lists, you can create a
+connection with individual library list settings for each project.
+</description>
+</item>
+
+<item title="Object Table view" href="/com.ibm.etools.iseries.rse.doc/topics/ctable.html" skip="true">
+<description>
+The Remote Systems view shows your libraries, objects and members using a tree structure.  If you would prefer a table view similar to PDM then you can use
+the <b>Object Table</b> view.  To use the table view you can right-click on a filter, library, or physical file in the Remote Systems view and select
+<b>Show in Table</b> from the pop-up menu.  Alternatively you can use the <b>Work With</b> actions in the Object Table view's pull-down menu to select an
+input for the table view (the pull-down menu is the upside down triangle in the top right corner of the view).
+<br/><br/>
+Once in the view you can right-click on any library, object or member and get the same pop-up menu actions as you would see in the Remote
+Systems view.  Double-clicking on a library or physical file will display the contained objects or members in the table.  Double-clicking on a member will
+open the member for editing in the Remote Systems LPEX Editor.
+<br/><br/>
+The view's pull down menu contains additional actions for showing all the information for objects and members (<b>Show Columns > All</b>), positioning to an item
+in the table (alternatively you can just start typing in the table view and this dialog appears), printing and subsetting the list.  The command area at the bottom
+of the view allows you to run CL commands and view the resulting messages.
+</description>
+</item>
+
+<item title="Opening a member" href="/com.ibm.etools.iseries.rse.doc/topics/teditrpg.html" skip="true">
+<description>
+You can open a member for editing by right-clicking on the member in the Remote Systems view and selecting
+<b>Open With > Remote Systems LPEX Editor</b> from the pop-up menu.  This locks the member on the host and opens
+it in the local Remote Systems LPEX Editor.  After you are done making changes you can save the member using either
+the <b>File > Save</b> menu option or the Ctrl+s keyboard shortcut.  The locks on the member are released when you
+close the editor.
+<br/><br/>
+If you know the exact library, file and member name for the member you want to open then you can also use the <b>Open Member</b> dialog
+to enter the information instead of selecting the member in the Remote Systems view.  To open the Open Member dialog either right-click on the
+Objects subsystem and select <b>Open Member</b> or use the Ctrl+Alt+q keyboard shortcut.
+</description>
+</item>
+
+<item title="Compiling a Member" href="/com.ibm.etools.iseries.rse.doc/topics/tcomprograms.html" skip="true">
+<description>
+You can invoke compiles from within the editor or using the pop-up menu actions on a member in the Remote Systems view.  While editing
+a member within the Remote Systems LPEX Editor you will see a <b>Compile</b> menu in the Workbench menu bar.  This contains two cascading menus:
+<b>Compile</b> and <b>Compile Prompt</b>.  Use the Compile Prompt menu if you wish to prompt the compile command before it runs.  Each of these
+menus cascades to show the standard IBM compile commands associated with the member's source type.  You can also use the <b>Work with Compile
+Commands</b> action to customize the compile commands or add your own.
+<br/><br/>
+The compile commands are submitted to batch on the server.  After the compile completes, the RSE will automatically download a list of all messages
+issued by the compiler and display them in the <b>Error List</b> view.  Double-clicking on entries in this view will automatically position the
+editor to the line causing the error and insert the error message into the editor.  Use the <b>Source > Remove Messages</b> action to clear all inserted
+messages from the editor.
+</description>
+</item>
+
+
+<item title="Running Your Program" href="/com.ibm.etools.iseries.rse.doc/topics/crun.html" skip="true">
+<description>
+How you run your application depends on whether it is a batch or 5250 application.  For 5250 applications it is easiest to open a 5250 emulator
+outside of the Workbench and run your program the way you normally would.  For batch programs you can right-click on the program in the
+Remote Systems view and select either <b>Batch</b>, <b>Multi-Threaded</b> or <b>IBM i application in RSE job</b> from the <b>Run As</b> cascading menu.  The
+Batch action runs your programming using SMBJOB from the RSE connection.  The Multi-Threaded action is only applicable to multi-threaded C/C++ applications.
+The IBM i application in RSE job runs your program in the server job used by the RSE connection.  This can be useful if you want to call a program to perform
+some job setup for the RSE connection, however you will not be able to use the RSE connection while the program is running.
+</description>
+</item>
+
+<item title="Debugging Your Program" href="/com.ibm.etools.iseries.rse.doc/topics/cdebugsession.html" skip="true">
+<description>
+There are many ways to launch your application for debugging with the Integrated i Debugger.  One of the easiest ways is to use Service
+Entry Points.  A Service Entry Point can be thought of as a system wide breakpoint set on a program, service program, module, or procedure that is
+specific to jobs running under your user profile.  Below are the steps for using Service Entry Points:
+<br/><br/>
+1.  In the Remote Systems view, select the program, service program, module or procedure that you want to debug.  You can find modules and procedures by
+expanding program and service program objects in the Remote Systems view.<br/>
+2.  Right-click and select <b>Debug (Service Entry) > Set Service Entry Point</b>.<br/>
+3.  This sets the service entry point and adds it to the <b>IBM i Service Entry Points</b> view.  You can use this view later on to remove, disable, or
+refresh the service entry point.<br/>
+4.  Run your application.  You can start it using one of the RSE options described above, from an emulator, from a Web application, as a stored procedure, etc...<br/>
+5.  When the program, service program, module or procedure that you set the service entry point on is called, the job will suspend and
+the Integrated i Debugger will attach to the job.  This causes the Debug perspective to open.<br/>
+6.  Inside of the Debug perspective, the <b>Debug view</b> in the top left corner shows all of your active debug jobs and the current call stack for each one that
+is currently suspended.  You can use the icons in the toolbar for the Debug view to control the debugger or use the corresponding <b>Step</b> actions under
+the Workbench's <b>Run</b> menu.<br/>
+7.  To set a line breakpoint, select any executable line in the source, then right-click and select <b>Add Breakpoint</b> from the pop-up menu.  All
+breakpoints are shown in the <b>Breakpoints</b> view.<br/>
+8.  To view or change the value of a field, select the field in the source, then right-click and select <b>Monitor Expression</b> from the pop-up menu.  This
+adds the field to the <b>Monitors</b> view.  As you step through your program, variables in the Monitors view will be automatically updated to show their
+current values.
+<br/><br/>
+The RSE perspective stays active while you are in the Debug perspective.  All open perspectives are shown in the top right corner of the Workbench.  You can switch to
+another open perspective by selecting it there (you may need to click on the >> symbol to see a complete list of open perspectives).  Alternatively you can use
+the Ctrl+F8 shortcut key to toggle between open perspectives.
+</description>
+</item>
+
+<item title="Using Filters" href="/com.ibm.etools.iseries.rse.doc/topics/cfilters.html" skip="true">
+<description>
+Working with large lists of objects or members in the RSE is not advisable for both practical (it is difficult to scroll through a list of hundreds of items) and
+performance reasons.  This is why the RSE was designed with very powerful filtering capabilities.  The Objects subsystem allows you to create library,
+object and member filters.  These are roughly equivalent to the PDM commands WRKLIBPDM, WRKOBJPDM and WRKMBRPDM.  When you create a filter you also give it a name
+and it is saved under your connection.  This allows you to take a few minutes up front to define useful filters for your projects and then benefit from them
+always being there.  To define a filter:
+<br/><br/>
+1.  Expand one of the <b>Work with libraries</b>, <b>Work with objects</b>, or <b>Work with members</b> entries under Objects or right-click on Objects and select one of the filter options from the cascading New menu.<br/>
+2.  On the first page of the wizard enter the filtering criteria then click Next.<br/>
+3.  On the second page of the wizard give the filter a meaningful name (this name is what appears in the Remote Systems view).<br/>
+4.  Expand your filter in the Remote Systems view to see the results, or right-click on the filter and select <b>Show in Table</b>.
+<br/><br/>
+Filters are actually made up of one or more filter strings.  When you first create the filter, the wizard prompts you for the filtering criteria for only
+one filter string.  After the filter is created you can right-click on it and select <b>Change</b> from the pop-up menu to modify the filter string or
+add additional filter strings.  This flexibility allows you to create filters that capture only the objects or members you are interested in using either
+naming patterns (if possible) or explicitly listing each one.
+</description>
+</item>
+
+
+<item title="Tips" skip="true">
+<description>
+Below are some miscellaneous tips to help you get started using the RSE:
+<br/><br/>
+1.  As a general rule, if you want to perform an action against something in the RSE or debugger then right-click on it and look for the action
+in the pop-up menu.  For example, if you need to search a list of members for a specific string then multi-select the members, right-click and select
+<b>Find String</b> from the pop-up menu.<br/>
+2.  Most of the standard workstation shortcut keys also work within the Workbench.  For example; Ctrl+Home or Ctrl+End to go to the top or bottom of a view
+or editor, Ctrl+c (copy), Ctrl+v (paste), Ctrl+z (undo), Ctrl+y (redo), Ctrl+s (save), using the arrow keys to navigate through a tree or table view, and positioning in
+a tree or table view by just starting to type the name.<br/>
+3.  Some additional shortcut keys to remember: Ctrl+F6 to switch between open editors, Ctrl+F7 to switch between open views, Ctrl+F8 to switch between open
+perspectives, and Ctrl+Shift+a to open a remote member.<br/>
+4.  Pressing F1 provides context sensitive help based on the currently active view.  Typically this help gives you a quick overview and some
+hyperlinks into the online help.<br/>
+5.  You can drag and drop views around within the Workbench window using the mouse, to customize the layout to your own liking.  Use the <b>Window > Reset
+Perspective</b> if you want to get back to the default layout.<br/>
+6.  Double-clicking on the title bar for a view or editor will maximize to take up the entire area of the Workbench.  Double-clicking on it again will minimize
+it back to the original size.  The shortcut key for this is Ctrl+m (note this shortcut key does not work inside the Remote Systems LPEX Editor because that key
+combination is assigned to a different action).
+</description>
+</item>
+
+
+</cheatsheet>
