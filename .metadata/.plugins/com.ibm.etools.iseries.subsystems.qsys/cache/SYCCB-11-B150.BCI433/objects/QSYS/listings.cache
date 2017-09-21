@@ -3,3 +3,13 @@ DT433A11
 PROD
 QSYS
 
+CRTBNDRPG
+*CMD
+PRX
+QSYS
+Create Bound RPG Program
+CRTPF
+*CMD
+
+QSYS
+Create Physical File

@@ -1,0 +1,16 @@
+000001170917     A          R RECORD1
+000002170917     A                                  2 71DATE
+000003170917     A                                  4 21'Test 1: '
+000004170917     A                                  2 31'Marks Calculator'
+000005170917     A                                  5 21'Test 2: '
+000007170917     A                                  6 21'Test 3: '
+000008170917     A                                  7 21'Labs: '
+000009170917     A                                  8 21'Exam: '
+000010170917     A                                  2  2'DT433A11'
+000011170917     A                                  3  2'SENM25'
+000100      
+000101170917     A*%%RS+<record-sequences>
+000102170917     A*%%RS+ <sequence name="Untitled">
+000103170917     A*%%RS+  <device type="display" width="80" height="24" />
+000104170917     A*%%RS+ </sequence>
+000105170917     A*%%RS </record-sequences>

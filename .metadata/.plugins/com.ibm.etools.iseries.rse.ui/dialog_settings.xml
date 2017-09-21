@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="messageLevelSection">
+		<item value="level.showing" key="messageLevelKey"/>
+	</section>
+	<section name="autoInsertSection">
+		<item value="false" key="autoInsertOldCheckKey"/>
+		<item value="false" key="autoInsertAllKey"/>
+		<item value="false" key="autoInsertAllCheckKey"/>
+		<item value="false" key="autoInsertOldKey"/>
+	</section>
+	<section name="showSeveritySection">
+		<item value="true" key="showSeverityTerminatingKey"/>
+		<item value="true" key="showSeverityWarningKey"/>
+		<item value="true" key="showSeverityErrorKey"/>
+		<item value="true" key="showSeveritySevereKey"/>
+		<item value="true" key="showSeverityInformationKey"/>
+	</section>
+	<section name="autoRemoveSection">
+		<item value="false" key="autoRemoveAddressedMsgsKey"/>
+		<item value="true" key="autoRemoveOldMsgsKey"/>
+	</section>
+</section>

@@ -1,0 +1,2 @@
+default.updateProfile.userCommands="editISeriesMember com.ibm.etools.iseries.edit.commands.EditISeriesMemberCommand browseISeriesMember com.ibm.etools.iseries.edit.commands.BrowseISeriesMemberCommand runISeriesCommand com.ibm.etools.iseries.edit.commands.RunISeriesCommandCommand"
+eclipse.preferences.version=1

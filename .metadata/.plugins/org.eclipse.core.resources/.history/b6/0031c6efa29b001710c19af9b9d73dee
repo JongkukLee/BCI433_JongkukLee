@@ -1,0 +1,15 @@
+000100170917     A                                      UNIQUE
+000101170917     A          R STUDENTSR                 TEXT('STUDENTS REGISTER')
+000102170917     A            STUDENTNO      9S 0       COLHDG('STUDENT' 'NUMBER')
+000103170917     A            FIRSTNAME     15          COLHDG('FIRST NAME')
+000104170917     A            LASTNMAE      20          COLHDG('LAST NAME')
+000105170917     A            BIRTHDATE       L
+000106170917     A            PHONE         10S 0       COLHDG('PNONE' 'NUMBER')
+000107170917     A            ADDRESS       30          COLHDG('STREET' 'ADDRESS')
+000108170917     A            CITY          15
+000109170917     A            PROVINCE       2          COLHDG('PROV' 'CODE')
+000110170917     A
+000111170917     A            POSTALCODE     6          COLHDG('POSTAL' 'CODE')
+000112170917     A            FEESOWED       6          COLHDG('FEES' 'OWED')
+000113170917     A            FINESOWED      7P 2       COLHDG('FINES' 'OWED')
+000114170917     A          K STUDENTNO

@@ -1,0 +1,3 @@
+com.ibm.etools.iseries.subsystems.qsys.filterOutCompilerSrvpgms=99
+com.ibm.etools.iseries.subsystems.qsys.newdebugstartup=99
+eclipse.preferences.version=1

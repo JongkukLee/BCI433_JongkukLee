@@ -1,0 +1,33 @@
+000001170917     A          R RECORD1
+000002170917     A                                  2 29'Marks Calculator'
+000003170917     A                                  2  4USER
+000004170917     A                                  3  4SYSNAME
+000005170917     A                                  2 65DATE
+000006170917     A                                  3 65TIME
+000007170917     A                                  5 19'Test1:'
+000008170917     A                                  6 19'Test2:'
+000010170917     A                                  7 19'Test3:'
+000011170917     A                                  8 19'Labs:'
+000012170917     A                                  9 19'Exam:'
+000013170917     A                                  2  2' '
+000014170917     A                                  3  2' '
+000015170917     A            TEST1          3  0B  5 28RANGE(0 100)
+000016170917     A            TEST2          3  0B  6 28RANGE(0 100)
+000017170917     A            TEST3          3  0B  7 28RANGE(0 100)
+000018170917     A            LAB            2  0B  8 28RANGE(0 30)
+000019170917     A            EXAM           3  0B  9 28RANGE(0 100)
+000020170917     A          R RECORD2                   CA03(03 'Exit')
+000021170917     A                                      CA06(06 'OVERLAY')
+000022170917     A                                  2 11'Tests:'
+000023170917     A                                  4 11'Final Mark:'
+000024170917     A                                  6 11'Final Grade:'
+000025170917     A            TESTOVRALL     3  0O  2 28
+000026170917     A            NUMGRADE       3  0O  4 28
+000027170917     A            LETGRADE       2   O  6 28
+000028170917     A                                  8  2'F3=Exit F6=OVERLAY'
+000029170917
+000101170917     A*%%RS+<record-sequences>
+000102170917     A*%%RS+ <sequence name="Untitled">
+000103170917     A*%%RS+  <device type="display" width="80" height="24" />
+000104170917     A*%%RS+ </sequence>
+000105170917     A*%%RS </record-sequences>

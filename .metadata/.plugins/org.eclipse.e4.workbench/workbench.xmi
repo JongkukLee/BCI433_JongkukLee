@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_GuRTwJjFEee218gU1zZHZA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_GuRTwZjFEee218gU1zZHZA" bindingContexts="_GuRZZ5jFEee218gU1zZHZA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;STUDENTS.RPGLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/STUDENTS.RPGLE&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/STUDENTS.RPGLE&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;SYSVALPRG.CLLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QCLLESRC.FILE/SYSVALPRG.CLLE&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QCLLESRC.FILE/SYSVALPRG.CLLE&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;com.ibm.etools.iseries.rse.ui.intro.rseIntroElementFactory&quot; id=&quot;com.ibm.etools.iseries.rse.ui.intro.rseIntroEditor&quot; name=&quot;IBM i RSE Introduction&quot; tooltip=&quot;IBM i RSE Introduction&quot;>&#xD;&#xA;&lt;persistable rseIntroURLID=&quot;file:/C:/BCI433_JongkukLee/.metadata/.plugins/com.ibm.etools.iseries.rse.ui/intro.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;MARKSRPG.RPGLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/MARKSRPG.RPGLE&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/MARKSRPG.RPGLE&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;DISPLAYTES.RPGLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/DISPLAYTES.RPGLE&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/DISPLAYTES.RPGLE&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.systemInPlaceEditor&quot; name=&quot;BCI433F2017.pptx&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/BCI433/BCI433 Notes/BCI433F2017.pptx&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/BCI433/BCI433 Notes/BCI433F2017.pptx&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.iseries.dds.tui.editor.ScreenDesigner&quot; name=&quot;MARKSDSP.DSPF&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/MARKSDSP.DSPF&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/MARKSDSP.DSPF&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;STUDENTS.RPGLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/STUDENTS.RPGLE&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/STUDENTS.RPGLE&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.systemInPlaceEditor&quot; name=&quot;lab3F17.docx&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/BCI433/BCI433 Labs/lab3F17.docx&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/BCI433/BCI433 Labs/lab3F17.docx&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;STUDENTS.PF&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/STUDENTS.PF&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/STUDENTS.PF&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;com.ibm.etools.iseries.rse.ui.intro.rseIntroElementFactory&quot; id=&quot;com.ibm.etools.iseries.rse.ui.intro.rseIntroEditor&quot; name=&quot;IBM i RSE Introduction&quot; tooltip=&quot;IBM i RSE Introduction&quot;>&#xD;&#xA;&lt;persistable rseIntroURLID=&quot;file:/C:/Users/reeve/Downloads/4th Semester/BCI433/BCI433_JongkukLee/.metadata/.plugins/com.ibm.etools.iseries.rse.ui/intro.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;SYSVALPRG.CLLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QCLLESRC.FILE/SYSVALPRG.CLLE&quot;>&#xD;&#xA;&lt;persistable path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QCLLESRC.FILE/SYSVALPRG.CLLE&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_GuRTwZjFEee218gU1zZHZA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_GuRTwpjFEee218gU1zZHZA" label="%trimmedwindow.label.eclipseSDK" x="143" y="7" width="1560" height="875">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_GuRTwZjFEee218gU1zZHZA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_GuRTwpjFEee218gU1zZHZA" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1370" height="772">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
+    <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
+    <persistedState key="aggregateWorkingSetId"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_GuRTwpjFEee218gU1zZHZA" selectedElement="_GuRTw5jFEee218gU1zZHZA" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_GuRTw5jFEee218gU1zZHZA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_GuRTxJjFEee218gU1zZHZA">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_GuRTw5jFEee218gU1zZHZA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_s5wT8JvREeeJ3La8ZwFhBQ">
         <children xsi:type="advanced:Perspective" xmi:id="_GuRTxJjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.SystemPerspective" selectedElement="_GuRTxZjFEee218gU1zZHZA" label="Remote System Explorer" iconURI="platform:/plugin/org.eclipse.rse.ui/icons/full/cview16/system_persp.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.actionSet:com.ibm.cic.licensing.common.ui.toolbar.actionSet,"/>
           <tags>persp.actionSet:com.ibm.rational.welcome.core.helpSearchActionSet</tags>
@@ -48,22 +51,22 @@
           <tags>persp.actionSet:com.ibm.etools.iseries.core.rseintro.actionSet</tags>
           <tags>persp.viewSC:org.eclipse.rse.terminals.ui.view.TerminalView</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_GuRTxZjFEee218gU1zZHZA" selectedElement="_GuRTzZjFEee218gU1zZHZA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_GuRTxpjFEee218gU1zZHZA" containerData="2208" selectedElement="_GuRTx5jFEee218gU1zZHZA">
-              <children xsi:type="basic:PartStack" xmi:id="_GuRTx5jFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.NavFolder" containerData="7500" selectedElement="_GuRTyJjFEee218gU1zZHZA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_GuRTxpjFEee218gU1zZHZA" containerData="3443" selectedElement="_GuRTx5jFEee218gU1zZHZA">
+              <children xsi:type="basic:PartStack" xmi:id="_GuRTx5jFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.NavFolder" containerData="7884" selectedElement="_GuRTyJjFEee218gU1zZHZA">
                 <tags>newtablook</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRTyJjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.systemView" ref="_GuRVD5jFEee218gU1zZHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRTyZjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.teamView" ref="_GuRVXJjFEee218gU1zZHZA"/>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_GuRTypjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.PropertiesFolder" containerData="2500" selectedElement="_GuRTy5jFEee218gU1zZHZA">
+              <children xsi:type="basic:PartStack" xmi:id="_GuRTypjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.PropertiesFolder" containerData="2116" selectedElement="_GuRTy5jFEee218gU1zZHZA">
                 <tags>newtablook</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRTy5jFEee218gU1zZHZA" elementId="org.eclipse.ui.views.PropertySheet" ref="_GuRViJjFEee218gU1zZHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRTzJjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.scratchpad.SystemScratchpadViewPart" ref="_GuRVlpjFEee218gU1zZHZA"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_GuRTzZjFEee218gU1zZHZA" containerData="7792" selectedElement="_GuRTzpjFEee218gU1zZHZA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_GuRTzZjFEee218gU1zZHZA" containerData="6557" selectedElement="_GuRTzpjFEee218gU1zZHZA">
               <children xsi:type="basic:PartSashContainer" xmi:id="_GuRTzpjFEee218gU1zZHZA" containerData="5507" selectedElement="_GuRTz5jFEee218gU1zZHZA" horizontal="true">
-                <children xsi:type="advanced:Placeholder" xmi:id="_GuRTz5jFEee218gU1zZHZA" elementId="org.eclipse.ui.editorss" containerData="8000" ref="_GuRVBpjFEee218gU1zZHZA"/>
-                <children xsi:type="basic:PartStack" xmi:id="_GuRT0JjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.OutlineFolder" containerData="2000" selectedElement="_GuRT0ZjFEee218gU1zZHZA">
+                <children xsi:type="advanced:Placeholder" xmi:id="_GuRTz5jFEee218gU1zZHZA" elementId="org.eclipse.ui.editorss" containerData="6323" ref="_GuRVBpjFEee218gU1zZHZA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_GuRT0JjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.OutlineFolder" containerData="3677" selectedElement="_GuRT0ZjFEee218gU1zZHZA">
                   <tags>newtablook</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_GuRT0ZjFEee218gU1zZHZA" elementId="org.eclipse.ui.views.ContentOutline" ref="_GuRVfZjFEee218gU1zZHZA"/>
                 </children>
@@ -74,9 +77,91 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRT05jFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.systemTableView" ref="_GuRVXZjFEee218gU1zZHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRT1JjFEee218gU1zZHZA" elementId="org.eclipse.ui.views.TaskList" ref="_GuRVb5jFEee218gU1zZHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRT1ZjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.rse.ui.ObjectTableView" ref="_GuRVl5jFEee218gU1zZHZA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_GuRT2JjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.edit.views.iserieseditorpromptpagebookview" ref="_GuRVt5jFEee218gU1zZHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRT1pjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.rse.ui.view.cmdlog" ref="_GuRVrpjFEee218gU1zZHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_GuRT15jFEee218gU1zZHZA" elementId="org.eclipse.rse.terminals.ui.view.TerminalView" ref="_GuRVtJjFEee218gU1zZHZA"/>
-                <children xsi:type="advanced:Placeholder" xmi:id="_GuRT2JjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.edit.views.iserieseditorpromptpagebookview" ref="_GuRVt5jFEee218gU1zZHZA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_uafkYJlUEee4P_i_d0neGQ" elementId="com.ibm.etools.iseries.rse.ui.ErrorListView" ref="_uae9UJlUEee4P_i_d0neGQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_rBDtwZuhEee8xrVYZ2IGgA" elementId="com.ibm.etools.iseries.rse.ui.DataTableView" ref="_rBDtwJuhEee8xrVYZ2IGgA"/>
+              </children>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="advanced:Perspective" xmi:id="_s5wT8JvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective" selectedElement="_s5wT8ZvREeeJ3La8ZwFhBQ" label="DDS Design" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/default_persp.png">
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.actionSet:com.ibm.cic.licensing.common.ui.toolbar.actionSet,"/>
+          <tags>persp.actionSet:com.ibm.rational.welcome.core.helpSearchActionSet</tags>
+          <tags>persp.actionSet:com.ibm.rational.welcome.core.webResourcesActionSet</tags>
+          <tags>persp.actionSet:com.ibm.cic.licensing.common.ui.actionSet</tags>
+          <tags>persp.actionSet:com.ibm.etools.iseries.rse.ui.search.searchActionSet</tags>
+          <tags>persp.actionSet:com.ibm.etools.iseries.rse.ui.actionSet</tags>
+          <tags>persp.actionSet:com.ibm.rational.llc.ui.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.imp.runtime.refactoringActions</tags>
+          <tags>persp.actionSet:org.eclipse.imp.xform.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
+          <tags>persp.actionSet:org.eclipse.rse.core.search.searchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
+          <tags>persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.keyBindings</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.PropertySheet</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ContentOutline</tags>
+          <tags>persp.viewSC:org.eclipse.ui.views.ResourceNavigator</tags>
+          <tags>persp.viewSC:org.eclipse.gef.ui.palette_view</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.editor.views.iserieseditorpromptpagebookview</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.rse.ui.FldTableView</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.rse.ui.ObjectTableView</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.rse.ui.view.cmdlog</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.rse.ui.ErrorListView</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.rse.ui.JobLogView</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.rse.ui.DataTableView</tags>
+          <tags>persp.viewSC:com.ibm.etools.iseries.rse.ui.SplfTableView</tags>
+          <tags>persp.viewSC:org.eclipse.rse.shells.ui.view.commandsView</tags>
+          <tags>persp.viewSC:org.eclipse.rse.ui.view.scratchpad.SystemScratchpadViewPart</tags>
+          <tags>persp.viewSC:org.eclipse.rse.ui.view.systemTableView</tags>
+          <tags>persp.viewSC:org.eclipse.rse.ui.view.systemView</tags>
+          <tags>persp.perspSC:org.eclipse.rse.ui.view.SystemPerspective</tags>
+          <tags>persp.perspSC:com.ibm.etools.iseries.perspective.iseriesperspectiveid</tags>
+          <tags>persp.perspSC:com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_s5wT8ZvREeeJ3La8ZwFhBQ" selectedElement="_s5wT-pvREeeJ3La8ZwFhBQ" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_s5wT8pvREeeJ3La8ZwFhBQ" containerData="3216" selectedElement="_s5wT85vREeeJ3La8ZwFhBQ">
+              <children xsi:type="basic:PartStack" xmi:id="_s5wT85vREeeJ3La8ZwFhBQ" elementId="leftTop" containerData="5057" selectedElement="_s5wT9JvREeeJ3La8ZwFhBQ">
+                <tags>newtablook</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wT9JvREeeJ3La8ZwFhBQ" elementId="org.eclipse.rse.ui.view.systemView" ref="_GuRVD5jFEee218gU1zZHZA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wT9ZvREeeJ3La8ZwFhBQ" elementId="org.eclipse.ui.views.ResourceNavigator" ref="_s5qNUJvREeeJ3La8ZwFhBQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wT9pvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.perspective.iseriesnavigator" ref="_s5q0YJvREeeJ3La8ZwFhBQ"/>
+              </children>
+              <children xsi:type="basic:PartSashContainer" xmi:id="_0eOK8JvREeeJ3La8ZwFhBQ" containerData="4943" selectedElement="_z8ev0ZvREeeJ3La8ZwFhBQ">
+                <children xsi:type="basic:PartStack" xmi:id="_z8ev0ZvREeeJ3La8ZwFhBQ" elementId="PartStack@d01221fa" containerData="7305" selectedElement="_s5wUAJvREeeJ3La8ZwFhBQ">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_s5wUAJvREeeJ3La8ZwFhBQ" elementId="org.eclipse.ui.views.PropertySheet" ref="_GuRViJjFEee218gU1zZHZA"/>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_s5wT95vREeeJ3La8ZwFhBQ" elementId="leftBottom" containerData="2695" selectedElement="_s5wT-JvREeeJ3La8ZwFhBQ">
+                  <tags>newtablook</tags>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_s5wT-JvREeeJ3La8ZwFhBQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_GuRVfZjFEee218gU1zZHZA"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_s5wT-ZvREeeJ3La8ZwFhBQ" elementId="org.eclipse.rse.ui.view.teamView" ref="_GuRVXJjFEee218gU1zZHZA"/>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_s5wT-pvREeeJ3La8ZwFhBQ" containerData="6784" selectedElement="_s5wT-5vREeeJ3La8ZwFhBQ">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_s5wT-5vREeeJ3La8ZwFhBQ" containerData="7189" selectedElement="_s5wT_JvREeeJ3La8ZwFhBQ" horizontal="true">
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wT_JvREeeJ3La8ZwFhBQ" elementId="org.eclipse.ui.editorss" containerData="7210" ref="_GuRVBpjFEee218gU1zZHZA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_s5wT_ZvREeeJ3La8ZwFhBQ" elementId="rightTop" containerData="2790" selectedElement="_s5wT_pvREeeJ3La8ZwFhBQ">
+                  <tags>newtablook</tags>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_s5wT_pvREeeJ3La8ZwFhBQ" elementId="org.eclipse.gef.ui.palette_view" ref="_s5uew5vREeeJ3La8ZwFhBQ"/>
+                </children>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_s5wT_5vREeeJ3La8ZwFhBQ" elementId="bottom" containerData="2811" selectedElement="_s5wUBZvREeeJ3La8ZwFhBQ">
+                <tags>newtablook</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUAZvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.edit.views.iserieseditorpromptpagebookview" ref="_GuRVt5jFEee218gU1zZHZA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUApvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.FldTableView" ref="_s5t3sJvREeeJ3La8ZwFhBQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUA5vREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.ObjectTableView" toBeRendered="false" ref="_GuRVl5jFEee218gU1zZHZA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUBJvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.view.cmdlog" ref="_GuRVrpjFEee218gU1zZHZA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUBZvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.ErrorListView" ref="_uae9UJlUEee4P_i_d0neGQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUBpvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.JobLogView" toBeRendered="false" ref="_s5uewJvREeeJ3La8ZwFhBQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUB5vREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.JobStatusView" toBeRendered="false" ref="_s5uewZvREeeJ3La8ZwFhBQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUCJvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.DataTableView" toBeRendered="false" ref="_rBDtwJuhEee8xrVYZ2IGgA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_s5wUCZvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.SplfTableView" toBeRendered="false" ref="_s5uewpvREeeJ3La8ZwFhBQ"/>
               </children>
             </children>
           </children>
@@ -113,41 +198,16 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_GuRVBpjFEee218gU1zZHZA" elementId="org.eclipse.ui.editorss" selectedElement="_GuRVB5jFEee218gU1zZHZA">
-      <children xsi:type="basic:PartStack" xmi:id="_GuRVB5jFEee218gU1zZHZA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_GuRVDJjFEee218gU1zZHZA">
+      <children xsi:type="basic:PartStack" xmi:id="_GuRVB5jFEee218gU1zZHZA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_-3SGIJv1EeeCPfRrJWqJiA">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <tags>noFocus</tags>
-        <children xsi:type="basic:Part" xmi:id="_GuRVCJjFEee218gU1zZHZA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="IBM i RSE Getting Started" iconURI="platform:/plugin/com.ibm.etools.iseries.rse.ui/icons/full/obj16/system400_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.etools.iseries.rse.ui.intro.rseIntroEditor&quot; name=&quot;IBM i RSE Introduction&quot; partName=&quot;IBM i RSE Getting Started&quot; title=&quot;IBM i RSE Getting Started&quot; tooltip=&quot;IBM i RSE Introduction&quot;>&#xD;&#xA;&lt;input factoryID=&quot;com.ibm.etools.iseries.rse.ui.intro.rseIntroElementFactory&quot; rseIntroURLID=&quot;file:/C:/BCI433_JongkukLee/.metadata/.plugins/com.ibm.etools.iseries.rse.ui/intro.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.etools.iseries.rse.ui.intro.rseIntroEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_GuRVCZjFEee218gU1zZHZA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SYSVALPRG.CLLE" iconURI="platform:/plugin/com.ibm.etools.systems.editor/icons/full/cview16/editor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;SYSVALPRG.CLLE&quot; partName=&quot;SYSVALPRG.CLLE&quot; title=&quot;SYSVALPRG.CLLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QCLLESRC.FILE/SYSVALPRG.CLLE&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QCLLESRC.FILE/SYSVALPRG.CLLE&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.etools.systems.editor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_GuRVCpjFEee218gU1zZHZA" elementId="#LpexTextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#LpexTextEditorContext</tags>
-            <tags>popup:com.ibm.etools.systems.editor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_GuRVC5jFEee218gU1zZHZA" elementId="#LpexTextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#LpexTextRulerContext</tags>
-            <tags>popup:com.ibm.etools.systems.editor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_GuRVDJjFEee218gU1zZHZA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="STUDENTS.RPGLE" iconURI="platform:/plugin/com.ibm.etools.systems.editor/icons/full/cview16/editor.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;STUDENTS.RPGLE&quot; partName=&quot;STUDENTS.RPGLE&quot; title=&quot;STUDENTS.RPGLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/STUDENTS.RPGLE&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/STUDENTS.RPGLE&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.ibm.etools.systems.editor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
           <menus xsi:type="menu:PopupMenu" xmi:id="_GuRVDZjFEee218gU1zZHZA" elementId="#LpexTextEditorContext">
             <tags>menuContribution:popup</tags>
             <tags>popup:#LpexTextEditorContext</tags>
@@ -160,10 +220,36 @@
             <tags>popup:#AbstractTextEditorRulerContext</tags>
           </menus>
         </children>
+        <children xsi:type="basic:Part" xmi:id="_UrUw8JuYEeex_t7LoQ2PNw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="STUDENTS.PF" iconURI="platform:/plugin/com.ibm.etools.systems.editor/icons/full/cview16/editor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;STUDENTS.PF&quot; partName=&quot;STUDENTS.PF&quot; title=&quot;STUDENTS.PF&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/STUDENTS.PF&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/STUDENTS.PF&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.etools.systems.editor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_sKOREJuoEeeet4R6C00R_w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="lab3F17.docx" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.systemInPlaceEditor&quot; name=&quot;lab3F17.docx&quot; partName=&quot;lab3F17.docx&quot; title=&quot;lab3F17.docx&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/BCI433/BCI433 Labs/lab3F17.docx&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/BCI433/BCI433 Labs/lab3F17.docx&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.ui.systemInPlaceEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_-3SGIJv1EeeCPfRrJWqJiA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MARKSDSP.DSPF" iconURI="platform:/plugin/com.ibm.etools.iseries.dds.tui/icons/full/view16/screendesigner.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.etools.iseries.dds.tui.editor.ScreenDesigner&quot; name=&quot;MARKSDSP.DSPF&quot; partName=&quot;MARKSDSP.DSPF&quot; title=&quot;MARKSDSP.DSPF&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/MARKSDSP.DSPF&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QDDSSRC.FILE/MARKSDSP.DSPF&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.etools.iseries.dds.tui.editor.ScreenDesigner</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_84boQJ5wEeeO0L6rx9lVDg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MARKSRPG.RPGLE" iconURI="platform:/plugin/com.ibm.etools.systems.editor/icons/full/cview16/editor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.etools.systems.editor&quot; name=&quot;MARKSRPG.RPGLE&quot; partName=&quot;MARKSRPG.RPGLE&quot; title=&quot;MARKSRPG.RPGLE&quot; tooltip=&quot;RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/MARKSRPG.RPGLE&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/RemoteSystemsTempFiles/ZEUS.SENECACOLLEGE.CA/QSYS.LIB/DT433A11.LIB/QPRGLESRC.FILE/MARKSRPG.RPGLE&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.etools.systems.editor</tags>
+          <tags>removeOnHide</tags>
+        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_GuRVD5jFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.systemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Remote Systems" iconURI="platform:/plugin/org.eclipse.rse.ui/icons/full/cview16/system_view.gif" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view horizontalPosition=&quot;0&quot; linkWithEditor=&quot;f&quot; release=&quot;2.0.0&quot; showFilterPools=&quot;f&quot; verticalPosition=&quot;0&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;element path=&quot;Conn///SYCCB-11-B150.BCI433&quot;/>&#xD;&#xA;&lt;element path=&quot;Subs///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects&quot;/>&#xD;&#xA;&lt;element path=&quot;FRef///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list///ZEUS.SENECACOLLEGE.CA:DT433A11 OBJTYPE(*LIB:PROD-CUR)&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list///ZEUS.SENECACOLLEGE.CA:DT433A11 OBJTYPE(*LIB:PROD-CUR)///ZEUS.SENECACOLLEGE.CA:DT433A11/QPRGLESRC OBJTYPE(*FILE)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;selection>&#xD;&#xA;&lt;element path=&quot;Conn///SYCCB-11-B150.BCI433&quot;/>&#xD;&#xA;&lt;/selection>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view horizontalPosition=&quot;0&quot; linkWithEditor=&quot;f&quot; release=&quot;2.0.0&quot; showFilterPools=&quot;f&quot; verticalPosition=&quot;21&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;element path=&quot;Conn///SYCCB-11-B150.BCI433&quot;/>&#xD;&#xA;&lt;element path=&quot;Subs///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects&quot;/>&#xD;&#xA;&lt;element path=&quot;FRef///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list///ZEUS.SENECACOLLEGE.CA:DT433A11 OBJTYPE(*LIB:PROD-CUR)&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list///ZEUS.SENECACOLLEGE.CA:DT433A11 OBJTYPE(*LIB:PROD-CUR)///ZEUS.SENECACOLLEGE.CA:DT433A11/QDDSSRC OBJTYPE(*FILE)&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list///ZEUS.SENECACOLLEGE.CA:DT433A11 OBJTYPE(*LIB:PROD-CUR)///ZEUS.SENECACOLLEGE.CA:DT433A11/QPRGLESRC OBJTYPE(*FILE)&quot;/>&#xD;&#xA;&lt;element path=&quot;Subs///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.ifs.files.ifs=IFS Files&quot;/>&#xD;&#xA;&lt;element path=&quot;FRef///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.ifs.files.ifs=IFS Files///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.ifs.files.ifs=File systems&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.ifs.files.ifs=IFS Files///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.ifs.files.ifs=File systems////&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.ifs.files.ifs=IFS Files///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.ifs.files.ifs=File systems////////BCI433&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.ifs.files.ifs=IFS Files///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.ifs.files.ifs=File systems////////BCI433////BCI433/BCI433 Notes&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;selection>&#xD;&#xA;&lt;element path=&quot;Remote///SYCCB-11-B150.BCI433///com.ibm.etools.iseries.subsystems.qsys.objects=Objects///SYCCB-11-B150___SYCCB-11-B150:com.ibm.etools.iseries.subsystems.qsys.objects=Library list///ZEUS.SENECACOLLEGE.CA:DT433A11 OBJTYPE(*LIB:PROD-CUR)///ZEUS.SENECACOLLEGE.CA:DT433A11/QDDSSRC OBJTYPE(*FILE)///ZEUS.SENECACOLLEGE.CA:DT433A11/QDDSSRC(MARKSDSP)&quot;/>&#xD;&#xA;&lt;/selection>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Remote Systems</tags>
       <menus xmi:id="_GuRVEJjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.systemView">
@@ -178,8 +264,14 @@
       <toolbar xmi:id="_GuRVT5jFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.systemView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_GuRVXJjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.teamView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Team" iconURI="platform:/plugin/org.eclipse.rse.ui/icons/full/cview16/team_view.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view horizontalPosition=&quot;0&quot; release=&quot;2.0.0&quot; verticalPosition=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Remote Systems</tags>
+      <menus xmi:id="_KNCn0JvSEeeJ3La8ZwFhBQ" elementId="org.eclipse.rse.ui.view.teamView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_KNCn0ZvSEeeJ3La8ZwFhBQ" elementId="org.eclipse.rse.ui.view.teamView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_GuRVXZjFEee218gU1zZHZA" elementId="org.eclipse.rse.ui.view.systemTableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Remote System Details" iconURI="platform:/plugin/org.eclipse.rse.ui/icons/full/cview16/system_view.gif" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
@@ -257,7 +349,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_GuRVspjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.rse.ui.view.cmdlog"/>
+      <toolbar xmi:id="_GuRVspjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.rse.ui.view.cmdlog" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_GuRVtJjFEee218gU1zZHZA" elementId="org.eclipse.rse.terminals.ui.view.TerminalView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Terminals" iconURI="platform:/plugin/org.eclipse.rse.terminals.ui/icons/terminal_view.gif" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
@@ -279,6 +371,66 @@
       </menus>
       <toolbar xmi:id="_GuRVuZjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.edit.views.iserieseditorpromptpagebookview" visible="false"/>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_uae9UJlUEee4P_i_d0neGQ" elementId="com.ibm.etools.iseries.rse.ui.ErrorListView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Error List" iconURI="platform:/plugin/com.ibm.etools.iseries.rse.ui/icons/full/eview16/errorlist_view.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:IBM i</tags>
+      <menus xmi:id="_uas_wJlUEee4P_i_d0neGQ" elementId="com.ibm.etools.iseries.rse.ui.ErrorListView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_uas_wZlUEee4P_i_d0neGQ" elementId="com.ibm.etools.iseries.rse.ui.ErrorListView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_rBDtwJuhEee8xrVYZ2IGgA" elementId="com.ibm.etools.iseries.rse.ui.DataTableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Data Table" iconURI="platform:/plugin/com.ibm.etools.iseries.rse.ui/icons/full/eview16/filetable_view.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:IBM i</tags>
+      <menus xmi:id="_rBP7AJuhEee8xrVYZ2IGgA" elementId="com.ibm.etools.iseries.rse.ui.DataTableView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_rBP7AZuhEee8xrVYZ2IGgA" elementId="com.ibm.etools.iseries.rse.ui.DataTableView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_s5qNUJvREeeJ3La8ZwFhBQ" elementId="org.eclipse.ui.views.ResourceNavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Navigator" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/filenav_nav.png" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_s5q0YJvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.perspective.iseriesnavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="i Projects Navigator" iconURI="platform:/plugin/com.ibm.etools.iseries.projects/icons/iseries_navigator_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:IBM i</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_s5t3sJvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.FldTableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Field Table" iconURI="platform:/plugin/com.ibm.etools.iseries.rse.ui/icons/full/eview16/fieldtable_view.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:IBM i</tags>
+      <menus xmi:id="_zwaB4J5yEeeO0L6rx9lVDg" elementId="com.ibm.etools.iseries.rse.ui.FldTableView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_zwaB4Z5yEeeO0L6rx9lVDg" elementId="com.ibm.etools.iseries.rse.ui.FldTableView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_s5uewJvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.JobLogView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Job Log" iconURI="platform:/plugin/com.ibm.etools.iseries.rse.ui/icons/full/eview16/system400job_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:IBM i</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_s5uewZvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.JobStatusView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Job Status" iconURI="platform:/plugin/com.ibm.etools.iseries.rse.ui/icons/full/eview16/job_monitor.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:IBM i</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_s5uewpvREeeJ3La8ZwFhBQ" elementId="com.ibm.etools.iseries.rse.ui.SplfTableView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Spooled File Table" iconURI="platform:/plugin/com.ibm.etools.iseries.rse.ui/icons/full/eview16/splftable_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:IBM i</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_s5uew5vREeeJ3La8ZwFhBQ" elementId="org.eclipse.gef.ui.palette_view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Palette" iconURI="platform:/plugin/org.eclipse.gef/icons/palette_view.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_s7O6oJvREeeJ3La8ZwFhBQ" elementId="org.eclipse.gef.ui.palette_view">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_s7O6oZvREeeJ3La8ZwFhBQ" elementId="org.eclipse.gef.ui.palette_view"/>
+    </sharedElements>
     <trimBars xmi:id="_GuRVvJjFEee218gU1zZHZA" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_GuRVvZjFEee218gU1zZHZA" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -286,31 +438,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRVv5jFEee218gU1zZHZA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVwJjFEee218gU1zZHZA" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVwZjFEee218gU1zZHZA" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVwpjFEee218gU1zZHZA" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVw5jFEee218gU1zZHZA" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_GuRVxJjFEee218gU1zZHZA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Guag35jFEee218gU1zZHZA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVxZjFEee218gU1zZHZA" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVxpjFEee218gU1zZHZA" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVx5jFEee218gU1zZHZA" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRVyJjFEee218gU1zZHZA" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5KEOMJ5yEeexLoMRkOxOVg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Guag35jFEee218gU1zZHZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRVyZjFEee218gU1zZHZA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -318,41 +446,17 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRVy5jFEee218gU1zZHZA" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:ToolBarSeparator" xmi:id="_GuRVzJjFEee218gU1zZHZA" elementId="debug" toBeRendered="false">
-          <tags>org.eclipse.jface.action.GroupMarker.GroupMarker(String)</tags>
-        </children>
         <children xsi:type="menu:HandledToolItem" xmi:id="_GuRVzZjFEee218gU1zZHZA" elementId="com.ibm.debug.pdt.codecoverage.ui.actions.CodeCoverageDropDownAction" label="Code Coverage" iconURI="platform:/plugin/com.ibm.debug.pdt.codecoverage.ui.launch/icons/full/obj16/run_analysis.gif" tooltip="Code Coverage " command="_GuaeS5jFEee218gU1zZHZA">
           <persistedState key="IIdentifier" value="com.ibm.debug.pdt.codecoverage.ui.launch/com.ibm.debug.pdt.codecoverage.ui.actions.CodeCoverageDropDownAction"/>
           <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_GuRVzpjFEee218gU1zZHZA" coreExpressionId="programmatic.value"/>
           <menu xmi:id="_GuRVz5jFEee218gU1zZHZA" elementId="com.ibm.debug.pdt.codecoverage.ui.actions.CodeCoverageDropDownAction"/>
         </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRV0JjFEee218gU1zZHZA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRV0ZjFEee218gU1zZHZA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRV0pjFEee218gU1zZHZA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRV05jFEee218gU1zZHZA" elementId="org.eclipse.imp.runtime.refactoringActions">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRV1JjFEee218gU1zZHZA" elementId="sampleGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRV1ZjFEee218gU1zZHZA" elementId="org.eclipse.imp.runtime.actions.markOccurrencesAction">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRV1pjFEee218gU1zZHZA" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRV15jFEee218gU1zZHZA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRV2JjFEee218gU1zZHZA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRWBZjFEee218gU1zZHZA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -360,85 +464,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRWB5jFEee218gU1zZHZA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWCJjFEee218gU1zZHZA" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWCZjFEee218gU1zZHZA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWCpjFEee218gU1zZHZA" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_GuRWC5jFEee218gU1zZHZA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_GuagiZjFEee218gU1zZHZA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWDJjFEee218gU1zZHZA" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWDZjFEee218gU1zZHZA" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWDpjFEee218gU1zZHZA" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_GuRWD5jFEee218gU1zZHZA" elementId="com.ibm.etools.systems.editor">
-        <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWEJjFEee218gU1zZHZA" elementId="lpex">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWEZjFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWEpjFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWE5jFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWFJjFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWFZjFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWFpjFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWF5jFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWGJjFEee218gU1zZHZA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWGZjFEee218gU1zZHZA" elementId="group.compile" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWGpjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.app.ui.buildFromEditor.cl">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWG5jFEee218gU1zZHZA" elementId="action.nextError">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWHJjFEee218gU1zZHZA" elementId="action.previousError">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWHZjFEee218gU1zZHZA" elementId="action.compile_key">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWHpjFEee218gU1zZHZA" elementId="com.ibm.etools.iseries.app.ui.buildFromEditor.ILErpg">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWH5jFEee218gU1zZHZA" elementId="action.nextError">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWIJjFEee218gU1zZHZA" elementId="action.previousError">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWIZjFEee218gU1zZHZA" elementId="action.verifyProgram">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWIpjFEee218gU1zZHZA" elementId="action.compile_key">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5KGDYZ5yEeexLoMRkOxOVg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_GuagiZjFEee218gU1zZHZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRWI5jFEee218gU1zZHZA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -450,12 +476,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GuRWKpjFEee218gU1zZHZA" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWK5jFEee218gU1zZHZA" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_GuRWLJjFEee218gU1zZHZA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_GuRWLZjFEee218gU1zZHZA" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -482,8 +502,45 @@
       <children xsi:type="menu:ToolControl" xmi:id="_GuRWN5jFEee218gU1zZHZA" elementId="org.eclipse.ui.ide.perspectivestack(minimized)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_cdN_IJlXEee4P_i_d0neGQ" elementId="org.eclipse.rse.ui.view.PropertiesFolder(org.eclipse.rse.ui.view.SystemPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_OaYZgJunEee8xrVYZ2IGgA" elementId="org.eclipse.rse.ui.view.NavFolder(org.eclipse.rse.ui.view.SystemPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_2vVGYJvbEeeJ3La8ZwFhBQ" elementId="leftTop(com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_2v4gAJvbEeeJ3La8ZwFhBQ" elementId="leftBottom(com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_rJ1NcJvcEeeJ3La8ZwFhBQ" elementId="PartStack@d01221fa(com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
     </trimBars>
-    <trimBars xmi:id="_GuRWOJjFEee218gU1zZHZA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Right"/>
+    <trimBars xmi:id="_GuRWOJjFEee218gU1zZHZA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_cdnAsJlXEee4P_i_d0neGQ" elementId="org.eclipse.rse.ui.view.OutlineFolder(org.eclipse.rse.ui.view.SystemPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_cdwKoJlXEee4P_i_d0neGQ" elementId="org.eclipse.rse.ui.view.MiscFolder(org.eclipse.rse.ui.view.SystemPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_ceDsoJlXEee4P_i_d0neGQ" elementId="org.eclipse.ui.editorss(org.eclipse.rse.ui.view.SystemPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_SCNw8JupEeeet4R6C00R_w" elementId="PartStack@1a48e9ee(org.eclipse.rse.ui.view.SystemPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_2wFUUJvbEeeJ3La8ZwFhBQ" elementId="rightTop(com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_2wSIoJvbEeeJ3La8ZwFhBQ" elementId="bottom(com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_2weV4JvbEeeJ3La8ZwFhBQ" elementId="org.eclipse.ui.editorss(com.ibm.etools.iseries.dds.tui.editor.DesignerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_GuRWOZjFEee218gU1zZHZA" contributorURI="platform:/plugin/org.eclipse.ui.workbench" bindingContext="_GuRZZ5jFEee218gU1zZHZA">
     <bindings xmi:id="_GuRWOpjFEee218gU1zZHZA" keySequence="CTRL+A" command="_GuafEpjFEee218gU1zZHZA"/>
@@ -1949,6 +2006,23 @@
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_GuReSJjFEee218gU1zZHZA" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_Guaio5jFEee218gU1zZHZA"/>
   <commands xmi:id="_GuReSZjFEee218gU1zZHZA" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_Guaid5jFEee218gU1zZHZA"/>
   <commands xmi:id="_GuReSpjFEee218gU1zZHZA" elementId="org.eclipse.hyades.uml2sd.ui.actions.ShowNodeStart" commandName="Show the node start" description="Show the node start" category="_GuainpjFEee218gU1zZHZA"/>
