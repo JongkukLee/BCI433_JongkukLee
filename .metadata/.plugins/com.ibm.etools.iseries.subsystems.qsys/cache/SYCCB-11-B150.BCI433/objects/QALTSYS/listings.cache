@@ -1,0 +1,15 @@
+EVFEVENT
+*FILE
+PF-DTA
+QALTSYS
+
+CRTLIB
+*CMD
+
+QALTSYS
+Create Library
+CRTSRCPF
+*CMD
+
+QALTSYS
+Create Source Physical File

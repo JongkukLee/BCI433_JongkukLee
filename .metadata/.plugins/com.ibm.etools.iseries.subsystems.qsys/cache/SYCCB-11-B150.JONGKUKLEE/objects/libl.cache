@@ -1,0 +1,40 @@
+QALTSYS
+*LIB
+PROD-SYS
+QSYS
+
+QSYS
+*LIB
+PROD-SYS
+QSYS
+System Library
+QSYS2
+*LIB
+PROD-SYS
+QSYS
+System Library for CPI's
+QHLPSYS
+*LIB
+PROD-SYS
+QSYS
+
+QUSRSYS
+*LIB
+PROD-SYS
+QSYS
+System Library for Users
+DT433A11
+*LIB
+PROD-CUR
+QSYS
+
+QGPL
+*LIB
+PROD-USR
+QSYS
+General Purpose Library
+QTEMP
+*LIB
+TEST-USR
+QSYS
+

@@ -1,0 +1,12 @@
+000100150928     A                                      DSPSIZ(24 80 *DS3)
+000200150928     A          R INPUT
+000300150928     A                                  2 27'Days of Week'
+000400150928     A                                  1  2USER
+000500150928     A                                  1 72DATE
+000600150928     A                                      EDTCDE(Y)
+000700150928     A                                  6 18'Enter a Day Number:'
+000800150928     A            DAYIN          1  0I  6 40
+000900150928     A          R OUTPUT                    OVERLAY
+001000150928     A                                      CA03(03)
+001100150928     A                                 12  8'You entered a '
+001200150928     A            DAYNAME        9A  O 12 23

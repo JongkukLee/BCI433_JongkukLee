@@ -1,0 +1,26 @@
+000100140917     A                                      DSPSIZ(24 80 *DS3)
+000200150205     A          R RECORD1
+000300150205     A
+000400140917     A                                  1 64DATE
+000500140917     A                                      EDTCDE(Y)
+000600140922     A                                  1 38'Lab 4'
+000700140917     A                                  2 64TIME
+000800140917     A                                  6  3'Please select one of the following-
+000900140917     A                                       options:'
+001000140922     A                                  7 14'1.  Currency Symbol Used by this S-
+001100140922     A                                      ystem'
+001200140917     A                                  8 14'2.  IPL type (Initial Program Load-
+001300140917     A                                       for System Reboot)'
+001400140917     A                                  9 14'3.  Signed on User''s Message Queu-
+001500140917     A                                      e'
+001600140922     A                                 10 14'4.  Initial number of active jobs -
+001700140922     A                                      for storage allocation'
+001800140922     A                                 11 14'5.  Display System Serial Number'
+001900140922     A                                 12 14'6   Maximum Password Length'
+002000140917     A                                 15 17'Option:'
+002100140917     A                                 23  4'F3=Exit'
+002200140917     A                                 23 17'F21=Comand Line '
+002300140922     A                                 13 14'7. Previous sign on by signed on u-
+002400140922     A                                      ser'
+002500140922     A            OPTION         2   B 15 25
+002600150205     A                                 15 37'Valid option must be entered'

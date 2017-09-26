@@ -1,0 +1,1850 @@
+A
+*PGM
+DFU
+QGPL
+A
+ADOPTEDCL
+*PGM
+CLP
+QGPL
+ADOPTED AUTHORITY
+CVSERVICES
+*PGM
+CLP
+QGPL
+CommVault Simpana Services Startup Program
+DLYJOBI
+*PGM
+CLP
+QGPL
+
+DSPSYSLVC
+*PGM
+CLP
+QGPL
+program to determine release level
+DSPSYSLVE
+*PGM
+CLLE
+QGPL
+program to determine release level HIDE THIS ONE
+DSPSYSLVP2
+*PGM
+CLLE
+QGPL
+program to determine release level HIDE THIS ONE
+HELLOCPP
+*PGM
+CLLE
+QGPL
+program to determine release level SHOW THIS ONE
+PROOF
+*PGM
+RPG
+QGPL
+CHECK OUT INSTALLATION
+REGCLP
+*PGM
+CLP
+QGPL
+REGISTRATION - OBJ GOES IN QGPL revised May/2001
+REGRGP2
+*PGM
+RPGLE
+QGPL
+RPG REG PROGRAM - OBJECT GOES IN QGPL
+STRJOB
+*PGM
+CLP
+QGPL
+Start Up Job
+ZINSTC
+*PGM
+CLLE
+QGPL
+chk licensed programs of OS
+ZINSTC0001
+*PGM
+CLLE
+QGPL
+wrapper for rtrv ptf of OS
+DEVENVFBA
+*SQLPKG
+
+QGPL
+
+EXCELAFBA
+*SQLPKG
+
+QGPL
+
+EXCELFBA
+*SQLPKG
+
+QGPL
+
+MSACCEAFBA
+*SQLPKG
+
+QGPL
+
+MSACCESFBA
+*SQLPKG
+
+QGPL
+
+MSQRY3AFBA
+*SQLPKG
+
+QGPL
+
+MSQRY32FBA
+*SQLPKG
+
+QGPL
+
+QZDAPKG
+*SQLPKG
+
+QGPL
+
+STARTUP
+*MODULE
+CLLE
+QGPL
+
+JRN20001
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20002
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20003
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20004
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20005
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20006
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20007
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20008
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20009
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20010
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20011
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20012
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20013
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20014
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20015
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20016
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20017
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20018
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20019
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20020
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20021
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20022
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20023
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20024
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20025
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20026
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20027
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20028
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20029
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20030
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20031
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20032
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+JRN20033
+*JRNRCV
+
+QGPL
+Receiver for journal JRN2 in BHATTI
+TEST0001
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0002
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0003
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0004
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0005
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0006
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0007
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0008
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0009
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0010
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0011
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0012
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0013
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0014
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0015
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0016
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0017
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0018
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0019
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0020
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0021
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0022
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0023
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0024
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0025
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0026
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0027
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0028
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0029
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0030
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0031
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0032
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+TEST0033
+*JRNRCV
+
+QGPL
+Receiver for journal TEST in APARACHA
+QYPSJ00000
+*DTAQ
+
+QGPL
+
+QYPSJ00001
+*DTAQ
+
+QGPL
+
+QYPSJ00002
+*DTAQ
+
+QGPL
+
+QYPSJ00003
+*DTAQ
+
+QGPL
+
+QYPSJ00004
+*DTAQ
+
+QGPL
+
+QYPSJ00005
+*DTAQ
+
+QGPL
+
+QYPSJ00006
+*DTAQ
+
+QGPL
+
+QYPSJ00007
+*DTAQ
+
+QGPL
+
+QYPSJ00008
+*DTAQ
+
+QGPL
+
+QYPSJ00009
+*DTAQ
+
+QGPL
+
+QYPSJ00010
+*DTAQ
+
+QGPL
+
+QYPSJ00011
+*DTAQ
+
+QGPL
+
+QYPSJ00012
+*DTAQ
+
+QGPL
+
+QYPSJ00013
+*DTAQ
+
+QGPL
+
+QYPSJ00014
+*DTAQ
+
+QGPL
+
+QYPSJ00015
+*DTAQ
+
+QGPL
+
+QYPSJ00016
+*DTAQ
+
+QGPL
+
+QYPSJ00017
+*DTAQ
+
+QGPL
+
+QYPSJ00018
+*DTAQ
+
+QGPL
+
+QYPSJ00019
+*DTAQ
+
+QGPL
+
+QYPSJ00020
+*DTAQ
+
+QGPL
+
+QYPSJ00021
+*DTAQ
+
+QGPL
+
+QYPSJ00022
+*DTAQ
+
+QGPL
+
+QYPSJ00023
+*DTAQ
+
+QGPL
+
+RSE2074
+*DTAQ
+
+QGPL
+
+RSE28360
+*DTAQ
+
+QGPL
+
+RSE3939
+*DTAQ
+
+QGPL
+
+DAMAN
+*JOBQ
+
+QGPL
+
+JOBQ2
+*JOBQ
+
+QGPL
+
+JOBQ3
+*JOBQ
+
+QGPL
+
+QBASE
+*JOBQ
+
+QGPL
+QBASE Subsystem Job Queue
+QBATCH
+*JOBQ
+
+QGPL
+Batch Subsystem Queue
+QFNC
+*JOBQ
+
+QGPL
+Finance Subsystem Job Queue
+QINTER
+*JOBQ
+
+QGPL
+Interactive Subsystem Queue
+QINTER2
+*JOBQ
+
+QGPL
+
+QPGMR
+*JOBQ
+
+QGPL
+Programmer Subsystem Queue
+QSNADS
+*JOBQ
+
+QGPL
+SNADS Subsystem Job Queue
+QSPL
+*JOBQ
+
+QGPL
+Spooling Subsystem Queue
+QS36EVOKE
+*JOBQ
+
+QGPL
+QS36EVOKE Job Queue
+QS36MRT
+*JOBQ
+
+QGPL
+QS36MRT Job Queue.
+QTXTSRCH
+*JOBQ
+
+QGPL
+Text Search Services Job Queue
+PRT01
+*OUTQ
+
+QGPL
+
+QDKT
+*OUTQ
+
+QGPL
+Default Diskette Output Queue
+QPRINT
+*OUTQ
+
+QGPL
+Default Printer Output Queue
+QPRINTS
+*OUTQ
+
+QGPL
+Printer Output Queue Intended for Special Forms
+QPRINT2
+*OUTQ
+
+QGPL
+Printer Output Queue Intended for 2-Part Paper
+RL233A06
+*OUTQ
+
+QGPL
+
+A
+*FILE
+DFU
+QGPL
+A
+AUDIBLEC
+*FILE
+PF-DTA
+QGPL
+
+AUDIBLED
+*FILE
+PF-DTA
+QGPL
+
+AUTHOR
+*FILE
+PF-DTA
+QGPL
+
+CHAP15AS1
+*FILE
+PF-DTA
+QGPL
+chapter 15 - assignment 1
+CHAP16AS1
+*FILE
+PF-DTA
+QGPL
+Chapter 16, assignment 1
+CHAP4AS1
+*FILE
+PF-DTA
+QGPL
+Chapter 4, programming assignment 1
+CHAP6AS3
+*FILE
+PF-DTA
+QGPL
+Customer Address File, Chapt 6, Prog Assn 3
+CHAP8AS2
+*FILE
+PF-DTA
+QGPL
+Employee Pay File - Chap 8, programming assn 2
+CHAP8AS4
+*FILE
+PF-DTA
+QGPL
+Student GPA File - Chap 8, Prog Assn 4 & 10
+CPCH13TF
+*FILE
+PF-DTA
+QGPL
+
+CUSTDF
+*FILE
+DSPF
+QGPL
+Customer Display - Chapter 4, 1
+EASYCOM
+*FILE
+PF-DTA
+QGPL
+COPYRIGHT AURA Equipements - FRANCE -
+EDITCDSP
+*FILE
+DSPF
+QGPL
+
+EDITCDSP2
+*FILE
+DSPF
+QGPL
+
+EMP
+*FILE
+PF-DTA
+QGPL
+
+EMPLOYEE
+*FILE
+PF-DTA
+QGPL
+
+EMPLOYEEPF
+*FILE
+PF-DTA
+QGPL
+Chapter 14, Interactive Program
+EMPNOTPF
+*FILE
+PF-DTA
+QGPL
+Employee Notes
+EMPPAYPF
+*FILE
+PF-DTA
+QGPL
+
+EMPREPORT
+*FILE
+PRTF
+QGPL
+
+EMPSCREEN
+*FILE
+DSPF
+QGPL
+
+EQUIPPF
+*FILE
+PF-DTA
+QGPL
+EQUIPMENT Physical File
+EQ200DSP
+*FILE
+DSPF
+QGPL
+
+FEESOWED
+*FILE
+LF
+QGPL
+
+FEESOWED1
+*FILE
+LF
+QGPL
+
+FEESSOWED
+*FILE
+LF
+QGPL
+
+FINEOWED
+*FILE
+LF
+QGPL
+
+FINEOWSED
+*FILE
+LF
+QGPL
+
+FINES_OWED
+*FILE
+LF
+QGPL
+
+FINESOWED
+*FILE
+LF
+QGPL
+
+FINESOWED1
+*FILE
+LF
+QGPL
+
+FINESOWED2
+*FILE
+LF
+QGPL
+
+FINESOWED9
+*FILE
+LF
+QGPL
+
+FTPOUT
+*FILE
+PF-DTA
+QGPL
+Output file for DSPJOBLOG
+HELLODSP
+*FILE
+DSPF
+QGPL
+
+HORSEPF
+*FILE
+PF-DTA
+QGPL
+Horse Physical File
+HSTATS
+*FILE
+PF-DTA
+QGPL
+Horse Statistics File
+ICDSPF
+*FILE
+DSPF
+QGPL
+
+ICEPF
+*FILE
+PF-DTA
+QGPL
+Ice Cream Master File
+ICSHIPPF
+*FILE
+PF-DTA
+QGPL
+Ice Cream Shipping Instructions
+INVCRPF
+*FILE
+PF-DTA
+QGPL
+Ice Cream Inventory File
+INVCRPFDUP
+*FILE
+PF-DTA
+QGPL
+Ice Cream Inventory File
+INVOICE
+*FILE
+PF-DTA
+QGPL
+
+ITEM_PUR
+*FILE
+PF-DTA
+QGPL
+
+LIBS
+*FILE
+PF-DTA
+QGPL
+Output file for DSPOBJD
+MANUFPF
+*FILE
+PF-DTA
+QGPL
+Project Leader file
+MYFINES
+*FILE
+LF
+QGPL
+
+PDARRRPT
+*FILE
+PRTF
+QGPL
+
+PLEADPF
+*FILE
+PF-DTA
+QGPL
+Project Leader file
+PRDTLPF
+*FILE
+PF-DTA
+QGPL
+Project Details File
+PRJDSPF
+*FILE
+DSPF
+QGPL
+
+PRODUCT
+*FILE
+PF-DTA
+QGPL
+
+PRODU00001
+*FILE
+PF-DTA
+QGPL
+
+PROJPF
+*FILE
+PF-DTA
+QGPL
+Project File
+PROVINCES
+*FILE
+PF-DTA
+QGPL
+Provinces file for assign 2, provcod key
+PRT01
+*FILE
+PF-DTA
+QGPL
+
+QAAPFILE
+*FILE
+LF
+QGPL
+Symbol set symbol definitions logical file
+QAAPFILE$
+*FILE
+PF-DTA
+QGPL
+Symbol set small symbol definitions
+QAAPFILE#
+*FILE
+PF-DTA
+QGPL
+Symbol set medium symbol definitions
+QAAPFILE@
+*FILE
+PF-DTA
+QGPL
+Symbol set large symbol definitions
+QAFCGRPH
+*FILE
+PF-DTA
+QGPL
+SAMPLE GDF
+QAFCPFDDTA
+*FILE
+PF-DTA
+QGPL
+SAMPLE DATABASE FILE FOR PFU
+QAFCTUTDBF
+*FILE
+PF-DTA
+QGPL
+SAMPLE DATABASE FILE FOR TUTORIAL
+QAFCTUTOR
+*FILE
+PF-DTA
+QGPL
+AFPU TUTORIAL TEXT
+QAFCTUTPFD
+*FILE
+PF-DTA
+QGPL
+AFP Utilities tutorial PFD file
+QAFCTUTXMP
+*FILE
+PF-DTA
+QGPL
+Sample PFD File
+QAFCXMPAI2
+*FILE
+PF-DTA
+QGPL
+SAMPLE DATABASE FILE (AIAG_B2)
+QAFCXMPAI3
+*FILE
+PF-DTA
+QGPL
+SAMPLE DATABASE FILE (AIAG_B3)
+QAFCXMPAI4
+*FILE
+PF-DTA
+QGPL
+SAMPLE DATABASE FILE (AIAG_B4)
+QAFCXMPAI5
+*FILE
+PF-DTA
+QGPL
+SAMPLE DATABASE FILE (AIAG_B5)
+QAFCXMPEIA
+*FILE
+PF-DTA
+QGPL
+SAMPLE DATABASE FILE (EIA)
+QAFCXMPOV1
+*FILE
+PF-DTA
+QGPL
+SAMPLE OVERLAYS FOR 4224/4234 PRINTER
+QAFCXMPOV2
+*FILE
+PF-DTA
+QGPL
+SAMPLE OVERLAYS FOR 3812/3816 PRINTER
+QAFCXMPOV3
+*FILE
+PF-DTA
+QGPL
+SAMPLE OVERLAYS FOR 4028 PRINTER
+QAFCXMPOV4
+*FILE
+PF-DTA
+QGPL
+SAMPLE OVERLAYS FOR OTHER PRINTERS
+QAFCXMPPF1
+*FILE
+PF-DTA
+QGPL
+PFD DEFINITIONS FOR 4224/4234 PRINTER
+QAFCXMPPF2
+*FILE
+PF-DTA
+QGPL
+PFD DEFINITIONS FOR 3812/3816 PRINTER
+QAFCXMPPF3
+*FILE
+PF-DTA
+QGPL
+PFD DEFINITIONS FOR 4028 PRINTER
+QAOEFFVL
+*FILE
+PF-DTA
+QGPL
+Form field valid values file
+QAPZCOVER
+*FILE
+PF-DTA
+QGPL
+PTF Cover Letter File
+QASUUSRPMT
+*FILE
+PF-DTA
+QGPL
+
+QAUOOPT
+*FILE
+PF-DTA
+QGPL
+
+QBFCDBIF
+*FILE
+SAVF
+QGPL
+
+QCBLLESRC
+*FILE
+PF-SRC
+QGPL
+
+QCBLSRC
+*FILE
+PF-SRC
+QGPL
+
+QCLSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for CL source
+QCMDSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for cmd def src
+QCPPSRC
+*FILE
+PF-SRC
+QGPL
+ILE C++ SOURCE FILE
+QCSRC
+*FILE
+PF-SRC
+QGPL
+ILE C SOURCE FILE
+QDDSSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for DDS source
+QDKT
+*FILE
+DKTF
+QGPL
+Default diskette data device file
+QDKTSRC
+*FILE
+DKTF
+QGPL
+Default source diskette device file
+QDSIGNONX
+*FILE
+DSPF
+QGPL
+
+QDSIGNONZ
+*FILE
+DSPF
+QGPL
+
+QDSIGNONZS
+*FILE
+DSPF
+QGPL
+
+QEWCKBDMAP
+*FILE
+PF-SRC
+QGPL
+Extended Wireless Keyboard Remap Rules File
+QEWCSCNFMT
+*FILE
+PF-SRC
+QGPL
+Extended Wireless Screen Reformat Rules File
+QEWCSRC
+*FILE
+PF-SRC
+QGPL
+Source file for Extended Wireless Controller data
+QEWLSRC
+*FILE
+PF-SRC
+QGPL
+Source file for Extended Wireless Line data
+QFMTSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for FMT source
+QINVFILE
+*FILE
+LF
+QGPL
+
+QINVREC
+*FILE
+PF-DTA
+QGPL
+
+QLBLSRC
+*FILE
+PF-SRC
+QGPL
+
+QMNUSRC
+*FILE
+PF-SRC
+QGPL
+Default source file for UIM menu source
+QORDDTL
+*FILE
+PF-DTA
+QGPL
+
+QORDFILE
+*FILE
+LF
+QGPL
+
+QORDHDR
+*FILE
+PF-DTA
+QGPL
+
+QPCJPDGPRF
+*FILE
+PRTF
+QGPL
+Printer device file for DSPPDGPRF OUTPUT(*PRINT)
+QPNLSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for UIM source
+QPRINT
+*FILE
+PRTF
+QGPL
+Default spool output print file for OUTQ(*JOB)
+QPRINTS
+*FILE
+PRTF
+QGPL
+Default spool print file for special forms
+QPRINT2
+*FILE
+PRTF
+QGPL
+Default spool print file for two copy output
+QREXSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for REXX source
+QRPGSRC
+*FILE
+PF-SRC
+QGPL
+
+QSALEREC
+*FILE
+PF-DTA
+QGPL
+
+QSRVSRC
+*FILE
+PF-SRC
+QGPL
+Binder language source file
+QSYSCHGS
+*FILE
+PF-DTA
+QGPL
+QSYS CODE TRACKER TABLE
+QTAPE
+*FILE
+TAPF
+QGPL
+Default tape data device file
+QTAPSRC
+*FILE
+TAPF
+QGPL
+Default source tape device file
+QTBLSRC
+*FILE
+PF-SRC
+QGPL
+Default source data base file for table source
+QTXTSRC
+*FILE
+PF-CPF9822
+QGPL
+
+RECREPORT
+*FILE
+PRTF
+QGPL
+
+REGISTE2
+*FILE
+DSPF
+QGPL
+USED BY REGISTRATION PROGRAM - OBJECT GOES IN QGPL
+SLSRPT
+*FILE
+PRTF
+QGPL
+
+STDNTMARK
+*FILE
+LF
+QGPL
+
+STDNTMARKS
+*FILE
+LF
+QGPL
+
+STDNTMARK2
+*FILE
+LF
+QGPL
+
+STDNTMRKS
+*FILE
+LF
+QGPL
+
+STDNT00001
+*FILE
+LF
+QGPL
+
+STDNT00002
+*FILE
+LF
+QGPL
+
+STDNT00003
+*FILE
+LF
+QGPL
+
+STDNT00004
+*FILE
+LF
+QGPL
+
+STDNT00005
+*FILE
+LF
+QGPL
+
+STUDENT
+*FILE
+PF-DTA
+QGPL
+
+STUDENTSL1
+*FILE
+PF-DTA
+QGPL
+Student file for IBC233 Lab 1
+SYSLVLDSP
+*FILE
+DSPF
+QGPL
+
+TSTFLE
+*FILE
+PF-DTA
+QGPL
+
+USAGEPF
+*FILE
+PF-DTA
+QGPL
+Project Details File
+BA233B40
+*MSGQ
+
+QGPL
+
+DS234A22
+*MSGQ
+
+QGPL
+
+EXAMREVIEW
+*MSGQ
+
+QGPL
+
+EXAM1
+*MSGQ
+
+QGPL
+
+EXREV
+*MSGQ
+
+QGPL
+
+MYMSGQA02
+*MSGQ
+
+QGPL
+HELLO WORLD
+RUSS
+*MSGQ
+
+QGPL
+
+RUSSP
+*MSGQ
+
+QGPL
+
+RUSSP1
+*MSGQ
+
+QGPL
+
+RUSS1
+*MSGQ
+
+QGPL
+
+STUDENTS
+*MSGQ
+
+QGPL
+
+TEST
+*MSGQ
+
+QGPL
+
+XXX
+*MSGQ
+
+QGPL
+
+ASSINGMENT
+*JOBD
+
+QGPL
+
+DA233C33JD
+*JOBD
+
+QGPL
+
+DA233C35JD
+*JOBD
+
+QGPL
+
+DA525A02JD
+*JOBD
+
+QGPL
+
+DA525A06JD
+*JOBD
+
+QGPL
+
+DA525A08JD
+*JOBD
+
+QGPL
+
+DA525A10JD
+*JOBD
+
+QGPL
+
+DA525A12JD
+*JOBD
+
+QGPL
+
+DA525A14
+*JOBD
+
+QGPL
+
+DA525A14JD
+*JOBD
+
+QGPL
+
+DA525A16JD
+*JOBD
+
+QGPL
+
+DA525A35JD
+*JOBD
+
+QGPL
+
+DA525A39JD
+*JOBD
+
+QGPL
+
+DA525A40JD
+*JOBD
+
+QGPL
+
+DA525A45JD
+*JOBD
+
+QGPL
+
+DF525A02
+*JOBD
+
+QGPL
+
+DF525A02JD
+*JOBD
+
+QGPL
+
+DF525A04JD
+*JOBD
+
+QGPL
+
+DF525A06JD
+*JOBD
+
+QGPL
+
+DF525A07JD
+*JOBD
+
+QGPL
+
+DF525A08JD
+*JOBD
+
+QGPL
+
+DF525A43JD
+*JOBD
+
+QGPL
+
+DF525A45JD
+*JOBD
+
+QGPL
+
+DP525A01JD
+*JOBD
+
+QGPL
+
+DP525A02JD
+*JOBD
+
+QGPL
+
+DP525A03JD
+*JOBD
+
+QGPL
+
+DP525A04JD
+*JOBD
+
+QGPL
+
+DP525A05JD
+*JOBD
+
+QGPL
+
+DP525A06JD
+*JOBD
+
+QGPL
+
+DP525A07JD
+*JOBD
+
+QGPL
+
+DP525A08JD
+*JOBD
+
+QGPL
+
+DP525A09JD
+*JOBD
+
+QGPL
+
+DP525A10JD
+*JOBD
+
+QGPL
+
+DP525A11JD
+*JOBD
+
+QGPL
+
+DP525A12JD
+*JOBD
+
+QGPL
+
+DP525A16JD
+*JOBD
+
+QGPL
+
+DP525A35JD
+*JOBD
+
+QGPL
+
+DP525A45JD
+*JOBD
+
+QGPL
+
+LNGRANGEJD
+*JOBD
+
+QGPL
+
+LRNGJOBB40
+*JOBD
+
+QGPL
+
+LRNGJOBD
+*JOBD
+
+QGPL
+
+QBATCH
+*JOBD
+
+QGPL
+Batch Subsystem Job Description
+QCTXFORM
+*JOBD
+
+QGPL
+PDF Transform Services job description
+QDFTJOBD
+*JOBD
+
+QGPL
+Default job description
+QDFTSVR
+*JOBD
+
+QGPL
+Default server job description
+QEZBACKUP
+*JOBD
+
+QGPL
+Operational Assistant job description for backup
+QEZDISKINF
+*JOBD
+
+QGPL
+JOBD for DISKTASKS menu options
+QINTER
+*JOBD
+
+QGPL
+Interactive Subsystem Job Description
+QINTIJBD
+*JOBD
+
+QGPL
+Interactive Subsystem IGC JOBD
+QOFCBATCH
+*JOBD
+
+QGPL
+
+QPMUSRCAT
+*JOBD
+
+QGPL
+Collection Services user-defined category support
+QSPLAFPW
+*JOBD
+
+QGPL
+Advanced Function Print Writer
+QSPLDBR
+*JOBD
+
+QGPL
+Data Base Spooling Reader
+QSPLDKTR
+*JOBD
+
+QGPL
+Diskette Spooling Reader
+QSPLDKTW
+*JOBD
+
+QGPL
+Diskette Spooling Writer
+QSPLPRTW
+*JOBD
+
+QGPL
+Printer Spooling Writer
+QSPLRMTW
+*JOBD
+
+QGPL
+Remote Spooling Writer
+QSPLSTRWTR
+*JOBD
+
+QGPL
+AUTOSTART REMOTE SPOOLING WRITERS
+SENECALRJD
+*JOBD
+
+QGPL
+
+QBATCH
+*CLS
+
+QGPL
+Batch Subsystem Class
+QCASERVR
+*CLS
+
+QGPL
+Client Access Server Class
+QDIALOCAL
+*CLS
+
+QGPL
+Class for QDIALOCAL Job
+QFNC
+*CLS
+
+QGPL
+Finance Subsystem Class
+QINDUSR
+*CLS
+
+QGPL
+Class for Indirect User Job
+QINTER
+*CLS
+
+QGPL
+Interactive Subsystem Class
+QMAILP
+*CLS
+
+QGPL
+Host mail printing class
+QPGMR
+*CLS
+
+QGPL
+Programmer Subsystem Class
+QSNADS
+*CLS
+
+QGPL
+Snads Subsystem Class
+QSPL
+*CLS
+
+QGPL
+Spooling Subsystem Class
+QSPL2
+*CLS
+
+QGPL
+Spooling Subsystem Class
+QSPL3
+*CLS
+
+QGPL
+Spooling Subsystem Class
+QSPL4
+*CLS
+
+QGPL
+Spooling Subsystem Class for Remote Writers.
+QWCPCSUP
+*CLS
+
+QGPL
+Client Access Class
+DSPSYSLVL
+*CMD
+
+QGPL
+command to display system level
+QFNC
+*SBSD
+
+QGPL
+Finance Subsystem
+QLMTUSRLIB
+*DTAARA
+
+QGPL
+
+QPWFS_MSGI
+*DTAARA
+
+QGPL
+
+QSS1MRI
+*DTAARA
+
+QGPL
+
+RAVI
+*PSFCFG
+
+QGPL
+PDF Convert - E-mail PDF
+TEST1
+*PSFCFG
+
+QGPL
+PDF Convert - Spool PDF to Testing/Qgpl
+QFCLOGO
+*PAGSEG
+
+QGPL
+SAMPLE PAGE SEGMENT - IM1 FORMAT
+QFCLOGO2
+*PAGSEG
+
+QGPL
+SAMPLE PAGE SEGMENT - IOCA FUNCTION SET 10 FORMAT

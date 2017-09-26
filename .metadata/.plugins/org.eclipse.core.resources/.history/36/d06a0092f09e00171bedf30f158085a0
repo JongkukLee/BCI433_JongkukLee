@@ -1,0 +1,49 @@
+000001170917     A          R RECORD1
+000002170917     A                                  2 29'Marks Calculator'
+000003170917     A                                  2  4USER
+000004170917     A                                  3  4SYSNAME
+000005170917     A                                  2 65DATE
+000006170921     A                                      EDTCDE(A)
+000007170917     A                                  3 65TIME
+000008170917     A                                  5 19'Test1:'
+000009170917     A                                  6 19'Test2:'
+000010170917     A                                  7 19'Test3:'
+000011170917     A                                  8 19'Labs:'
+000012170917     A                                  9 19'Exam:'
+000013170917     A                                  2  2' '
+000014170917     A                                  3  2' '
+000015170917     A            TEST1          3  0B  5 28RANGE(0 100)
+000016170917     A            TEST2          3  0B  6 28RANGE(0 100)
+000017170917     A            TEST3          3  0B  7 28RANGE(0 100)
+000018170920     A            LAB            3  0B  8 28RANGE(0 30)
+000019170917     A            EXAM           3  0B  9 28RANGE(0 100)
+000021170917     A          R RECORD2                   CA03(03 'Exit')
+000022170920     A                                      OVERLAY
+000023170920     A                                 11 15'Tests:'
+000024170920     A                                 13 15'Final Mark:'
+000025170920     A                                 15 15'Final Grade:'
+000026170920     A            TESTOVRALL     2  0O 11 28
+000027170920     A            NUMGRADE       2  0O 13 28
+000028170920     A            LETGRADE       2   O 15 28
+000029170920     A                                 20  2'F3=Exit'
+000030170920     A                                  2  4USER
+000031170920     A                                  2 29'Marks Calculator'
+000032170920     A                                  2 65DATE
+000034170920     A                                  3 65TIME
+000035170920     A                                  3  4SYSNAME
+000036170920     A                                  5 19'Test1:'
+000037170920     A                                  6 19'Test2:'
+000038170920     A                                  7 19'Test3:'
+000039170920     A                                  8 19'Labs:'
+000040170920     A                                  9 19'Exam:'
+000041170920     A            TEST1          3  0B  5 28RANGE(0 100)
+000042170920     A            TEST2          3  0B  6 28RANGE(0 100)
+000043170920     A            TEST3          3  0B  7 28RANGE(0 100)
+000044170920     A            LAB            3  0B  8 28RANGE(0 30)
+000045170920     A            EXAM           3  0B  9 28RANGE(0 100)
+000046170917
+000101170917     A*%%RS+<record-sequences>
+000102170917     A*%%RS+ <sequence name="Untitled">
+000103170917     A*%%RS+  <device type="display" width="80" height="24" />
+000104170917     A*%%RS+ </sequence>
+000105170917     A*%%RS </record-sequences>
