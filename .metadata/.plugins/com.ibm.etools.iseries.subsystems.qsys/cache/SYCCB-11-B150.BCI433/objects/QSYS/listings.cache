@@ -28,3 +28,8 @@ CRTPF
 
 QSYS
 Create Physical File
+MONMSG
+*CMD
+
+QSYS
+Monitor Message

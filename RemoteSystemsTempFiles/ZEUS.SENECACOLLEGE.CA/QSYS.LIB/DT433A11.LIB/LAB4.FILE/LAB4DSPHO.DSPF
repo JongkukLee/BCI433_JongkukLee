@@ -22,7 +22,9 @@
 002200140917     A                                 23 17'F21=Comand Line '
 002300140922     A                                 13 14'7. Previous sign on by signed on u-
 002400140922     A                                      ser'
-002500140922     A            OPTION         2   B 15 25
+002500170927     A            OPTION         2   B 15 25
+002501170927     A  30                                  DSPATR(RI)
+002502170927     A  30                                  DSPATR(PC)
 002600170925     A  30                             15 37'Valid option must be entered'
 002601170925     A                                  1  4'Jongkuk Lee'
 002602170925     A            MSGTXT        80   B 18 14
