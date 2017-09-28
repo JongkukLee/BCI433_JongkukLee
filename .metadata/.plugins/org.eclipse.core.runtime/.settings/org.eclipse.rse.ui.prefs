@@ -1,9 +1,9 @@
 com.ibm.etools.iseries.rse.ui.aspdev=*CMDDFT;*ASP;*ASPGRPPRI;*SYSTEM
 com.ibm.etools.iseries.rse.ui.autl.aut=*CMDDFT;*LIBCRTAUT;*CHANGE;*ALL;*USE;*EXCLUDE
 com.ibm.etools.iseries.rse.ui.autl.crtaut=*CMDDFT;*SYSVAL;*USE;*CHANGE;*ALL;*EXCLUDE
-com.ibm.etools.iseries.rse.ui.generic.file.srcordta=*;STUDENTLAB;QDDSSRC;QPRGLESRC;STUDENTS
+com.ibm.etools.iseries.rse.ui.generic.file.srcordta=QCLLESRC;*;LAB4;QPRGLESRC;STUDENTLAB;QDDSSRC;STUDENTS
 com.ibm.etools.iseries.rse.ui.generic.lib=DT433A11;BCI433LIB;*LIBL;*USRLIBL;*CURLIB;*ALLUSR;*ALL
-com.ibm.etools.iseries.rse.ui.generic.mbr=*;STUDENTLAB;MARKSDSP;MARKSRPG;STUDENTS
+com.ibm.etools.iseries.rse.ui.generic.mbr=STARTUP;LAB4DSPHO;LAB4CL;STUDENTS;*;STUDENTLAB;MARKSDSP;MARKSRPG
 com.ibm.etools.iseries.rse.ui.generic.mbrtext=*;*BLANK
 com.ibm.etools.iseries.rse.ui.generic.mbrtype=*;RPGLE;PF
 com.ibm.etools.iseries.rse.ui.generic.obj=*
