@@ -1,5 +1,5 @@
 # 
-#Mon Sep 25 12:52:35 EDT 2017
+#Thu Sep 28 13:16:58 EDT 2017
 com.ibm.etools.iseries.rse.ui.generic.lib=DT433A11;BCI433LIB;*LIBL;*USRLIBL;*CURLIB;*ALLUSR;*ALL
 com.ibm.etools.iseries.rse.ui.autl.aut=*CMDDFT;*LIBCRTAUT;*CHANGE;*ALL;*USE;*EXCLUDE
 com.ibm.etools.iseries.rse.ui.generic.obj=*
@@ -13,9 +13,9 @@ com.ibm.etools.iseries.rse.ui.libNoCurlib=BCI433LIB
 com.ibm.etools.iseries.rse.ui.generic.mbrtype=*;RPGLE;PF
 com.ibm.etools.iseries.rse.ui.aspdev=*CMDDFT;*ASP;*ASPGRPPRI;*SYSTEM
 com.ibm.etools.iseries.rse.ui.mbr=LAB4CL;STARTUP;MARKSRPG;MARKSDSP;STUDENTS
-com.ibm.etools.iseries.rse.ui.generic.file.srcordta=*;STUDENTLAB;QDDSSRC;QPRGLESRC;STUDENTS
+com.ibm.etools.iseries.rse.ui.generic.file.srcordta=QCLLESRC;*;LAB4;QPRGLESRC;STUDENTLAB;QDDSSRC;STUDENTS
 com.ibm.etools.iseries.rse.ui.src=LAB4;QCLLESRC;QPRGLESRC;QDDSSRC
 com.ibm.etools.iseries.rse.ui.lib=*LIBL;*CURLIB
 com.ibm.etools.iseries.rse.ui.generic.mbrtext=*;*BLANK
-com.ibm.etools.iseries.rse.ui.generic.mbr=*;STUDENTLAB;MARKSDSP;MARKSRPG;STUDENTS
+com.ibm.etools.iseries.rse.ui.generic.mbr=STARTUP;LAB4DSPHO;LAB4CL;STUDENTS;*;STUDENTLAB;MARKSDSP;MARKSRPG
 com.ibm.etools.iseries.rse.ui.generic.objattr=*
