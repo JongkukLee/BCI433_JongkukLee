@@ -1,0 +1,89 @@
+000100171004             PGM
+000101170927             DCLF       LAB4DSPHO
+000102171004             DCL        &SECURITY   *CHAR 2
+000103171004             DCL        &PRVSIGN    *CHAR 13
+000104171004             DCL        &DATE *CHAR 20
+000108171004             DCL        &MSGQ        *CHAR 10
+000123171004             DCL        &MSGQLIB     *CHAR 10
+000124171004             DCL        &QPWDMAXLEN *DEC 5
+000125171004             DCL        &QACTJOB    *DEC 5
+000126171004             DCL        &QSRLNBR *CHAR 8
+000127171004             DCL        &QIPLSTS *CHAR 1
+000128171004             DCL        &QCURSYM *CHAR 1
+000129171004
+000131170927             /* Pass the retrieve data in the display file then use the physical file */
+000132170927             SNDRCVF
+000133170927             DOWHILE    (&IN03 = '0') /* If F3, escape the loop */
+000134171004                CHGVAR     &MSGTXT (&IN21)
+000135171004
+000136171004                IF         (&IN21 = '1') /*CALL       QUSCMDLN*/
+000137171004                ELSE       DO
+000138171004
+000139171004                SELECT
+000140171004                   WHEN       (&OPTION = '1' *OR &OPTION = '01') DO
+000141171004                      RTVSYSVAL  SYSVAL(QCURSYM)  RTNVAR(&QCURSYM)
+000142171004                      CHGVAR     &MSGTXT ('The currency symbol is set to ' *CAT &QIPLSTS)
+000143171004                   ENDDO
+000144171004                   WHEN       (&OPTION = '2' *OR &OPTION = '02') DO
+000145171004                      RTVSYSVAL  SYSVAL(QIPLSTS)  RTNVAR(&QIPLSTS)
+000146171004                      CHGVAR     &MSGTXT (&QIPLSTS)
+000147171004                   ENDDO
+000148171004                   WHEN       (&OPTION = '3' *OR &OPTION = '03') DO
+000149171004                      RTVUSRPRF  MSGQ(&MSGQ) MSGQLIB(&MSGQLIB)
+000150171004                      CHGVAR     &MSGTXT ('123dfdfTHE OUTPUT QUE NAME IS    ' *BCAT &MSGQLIB +
+000151171004                                   *BCAT 'IN LIBRARY' *BCAT &MSGQ)
+000152171004                   ENDDO
+000153171004                   WHEN       (&OPTION = '4' *OR &OPTION = '04') DO
+000154171004                      RTVSYSVAL  SYSVAL(QACTJOB)  RTNVAR(&QACTJOB)
+000155171004                      CHGVAR     &MSGTXT (&QACTJOB)
+000156171004                   ENDDO
+000157171004                   WHEN       (&OPTION = '5' *OR &OPTION = '05') DO
+000158171004                      RTVSYSVAL  SYSVAL(QSRLNBR)  RTNVAR(&QSRLNBR)
+000159171004                      CHGVAR     &MSGTXT (&QSRLNBR)
+000160171004                   ENDDO
+000161171004                   WHEN       (&OPTION = '6' *OR &OPTION = '06') DO
+000162171004                      call       QUSCMDLN
+000163171004                      /*         RTVSYSVAL  SYSVAL(QPWDMAXLEN)  RTNVAR(&QPWDMAXLEN) */
+000164171004                      /* CHGVAR     &MSGTXT (&QPWDMAXLEN)                            */
+000165171004                   ENDDO
+000166171004
+000167171004
+000168171004                   WHEN       (&OPTION = '7' *OR &OPTION = '07') DO
+000169171004                      RTVUSRPRF  PRVSIGN(&PRVSIGN)
+000170171004                      CHGVAR     &DATE (%SST(&PRVSIGN 4 2) *CAT '/' *CAT %SST(&PRVSIGN 6 2) +
+000171171004                                   *CAT       '/' *CAT %SST(&PRVSIGN 2 2))
+000180171004                      CHGVAR     &MSGTXT (&DATE)
+000181171004                   ENDDO
+000182171004
+000183171004
+000184170927                   OTHERWISE  CHGVAR &IN30 '1'
+000185170927                ENDSELECT
+000186170927                SNDRCVF
+000187170927                CHGVAR     &IN30 '0'
+000188170927                CHGVAR     &MSGTXT ' '
+000189171004                CHGVAR     &IN21 '0'
+000190171004             ENDDO
+000191170927             ENDDO
+000192170927
+000193170928             SUBR       OPTION1
+000194170928
+000195170928                CHGVAR     &MSGTXT ('The currency symbol is set to $' )
+000196170928             ENDSUBR
+000197170928
+000198170928             SUBR       OPTION2
+000199170927                /* Retrieve system value */
+000200170927                RTVSYSVAL  SYSVAL(QSECURITY) RTNVAR(&SECURITY)
+000201170927                SELECT
+000202170927                   WHEN       (&SECURITY = '10' ) CHGVAR  &MSGTXT  ('SECURITY LEVEL IS 10  AND +
+000203170927                                NOT SUPPORTED')
+000204170927                   WHEN       (&SECURITY = '20' ) CHGVAR  &MSGTXT  ('PASSWORD SECURITY ONLY AT +
+000205170927                                LEVEL' *BCAT  &SECURITY)
+000206170927                   WHEN       (&SECURITY = '30' ) CHGVAR    &MSGTXT ('PASSWORD AND OBJECT +
+000207170927                                SECURITY AT LEVEL 30')
+000208170927                   WHEN       (&SECURITY = '40' ) CHGVAR    &MSGTXT ('PASSWORD, OBJECT, AND +
+000209170927                                OPERATING SYSTEM INTEGRITY AT LEVEL 40')
+000210170927                   WHEN       (&SECURITY = '50' ) CHGVAR    &MSGTXT  ('PASSWORD, OBJECT, AND +
+000211170927                                ENHANCED OPERATING SYSTEM INTEGRITY AT LEVEL 50' )
+000212170927                ENDSELECT
+000213170927             ENDSUBR
+000214171004             ENDPGM

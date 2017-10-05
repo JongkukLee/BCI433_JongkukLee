@@ -1,0 +1,2060 @@
+
+  <!doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+  <html>
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Retrieve System Value  (RTVSYSVAL)</title>
+</head>
+<body bgcolor="white">
+<a name="RTVSYSVAL.Top_Of_Page"></a>
+<h2>Retrieve System Value  (RTVSYSVAL)</h2>
+<table width="100%">
+<tr>
+<td align="left" valign="top"><b>Where allowed to run:  </b>Compiled CL program or interpreted REXX (*BPGM *IPGM *BREXX *IREXX)<br>
+<b>Threadsafe:  </b>Yes
+</td>
+<td align="right" valign="top">
+<a href="#RTVSYSVAL.PARAMETERS.TABLE">Parameters</a><br>
+<a href="#RTVSYSVAL.COMMAND.EXAMPLES">Examples</a><br>
+<a href="#RTVSYSVAL.ERROR.MESSAGES">Error messages</a></td>
+</tr>
+</table>
+
+<div> <a name="RTVSYSVAL"></a>
+<p>The Retrieve System Value (RTVSYSVAL) command is used in a CL program to retrieve the value from the specified system value so that it can be used in the program.  The value is returned (copied) to the specified CL variable in the program.
+</p>
+<p><b>Restrictions:</b>
+</p>
+<ol>
+<li>This command is valid only in CL programs or REXX procedures.
+</li>
+<li>The attributes of the system value and the receiving CL variable must be compatible.
+</li>
+</ol>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVSYSVAL.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+
+<div>
+<h3><a name="RTVSYSVAL.PARAMETERS.TABLE">Parameters</a></h3>
+<table cellspacing="0" cellpadding="4" border="1"><tr>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Keyword</th>
+<th width="15%" align="left" valign="bottom" bgcolor="aqua">Description</th>
+<th width="30%" align="left" valign="bottom" bgcolor="aqua">Choices</th>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Notes</th>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVSYSVAL.SYSVAL"><b>SYSVAL</b></a></td>
+<td valign="top">System value</td>
+<td valign="top">QABNORMSW, QACGLVL, QACTJOB, QADLACTJ, QADLSPLA, QADLTOTJ, QALWJOBITP, QALWOBJRST, QALWUSRDMN, QASTLVL, QATNPGM, QAUDCTL, QAUDENDACN, QAUDFRCLVL, QAUDLVL, QAUDLVL2, QAUTOCFG, QAUTORMT, QAUTOSPRPT, QAUTOVRT, QBASACTLVL, QBASPOOL, QBOOKPATH, QCCSID, QCENTURY, QCFGMSGQ, QCHRID, QCHRIDCTL, QCMNARB, QCMNRCYLMT, QCNTRYID, QCONSOLE, QCRTAUT, QCRTOBJAUD, QCTLSBSD, QCURSYM, QDATE, QDATETIME, QDATFMT, QDATSEP, QDAY, QDAYOFWEEK, QDBFSTCCOL, QDBRCVYWT, QDECFMT, QDEVNAMING, QDEVRCYACN, QDSCJOBITV, QDSPSGNINF, QDYNPTYADJ, QDYNPTYSCD, QENDJOBLMT, QFRCCVNRST, QHOUR, QHSTLOGSIZ, QIGC, QIGCCDEFNT, QIGCFNTSIZ, QINACTMSGQ, QINACTITV, QIPLDATTIM, QIPLSTS, QIPLTYPE, QJOBMSGQFL, QJOBMSGQMX, QJOBMSGQSZ, QJOBMSGQTL, QJOBSPLA, QKBDBUF, QKBDTYPE, QLANGID, QLEAPADJ, QLIBLCKLVL, QLMTDEVSSN, QLMTSECOFR, QLOCALE, QLOGOUTPUT, QMAXACTLVL, QMAXJOB, QMAXSGNACN, QMAXSIGN, QMAXSPLF, QMCHPOOL, QMINUTE, QMLTTHDACN, QMODEL, QMONTH, QPASTHRSVR, QPFRADJ, QPRBFTR, QPRBHLDITV, QPRCFEAT, QPRCMLTTSK, QPRTDEV, QPRTKEYFMT, QPRTTXT, QPWDCHGBLK, QPWDEXPITV, QPWDEXPWRN, QPWDLMTAJC, QPWDLMTCHR, QPWDLMTREP, QPWDLVL, QPWDMAXLEN, QPWDMINLEN, QPWDPOSDIF, QPWDRQDDGT, QPWDRQDDIF, QPWDRULES, QPWDVLDPGM, QPWRDWNLMT, QPWRRSTIPL, QQRYDEGREE, QQRYTIMLMT, QRCLSPLSTG, QRETSVRSEC, QRMTIPL, QRMTSIGN, QRMTSRVATR, QSAVACCPTH, QSCANFS, QSCANFSCTL, QSCPFCONS, QSECOND, QSECURITY, QSETJOBATR, QSFWERRLOG, QSHRMEMCTL, QSPCENV, QSPLFACN, QSRLNBR, QSRTSEQ, QSRVDMP, QSSLCSL, QSSLCSLCTL, QSSLPCL, QSTGLOWACN, QSTGLOWLMT, QSTRPRTWTR, QSTRUPPGM, QSTSMSG, QSVRAUTITV, QSYSLIBL, QTHDRSCADJ, QTHDRSCAFN, QTIMADJ, QTIME, QTIMSEP, QTIMZON, QTOTJOB, QTSEPOOL, QUPSDLYTIM, QUPSMSGQ, QUSEADPAUT, QUSRLIBL, QUTCOFFSET, QVFYOBJRST, QYEAR</td>
+<td valign="top">Required, Positional 1</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVSYSVAL.RTNVAR"><b>RTNVAR</b></a></td>
+<td valign="top">CL variable for returned value</td>
+<td valign="top"><i>Not restricted</i></td>
+<td valign="top">Required, Positional 2</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr><td align="right"><a href="#RTVSYSVAL.Top_Of_Page">Top</a></td></tr>
+</table>
+</div>
+<div> <a name="RTVSYSVAL.SYSVAL"></a>
+<h3>System value (SYSVAL)</h3>
+<p>Specifies the name of the system value whose value is retrieved and returned for use in the program.  The names and descriptions of the system values that can be specified are in the Work management topic collection in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+<p>This is a required parameter.
+</p>
+<p>The system values are:
+</p>
+<dl>
+<dt><b>QABNORMSW</b></dt>
+<dd>Previous end of system indicator.  This value cannot be changed.
+<ul>
+<li>'0' means previous end was normal.
+</li>
+<li>'1' means previous end was abnormal.
+</li>
+</ul>
+</dd>
+<dt><b>QACGLVL</b></dt>
+<dd>Accounting level.  Changes made to this system value take effect for jobs started after the change is made.
+<ul>
+<li>*NONE  - No accounting information is written to a journal.
+</li>
+<li>*JOB   - Job resource use is written to a journal.
+</li>
+<li>*PRINT - Spooled and printer file resource use is written to a journal.
+</li>
+</ul>
+</dd>
+<dt><b>QACTJOB</b></dt>
+<dd>Initial number of active jobs for which storage is allocated.  Changes made to this system value take effect at the next IPL.
+</dd>
+<dt><b>QADLACTJ</b></dt>
+<dd>Additional number of active jobs for which storage is allocated.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QADLSPLA</b></dt>
+<dd>Additional storage for extending spooling control block (bytes).  The operating system no longer uses this system value.  Changes made to this system value have no effect.
+</dd>
+<dt><b>QADLTOTJ</b></dt>
+<dd>Additional total number of jobs for which storage is allocated.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QALWJOBITP</b></dt>
+<dd>Allow jobs to be interrupted.  This system value specifies how the system responds to user initiated requests to interrupt a job to run a user-defined exit program in that job.  The Call Job Interrupt Program (QWCJBITP) API in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/ contains information on using job interrupt exit programs.  The Change Job Interrupt Status (QWCCJITP) API in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/ contains information on retrieving and changing the interrupt status of a job.  The interrupt status of an active job can be changed at any time but will only take effect when the value of QALWJOBITP allows jobs to be interrupted.  Changes made to this system value take effect immediately.  The shipped value is 0.
+<ul>
+<li>0 means the system will not allow jobs to be interrupted to run user-defined exit programs.  All new jobs becoming active will default to be uninterruptible.  All active jobs are uninterruptible regardless of what the job interrupt status is set to.
+</li>
+<li>1 means the system will allow jobs to be interrupted to run user-defined exit programs.  All new jobs becoming active will default to be uninterruptible.
+</li>
+<li>2 means the system will allow jobs to be interrupted to run user-defined exit programs.  All new jobs becoming active will default to be interruptible.
+</li>
+</ul>
+</dd>
+<dt><b>QALWOBJRST</b></dt>
+<dd>Allow object to be restored.  This system value determines whether objects with security-sensitive attributes are restored.  See Restore options for additional information.
+</dd>
+<dt><b>QALWUSRDMN</b></dt>
+<dd>Allow user domain objects in libraries or directories.  This system value specifies which libraries on the system can contain the user domain user objects *USRSPC (user space), *USRIDX (user index), and *USRQ (user queue).  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QASTLVL</b></dt>
+<dd>Assistance level.  Indicates the Operational Assistant level of system displays for user profiles where ASTLVL(*SYSVAL) is specified.  Changes made to this system value take effect immediately.
+<ul>
+<li>*BASIC    - The Operational Assistant user interface is used.
+</li>
+<li>*INTERMED - The system interface is used.
+</li>
+<li>*ADVANCED - The expert system interface is used.
+</li>
+</ul>
+<p>If a command does not have an *ADVANCED level interface, *INTERMED is used.
+</p>
+</dd>
+<dt><b>QATNPGM</b></dt>
+<dd>Attention program.  If *ASSIST is specified for this system value, the Operational Assistant main menu is called when the user presses the Attention (Attn) key.  This value can be changed to the name of a program, which will be called when the user presses the Attn key in a job where ATNPGM(*SYSVAL) is specified in the user profile.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QAUDCTL</b></dt>
+<dd>Audit control.  This system value contains the on and off switches for object and user action auditing.  This system value activates auditing on the system that is selected by the Change Object Auditing (CHGOBJAUD) and Change User Auditing (CHGUSRAUD) commands and the QAUDLVL and QAUDLVL2 system values.  Changes made to this system value take effect immediately.
+<ul>
+<li>*NOTAVL - The user performing the command is not allowed to display the current auditing value.  You cannot change the system value to not available (*NOTAVL).
+</li>
+<li>*NONE   - No security auditing is done on the system.   This is the shipped value.
+</li>
+<li>*AUDLVL - The actions specified in the QAUDLVL and QAUDLVL2 system values will be logged to the security journal. Also actions specified by a user profile's action auditing values will be audited.  A user profile's action auditing values are set through the AUDLVL parameter on the CHGUSRAUD command.
+</li>
+<li>*OBJAUD - Actions against objects that have an object audit value other than *NONE will be audited.  An object's audit value is set through the Change Auditing Value (CHGAUD) command or the CHGOBJAUD command.
+</li>
+<li>*NOQTEMP - No auditing of most objects in QTEMP is done.  You must specify *NOQTEMP with either *OBJAUD or *AUDLVL.  You can not specify *NOQTEMP by itself.
+</li>
+</ul>
+</dd>
+<dt><b>QAUDENDACN</b></dt>
+<dd>Audit journal error action.  This system value specifies the action to be taken by the system if errors occur when an audit journal entry is being sent by the operating system to the security audit journal.  Changes made to this system value take effect immediately.
+<ul>
+<li>*NOTAVL - The user performing the command is not allowed to display the current auditing value.  You cannot change the system value to not available (*NOTAVL).
+</li>
+<li>*NOTIFY - Notification of failure is sent to the QSYSOPR and QSYSMSG message queues, and then the action that caused the audit attempt continues.
+</li>
+<li>*PWRDWNSYS - The Power Down System (PWRDWNSYS) command is issued.  The system will then be brought up in a restricted state on the following IPL, and then only a user with audit (*AUDIT) and all object (*ALLOBJ) special authority can sign on the system.
+</li>
+</ul>
+</dd>
+<dt><b>QAUDFRCLVL</b></dt>
+<dd>Force audit journal.  This system value specifies the number of audit journal entries that can be written to the security auditing journal before the journal entry data is forced to auxiliary storage.
+<ul>
+<li>1 through 100.
+</li>
+<li>*SYS - The system determines when the journal entries are to be written to auxiliary storage based on internal system processing.  *SYS cannot be returned in a decimal variable, so the command returns 0 when the value *SYS is specified.
+</li>
+<li>*NOTAVL - The user performing the command is not allowed to display the current auditing value.  You cannot change the system value to not available (*NOTAVL).  *NOTAVL cannot be returned in a decimal variable, so the command returns -1 in place of *NOTAVL.
+</li>
+</ul>
+<p>Changes made to this system value take effect immediately.
+</p>
+</dd>
+<dt><b>QAUDLVL</b></dt>
+<dd>Security auditing level.  Controls the level of action auditing on the system. Changes made to this system value take effect immediately for all jobs running on the system.
+<ul>
+<li>*NONE     - No security action auditing will occur on the system.  This is the shipped value.
+</li>
+<li>*AUDLVL2  - Both QAUDLVL and QAUDLVL2 system values will be used to determine the security actions to be audited.
+<p><b>Note:</b>
+</p>
+<ul>
+<li>If you wish to use the QAUDLVL2 system value exclusively, set the QAUDLVL system value to *AUDLVL2 and add your auditing values to the QAUDLVL2 system value.
+</li>
+<li>If you wish to use both system values you can set your values in the QAUDLVL system value along with the *AUDLVL2 value, then add any additional values to the QAUDLVL2 system value.
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>*ATNEVT   - Attention events are audited.  Attention events are conditions that require further evaluation to determine the condition's security significance. For example, intrusion monitor events need to be examined to determine whether the condition is an intrusion or a false positive.
+</li>
+<li>*AUTFAIL  - Authorization failures are audited.
+</li>
+<li>*CREATE   - All object creations are audited.  Objects created into library QTEMP are not audited.
+</li>
+<li>*DELETE   - All deletions of external objects on the system are audited.  Objects deleted from library QTEMP are not audited.
+</li>
+<li>*JOBBAS   - Base actions that affect a job are audited.
+</li>
+<li>*JOBCHGUSR- Actions that change a thread's active user profile or its group profiles are audited.
+</li>
+<li>*JOBDTA   - Actions that affect a job are audited.
+<p><b>Note:</b> *JOBDTA is composed of two values to allow you to better customize your auditing. If you specify both of the values, you will get the same auditing as if you specified *JOBDTA. The following values make up *JOBDTA.
+</p>
+<ul>
+<li>*JOBBAS
+</li>
+<li>*JOBCHGUSR
+</li>
+</ul>
+</li>
+<li>*NETBAS   - Network base functions are audited.
+</li>
+<li>*NETCLU   - Cluster and cluster resource group operations are audited.
+</li>
+<li>*NETCMN   - Networking and communications functions are audited.
+<p><b>Note:</b> *NETCMN is composed of several values to allow you to better customize your auditing. If you specify all of the values, you will get the same auditing as if you specified *NETCMN. The following values make up *NETCMN.
+</p>
+<ul>
+<li>*NETBAS
+</li>
+<li>*NETCLU
+</li>
+<li>*NETFAIL
+</li>
+<li>*NETSCK
+</li>
+</ul>
+</li>
+<li>*NETFAIL  - Network failures are audited.
+</li>
+<li>*NETSCK   - Socket tasks are audited.
+</li>
+<li>*NOTAVL - The user performing the command is not allowed to display the current auditing value.  You cannot change the system value to not available (*NOTAVL).
+</li>
+<li>*OBJMGT   - Generic object tasks are audited.
+</li>
+<li>*OFCSRV   - OfficeVision tasks are audited.
+</li>
+<li>*OPTICAL  - All optical functions are audited.
+</li>
+<li>*PGMADP   - Adopting authority from a program owner is audited.
+</li>
+<li>*PGMFAIL  - Program failures are audited.
+</li>
+<li>*PRTDTA   - Printing functions are audited.
+</li>
+<li>*SAVRST   - Save and restore information is audited.
+</li>
+<li>*SECCFG   - Security configuration is audited.
+</li>
+<li>*SECDIRSRV- Changes or updates when doing directory service functions are audited.
+</li>
+<li>*SECIPC   - Changes to interprocess communications are audited.
+</li>
+<li>*SECNAS   - Network authentication service actions are audited.
+</li>
+<li>*SECRUN   - Security run time functions are audited.
+</li>
+<li>*SECSCKD  - Socket descriptors are audited.
+</li>
+<li>*SECURITY - All security-related functions are audited.
+<p><b>Note:</b> *SECURITY is composed of several values to allow you to better customize your auditing. If you specify all of the values, you will get the same auditing as if you specified *SECURITY. The following values make up *SECURITY.
+</p>
+<ul>
+<li>*SECCFG
+</li>
+<li>*SECDIRSRV
+</li>
+<li>*SECIPC
+</li>
+<li>*SECNAS
+</li>
+<li>*SECRUN
+</li>
+<li>*SECSCKD
+</li>
+<li>*SECVFY
+</li>
+<li>*SECVLDL
+</li>
+</ul>
+</li>
+<li>*SECVFY   - Use of verification functions are audited.
+</li>
+<li>*SECVLDL  - Changes to validation list objects are audited.
+</li>
+<li>*SERVICE  - For a list of all the service commands and API calls that are audited, see the System i Security Reference, SC41-5302 publication
+</li>
+<li>*SPLFDTA  - Spooled file functions are audited.
+</li>
+<li>*SYSMGT   - System management tasks are audited.
+</li>
+</ul>
+</dd>
+<dt><b>QAUDLVL2</b></dt>
+<dd>Security auditing level extension.  This system value is required when more than sixteen auditing values are needed.  Specifying *AUDLVL2 as one of the values in the QAUDLVL system value will cause the system to also look for auditing values in the QAUDLVL2 system value.  Changes made to this system value take effect immediately for all jobs running on the system.
+<ul>
+<li>*NONE     - No auditing values are contained in this system value.  This is the shipped value.
+</li>
+</ul>
+<ul>
+<li>*ATNEVT   - Attention events are audited.  Attention events are conditions that require further evaluation to determine the condition's security significance. For example, intrusion monitor events need to be examined to determine whether the condition is an intrusion or a false positive.
+</li>
+<li>*AUTFAIL  - Authorization failures are audited.
+</li>
+<li>*CREATE   - All object creations are audited.  Objects created into library QTEMP are not audited.
+</li>
+<li>*DELETE   - All deletions of external objects on the system are audited.  Objects deleted from library QTEMP are not audited.
+</li>
+<li>*JOBBAS   - Base actions that affect a job are audited.
+</li>
+<li>*JOBCHGUSR- Actions that change a thread's active user profile or its group profiles are audited.
+</li>
+<li>*JOBDTA   - Actions that affect a job are audited.
+<p><b>Note:</b> *JOBDTA is composed of two values to allow you to better customize your auditing. If you specify both of the values, you will get the same auditing as if you specified *JOBDTA. The following values make up *JOBDTA.
+</p>
+<ul>
+<li>*JOBBAS
+</li>
+<li>*JOBCHGUSR
+</li>
+</ul>
+</li>
+<li>*NETBAS   - Network base functions are audited.
+</li>
+<li>*NETCLU   - Cluster and cluster resource group operations are audited.
+</li>
+<li>*NETCMN   - Networking and communications functions are audited.
+<p><b>Note:</b> *NETCMN is composed of several values to allow you to better customize your auditing. If you specify all of the values, you will get the same auditing as if you specified *NETCMN. The following values make up *NETCMN.
+</p>
+<ul>
+<li>*NETBAS
+</li>
+<li>*NETCLU
+</li>
+<li>*NETFAIL
+</li>
+<li>*NETSCK
+</li>
+</ul>
+</li>
+<li>*NETFAIL  - Network failures are audited.
+</li>
+<li>*NETSCK   - Socket tasks are audited.
+</li>
+<li>*NOTAVL - The user performing the command is not allowed to display the current auditing value.  You cannot change the system value to not available (*NOTAVL).
+</li>
+<li>*OBJMGT   - Generic object tasks are audited.
+</li>
+<li>*OFCSRV   - OfficeVision tasks are audited.
+</li>
+<li>*OPTICAL  - All optical functions are audited.
+</li>
+<li>*PGMADP   - Adopting authority from a program owner is audited.
+</li>
+<li>*PGMFAIL  - Program failures are audited.
+</li>
+<li>*PRTDTA   - Printing functions are audited.
+</li>
+<li>*SAVRST   - Save and restore information is audited.
+</li>
+<li>*SECCFG   - Security configuration is audited.
+</li>
+<li>*SECDIRSRV- Changes or updates when doing directory service functions are audited.
+</li>
+<li>*SECIPC   - Changes to interprocess communications are audited.
+</li>
+<li>*SECNAS   - Network authentication service actions are audited.
+</li>
+<li>*SECRUN   - Security run time functions are audited.
+</li>
+<li>*SECSCKD  - Socket descriptors are audited.
+</li>
+<li>*SECURITY - All security-related functions are audited.
+<p><b>Note:</b> *SECURITY is composed of several values to allow you to better customize your auditing. If you specify all of the values, you will get the same auditing as if you specified *SECURITY. The following values make up *SECURITY.
+</p>
+<ul>
+<li>*SECCFG
+</li>
+<li>*SECDIRSRV
+</li>
+<li>*SECIPC
+</li>
+<li>*SECNAS
+</li>
+<li>*SECRUN
+</li>
+<li>*SECSCKD
+</li>
+<li>*SECVFY
+</li>
+<li>*SECVLDL
+</li>
+</ul>
+</li>
+<li>*SECVFY   - Use of verification functions are audited.
+</li>
+<li>*SECVLDL  - Changes to validation list objects are audited.
+</li>
+<li>*SERVICE  - For a list of all the service commands and API calls that are audited, see the System i Security Reference, SC41-5302 publication
+</li>
+<li>*SPLFDTA  - Spooled file functions are audited.
+</li>
+<li>*SYSMGT   - System management tasks are audited.
+</li>
+</ul>
+</dd>
+<dt><b>QAUTOCFG</b></dt>
+<dd>Automatic device configuration indicator.  Changes made to this system value take effect immediately.
+<ul>
+<li>0 means auto-configuration is off.
+</li>
+<li>1 means auto-configuration is on.
+</li>
+</ul>
+</dd>
+<dt><b>QAUTOSPRPT</b></dt>
+<dd>Automatic system disabled reporting.  The operating system no longer uses this system value.  Changes made to this system value have no effect.
+</dd>
+<dt><b>QAUTORMT</b></dt>
+<dd>Automatic configuration for remote controllers. The QAUTORMT system value controls the automatic configuration of remote controllers.
+<ul>
+<li>0 means auto-configuration is off.
+</li>
+<li>1 means auto-configuration is on.
+</li>
+</ul>
+</dd>
+<dt><b>QAUTOVRT</b></dt>
+<dd>Automatic virtual device configuration indicator.  The user must have *ALLOBJ authority to change this system value.  Changes made to this system value take effect immediately.  See Autoconfigure virtual devices for additional information.
+</dd>
+<dt><b>QBASACTLVL</b></dt>
+<dd>Activity level of base storage pool.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QBASPOOL</b></dt>
+<dd>Minimum size of base storage pool (in kilobytes).  To specify a size in megabytes, the number must be followed by *MB and enclosed in apostrophes.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QBOOKPATH</b></dt>
+<dd>Book and bookshelf search path.  The operating system no longer uses this system value.  Changes made to this system value have no effect.
+</dd>
+<dt><b>QCCSID</b></dt>
+<dd>Coded character set identifier.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QCENTURY</b></dt>
+<dd>Century value for the system date.
+<ul>
+<li>0 indicated years 19<b>XX.</b>
+</li>
+<li>1 indicates years 20<b>XX.</b>
+</li>
+</ul>
+</dd>
+<dt><b>QCFGMSGQ</b></dt>
+<dd>Configuration message queue used to specify the message queue to receive communication messages.  Both an object name and library name can be specified.  A change to this system value takes effect when a line, controller, or device description that supports the MSGQ parameter is varied on.
+</dd>
+<dt><b>QCHRID</b></dt>
+<dd>Default graphic character set and code page used for displaying or printing data.  Changes made to this system value take effect for display files, display device descriptions, and printer files that are created, changed, or overridden after the change.
+</dd>
+<dt><b>QCHRIDCTL</b></dt>
+<dd>Character identifier control for the job.  This attribute controls the type of CCSID conversion that occurs for display files, printer files, and panel groups.  The *CHRIDCTL special value must be specified for the CHRID parameter on the create, change, or override commands for display files, printer files, and panel groups before this attribute is used.
+<ul>
+<li>0 means the *DEVD special value is used.
+</li>
+<li>1 means the *JOBCCSID special value is used.
+</li>
+</ul>
+</dd>
+<dt><b>QCMNARB</b></dt>
+<dd>Communication arbiters.  The number of communication arbiter jobs that are available to process work for controllers and devices.  A change to this value takes effect on the next IPL.  The shipped value is *CALC.
+<ul>
+<li>*CALC:  The operating system calculates the number of communication arbiter jobs.
+</li>
+<li>0 - 99:  Specifies the number of communication arbiter jobs that are available to process work for controllers and devices.
+</li>
+</ul>
+<p>
+<b>Note:     </b>If this system value is set to zero (0), the work in these jobs is done in QSYSARB and QLUS system jobs as opposed to the communication arbiters.
+</p>
+</dd>
+<dt><b>QCMNRCYLMT</b></dt>
+<dd>Provides recovery limits for system communications recovery.  Specifies the number of recovery attempts to make and when an inquiry message is sent to the device message queue or to the system operator when the specified number of recovery attempts have been reached.  Changes made to this system value do not affect a currently varied on device, but is in effect when a device is varied on after the change.
+</dd>
+<dt><b>QCNTRYID</b></dt>
+<dd>Default country or region identifier.  Changes to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QCONSOLE</b></dt>
+<dd>System console.  This value is not changeable.
+</dd>
+<dt><b>QCRTAUT</b></dt>
+<dd>Public authority for created objects.  You must have *ALLOBJ and *SECADM special authorities to change this system value.  Changes made to this system value take effect immediately.
+<ul>
+<li>*CHANGE means the user can change the object and perform basic functions on the object.  Change authority allows the user to perform all operations on the object except those limited to the owner or controlled by object existence authority and object management authority.  Change authority provides object operational authority and all data authority.
+</li>
+<li>*ALL means the user can control the object's existence, specify the security for the object, change the object, change the owner for the object, and perform basic functions on the object.  All authority allows the user to perform all operations on the object except those limited to the owner or controlled by authorization list management rights.  If the object is an authorization list, the user cannot add, change, or remove users, or transfer ownership of the authorization list.
+</li>
+<li>*USE means the user can perform basic operations on the object, such as run a program or read a file.  The user is prevented from changing the object.  Use authority provides object operational authority and read authority.
+</li>
+<li>*EXCLUDE authority prevents the user from accessing the object.
+</li>
+</ul>
+</dd>
+<dt><b>QCRTOBJAUD</b></dt>
+<dd>Create object auditing.  This system value specifies the default object auditing value for an object created into a library or directory.  The object auditing value determines whether an audit journal entry is sent to the system auditing journal when an object is used or changed.  Changes made to this system value take effect immediately.
+<ul>
+<li>*NOTAVL - The user performing the command is not allowed to display the current auditing value.  You cannot change the system value to not available (*NOTAVL).
+</li>
+<li>*NONE   - No auditing entries are sent for the object.
+</li>
+<li>*USRPRF - Auditing entries are sent if the user is currently being audited.
+</li>
+<li>*CHANGE - Auditing entries are sent if the object is changed.
+</li>
+<li>*ALL    - Auditing entries are sent if the object is used or changed.
+</li>
+</ul>
+</dd>
+<dt><b>QCTLSBSD</b></dt>
+<dd>Controlling subsystem description name.  Both an object name and library name can be specified.  Changes made to this system value take effect at the next IPL.
+</dd>
+<dt><b>QCURSYM</b></dt>
+<dd>Currency symbol.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QDATE</b></dt>
+<dd>System date.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QDATETIME</b></dt>
+<dd>System date and time.  This is the date and time for the local system time as a single value.  Retrieving or changing this value is similar to retrieving or changing QDATE and QTIME in a single operation.  The format of the field is YYYYMMDDHHNNSSXXXXXX where YYYY is the year, MM is the month, DD is the day, HH is the hours, NN is the minutes, SS is the seconds, and XXXXXX is the microseconds.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QDATFMT</b></dt>
+<dd>Date format.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QDATSEP</b></dt>
+<dd>Date separator.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QDAY</b></dt>
+<dd>Day of the month (day of the year if the system date format is Julian).  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QDAYOFWEEK</b></dt>
+<dd>The day of the week.
+<ul>
+<li>*SUN - Sunday
+</li>
+<li>*MON - Monday
+</li>
+<li>*TUE - Tuesday
+</li>
+<li>*WED - Wednesday
+</li>
+<li>*THU - Thursday
+</li>
+<li>*FRI - Friday
+</li>
+<li>*SAT - Saturday
+</li>
+</ul>
+</dd>
+<dt><b>QDBFSTCCOL</b></dt>
+<dd>Database file statistics collection.  Specifies the type of statistics collection requests that are allowed to be processed in the background by system job, QDBFSTCCOL.  Changes made to this system value take effect immediately.
+<ul>
+<li>*ALL means all user requested database file statistics collection requests and statistics collections automatically requested by the database manager are allowed to be processed by the database statistics system job.
+</li>
+<li>*SYSTEM means only automatically requested database statistics collection requests by the database manager are allowed to be processed by the database statistics system job.
+</li>
+<li>*USER means only user requested database file statistics collection requests are allowed to be processed by the database statistics system job.
+</li>
+<li>*NONE means no database file statistics collection requests are allowed to be processed by the database statistics system job.
+</li>
+</ul>
+</dd>
+<dt><b>QDBRCVYWT</b></dt>
+<dd>Database recovery wait indicator.  Changes to this system value take effect at the next IPL in unattended mode.
+<ul>
+<li>0 means do not wait.
+</li>
+<li>1 means wait.
+</li>
+</ul>
+</dd>
+<dt><b>QDECFMT</b></dt>
+<dd>Decimal format.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QDEVNAMING</b></dt>
+<dd>Indicates the device naming convention.  Changes made to this system value take effect the next time a device is automatically configured.  Existing configured device names are not changed.
+<ul>
+<li>*NORMAL means follow IBM i standards.
+</li>
+<li>*S36 means follow S/36 standards.
+</li>
+<li>*DEVADR means device names are derived from resource names.
+</li>
+</ul>
+</dd>
+<dt><b>QDEVRCYACN</b></dt>
+<dd>Specifies the action taken when an I/O error occurs for the job's requesting program device.  Changes made to this system value take effect for jobs started after the change is made.
+<ul>
+<li>*DSCMSG disconnects the job.  On reconnection, an error message will be sent to the user's application program.
+</li>
+<li>*DSCENDRQS disconnects the job.  On reconnection, a cancel request function should be performed to return control of the job back to the last request level.
+</li>
+<li>*ENDJOB ends the job.  A job log will be produced for the job.  A message will be sent to the job log and to the QHST log indicating that the job was ended because of device error.
+</li>
+<li>*ENDJOBNOLIST ends the job.  A job log will not be produced for the job.  A message will be sent to the QHST log indicating that the job was ended because of device error.
+</li>
+<li>*MSG signals the I/O error message to the application program.  The application program performs error recovery itself.
+</li>
+</ul>
+</dd>
+<dt><b>QDSCJOBITV</b></dt>
+<dd>Time interval that a job can be disconnected before it is ended.  Changes made to this system value take effect immediately.  An interactive job can be disconnected with the Disconnect Job (DSCJOB) command when it has been inactive for an interval of time (the system values QINACTIV and QINACTMSGQ), or when an Input/Output error occurs at the interactive job's work station (the system value QDEVRCYACN).
+<ul>
+<li>5-1440 is the time out interval in minutes.
+</li>
+<li>*NONE means no time out interval.
+</li>
+</ul>
+</dd>
+<dt><b>QDSPSGNINF</b></dt>
+<dd>Controls the display of sign-on information.  Changes made to this system value take effect immediately.
+<ul>
+<li>0 means the sign-on information is not displayed.
+</li>
+<li>1 means the sign-on information is displayed.
+</li>
+</ul>
+</dd>
+<dt><b>QDYNPTYADJ</b></dt>
+<dd>Dynamic priority adjustment.  The QDYNPTYADJ system value controls whether the priority of interactive jobs is dynamically adjusted to maintain high performance of batch job processing.  This adjustment capability is only effective on systems that are rated for both interactive and non-interactive throughput and have Dynamic Priority Scheduling enabled.  A change to this value takes effect at the next IPL.
+<ul>
+<li>0 means the dynamic priority adjustment support is turned off.
+</li>
+<li>1 means the dynamic priority adjustment support is turned on.
+</li>
+</ul>
+</dd>
+<dt><b>QDYNPTYSCD</b></dt>
+<dd>Dynamic priority scheduler.  The QDYNPTYSCD system value controls the dynamic priority scheduler algorithm.  The value allows the use of dynamic priority scheduling.
+<ul>
+<li>0 means the dynamic priority scheduler is off.
+</li>
+<li>1 means the dynamic priority scheduler is on.
+</li>
+</ul>
+</dd>
+<dt><b>QENDJOBLMT</b></dt>
+<dd>Maximum time (in seconds) for application clean up during immediate ending of a job.
+<p>When a job being ended has a signal handling procedure for the asynchronous signal SIGTERM, the SIGTERM signal is generated for that job.  When the signal handling procedure for the SIGTERM signal is given control, the procedure can take the appropriate actions to avoid undesirable results such as application data that has been partially updated.  If the SIGTERM signal handler has not completed in the specified time, the system ends the job.
+</p>
+<p>When the job is ended in a controlled manner, the maximum time for the SIGTERM signal handler is specified on the command.  When the job is ended in an immediate manner, the maximum time for the SIGTERM signal handler is specified by this system value.  This time limit is used when ending one job, when ending all the jobs in a subsystem, or when ending all jobs in all subsystems.  After two minutes, the system operator can use the End Job (ENDJOB) command with OPTION(*IMMED) to override the QENDJOBLMT value and end individual jobs immediately.
+</p>
+<p>A change to this value takes effect immediately.  Jobs that are already ending are not affected.
+</p>
+</dd>
+<dt><b>QFRCCVNRST</b></dt>
+<dd>Force conversion on restore.  This system value allows you to specify whether or not to convert programs, service programs, SQL packages, and module objects during the restore.  It can also prevent some objects from being restored.  The default value on the restore commands use the value of this system value.  Changes to this system value will take effect immediately.
+<dl>
+<dt><b>0</b></dt>
+<dd>Do not convert anything.  Do not prevent anything from being restored.
+</dd>
+<dt><b>1</b></dt>
+<dd>Objects with validation errors will be converted.
+</dd>
+<dt><b>2</b></dt>
+<dd>Objects requiring conversion to be used on the current version of the operating system or on the current machine will be converted.  Objects with validation errors will also be converted.
+</dd>
+<dt><b>3</b></dt>
+<dd>Objects suspected of having been tampered with, objects containing validation errors, and objects requiring conversion to be used by the current version of the operating system or on the current machine will be converted.
+</dd>
+<dt><b>4</b></dt>
+<dd>Objects that contain sufficient creation data to be converted and do not have valid digital signatures will be converted.  An object that does not contain sufficient creation data will be restored without conversion.  NOTE:  Objects (signed and unsigned) that have validation errors, are suspected of having been tampered with, or require conversion to be used by the current version of the operating system, but cannot be converted will not be restored.
+</dd>
+<dt><b>5</b></dt>
+<dd>Objects that contain sufficient creation data will be converted.  An object that does not contain sufficient creation data will be restored.  NOTE:  Objects that have validation errors, are suspected of having been tampered with, or require conversion to be used on the current version of the operating system, but cannot be converted will not be restored.
+</dd>
+<dt><b>6</b></dt>
+<dd>All objects that do not have a valid digital signature will be converted.  NOTE:  An object with a valid digital signature that also has a validation error, is suspected of having been tampered with, or requires conversion to be used on the current version of the operating system, but cannot be converted will not be restored.
+</dd>
+<dt><b>7</b></dt>
+<dd>Every object will be converted.
+</dd>
+</dl>
+<p>When an object is converted, its digital signature is discarded.  The state of the converted object is set to user state.  After conversion, objects will have a good validation value and are not suspected of having been tampered with.
+</p>
+</dd>
+<dt><b>QHOUR</b></dt>
+<dd>Hour of the day.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QHSTLOGSIZ</b></dt>
+<dd>Maximum number of records for each version of the history log.  Valid values range from 1 to 10,000,000 or the special value *DAILY which means that a new version of the history log is created each time the date in the history log messages changes, or when the current log version reaches the maximum size of 10,000,000 records.  *DAILY cannot be returned in a decimal variable, so the Retrieve System Value (RTVSYSVAL) command returns a value of -1 when the system value is set to *DAILY.  Specifying a value of -1 on the Change System Value (CHGSYSVAL) command has the same effect as specifying *DAILY.  Changes made to this system value take effect when the next version of the history log is created.
+</dd>
+<dt><b>QIGC</b></dt>
+<dd>Indicates whether the double-byte character set (DBCS) version of the system is installed.  This value cannot be changed.
+<ul>
+<li>0 means the DBCS version is not installed.
+</li>
+<li>1 means the DBCS version is installed.
+</li>
+</ul>
+</dd>
+<dt><b>QIGCCDEFNT</b></dt>
+<dd>Double byte character set (DBCS) coded font name.  Used when transforming an SNA character string (SCS) into an Advanced Function Printing data stream (AFPDS) and when creating an AFPDS spooled file with shift in/shift out (SI/SO) characters in the data.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QIGCFNTSIZ</b></dt>
+<dd>Double byte coded font point size.  Used along with the system value, QIGCCDEFNT, double byte coded font.  They will be used when transforming SNA character string (SCS) into an Advanced Function Printing Data Stream (AFPDS) and when creating an AFPDS spooled file with shift in/ shift out (SI/SO) characters present in the data.
+<ul>
+<li>*NONE means that no point size is identified to the system.  The point size is selected by the system based on the type of printer used.
+</li>
+<li>000.1 - 999.9 means the point size for the double byte coded font.
+</li>
+</ul>
+</dd>
+<dt><b>QINACTITV</b></dt>
+<dd>Inactive interactive job time out interval in minutes.  When the time interval is changed to a value other than *NONE a new inactivity interval is established and the analysis of job inactivity is started again.  The system value QINACTMSGQ determines the action the system takes.  For information on enforcement for target pass-through and TELNET sessions, see the Work management topic collection in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/
+<p>Local jobs that are currently signed on to a remote system are excluded.  For example, a work station is directly attached to system A, and system A has QINACTIV set on.  If Display Station Pass-through or TELNET is used to sign on to system B, this work station is not affected by the QINACTITV value set on system A.  Changes made to this system value take effect immediately.
+</p>
+<ul>
+<li>*NONE means that the system does not check for inactivity.
+</li>
+<li>5 - 300 means the number of minutes a job can be inactive before action is taken.
+</li>
+</ul>
+</dd>
+<dt><b>QINACTMSGQ</b></dt>
+<dd>The qualified name of a message queue to which job inactive messages will be sent if QINACTMSGQ is not *NONE.  The message queue must exist before the system value can be changed to a message queue name.  Both an object name and library name can be specified.  Changes made to this system value take effect immediately.
+<ul>
+<li>*ENDJOB means that interactive jobs, secondary jobs, and group jobs will be ended.
+</li>
+<li>*DSCJOB means that interactive jobs, secondary jobs, and group jobs will be disconnected.
+</li>
+<li>Message queue name is the name of a message queue that receives a message when a job has been inactive.
+</li>
+</ul>
+</dd>
+<dt><b>QIPLDATTIM</b></dt>
+<dd>Date and time for automatic IPL.  This system value can be set independently in each partition.  If the system is powered down at the time an automatic IPL should occur in a partition, the IPL will not occur.  When the system is powered on, the partition will be IPLed if its IPL date and time is past due.  The partition will not IPL if it was configured with an IPL action of hold.  Changes made to this system value take effect immediately.
+<p>QIPLDATTIM is a single system value with two parts:
+</p>
+<ul>
+<li>Date:  The date an IPL automatically occurs on the system.  The date is specified in QDATFMT format with no date separators.
+</li>
+<li>Time:  The time an IPL automatically occurs on the system.  The time is specified with no time separators.
+</li>
+</ul>
+<p>*NONE, which indicates that no timed automatic IPL is scheduled, can be specified instead of a specific date and time.
+</p>
+<p>The following example shows how to change the IPL date and time to September 10, 1993 (QDATFMT is MDY) at 9:00 a.m.
+</p>
+<p>
+<pre>
+CHGSYSVAL SYSVAL(QIPLDATTIM) VALUE('091093 090000')
+</pre>
+</p>
+</dd>
+<dt><b>QIPLSTS</b></dt>
+<dd>Initial program load (IPL) status indicator.
+<ul>
+<li>0 means operator panel IPL.
+</li>
+<li>1 means auto-IPL after power restored.
+</li>
+<li>2 means restart IPL.
+</li>
+<li>3 means time of day IPL.
+</li>
+<li>4 means remote IPL.
+</li>
+</ul>
+</dd>
+<dt><b>QIPLTYPE</b></dt>
+<dd>Indicates the type of IPL to perform.  Changes made to this system value take effect at the next manual IPL.
+<ul>
+<li>0 means unattended IPL.
+</li>
+<li>1 means attended IPL with dedicated service tools.
+</li>
+<li>2 means attended IPL with console in debug mode.
+<p>
+<b>Note:     </b>You should only use this for problem analysis because it prevents other devices on the work station controller from being used.
+</p>
+</li>
+</ul>
+</dd>
+<dt><b>QJOBMSGQFL</b></dt>
+<dd>Job message queue full action.  This system value specifies how to handle the job message queue when it is considered full.  Changes made to this system value take effect for jobs started after the change is made.
+<ul>
+<li>*NOWRAP  - The job message queue is not wrapped.
+</li>
+<li>*WRAP    - The job message queue is wrapped.
+</li>
+<li>*PRTWRAP - The job message queue is wrapped and the messages that are being overlaid are printed.
+</li>
+</ul>
+</dd>
+<dt><b>QJOBMSGQMX</b></dt>
+<dd>Job message queue maximum size.  This system value specifies how large (in megabytes) a message queue can be before it is considered full.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QJOBMSGQSZ</b></dt>
+<dd>Initial size of job message queue in kilobytes (KB).  The operating system no longer uses this system value.  Changes made to this system value have no effect.
+</dd>
+<dt><b>QJOBMSGQTL</b></dt>
+<dd>Maximum size of job message queue (in KB).  The operating system no longer uses this system value.  Changes made to this system value have no effect.
+</dd>
+<dt><b>QJOBSPLA</b></dt>
+<dd>Initial size of spooling control block for a job (in bytes).  The operating system no longer uses this system value.  Changes made to this system value have no effect.
+</dd>
+<dt><b>QKBDBUF</b></dt>
+<dd>Keyboard buffer.  Changes made to this system value take effect the next time someone logs on.
+<ul>
+<li>*NO means turn off the type-ahead feature and the attention key buffering option.
+</li>
+<li>*TYPEAHEAD means turn on the type-ahead feature but turn off the attention key buffering option.
+</li>
+<li>*YES means turn on the type-ahead feature and the attention key buffering option.
+</li>
+</ul>
+</dd>
+<dt><b>QKBDTYPE</b></dt>
+<dd>Keyboard language character set.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QLANGID</b></dt>
+<dd>Default language identifier.  Changes to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QLEAPADJ</b></dt>
+<dd>Leap year adjustment.  This system value is used to adjust the system calendar algorithm for the leap year in different calendar systems.
+<p>This system value is determined by the year offset that is associated with the time zone description specified in the system value QTIMZON.  A change to a different time zone description for QTIMZON may result in a different associated adjustment.
+</p>
+<p>QLEAPADJ cannot be changed to a value that is different than its current value.  If an attempt is made to do so, the diagnostic message CPD168B will be issued.  The value of QLEAPADJ is managed by the system.
+</p>
+</dd>
+<dt><b>QLIBLCKLVL</b></dt>
+<dd>Library locking level.  Specifies whether libraries in a job's library search list are locked by that job.  A change to this system value takes effect for all jobs that become active after the change.
+<ul>
+<li>0 means the libraries in a user job's library search list are not locked.
+</li>
+<li>1 means the libraries in a user job's library search list are locked by that job.
+</li>
+</ul>
+</dd>
+<dt><b>QLMTDEVSSN</b></dt>
+<dd>Limits concurrent device sessions.  Changes made to this system value take effect immediately.
+<ul>
+<li>0 means users are not limited to a specific number of device sessions.
+</li>
+<li>1-9 indicates maximum number of concurrent device sessions.
+</li>
+</ul>
+</dd>
+<dt><b>QLMTSECOFR</b></dt>
+<dd>Limit security officer device access.  Changes made to this system value take effect immediately.
+<ul>
+<li>0 means users with *ALLOBJ or *SERVICE special authority can sign on any work station.
+</li>
+<li>1 means users with *ALLOBJ or *SERVICE special authority must have explicit authority to a work station.
+</li>
+</ul>
+</dd>
+<dt><b>QLOCALE</b></dt>
+<dd>Locale path name.  This system value is used to set the locale for the system.  The locale path name must be a path name that specifies a locale.  A locale is made up of the language, territory, and code set combination used to identify a set of language conventions.  The maximum path length allowed for the locale path name on the Change System Value (CHGSYSVAL) command is 1,024 bytes.
+<p>A change to this system value takes effect immediately.  The shipped value may be different for different countries.
+</p>
+<ul>
+<li>*NONE means there is no locale path name for the QLOCALE system value.
+</li>
+<li>*C means the C locale is to be used.
+</li>
+<li>*POSIX means the POSIX locale is to be used.
+</li>
+</ul>
+</dd>
+<dt><b>QLOGOUTPUT</b></dt>
+<dd>Job log output.  This system value specifies how the job log will be produced when a job completes.  This does not affect job logs produced when the message queue is full and the job message queue full action specifies *PRTWRAP.  Messages in the job message queue are written to a spooled file, from which the job log can be printed, unless the Control Job Log Output (QMHCTLJL) API was used in the job to specify that the messages in the job log are to be written to a database file.
+<p>Changes made to this system value take effect immediately for jobs entering the system after the change is made.
+</p>
+<ul>
+<li>*JOBEND means the job log will be produced by the job itself.  If the job cannot produce its own job log, the job log will be produced by a job log server.
+</li>
+<li>*JOBLOGSVR means the job log will be produced by a job log server.
+</li>
+<li>*PND means the job log will not be produced.  The job log remains pending until removed.
+</li>
+</ul>
+</dd>
+<dt><b>QMAXACTLVL</b></dt>
+<dd>Maximum activity level of the system.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QMAXJOB</b></dt>
+<dd>Maximum number of jobs that are allowed on the system.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QMAXSGNACN</b></dt>
+<dd>The system's response when the limit imposed by QMAXSIGN system value is reached.  Changes made to this system value take effect the next time someone attempts to sign on the system.
+<ul>
+<li>1 means the device will be disabled.
+</li>
+<li>2 means the user profile will be disabled.
+</li>
+<li>3 means the device and the user profile will be disabled.
+</li>
+</ul>
+</dd>
+<dt><b>QMAXSIGN</b></dt>
+<dd>Maximum number of not valid sign-on attempts allowed.  Changes made to this system value take effect the next time someone attempts to sign on the system.
+</dd>
+<dt><b>QMAXSPLF</b></dt>
+<dd>Maximum number of spooled files that can be created per job.  Changes made to this system value take effect immediately.  Spooled files will not be deleted when this value is changed to a lower number.  See the Printer Device Programming book for information on how this system value affects spooling for a job.
+</dd>
+<dt><b>QMCHPOOL</b></dt>
+<dd>Machine storage pool size (in kilobytes).  To specify a size in megabytes, the number must be followed by *MB and enclosed in apostrophes.  Changes made to this system value take effect immediately.
+<p><b>Note: </b>Changes to the size of a pool may require pages to be written to auxiliary storage.  The time required for the system to complete a large change may be greater than your default wait time.  If this occurs, message CPF1001 (Wait time expired for system response.) is issued, even though the change completes.
+</p>
+</dd>
+<dt><b>QMINUTE</b></dt>
+<dd>Minute of the hour.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QMLTTHDACN</b></dt>
+<dd>Multithreaded job action.  This value controls the action to be taken when a function that may not be threadsafe is called in a multithreaded job.  Changes made to this system value take effect immediately.  The shipped value is 2.
+<ul>
+<li>1 means perform the function that is not threadsafe without sending a message.
+</li>
+<li>2 means perform the function that is not threadsafe and send an informational message.
+</li>
+<li>3 means do not perform the function that is not threadsafe.
+</li>
+</ul>
+</dd>
+<dt><b>QMODEL</b></dt>
+<dd>System model number.  The number or letters used to identify the model of the system.  You cannot change QMODEL, but the 4-character value can be displayed or retrieved in user-written programs.  The system model number system value is the same in each partition on a system.
+</dd>
+<dt><b>QMONTH</b></dt>
+<dd>Month of the year (not used for Julian dates).  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QPASTHRSVR</b></dt>
+<dd>Pass-through servers.  The number of target display station pass-through server jobs that are available to process display station pass-through, IBM i Access for Windows                      workstation function (WSF), and other 5250 emulation programs on programmable workstations.  Changes made to this system value take effect immediately.  The shipped value is *CALC.
+</dd>
+<dt><b>QPFRADJ</b></dt>
+<dd>Initial program load (IPL) performance adjustment and dynamic performance tuning.  Dynamic performance tuning automatically changes storage pool sizes and activity levels for shared storage pools.  Private storage pools are not changed.  Changes made to this system value take effect immediately.
+<ul>
+<li>0 means no performance adjustment.  Dynamic performance tuning is not started.
+</li>
+<li>1 means performance adjustment at IPL.  Dynamic performance tuning is not started.
+</li>
+<li>2 means performance adjustment at IPL.  Dynamic performance tuning is started.  If QPFRADJ is changed from 2 to 0 or 1, dynamic performance tuning is stopped.
+</li>
+<li>3 means dynamic performance tuning is started.  If QPFRADJ is changed from 3 to 0 or 1, dynamic performance tuning is stopped.
+</li>
+</ul>
+<p>If you create journal QPFRADJ in library QSYS, the dynamic tuning program keeps a record of the changes made to storage pool sizes, activity levels, and the performance level of the system when the changes were made (faulting rates per pool, pool sizes, and activity levels).
+</p>
+</dd>
+<dt><b>QPRBFTR</b></dt>
+<dd>Problem filter name.  Specifies the name of the filter object used by the service activity manager when processing problems.  Changes to this system value take effect immediately.
+</dd>
+<dt><b>QPRBHLDITV</b></dt>
+<dd>Problem log entry hold interval.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QPRCFEAT</b></dt>
+<dd>Processor feature.  The is the processor feature code level of the system.  You cannot change QPRCFEAT, but the 4-character value can be displayed or retrieved in user-written programs.  The processor feature system value is the same in each partition on a system.
+</dd>
+<dt><b>QPRCMLTTSK</b></dt>
+<dd>Processor multitasking.  If the hardware on your system supports processor multitasking, this system value allows you to set the multitasking capability to be on, off, or System-controlled.  Changes to this system value can affect the performance of your system.
+<p>An IPL may be required for this system value to take effect.  See the System Values topic in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/ for additional information.
+</p>
+<ul>
+<li>0 means that processor multitasking is turned off.
+</li>
+<li>1 means that processor multitasking is turned on.
+</li>
+<li>2 means that processor multitasking is under system control.
+</li>
+</ul>
+<p>For more information on partitions, see the Logical Partitions topic in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+</dd>
+<dt><b>QPRTDEV</b></dt>
+<dd>Default printer device description.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QPRTKEYFMT</b></dt>
+<dd>Print key format.  Changes made to this system value take effect for jobs started after the change is made.
+<ul>
+<li>*PRTHDR means that header information is printed when the print key is pressed.
+</li>
+<li>*PRTBDR means that border information is printed when the print key is pressed.
+</li>
+<li>*PRTALL means that border information and header information are printed when the print key is pressed.
+</li>
+<li>*NONE means that border information and header information are not printed when the print key is pressed.
+</li>
+</ul>
+</dd>
+<dt><b>QPRTTXT</b></dt>
+<dd>Up to 30 characters of text that can be printed at the bottom of listings and separator pages.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QPWDCHGBLK</b></dt>
+<dd>Specifies the time period during which a password is blocked from being changed following the prior successful password change operation.  This system value does not restrict password changes made by the Change User Profile (CHGUSRPRF) command. Changes made to this system value take effect immediately.
+<ul>
+<li>*NONE means there is no restriction on how frequently a user can change a password.
+</li>
+<li>1-99 indicates the number of hours a user must wait after the prior successful password change operation before they can change the password again.
+</li>
+</ul>
+</dd>
+<dt><b>QPWDEXPITV</b></dt>
+<dd>The number of days for which a password is valid.  Changes made to this system value take effect immediately.
+<ul>
+<li>*NOMAX means a password can be used an unlimited number of days.
+</li>
+<li>1-366 means the number of days before the password ends.
+</li>
+</ul>
+</dd>
+<dt><b>QPWDEXPWRN</b></dt>
+<dd>Controls the number of days prior to a password expiring to begin displaying password expiration warning messages on the Sign-on Information display.
+<ul>
+<li>1-99 indicates the number of days prior to the password expiring to begin displaying the password expiration warning message.
+</li>
+</ul>
+</dd>
+<dt><b>QPWDLMTAJC</b></dt>
+<dd>Limits the use of adjacent numbers in a password.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>0 means adjacent numbers are allowed.
+</li>
+<li>1 means adjacent numbers are not allowed.
+</li>
+</ul>
+<p><b>Note:</b> If the QPWDRULES system value specifies any value other than *PWDSYSVAL, this system value will be ignored when new passwords are checked to see if they are formed correctly.  In addition, this system value cannot be changed if QPWDRULES has a value other than *PWDSYSVAL.
+</p>
+</dd>
+<dt><b>QPWDLMTCHR</b></dt>
+<dd>Limits the use of certain characters in a password.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>*NONE means there are no restricted characters.
+</li>
+<li>restricted-characters means up to 10 restricted characters enclosed in apostrophes can be specified.  Valid characters are: A-Z, 0-9, and special characters #, $, @, or underscore (_).
+</li>
+</ul>
+<p><b>Note:</b> This system value is ignored if the system is operating at QPWDLVL 2 or 3.
+</p>
+<p><b>Note:</b> If the QPWDRULES system value specifies any value other than *PWDSYSVAL, this system value will be ignored when new passwords are checked to see if they are formed correctly.  In addition, this system value cannot be changed if QPWDRULES has a value other than *PWDSYSVAL.
+</p>
+</dd>
+<dt><b>QPWDLMTREP</b></dt>
+<dd>Limits the use of repeating characters in a password.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>0 means characters can be used more than once.
+</li>
+<li>1 means characters cannot be used more than once.
+</li>
+<li>2 means characters cannot be used consecutively.
+</li>
+</ul>
+<p><b>Note:</b> If the QPWDRULES system value specifies any value other than *PWDSYSVAL, this system value will be ignored when new passwords are checked to see if they are formed correctly.  In addition, this system value cannot be changed if QPWDRULES has a value other than *PWDSYSVAL.
+</p>
+</dd>
+<dt><b>QPWDLVL</b></dt>
+<dd>Specifies the password level.
+<p>Changing this system value requires careful consideration.  If your system connects to other systems in a network then all systems must be able to run with the password rules that will be in effect.
+</p>
+<p>See the System i Security Reference, SC41-5302 publication for additional considerations prior to changing this system value.
+</p>
+<p>Changes to this system value will take effect on the next IPL.
+</p>
+<ul>
+<li>0 means passwords from 1-10 characters are allowed.
+</li>
+<li>1 means passwords from 1-10 characters are allowed.  IBM i NetServer passwords for Windows 95/98/ME clients will be removed from the system making the product unavailable for use.
+</li>
+<li>2 means passwords from 1-128 characters are allowed.  Passwords can consist of any character and will be case sensitive.
+</li>
+<li>3 means passwords from 1-128 characters are allowed.  Passwords can consist of any character and will be case sensitive.  IBM i NetServer passwords for Windows 95/98/ME clients will be removed from the system making the product unavailable for use.
+</li>
+</ul>
+</dd>
+<dt><b>QPWDMAXLEN</b></dt>
+<dd>The maximum number of characters in a password.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>1-128 means a value from 1 to 128 can be specified as the maximum number of characters in a password.
+<p>If the system is operating at QPWDLVL 0 or 1, the valid range is 1-10.  If the system is operating at QPWDLVL 2 or 3, the valid range is 1-128.
+</p>
+</li>
+</ul>
+<p><b>Note:</b> If the QPWDRULES system value specifies any value other than *PWDSYSVAL, this system value will be ignored when new passwords are checked to see if they are formed correctly.  In addition, this system value cannot be changed if QPWDRULES has a value other than *PWDSYSVAL.
+</p>
+</dd>
+<dt><b>QPWDMINLEN</b></dt>
+<dd>The minimum number of characters in a password.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>1-128 means a value from 1 to 128 can be specified as the minimum number of characters in a password.
+<p>If the system is operating at QPWDLVL 0 or 1, the valid range is 1-10.  If the system is operating at QPWDLVL 2 or 3, the valid range is 1-128.
+</p>
+</li>
+</ul>
+<p><b>Note:</b> If the QPWDRULES system value specifies any value other than *PWDSYSVAL, this system value will be ignored when new passwords are checked to see if they are formed correctly.  In addition, this system value cannot be changed if QPWDRULES has a value other than *PWDSYSVAL.
+</p>
+</dd>
+<dt><b>QPWDPOSDIF</b></dt>
+<dd>Controls the position of characters in a new password.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>0 means the same characters can be used in a position corresponding to the same position in the previous password.
+</li>
+<li>1 means the same character cannot be used in a position corresponding to the same position in the previous password.
+</li>
+</ul>
+<p><b>Note:</b> If the QPWDRULES system value specifies any value other than *PWDSYSVAL, this system value will be ignored when new passwords are checked to see if they are formed correctly.  In addition, this system value cannot be changed if QPWDRULES has a value other than *PWDSYSVAL.
+</p>
+</dd>
+<dt><b>QPWDRQDDGT</b></dt>
+<dd>Require number in a new password.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>0 means numbers are not required.
+</li>
+<li>1 means one or more numbers are required.
+</li>
+</ul>
+<p><b>Note:</b> If the QPWDRULES system value specifies any value other than *PWDSYSVAL, this system value will be ignored when new passwords are checked to see if they are formed correctly.  In addition, this system value cannot be changed if QPWDRULES has a value other than *PWDSYSVAL.
+</p>
+</dd>
+<dt><b>QPWDRQDDIF</b></dt>
+<dd>Controls whether the password must be different than the previous passwords.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>0 means a password can be the same as one previously used.
+</li>
+<li>1 means a password must be different than the previous 32 passwords.
+</li>
+<li>2 means a password must be different than the previous 24 passwords.
+</li>
+<li>3 means a password must be different than the previous 18 passwords.
+</li>
+<li>4 means a password must be different than the previous 12 passwords.
+</li>
+<li>5 means a password must be different than the previous 10 passwords.
+</li>
+<li>6 means a password must be different than the previous 8 passwords.
+</li>
+<li>7 means a password must be different than the previous 6 passwords.
+</li>
+<li>8 means a password must be different than the previous 4 passwords.
+</li>
+</ul>
+</dd>
+<dt><b>QPWDRULES</b></dt>
+<dd>Specifies the rules used to check whether a password is formed correctly.  Changes made to this system value take effect the next time a password is changed.
+<ul>
+<li>*PWDSYSVAL     - This system value is ignored and the other password system values are used to check whether a password is formed correctly.  Specifically, the QPWDLMTAJC, QPWDLMTCHR, QPWDLMTREP, QPWDMAXLEN, QPWDMINLEN, QPWDPOSDIF, and QPWDRQDDGT system values will be used instead of QPWDRULES.
+<p><b>Note:</b> If any value other than *PWDSYSVAL is specified for QPWDRULES, the QPWDLMTAJC, QPWDLMTCHR, QPWDLMTREP, QPWDMAXLEN, QPWDMINLEN, QPWDPOSDIF, and QPWDRQDDGT system values are ignored when a new password is checked to see if it is formed correctly.
+</p>
+</li>
+<li>*ALLCRTCHG     - Enforce all password composition rules defined in the QPWDRULES system value when creating or changing a password via the Create User Profile (CRTUSRPRF) and Change User Profile (CHGUSRPRF) commands.  Validation programs registered for the QIBM_QSY_VLD_PASSWRD exit point, format VLDP0200, will be called to validate the password after the password composition rules have been checked.
+<p><b>Note:</b> Password rules are always enforced when using the Change Password (CHGPWD) command and the Change User Password (QSYCHGPW) API, regardless of whether or not this special value is specified.
+</p>
+</li>
+<li>*CHRLMTAJC     - The password may not contain 2 or more occurrences of the same character that are positioned adjacent (consecutive) to each other.  This value cannot be specified if the *CHRLMTREP value is also specified.
+</li>
+<li>*CHRLMTREP     - The password may not contain 2 or more occurrences of the same character.  This value cannot be specified if the *CHRLMTAJC value is also specified.
+</li>
+<li>*DGTLMTAJC     - The password may not contain 2 or more adjacent (consecutive) digit characters.
+</li>
+<li>*DGTLMTFST     - The first character of the password may not be a digit character.  This value cannot be specified if *LTRLMTFST and *SPCCHRLMTFST values are also specified.
+</li>
+<li>*DGTLMTLST     - The last character of the password may not be a digit character.  This value cannot be specified if *LTRLMTLST and *SPCCHRLMTLST values are also specified.
+</li>
+<li>*DGTMAXn       - Where n is a number from 0 to 9.  Specifies the maximum number of digit characters that may occur in the password.
+<p>Only one *DGTMAXn value can be specified.  If a *DGTMINn value is also specified, the n value specified for *DGTMAXn must be greater than or equal to the n value specified for *DGTMINn.
+</p>
+</li>
+<li>*DGTMINn       - Where n is a number from 0 to 9.  Specifies the minimum number of digit characters that must occur in the password.
+<p>Only one *DGTMINn value can be specified.  If a *DGTMAXn value is also specified, the n value specified for *DGTMAXn must be greater than or equal to the n value specified for *DGTMINn.
+</p>
+</li>
+<li>*LMTSAMPOS     - The same character cannot be used in a position corresponding to the same position in the previous password. If *ALLCRTCHG is also specified, *LMTSAMPOS will only be enforced when the password is changed via the CHGPWD command or the QSYCHGPW API. It is not enforced when the CRTUSRPRF or CHGUSRPRF command is used since the previous password is not available.
+</li>
+<li>*LMTPRFNAME    - The uppercase password value may not contain the complete user profile name in consecutive positions.
+</li>
+<li>*LTRLMTAJC     - The password may not contain 2 or more adjacent (consecutive) letter characters.
+</li>
+<li>*LTRLMTFST     - The first character of the password may not be a letter character.  This value cannot be specified if *DGTLMTFST and *SPCCHRLMTFST values are also specified.  If the system is operating with a QPWDLVL of 0 or 1, *LTRLMTFST and *SPCCHRLMTFST cannot both be specified.
+</li>
+<li>*LTRLMTLST     - The last character of the password may not be a letter character.  This value cannot be specified if *DGTLMTLST and *SPCCHRLMTLST values are also specified.
+</li>
+<li>*LTRMAXn       - Where n is a number from 0 to 9.  Specifies the maximum number of letter characters that may occur in the password.
+<p>Only one *LTRMAXn value can be specified.  If a *LTRMINn value is also specified, the n value specified for *LTRMAXn must be greater than or equal to the n value specified for *LTRMINn.
+</p>
+</li>
+<li>*LTRMINn       - Where n is a number from 0 to 9.  Specifies the minimum number of letter characters that must occur in the password.
+<p>Only one *LTRMINn value can be specified.  If a *LTRMAXn value is also specified, the n value specified for *LTRMAXn must be greater than or equal to the n value specified for *LTRMINn.
+</p>
+</li>
+<li>*MAXLENnnn     - Where nnn is a number from 1 to 128 (without leading zeroes).  The maximum number of characters in a password.
+<p>If the system is operating at QPWDLVL 0 or 1, the valid range is 1-10.  If the system is operating at QPWDLVL 2 or 3, the valid range is 1-128.
+</p>
+<p>The nnn value specified must be large enough to accommodate all *MIXCASEn, *DGTMAXn, *LTRMAXn, *SPCCHRMAXn, first and last character restrictions, and non-adjacent character requirements.
+</p>
+<p>If *MINLENnnn is also specified, the nnn value specified for *MAXLENnnn must be greater than or equal to the nnn value specified for *MINLENnnn.
+</p>
+<p>If no *MAXLENnnn value is specified, a value of *MAXLEN10 is assumed if the system is operating with a QPWDLVL value of 0 or 1 or a value of *MAXLEN128 is assumed if the system is operating with a QPWDLVL value of 2 or 3.
+</p>
+</li>
+<li>*MINLENnnn     - Where nnn is a number from 1 to 128 (without leading zeroes).  The minimum number of characters in a password.
+<p>If the system is operating at QPWDLVL 0 or 1, the valid range is 1-10.  If the system is operating at QPWDLVL 2 or 3, the valid range is 1-128.
+</p>
+<p>If *MAXLENnnn is also specified, the nnn value specified for *MAXLENnnn must be greater than or equal to the nnn value specified for *MINLENnnn.
+</p>
+<p>If no *MINLENnnn value is specified, a value of *MINLEN1 is assumed.
+</p>
+</li>
+<li>*MIXCASEn      - Where n is a number from 0 to 9.  The password must contain at least n uppercase and n lowercase letters.  This value is rejected if the system is operating with a QPWDLVL value of 0 or 1 because passwords are required to be uppercase.
+<p>Only one *MIXCASEn value can be specified.
+</p>
+<p>If a *LTRMAXn value is specified, the n value specified for *LTRMAXn must be greater than or equal to two times the n value specified for *MIXCASEn.
+</p>
+</li>
+<li>*REQANY3       - The password must contain characters from at least three of the following four types of characters.
+<ul>
+<li>Uppercase letters
+</li>
+<li>Lowercase letters
+</li>
+<li>Digits
+</li>
+<li>Special characters
+</li>
+</ul>
+<p>When the system is operating with a QPWDLVL of 0 or 1, *REQANY3 has the same effect as if *DGTMIN1, *LTRMIN1, and *SPCCHRMIN1 were all specified.
+</p>
+</li>
+<li>*SPCCHRLMTAJC  - The password may not contain 2 or more adjacent (consecutive) special characters.
+</li>
+<li>*SPCCHRLMTFST  - The first character of the password may not be a special character.  This value cannot be specified if *DGTLMTFST and *LTRLMTFST values are also specified.  If the system is operating with a QPWDLVL value of 0 or 1, *LTRLMTFST and *SPCCHRLMTFST cannot both be specified.
+</li>
+<li>*SPCCHRLMTLST  - The last character of the password may not be a special character.  This value cannot be specified if *DGTLMTLST and *LTRLMTLST values are also specified.
+</li>
+<li>*SPCCHRMAXn    - Where n is a number from 0 to 9.  Specifies the maximum number of special characters that may occur in the password.
+<p>Only one *SPCCHRMAXn value can be specified.  If a *SPCCHRMINn value is also specified, the n value specified for *SPCCHRMAXn must be greater than or equal to the n value specified for *SPCCHRMINn.
+</p>
+</li>
+<li>*SPCCHRMINn    - Where n is a number from 0 to 9.  Specifies the minimum number of special characters that must occur in the password.
+<p>Only one *SPCCHRMINn value can be specified.  If a *SPCCHRMAXn value is also specified, the n value specified for *SPCCHRMAXn must be greater than or equal to the n value specified for *SPCCHRMINn.
+</p>
+</li>
+</ul>
+</dd>
+<dt><b>QPWDVLDPGM</b></dt>
+<dd>Password validation program provides the ability for a user-written program to do additional validation on passwords.The specified password validation program(s) are called from the CHGPWD command and the QSYCHGPW API if the new password has passed all the other tests specified in the password-control system values. This program is not called from the CRTUSRPRF or CHGUSRPRF commands.  Validation programs registered for the QIBM_QSY_VLD_PASSWRD exit point, format VLDP0200, will be called to validate the password after the password composition rules have been checked for CRTUSRPRF and CHGUSRPRF.  Changes made to this system value take effect the next time a password is changed.  See Password validation program for additional information.
+</dd>
+<dt><b>QPWRDWNLMT</b></dt>
+<dd>Maximum amount of time (in seconds) allowed for PWRDWNSYS *IMMED.  This is the time used to wait for power down to complete normally after either of the following happens:
+<ul>
+<li>A Power Down System (PWRDWNSYS) command with *IMMED specified for the <b>How to end</b> (OPTION) parameter is entered.
+</li>
+<li>A PWRDWNSYS command with *CNTRLD specified for the <b>How to end</b> (OPTION) parameter is entered and the time specified for the <b>Controlled end delay time</b> (DELAY) parameter has ended.
+</li>
+</ul>
+<p>Changes to this value take effect when a PWRDWNSYS command is entered.
+</p>
+</dd>
+<dt><b>QPWRRSTIPL</b></dt>
+<dd>Automatic initial program load (IPL) after power restored allowed.  Changes made to this system value take effect the next time there is a power failure.
+<ul>
+<li>0 means no auto-IPL after power restored.
+</li>
+<li>1 means auto-IPL after power restored.
+</li>
+</ul>
+<p>Whether or not a partition is IPLed at the same time as the system is powered on depends on the partition's configuration value for IPL action.
+</p>
+<p>On partitioned systems, this system value must be changed from the service processor's Advanced System Management Interface (ASMI).
+</p>
+<p>For more information on partitions, see the Logical Partitions topic in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+</dd>
+<dt><b>QQRYDEGREE</b></dt>
+<dd>Query parallel processing degree.  The value specifies the parallel processing degree available to users of the system.
+<ul>
+<li>*NONE means no parallel processing is allowed for database query processing or database file keyed access path builds or rebuilds.
+</li>
+<li>*IO means any number of tasks can be used when the database query optimizer chooses to use I/O parallel processing for queries.  SMP parallel processing is not allowed, including when building or rebuilding database file keyed access paths.
+</li>
+<li>*OPTIMIZE means the query optimizer can choose to use any number of tasks for either I/O or SMP parallel processing to process the query or database file keyed access path build or rebuild.  Use of parallel processing and the number of tasks used is determined with respect to the number of processors available in the pool in which the job is run, and whether the expected elapsed time for the query or database file keyed access path build or rebuild, is limited by CPU processing or I/O resources.
+</li>
+<li>*MAX means the query optimizer can choose to use either I/O or SMP parallel processing to process the query.  The choices made by the query optimizer will be similar to those made for the value *OPTIMIZE except the optimizer will assume that all active memory in the pool can be used to process the query or database file keyed access path build or rebuild.
+</li>
+</ul>
+</dd>
+<dt><b>QQRYTIMLMT</b></dt>
+<dd>Query processing time limit.
+<ul>
+<li>*NOMAX means the maximum query interval is used.
+</li>
+<li>0-2147352578 means the number of seconds allowed for query processing.
+</li>
+</ul>
+</dd>
+<dt><b>QRCLSPLSTG</b></dt>
+<dd>Automatic deletion of empty spooled members is allowed based on the member retention interval.  Changes made to this system value take effect immediately.
+<ul>
+<li>*NONE means no retention interval.
+<p>
+<b>Note:     </b>Using this value can have adverse effects on system performance.  More information is in the Files and file systems category in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+</li>
+<li>*NOMAX means all empty members are kept.
+</li>
+<li>1-366 means the number of days that empty spooled members are kept for new spooled file use.
+</li>
+</ul>
+</dd>
+<dt><b>QRETSVRSEC</b></dt>
+<dd>Retain server security data indicator.  This value determines whether the security data needed by a server to authenticate a user on a target system through client/server interfaces can be retained on this system.
+<ul>
+<li>0 means that the server security data is not retained.
+</li>
+<li>1 means that the server security data is retained.
+</li>
+</ul>
+</dd>
+<dt><b>QRMTSRVATR</b></dt>
+<dd>Remote service attribute.  The QRMTSRVATR system value controls the remote service problem analysis ability.  The value allows the system to be analyzed remotely.
+<ul>
+<li>0 means the remote service attribute is off.
+</li>
+<li>1 means the remote service attribute is on.
+</li>
+</ul>
+</dd>
+<dt><b>QRMTIPL</b></dt>
+<dd>Remote power on and IPL indicator.  Changes made to this system value take effect immediately.
+<ul>
+<li>0 means remote power on and IPL are not allowed.
+</li>
+<li>1 means remote power on and IPL are allowed.
+<p>
+<b>Note:     </b>Any telephone call will cause the system to IPL.
+</p>
+</li>
+</ul>
+<p>Whether or not a partition is IPLed at the same time as the system is powered on depends on the partition's configuration value for IPL action.
+</p>
+<p>On partitioned systems, this system value must be changed from the service processor's Advanced System Management Interface (ASMI).
+</p>
+<p>For more information on partitions, see the Logical Partitions topic in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+</dd>
+<dt><b>QRMTSIGN</b></dt>
+<dd>Remote sign-on control.  Changes made to this system value take effect immediately.
+<ul>
+<li>*FRCSIGNON means normal sign-on required.
+</li>
+<li>*SAMEPRF means when the source and target user profile are the same, the sign-on can be bypassed for remote sign-on attempts.
+</li>
+<li>*REJECT means no remote sign-on is allowed.
+</li>
+<li>*VERIFY means after verifying that the user has access to the system, the system allows the user to bypass the sign-on.
+</li>
+<li>program means you can specify a program to decide which remote sessions will be allowed and which user profiles can be automatically signed-on from which locations.
+</li>
+</ul>
+</dd>
+<dt><b>QSAVACCPTH</b></dt>
+<dd>Save access paths.  Changes made to this system value take effect at the start of the next save operation.
+<ul>
+<li>0 means do not save logical file access paths that are dependent on the physical files that are being saved.
+</li>
+<li>1 means save logical file access paths that are dependent on the physical files that are being saved.
+</li>
+</ul>
+</dd>
+<dt><b>QSCANFS</b></dt>
+<dd>Scan file systems.  This system value specifies the integrated file systems in which objects will be scanned when exit programs are registered with any of the integrated file system scan-related exit points.  Changes made to this system value take effect immediately.  See Scan file systems for additional information.
+</dd>
+<dt><b>QSCANFSCTL</b></dt>
+<dd>Scan file systems control.  This system value controls the integrated file system scanning on the system when exit programs are registered with any of the integrated file system scan-related exit points.  These controls apply to integrated file system objects in the file systems covered by the QSCANFS(Scan file systems) system value.  Changes made to this system value take effect immediately.  See Scan file systems control for additional information.
+</dd>
+<dt><b>QSCPFCONS</b></dt>
+<dd>IPL action with console problem.  Changes to this system value take effect before the next IPL.
+<ul>
+<li>0 means end system.
+</li>
+<li>1 means continue the unattended IPL.
+</li>
+</ul>
+</dd>
+<dt><b>QSECOND</b></dt>
+<dd>Second of the minute.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QSECURITY</b></dt>
+<dd>System security level.  Changes made to this system value take effect at the next IPL.
+<ul>
+<li>20 means the system requires a password to sign-on.
+</li>
+<li>30 means password security at sign-on and object security at each access.  You must have authority to access all system resources.
+</li>
+<li>40 means password security at sign-on and object security at each access.  Programs that try to access objects through interfaces that are not supported will fail.
+</li>
+<li>50 means the system requires a password to sign on and users must have authority to access objects and system resources.  The security and integrity of the QTEMP library and user domain objects are enforced.  Programs that try to access objects through interfaces that are not supported or that try to pass unsupported parameter values to supported interfaces will fail.
+</li>
+</ul>
+</dd>
+<dt><b>QSFWERRLOG</b></dt>
+<dd>Software error log.  Indicates whether system-detected software problems are entered in the error log.  Changes made to this system value take effect immediately.
+<ul>
+<li>*LOG means that when a software error is detected by the system, the error is evaluated to determine if it should be logged unconditionally, or if the decision to log the error should be deferred to the policy based Service Monitor.
+<p>If the error is to be logged unconditionally, a PARable message is sent to QSYSOPR and an entry is created in the problem log.  If the reporting component provides error data, a spooled file is created to contain the data.  The spooled file name is stored in the error log and problem log entries.
+</p>
+<p>If the error is to be conditionally logged, the decision to log the error will be made by the policy based Service Monitor.  If the decision is to log the problem, an entry is created in the problem log.  The problem data will be stored in a problem data library and the problem record entry will be updated with the name of the library.
+</p>
+</li>
+<li>*NOLOG means no logging will occur if a software error is detected.
+</li>
+</ul>
+</dd>
+<dt><b>QSHRMEMCTL</b></dt>
+<dd>Shared memory control.  Specifies whether or not users can use shared memory, or use mapped memory that has write capability.  Changes made to this system value take effect immediately.
+<ul>
+<li>0 means that users cannot use shared memory, or use mapped memory that has write capability.
+</li>
+<li>1 means that users can use shared memory or mapped memory that has write capability.
+</li>
+</ul>
+</dd>
+<dt><b>QSPCENV</b></dt>
+<dd>Special environment.  The system environment used as the default for all users.  Changes made to this system value take effect the next time a user signs on to the system.
+<ul>
+<li>*NONE means no special environment is entered when you sign on.
+</li>
+<li>*S36 means the System/36 environment is entered when you sign on.
+</li>
+</ul>
+</dd>
+<dt><b>QSPLFACN</b></dt>
+<dd>Spooled file action.  Specifies whether spooled files are kept with a job or detached from the job.  Keeping spooled files with jobs allows job commands such as the Work with Submitted Jobs (WRKSBMJOB) command to work with the spooled files even after the job has ended.  Detaching spooled files from jobs reduces the use of system resources by allowing job structures to be recycled when the job ends.  A change to this system value takes effect for all jobs that become active after the change.  The shipped value is *KEEP.
+<ul>
+<li>*KEEP means that when the job ends, as long as at least one spooled file for the job exists in the system auxiliary storage pool (ASP number 1) or in a basic user ASP (ASP numbers 2-32), the spooled files are kept with the job and the status of the job is updated to indicate that the job has completed.  If all remaining spooled files for the job are in independent ASPs (ASP numbers 33-255), the spooled files will be detached from the job and the job will be removed from the system.
+</li>
+<li>*DETACH means the spooled files are detached from the job when the job ends.
+</li>
+</ul>
+</dd>
+<dt><b>QSRLNBR</b></dt>
+<dd>System serial number.  This value cannot be changed.  If is retrieved from the data fields by the system when installing the operating system licensed program.  You can display QSRLNBR, or you can retrieve this value in user-written programs.  The system serial number is the same in each partition on a system.
+</dd>
+<dt><b>QSRTSEQ</b></dt>
+<dd>Sort sequence.  This system value specifies the default sort sequence algorithm to be used by the system.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QSRVDMP</b></dt>
+<dd>Service dumps.  Indicates whether service dumps for escape messages that are not monitored are created.  Changes made to this system value take effect immediately.
+<ul>
+<li>*DMPUSRJOB means that service dumps are created only for user jobs, not system jobs.
+</li>
+<li>*DMPSYSJOB means that service dumps are created only for system jobs, not user jobs.  System jobs include the operating system, subsystem monitors, LU service process, spooled readers and writers, and the SCPF job.
+</li>
+<li>*DMPALLJOB means that service dumps are created for all jobs.
+</li>
+<li>*NONE means no service dumps are created.
+</li>
+</ul>
+</dd>
+<dt><b>QSSLCSL</b></dt>
+<dd>Secure Sockets Layer (SSL) cipher specification list.  This system value specifies the list of cipher suites that are supported by System SSL.  The values are read-only unless the QSSLCSLCTL (SSL cipher control) system value is set to *USRDFN.
+<p>For details on System SSL and SSL ciphers, see the SSL section of the Security Reference information in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+<p>A change to this system value takes effect immediately for all subsequent System SSL sessions.  The shipped value is *ECDHE_ECDSA_AES_128_CBC_SHA256, *ECDHE_ECDSA_AES_256_CBC_SHA384, *ECDHE_ECDSA_AES_128_GCM_SHA256, *ECDHE_ECDSA_AES_256_GCM_SHA384, *RSA_AES_128_CBC_SHA256, *RSA_AES_128_CBC_SHA, *RSA_AES_256_CBC_SHA256, *RSA_AES_256_CBC_SHA, *RSA_AES_128_GCM_SHA256, *RSA_AES_256_GCM_SHA384, *ECDHE_RSA_AES_128_CBC_SHA256, *ECDHE_RSA_AES_256_CBC_SHA384, *ECDHE_RSA_AES_128_GCM_SHA256, *ECDHE_RSA_AES_256_GCM_SHA384, *ECDHE_ECDSA_3DES_EDE_CBC_SHA, *ECDHE_RSA_3DES_EDE_CBC_SHA, *RSA_3DES_EDE_CBC_SHA, *ECDHE_ECDSA_RC4_128_SHA, *ECDHE_RSA_RC4_128_SHA, *RSA_RC4_128_SHA, *RSA_RC4_128_MD5, *RSA_DES_CBC_SHA, *RSA_EXPORT_RC4_40_MD5, *RSA_EXPORT_RC2_CBC_40_MD5, *ECDHE_ECDSA_NULL_SHA, *ECDHE_RSA_NULL_SHA, *RSA_NULL_SHA256, *RSA_NULL_SHA, and *RSA_NULL_MD5.
+</p>
+<p>
+<b>Note:     </b>You must have *IOSYSCFG, *ALLOBJ, and *SECADM special authorities to change this system value.
+</p>
+<p>A cipher cannot be added to QSSLCSL if the required SSL protocol value for the cipher suite is not set for the QSSLPCL (SSL protocol list) system value.
+</p>
+<ul>
+<li>*RSA_AES_128_GCM_SHA256         - Use the Rivest Shamir Adleman (RSA) public key algorithm with the Advanced Encryption Standard (AES) cipher with Galois/Counter Mode (GCM) and 128 bit keys. Use the Secure Hash Algorithm 256 (SHA256) for generating the message authentication code (MAC).
+</li>
+<li>*RSA_AES_256_GCM_SHA384         - Use the RSA public key algorithm with the AES cipher with GCM and 256 bit keys. Use the Secure Hash Algorithm 384 (SHA384) for generating the MAC.
+</li>
+<li>*ECDHE_ECDSA_NULL_SHA           - Use the Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange algorithm with the Elliptic Curve Digital Signature Algorithm (ECDSA) signature algorithm but do not use any cipher.  Use the Secure Hash Algorithm 1 (SHA-1) for generating the MAC.
+</li>
+<li>*ECDHE_ECDSA_RC4_128_SHA        - Use the ECDHE key exchange algorithm with the ECDSA signature algorithm with the Rivest Cipher 4 (RC4) cipher and 128 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*ECDHE_ECDSA_3DES_EDE_CBC_SHA   - Use the ECDHE key exchange algorithm with the ECDSA signature algorithm with the Triple Data Encryption Standard (3DES) cipher with the encrypt/decrypt/encrypt (EDE) and cipher block chaining (CBC) modes and 168 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*ECDHE_RSA_NULL_SHA             - Use the ECDHE key exchange algorithm with the RSA public key algorithm but do not use any cipher. Use SHA-1 for generating the MAC.
+</li>
+<li>*ECDHE_RSA_RC4_128_SHA          - Use the ECDHE key exchange algorithm with the RSA public key algorithm with the RC4 cipher and 128 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*ECDHE_RSA_3DES_EDE_CBC_SHA     - Use the ECDHE key exchange algorithm with the RSA public key algorithm with the 3DES cipher with the EDE and CBC modes and 168 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*ECDHE_ECDSA_AES_128_CBC_SHA256 - Use the ECDHE key exchange algorithm with the ECDSA signature algorithm with the AES cipher with CBC and 128 bit keys. Use SHA256 for generating the MAC.
+</li>
+<li>*ECDHE_ECDSA_AES_256_CBC_SHA384 - Use the ECDHE key exchange algorithm with the ECDSA signature algorithm with the AES cipher with CBC and 256 bit keys. Use SHA384 for generating the MAC.
+</li>
+<li>*ECDHE_RSA_AES_128_CBC_SHA256   - Use the ECDHE key exchange algorithm with the RSA public key algorithm with the AES cipher with CBC and 128 bit keys. Use SHA256 for generating the MAC.
+</li>
+<li>*ECDHE_RSA_AES_256_CBC_SHA384   - Use the ECDHE key exchange algorithm with the RSA public key algorithm with the AES cipher with CBC and 256 bit keys. Use SHA384 for generating the MAC.
+</li>
+<li>*ECDHE_ECDSA_AES_128_GCM_SHA256 - Use the ECDHE key exchange algorithm with the ECDSA signature algorithm with the AES cipher with GCM and 128 bit keys. Use SHA256 for generating the MAC.
+</li>
+<li>*ECDHE_ECDSA_AES_256_GCM_SHA384 - Use the ECDHE key exchange algorithm with the ECDSA signature algorithm with the AES cipher with GCM and 256 bit keys. Use SHA384 for generating the MAC.
+</li>
+<li>*ECDHE_RSA_AES_128_GCM_SHA256   - Use the ECDHE key exchange algorithm with the RSA public key algorithm with the AES cipher with GCM and 128 bit keys. Use SHA256 for generating the MAC.
+</li>
+<li>*ECDHE_RSA_AES_256_GCM_SHA384   - Use the ECDHE key exchange algorithm with the RSA public key algorithm with the AES cipher with GCM and 256 bit keys. Use SHA384 for generating the MAC.
+</li>
+<li>*RSA_AES_128_CBC_SHA256         - Use the RSA public key algorithm with the AES cipher with CBC and 128 bit keys. Use SHA256 for generating the MAC.
+</li>
+<li>*RSA_AES_128_CBC_SHA       - Use the RSA public key algorithm with the AES cipher with CBC and 128 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*RSA_AES_256_CBC_SHA256    - Use the RSA public key algorithm with the AES cipher with CBC and 256 bit keys. Use SHA256 for generating the MAC.
+</li>
+<li>*RSA_AES_256_CBC_SHA       - Use the RSA public key algorithm with the AES cipher with CBC and 256 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*RSA_3DES_EDE_CBC_SHA           - Use the RSA public key algorithm with the 3DES cipher with the EDE and CBC modes and 168 bit keys.  Use SHA-1 for generating the MAC.
+</li>
+<li>*RSA_RC4_128_SHA           - Use the RSA public key algorithm with the RC4 cipher and 128 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*RSA_RC4_128_MD5           - Use the RSA public key algorithm with the RC4 cipher and 128 bit keys. Use message digest algorithm 5 (MD5) for generating the MAC.
+</li>
+<li>*RSA_DES_CBC_SHA           - Use the RSA public key algorithm with the Data Encryption Standard (DES) cipher with CBC mode and 56 bit keys. Use SHA-1 for generating the MAC.
+</li>
+<li>*RSA_EXPORT_RC2_CBC_40_MD5 - Use the RSA public key algorithm with the Rivest Cipher 2 (RC2) cipher with CBC mode and 40 bit keys.  Use MD5 for generating the MAC.
+</li>
+<li>*RSA_EXPORT_RC4_40_MD5     - Use the RSA public key algorithm with the RC4 cipher and 40 bit keys. Use MD5 for generating the MAC.
+</li>
+<li>*RSA_NULL_SHA256           - Use the RSA public key algorithm but do not use any cipher. Use SHA256 for generating the MAC.
+</li>
+<li>*RSA_NULL_SHA              - Use the RSA public key algorithm but do not use any cipher. Use SHA-1 for generating the MAC.
+</li>
+<li>*RSA_NULL_MD5              - Use the RSA public key algorithm but do not use any cipher. Use MD5 for generating the MAC.
+</li>
+<li>*RSA_RC2_CBC_128_MD5       - Use the RSA public key algorithm with the RC2 cipher with CBC mode and 128 bit keys. Use MD5 for generating the MAC.
+</li>
+<li>*RSA_3DES_EDE_CBC_MD5      - Use the RSA public key algorithm with the 3DES cipher with the EDE and CBC modes and 168 bit keys. Use MD5 for generating the MAC.
+</li>
+<li>*RSA_DES_CBC_MD5           - Use the RSA public key algorithm with the DES cipher with CBC mode and 56 bit keys. Use MD5 for generating the MAC.
+</li>
+</ul>
+<p>
+<b>Note:     </b>System SSL uses the sequence of the values in QSSLCSL to order the System SSL default cipher specification list.  The default cipher specification list entries are system defined and can change on release boundaries.  A default cipher removed from QSSLCSL results in the cipher's removal from the default list.  The default cipher is added back to the default cipher specification list when it is added back into QSSLCSL.  It is not possible to add other ciphers to the default list beyond the system defined set for the release.
+</p>
+</dd>
+<dt><b>QSSLCSLCTL</b></dt>
+<dd>Secure Sockets Layer (SSL) cipher control.  This system value specifies whether or not the QSSLCSL (SSL cipher specification list) system value is controlled by the system or by the user.
+<p>For details on System SSL and SSL ciphers, see the SSL section of the Security Reference information in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+<p>A change to this system value takes effect immediately.  The shipped value is *OPSYS.
+</p>
+<p>
+<b>Note:     </b>You must have *IOSYSCFG, *ALLOBJ, and *SECADM special authorities to change this system value.
+</p>
+<ul>
+<li>*OPSYS  - The QSSLCSL (SSL cipher specification list) system value is read only.  The values contained in the QSSLCSL (SSL cipher specification list) system value are automatically modified to contain the list of supported cipher suites as determined by the operating system release.
+<p>
+<b>Note:     </b>*OPSYS allows the values to be automatically updated with newer and stronger ciphers when installing to a future release that has new cipher suite capabilities.
+</p>
+</li>
+<li>*USRDFN - The QSSLCSL (SSL cipher specification list) system value is modifiable.
+<p>
+<b>Note:     </b>Additional cipher suite capabilities will not be added automatically when moving to a future release.  You will have to determine what if any new cipher suites are available and add them to the QSSLCSL (SSL cipher specification list) system value manually.
+</p>
+</li>
+</ul>
+</dd>
+<dt><b>QSSLPCL</b></dt>
+<dd>Secure Sockets Layer (SSL) protocols.  This system value specifies the SSL protocol versions supported by System SSL.
+<p>For details on System SSL and SSL Protocols, see the SSL section of the Security Reference information in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+<p>A change to this system value takes effect immediately for all subsequent System SSL sessions.  The shipped value is *OPSYS.
+</p>
+<p>
+<b>Note:     </b>You must have *IOSYSCFG, *ALLOBJ, and *SECADM special authorities to change this system value.
+</p>
+<ul>
+<li>*OPSYS     - The SSL protocols supported are determined by the system.  The protocols can be different with each operating system release.  See the SSL section of the Security Reference information in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/ for the values supported for your release.
+</li>
+<li>*TLSV1.2   - Transport Layer Security version 1.2 will be supported.  This value cannot be specified if the *OPSYS value is also specified.
+</li>
+<li>*TLSV1.1   - Transport Layer Security version 1.1 will be supported.  This value cannot be specified if the *OPSYS value is also specified.
+</li>
+<li>*TLSV1     - Transport Layer Security version 1.0 will be supported.  This value cannot be specified if the *OPSYS value is also specified.
+</li>
+<li>*SSLV3     - Secure Sockets Layer version 3.0 will be supported.  This value cannot be specified if the *OPSYS value is also specified.
+</li>
+<li>*SSLV2     - Secure Sockets Layer version 2.0 will be supported.  This value cannot be specified if the *OPSYS or *TLSV1.2 value is also specified.
+</li>
+</ul>
+</dd>
+<dt><b>QSTGLOWACN</b></dt>
+<dd>Auxiliary storage lower limit action.  Specifies the action to take when the available storage in the system ASP goes below the auxiliary storage lower limit.  A change to this system value takes effect immediately.  The shipped value is *MSG.
+<ul>
+<li>*MSG:  Send message CPI099C to QSYSMSG and QSYSOPR message queue.  This message is also sent for the other actions.
+</li>
+<li>*CRITMSG:  Send critical message CPI099B to the user specified in the service attribute to receive critical messages.
+</li>
+<li>*REGFAC:  Submit a job to call exit programs registered for the QIBM_QWC_QSTGLOWACN exit point.
+</li>
+<li>*ENDSYS:  End the system to the restricted state.
+</li>
+<li>*PWRDWNSYS:  Power down the system immediately and restart it.
+</li>
+</ul>
+</dd>
+<dt><b>QSTGLOWLMT</b></dt>
+<dd>Auxiliary storage lower limit.  Specifies the percent of available storage remaining in the system ASP when the auxiliary storage lower limit action is taken.  A change to this system value takes effect immediately.  The shipped value is 5.0.
+<ul>
+<li>Lower limit:  Percentage of available storage remaining in the system ASP when the action specified in QSTGLOWACN is taken.  The percent of storage currently used in the system ASP can be viewed with the Work with System Status (WRKSYSSTS) command.
+</li>
+</ul>
+</dd>
+<dt><b>QSTRPRTWTR</b></dt>
+<dd>Start print writers at initial program load (IPL).  This system value is set by the system at the time of IPL or is set by the user on the IPL Options display.  This system value cannot be changed using the Change System Value (CHGSYSVAL) command.
+<ul>
+<li>0 means print writers were not started.
+</li>
+<li>1 means print writers were started.
+</li>
+</ul>
+</dd>
+<dt><b>QSTRUPPGM</b></dt>
+<dd>Start-up program name from autostart job in the controlling subsystem.  Both an object name and library name can be specified.  Changes made to this system value take effect at the next IPL.
+</dd>
+<dt><b>QSTSMSG</b></dt>
+<dd>Indicates whether status messages are shown.  Changes made to this system value take effect the next time a user signs on to the system.
+<ul>
+<li>*NORMAL means status messages will be shown.
+</li>
+<li>*NONE means status messages will not be shown.
+</li>
+</ul>
+</dd>
+<dt><b>QSVRAUTITV</b></dt>
+<dd>Server authentication interval.  The operating system no longer uses this system value.  Changes made to this system value have no effect.
+</dd>
+<dt><b>QSYSLIBL</b></dt>
+<dd>System part of the library list.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QTHDRSCADJ</b></dt>
+<dd>Thread resources adjustment.  This system value specifies whether or not the system should dynamically make adjustments to the affinity or preference of threads currently running in the system to certain processors and memory.  If some resources are being utilized more than others, the system may reassign some of the threads running on the more heavily utilized resources to have affinity to the less utilized resources.  Changes made to this system value take effect immediately.  The shipped value is '1.'
+<ul>
+<li>'0' means no automatic adjustment of threads is made by the system.  Threads will continue to have affinity to the resources which they are currently assigned to until they end or until the system value is changed.
+</li>
+<li>'1' means the system dynamically makes adjustments of threads' affinity to the system's resources.  It does not change the grouping or level of affinity in the threads.
+</li>
+</ul>
+</dd>
+<dt><b>QTHDRSCAFN</b></dt>
+<dd>Thread resources affinity.  The affinity or preference of threads to certain processors and memory.  Changes made to this system value take effect immediately for threads in jobs that are started after the change, but has no effect on threads currently running.
+<ul>
+<li>*NOGROUP - Secondary threads will not necessarily have affinity to the same group of processors and memory as their initiating thread.
+</li>
+<li>*GROUP - Secondary threads will have affinity to the same group of processors and memory as their initiating thread.
+</li>
+</ul>
+<p>The thread resources affinity level can be set to the following values:
+</p>
+<ul>
+<li>*NORMAL - A thread will use any processor or memory if the resources it has affinity to are not readily available.
+</li>
+<li>*HIGH - A thread will only use the resources it has affinity to, and will wait until they become available if necessary.
+</li>
+</ul>
+</dd>
+<dt><b>QTIMADJ</b></dt>
+<dd>Time adjustment.  This system value can be used to identify software that adjusts the system clock to keep it synchronized with an external time source.  This value should be maintained by time adjustment software and is intended as an aid to prevent having multiple time adjustment applications conflict with each other.  There are no checks performed by the system to verify this value or that software is or is not performing time adjustments.  IBM time adjustment offerings will use identifiers that start with QIBM such as 'QIBM_OS400_SNTP'.  Other software suppliers should follow a similar naming convention of company name and product name.
+<p>Time adjustment software should check QTIMADJ prior to starting.  If QTIMADJ has an identifier for other time adjustment software, then the software being started should notify the user of this potential conflict and confirm that this time adjustment software should be started.  When QTIMADJ is *NONE the software should update QTIMADJ to identify that it is now responsible for adjusting the system clock.  Time adjustment software should check QTIMADJ again prior to ending.  QTIMADJ should be set to *NONE only if the current value identifies this time adjustment software that is ending.  Changes made to this system value take effect immediately.  The shipped value is *NONE.
+</p>
+<ul>
+<li>*NONE - Indicates that time adjustment software has not been identified.
+</li>
+<li>Identifier - Identify the software that will be used to adjust the system clock.
+</li>
+</ul>
+</dd>
+<dt><b>QTIME</b></dt>
+<dd>Time of day.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QTIMSEP</b></dt>
+<dd>Time separator.  Changes made to this system value take effect for jobs started after the change is made.
+<p>This value affects jobs for which *SYSVAL is specified as the time separator.  When specifying time on commands, users must use the time separator specified for their job or no time separator.  If a time separator different from the job's time separator is used to specify time on a command, the command will fail.
+</p>
+</dd>
+<dt><b>QTIMZON</b></dt>
+<dd>Time zone. This specifies the name of the time zone description used to calculate local system time.  A change to a different time zone description may result in a different offset that is associated with this new time zone description.  A different offset would cause the local system time (system value QTIME) to change.  In addition, the system value QUTCOFFSET will be changed to match this new offset.  Changes made to this system value take effect immediately.
+</dd>
+<dt><b>QTOTJOB</b></dt>
+<dd>The total number of jobs for which storage must be allocated.  Changes made to this system value take effect the next time the job tables are rebuilt during the IPL.
+</dd>
+<dt><b>QTSEPOOL</b></dt>
+<dd>Indicates whether interactive jobs should be moved to another main storage pool when they reach time slice end.  Changes made to this system value take effect for jobs started after the change is made.
+<ul>
+<li>*NONE means jobs are not moved when time slice end is reached.
+</li>
+<li>*BASE means jobs are moved when time slice end is reached.
+</li>
+</ul>
+</dd>
+<dt><b>QUPSDLYTIM</b></dt>
+<dd>Uninterruptible power supply delay time.  Changes made to this system value take effect the next time there is a power failure.
+<ul>
+<li>*BASIC and *CALC cause the Licensed Internal Code (LIC) to assign specific values as the delay time.
+</li>
+<li>*NOMAX means the system will not start any action on its own.
+</li>
+<li>0 means the system will power down automatically when system utility power fails.
+</li>
+<li>1-99999 means specify the delay time in seconds before the system powers down.
+</li>
+</ul>
+<p>For more information on partitions, see the Logical Partitions topic in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+</dd>
+<dt><b>QUPSMSGQ</b></dt>
+<dd>Message queue for uninterruptible power supply messages.  Changes made to this system value take effect the next time there is a power failure.
+</dd>
+<dt><b>QUSEADPAUT</b></dt>
+<dd>Defines which users can create, change and update programs and service programs with the (use adopted authority) USEADPAUT(*YES) attribute.  When a program or service program has a use adopted authority attribute of *YES, the program/service program can use any adopted authority that is being passed to it from a program/ service program higher in the call stack.
+<p>This system value has no effect on the following:
+</p>
+<ul>
+<li>Existing programs/service programs created with the USEADPAUT(*YES) attribute.  Users are responsible for deciding which existing programs/service programs should be changed to have USEADPAUT(*NO).
+</li>
+<li>Restoring a program/service program that uses adopted authority.  These program/service programs can still be restored on your system.
+</li>
+<li>Duplicating a program/service program that uses adopted authority.  The USEADPAUT attribute of the existing program/service program is copied to the new object.
+</li>
+</ul>
+<p>The following values can be specified:
+</p>
+<ul>
+<li>*NONE means there is no restriction on who can create, change or update a program/service program to use adopted authority.  Any user can create, change or update a program/service program to have the USEADPTAUT(*YES) attribute.
+</li>
+<li>Name means you can specify the name of the authorization list which will control which users can set the USEADPAUT(*YES) attribute.  The user needs *USE authority to the authorization list to be able to create, change or update programs/service programs with the USEADPAUT(*YES) attribute.  Authority to the authorization list cannot come from adopted authority.  That is, if you are running a program that adopts authority, the adopted authority is not used when checking authority to the authorization list.
+</li>
+</ul>
+</dd>
+<dt><b>QUSRLIBL</b></dt>
+<dd>User part of the library list.  Changes made to this system value take effect for jobs started after the change is made.
+</dd>
+<dt><b>QUTCOFFSET</b></dt>
+<dd>Indicates the number of hours (in 24-hour format) and minutes that the current system time is offset from the Coordinated Universal Time (UTC).
+<ul>
+<li>+hhmm means that the current system time is hh hours and mm minutes ahead of UTC.
+</li>
+<li>-hhmm means that the current system time is hh hours and mm minutes behind UTC.
+</li>
+</ul>
+<p>
+<b>Note:     </b>This system value must be the same as the offset that is associated with the time zone description specified in the system value QTIMZON.  A change to a different time zone description for QTIMZON may result in a different associated offset.  The system value QUTCOFFSET will be changed as well to match this new offset.  QUTCOFFSET cannot be changed to a value that is different than the offset currently associated with QTIMZON.  If an attempt is made to do so, the diagnostic message CPD1687 will be issued.
+</p>
+</dd>
+<dt><b>QVFYOBJRST</b></dt>
+<dd>Verify object on restore.  This system value specifies the policy to be used for object signature verification during a restore operation.  This value applies to objects of types:  *CMD, *PGM, *SRVPGM, *SQLPKG and *MODULE.  It also applies to *STMF objects which contain Java programs.  This value also specifies the policy for PTFs applied to the system including Licensed Internal Code fixes.  Changes made to this system value take effect immediately.  See Verify object on restore for additional information.
+</dd>
+<dt><b>QYEAR</b></dt>
+<dd>Year.  Changes made to this system value take effect immediately.
+</dd>
+</dl>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVSYSVAL.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVSYSVAL.RTNVAR"></a>
+<h3>CL variable for returned value (RTNVAR)</h3>
+<p>Specifies the name of the CL program variable that receives the value of the system value being returned.  The type and length for the CL variable when it was declared must be compatible with that of the system value being received.  The attributes of individual system values are described in the Work management topic collection in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/.
+</p>
+<p>In general, the return variable type must match the system value type.  For character system values that are 1 character long, the CL variable can be a character or logical variable.  For character and logical system values, the length of the CL variable must equal the length of the system value.  For decimal system values, the CL variable length must be greater than or equal to the length of the system value.
+</p>
+<p>The following table lists the type and length of each system value.
+</p>
+<p>
+<pre>
+SYSTEM VALUE   TYPE         LENGTH
+---------------------------------------------
+QABNORMSW      Character    1
+QACGLVL        Character    80
+QACTJOB        Decimal      (5 0)
+QADLACTJ       Decimal      (5 0)
+QADLSPLA       Decimal      (5 0)
+QADLTOTJ       Decimal      (5 0)
+QALWJOBITP     Character    1
+QALWOBJRST     Character    150
+QALWUSRDMN     Character    500
+QASTLVL        Character    10
+QATNPGM        Character    20
+QAUDCTL        Character    50
+QAUDENDACN     Character    10
+QAUDFRCLVL     Decimal      (5 0)
+QAUDLVL        Character    160
+QAUDLVL2       Character    990
+QAUTOCFG       Character    1
+QAUTORMT       Character    1
+QAUTOSPRPT     Character    1
+QAUTOVRT       Decimal      (5 0)
+</pre>
+</p>
+<p>
+<pre>
+QBASACTLVL     Decimal      (5 0)
+QBASPOOL       Decimal      (10 0)
+QBOOKPATH      Character    (315)
+</pre>
+</p>
+<p>
+<pre>
+QCCSID         Decimal      (5 0)
+QCENTURY       Character    1
+QCFGMSGQ       Character    20
+QCHRID         Character    20
+QCHRIDCTL      Character    10
+QCMNARB        Character    10
+QCMNRCYLMT     Character    20
+QCNTRYID       Character    2
+QCONSOLE       Character    10
+QCRTAUT        Character    10
+QCRTOBJAUD     Character    10
+QCTLSBSD       Character    20
+QCURSYM        Character    1
+</pre>
+</p>
+<p>
+<pre>
+QDATE          Character    5 (for Julian dates) or 6
+QDATETIME      Character    20
+QDATFMT        Character    3
+QDATSEP        Character    1
+QDAY           Character    2 or 3 (for Julian dates)
+QDAYOFWEEK     Character    4
+QDBFSTCCOL     Character    10
+QDBRCVYWT      Character    1
+QDECFMT        Character    1
+QDEVNAMING     Character    10
+QDEVRCYACN     Character    20
+QDSCJOBITV     Character    10
+QDSPSGNINF     Character    1
+QDYNPTYADJ     Character    1
+QDYNPTYSCD     Character    1
+</pre>
+</p>
+<p>
+<pre>
+QENDJOBLMT     Decimal      (5 0)
+</pre>
+</p>
+<p>
+<pre>
+QFRCCVNRST     Character    1
+</pre>
+</p>
+<p>
+<pre>
+QHOUR          Character    2
+QHSTLOGSIZ     Decimal      (8 0)
+</pre>
+</p>
+<p>
+<pre>
+QIGC           Character    1
+QIGCCDEFNT     Character    20
+QIGCFNTSIZ     Decimal      (4 1)
+QINACTITV      Character    10
+QINACTMSGQ     Character    20
+QIPLDATTIM     Character    20
+QIPLSTS        Character    1
+QIPLTYPE       Character    1
+</pre>
+</p>
+<p>
+<pre>
+QJOBMSGQFL     Character    10
+QJOBMSGQMX     Decimal      (5 0)
+QJOBMSGQSZ     Decimal      (5 0)
+QJOBMSGQTL     Decimal      (5 0)
+QJOBSPLA       Decimal      (5 0)
+</pre>
+</p>
+<p>
+<pre>
+QKBDBUF        Character    10
+QKBDTYPE       Character    3
+</pre>
+</p>
+<p>
+<pre>
+QLANGID        Character    3
+QLEAPADJ       Decimal      (5 0)
+QLIBLCKLVL     Character    1
+QLMTDEVSSN     Character    1
+QLMTSECOFR     Character    1
+QLOCALE        Character    1024
+QLOGOUTPUT     Character    10
+</pre>
+</p>
+<p>
+<pre>
+QMAXACTLVL     Decimal      (5 0)
+QMAXJOB        Decimal      (10 0)
+QMAXSGNACN     Character    1
+QMAXSIGN       Character    6
+QMAXSPLF       Decimal      (10 0)
+QMCHPOOL       Decimal      (10 0)
+QMINUTE        Character    2
+QMLTTHDACN     Character    1
+QMODEL         Character    4
+QMONTH         Character    2
+</pre>
+</p>
+<p>
+<pre>
+QPASTHRSVR     Character    10
+QPFRADJ        Character    1
+QPRBFTR        Character    20
+QPRBHLDITV     Decimal      (5 0)
+QPRCFEAT       Character    4
+QPRCMLTTSK     Character    1
+QPRTDEV        Character    10
+QPRTKEYFMT     Character    10
+QPRTTXT        Character    30
+QPWDCHGBLK     Character    10
+QPWDEXPITV     Character    6
+QPWDEXPWRN     Decimal      (5 0)
+QPWDLMTAJC     Character    1
+QPWDLMTCHR     Character    10
+QPWDLMTREP     Character    1
+QPWDLVL        Decimal      (5 0)
+QPWDMAXLEN     Decimal      (5 0)
+QPWDMINLEN     Decimal      (5 0)
+QPWDPOSDIF     Character    1
+QPWDRQDDGT     Character    1
+QPWDRQDDIF     Character    1
+QPWDRULES      Character    750
+QPWDVLDPGM     Character    20
+QPWRDWNLMT     Decimal      (5 0)
+QPWRRSTIPL     Character    1
+</pre>
+</p>
+<p>
+<pre>
+QQRYDEGREE     Character    10
+QQRYTIMLMT     Character    10
+</pre>
+</p>
+<p>
+<pre>
+QRCLSPLSTG     Character    10
+QRETSVRSEC     Character    1
+QRMTIPL        Character    1
+QRMTSRVATR     Character    1
+QRMTSIGN       Character    20
+</pre>
+</p>
+<p>
+<pre>
+QSAVACCPTH     Character    1
+QSCANFS        Character    200
+QSCANFSCTL     Character    200
+QSCPFCONS      Character    1
+QSECOND        Character    2
+QSECURITY      Character    2
+QSETJOBATR     Character    160
+QSFWERRLOG     Character    10
+QSHRMEMCTL     Character    1
+QSPCENV        Character    10
+QSPLFACN       Character    10
+QSRLNBR        Character    8
+QSRTSEQ        Character    20
+QSRVDMP        Character    10
+QSSLCSL        Character    3840
+QSSLCSLCTL     Character    10
+QSSLPCL        Character    100
+QSTGLOWACN     Character    10
+QSTGLOWLMT     Decimal      (7 4)
+QSTRPRTWTR     Character    1
+QSTRUPPGM      Character    20
+QSTSMSG        Character    10
+QSVRAUTITV     Decimal      (6 0)
+QSYSLIBL       Character    150
+</pre>
+</p>
+<p>
+<pre>
+QTHDRSCADJ     Character    1
+QTHDRSCAFN     Character    20
+QTIMADJ        Character    30
+QTIME          Character    6, 7, 8, or 9 (for seconds,
+                            tenths, hundredths, or
+                            thousandths of a second)
+QTIMSEP        Character    1
+QTIMZON        Character    10
+QTOTJOB        Decimal      (5 0)
+QTSEPOOL       Character    10
+</pre>
+</p>
+<p>
+<pre>
+QUPSDLYTIM     Character    20
+QUPSMSGQ       Character    20
+QUSEADPAUT     Character    10
+QUSRLIBL       Character    250
+QUTCOFFSET     Character    5
+</pre>
+</p>
+<p>
+<pre>
+QVFYOBJRST     Character    1
+</pre>
+</p>
+<p>
+<pre>
+QYEAR          Character    2
+</pre>
+</p>
+<p>This is a required parameter.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVSYSVAL.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="RTVSYSVAL.COMMAND.EXAMPLES">Examples</a> </h3>
+<p>
+<pre>
+RTVSYSVAL   SYSVAL(QDATE)  RTNVAR(&amp;DATE)
+</pre>
+</p>
+<p>This command retrieves the date value from the system value QDATE and copies it into the CL variable &amp;DATE. The CL variable must be declared as a 6-character variable to match the attributes of the QDATE system value.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVSYSVAL.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="RTVSYSVAL.ERROR.MESSAGES">Error messages</a> </h3>
+<p><b><u>*ESCAPE Messages</u></b>
+</p>
+<dl>
+<dt><b>CPF1028</b></dt>
+<dd>&amp;1 not valid for parameter SYSVAL.
+</dd>
+<dt><b>CPF1074</b></dt>
+<dd>SYSVAL(QMONTH) not valid for Julian date format.
+</dd>
+<dt><b>CPF1094</b></dt>
+<dd>CL variable not same type as system value &amp;1.
+</dd>
+<dt><b>CPF1095</b></dt>
+<dd>CL variable length not valid for system value &amp;1.
+</dd>
+<dt><b>CPF1842</b></dt>
+<dd>Cannot access system value &amp;1.
+</dd>
+<dt><b>CPF268D</b></dt>
+<dd>Unable to access system value &amp;1.
+</dd>
+</dl>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVSYSVAL.Top_Of_Page">Top</a></td></tr>
+</table>
+</body>
+</html>

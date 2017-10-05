@@ -13,23 +13,7828 @@ DT433A11
 PROD
 QSYS
 
+ADDAJE
+*CMD
+
+QSYS
+Add Autostart Job Entry
+ADDALRACNE
+*CMD
+
+QSYS
+Add Alert Action Entry
+ADDALRD
+*CMD
+
+QSYS
+Add Alert Description
+ADDALRSLTE
+*CMD
+
+QSYS
+Add Alert Selection Entry
+ADDAUTLE
+*CMD
+
+QSYS
+Add Authorization List Entry
+ADDBKP
+*CMD
+
+QSYS
+Add Breakpoint
+ADDBLDOPTE
+*CMD
+PRX
+QSYS
+
+ADDBNDDIRE
+*CMD
+
+QSYS
+Add Binding Directory Entry
+ADDBUILDER
+*CMD
+PRX
+QSYS
+
+ADDCFGLE
+*CMD
+
+QSYS
+Add Configuration List Entries
+ADDCKMKSFE
+*CMD
+
+QSYS
+Add Keystore File Entry
+ADDCMNE
+*CMD
+
+QSYS
+Add Communications Entry
+ADDCOMSNMP
+*CMD
+
+QSYS
+Add Community for SNMP
+ADDDIRE
+*CMD
+
+QSYS
+Add Directory Entry
+ADDDIRSHD
+*CMD
+
+QSYS
+Add Directory Shadow System
+ADDDLOAUT
+*CMD
+
+QSYS
+Add DLO Authority
+ADDDNSSIG
+*CMD
+PRX
+QSYS
+Add DNS Signature
+ADDDOMAPP
+*CMD
+PRX
+QSYS
+Add Domino Application
+ADDDSTLE
+*CMD
+
+QSYS
+Add Distribution List Entry
+ADDDTADFN
+*CMD
+
+QSYS
+Add Data Definition
+ADDEMLCFGE
+*CMD
+
+QSYS
+Add Configuration Entry
+ADDENVVAR
+*CMD
+
+QSYS
+Add Environment Variable
+ADDEWCBCDE
+*CMD
+
+QSYS
+Add EWC Barcode Entry
+ADDEWCM
+*CMD
+
+QSYS
+Add Wireless Ctl Member
+ADDEWCPTCE
+*CMD
+
+QSYS
+Add EWC PTC Entry
+ADDEWLM
+*CMD
+
+QSYS
+Add Wireless Line Member
+ADDFNTTBLE
+*CMD
+
+QSYS
+Add Font Table Entry
+ADDHDBDLFM
+*CMD
+
+QSYS
+Add Host Database to DLFM
+ADDICFDEVE
+*CMD
+
+QSYS
+Add ICF Device Entry
+ADDIMGCLGE
+*CMD
+
+QSYS
+Add Image Catalog Entry
+ADDIPSIFC
+*CMD
+
+QSYS
+Add IP over SNA Interface
+ADDIPSLOC
+*CMD
+
+QSYS
+Add IP over SNA Location
+ADDIPSRTE
+*CMD
+
+QSYS
+Add IP over SNA Route
+ADDJOBQE
+*CMD
+
+QSYS
+Add Job Queue Entry
+ADDJOBSCDE
+*CMD
+
+QSYS
+Add Job Schedule Entry
+ADDKRBKTE
+*CMD
+
+QSYS
+Add Kerberos Keytab Entry
+ADDKRBTKT
+*CMD
+
+QSYS
+Add Kerberos Ticket
+ADDLANADPI
+*CMD
+
+QSYS
+Add LAN Adapter Information
+ADDLFM
+*CMD
+
+QSYS
+Add Logical File Member
+ADDLIBLE
+*CMD
+
+QSYS
+Add Library List Entry
+ADDLNK
+*CMD
+
+QSYS
+Add Link
+ADDMSGD
+*CMD
+
+QSYS
+Add Message Description
+ADDNCK
+*CMD
+
+QSYS
+Add Nickname
+ADDNETTBLE
+*CMD
+
+QSYS
+Add Network Table Entry
+ADDNODLE
+*CMD
+
+QSYS
+Add Node List Entry
+ADDNWSSTGL
+*CMD
+
+QSYS
+Add Server Storage Link
+ADDOSPFARA
+*CMD
+
+QSYS
+Add OSPF Area
+ADDOSPFIFC
+*CMD
+
+QSYS
+Add OSPF Interface
+ADDOSPFLNK
+*CMD
+
+QSYS
+Add OSPF Virtual Link
+ADDOSPFRNG
+*CMD
+
+QSYS
+Add OSPF Range
+ADDPCLTBLE
+*CMD
+
+QSYS
+Add Protocol Table Entry
+ADDPFCST
+*CMD
+
+QSYS
+Add PF Constraint
+ADDPFM
+*CMD
+
+QSYS
+Add Physical File Member
+ADDPFTRG
+*CMD
+
+QSYS
+Add Physical File Trigger
+ADDPFVLM
+*CMD
+
+QSYS
+Add Phy File Variable Len Mbr
+ADDPFXDLFM
+*CMD
+
+QSYS
+Add Prefix to DLFM
+ADDPGM
+*CMD
+
+QSYS
+Add Program
+ADDPJE
+*CMD
+
+QSYS
+Add Prestart Job Entry
+ADDPRBACNE
+*CMD
+
+QSYS
+Add Problem Action Entry
+ADDPRBSLTE
+*CMD
+
+QSYS
+Add Problem Selection Entry
+ADDPRDBPR
+*CMD
+PRX
+QSYS
+
+ADDRDBDIRE
+*CMD
+
+QSYS
+Add RDB Directory Entry
+ADDREXBUF
+*CMD
+
+QSYS
+Add REXX Buffer
+ADDRIPACP
+*CMD
+
+QSYS
+Add RIP Accepted Route
+ADDRIPFLT
+*CMD
+
+QSYS
+Add RIP Filter
+ADDRIPIFC
+*CMD
+
+QSYS
+Add RIP Interface
+ADDRIPIGN
+*CMD
+
+QSYS
+Add Ignored RIP Neighbor
+ADDRMTJRN
+*CMD
+
+QSYS
+Add Remote Journal
+ADDRTGE
+*CMD
+
+QSYS
+Add Routing Entry
+ADDSCHIDXE
+*CMD
+
+QSYS
+Add Search Index Entry
+ADDSMTPLE
+*CMD
+PRX
+QSYS
+Add SMTP List Entry
+ADDSMTPRLE
+*CMD
+
+QSYS
+Add Remote Login Entry
+ADDSOCE
+*CMD
+
+QSYS
+Add Sphere of Control Entry
+ADDSRVTBLE
+*CMD
+
+QSYS
+Add Service Table Entry
+ADDSVRAUTE
+*CMD
+
+QSYS
+Add Server Auth Entry
+ADDTAPCTG
+*CMD
+
+QSYS
+Add Tape Cartridge
+ADDTCPHTE
+*CMD
+
+QSYS
+Add TCP/IP Host Table Entry
+ADDTCPIFC
+*CMD
+
+QSYS
+Add TCP/IP Interface
+ADDTCPPORT
+*CMD
+
+QSYS
+Add TCP/IP Port Restriction
+ADDTCPPTP
+*CMD
+
+QSYS
+Add Point-to-Point Profile
+ADDTCPRSI
+*CMD
+
+QSYS
+Add TCP/IP Remote System
+ADDTCPRTE
+*CMD
+
+QSYS
+Add TCP/IP Route
+ADDTCPSVR
+*CMD
+
+QSYS
+Add TCP/IP Server
+ADDTEFE
+*CMD
+PRX
+QSYS
+
+ADDTRC
+*CMD
+
+QSYS
+Add Trace
+ADDUSRSMTP
+*CMD
+PRX
+QSYS
+Add User SMTP
+ADDUSRSNMP
+*CMD
+
+QSYS
+Add User for SNMP
+ADDWSE
+*CMD
+
+QSYS
+Add Work Station Entry
+ALCOBJ
+*CMD
+
+QSYS
+Allocate Object
+ANSLIN
+*CMD
+
+QSYS
+Answer Line
+ANZQRY
+*CMD
+
+QSYS
+Analyze Query
+APING
+*CMD
+
+QSYS
+Verify APPC Connection
+AREXEC
+*CMD
+
+QSYS
+Run Remote Command
+ARPING
+*CMD
+
+QSYS
+Send ARP Request
+ASKQST
+*CMD
+
+QSYS
+Ask Question
+BCHJOB
+*CMD
+
+QSYS
+Batch Job
+BLDHELP
+*CMD
+PRX
+QSYS
+
+CALL
+*CMD
+
+QSYS
+Call Program
+CALLPRC
+*CMD
+
+QSYS
+Call Bound Procedure
+CALLSUBR
+*CMD
+
+QSYS
+Call Subroutine
+CD
+*CMD
+
+QSYS
+Change Current Directory
+CFGACCWEB
+*CMD
+PRX
+QSYS
+Configure Access for Web
+CFGDEVMLB
+*CMD
+
+QSYS
+Configure Device Media Library
+CFGDOMSVR
+*CMD
+PRX
+QSYS
+Configure Domino Server
+CFGIPS
+*CMD
+
+QSYS
+Configure IP over SNA
+CFGPMAGT
+*CMD
+
+QSYS
+Configure PM Agent
+CFGPM400
+*CMD
+
+QSYS
+Configure PM Agent
+CFGRTG
+*CMD
+
+QSYS
+Configure Routing Protocols
+CFGTCP
+*CMD
+
+QSYS
+Configure TCP/IP
+CFGTCPAPP
+*CMD
+
+QSYS
+Configure TCP/IP Applications
+CFGTCPBP
+*CMD
+
+QSYS
+Configure TCP/IP BOOTP
+CFGTCPFTP
+*CMD
+PRX
+QSYS
+Configure TCP/IP FTP
+CFGTCPHTTP
+*CMD
+PRX
+QSYS
+Configure TCP/IP HTTP
+CFGTCPLPD
+*CMD
+PRX
+QSYS
+Configure TCP/IP LPD
+CFGTCPPTP
+*CMD
+
+QSYS
+Configure Point-to-Point TCPIP
+CFGTCPRTD
+*CMD
+
+QSYS
+Configure TCP/IP RouteD
+CFGTCPRXC
+*CMD
+PRX
+QSYS
+Configure TCP/IP REXEC
+CFGTCPSMTP
+*CMD
+PRX
+QSYS
+Configure TCP/IP SMTP
+CFGTCPSNMP
+*CMD
+
+QSYS
+Configure TCP/IP SNMP
+CFGTCPTELN
+*CMD
+PRX
+QSYS
+Configure TCP/IP TELNET
+CHDIR
+*CMD
+
+QSYS
+Change Current Directory
+CHGACGCDE
+*CMD
+
+QSYS
+Change Accounting Code
+CHGAJE
+*CMD
+
+QSYS
+Change Autostart Job Entry
+CHGALRACNE
+*CMD
+
+QSYS
+Change Alert Action Entry
+CHGALRD
+*CMD
+
+QSYS
+Change Alert Description
+CHGALRSLTE
+*CMD
+
+QSYS
+Change Alert Selection Entry
+CHGALRTBL
+*CMD
+
+QSYS
+Change Alert Table
+CHGASPACT
+*CMD
+
+QSYS
+Change ASP Activity
+CHGATR
+*CMD
+
+QSYS
+Change Attribute
+CHGAUD
+*CMD
+
+QSYS
+Change Auditing Value
+CHGAUT
+*CMD
+
+QSYS
+Change Authority
+CHGAUTLE
+*CMD
+
+QSYS
+Change Auth List Entry
+CHGBCKUP
+*CMD
+
+QSYS
+Change Backup Options
+CHGBLDMSG
+*CMD
+PRX
+QSYS
+
+CHGBLDOPTE
+*CMD
+PRX
+QSYS
+
+CHGBPA
+*CMD
+
+QSYS
+Change BOOTP Attributes
+CHGBPR
+*CMD
+PRX
+QSYS
+
+CHGBUILDER
+*CMD
+PRX
+QSYS
+
+CHGCDEFNT
+*CMD
+
+QSYS
+Change Coded Font
+CHGCFGL
+*CMD
+
+QSYS
+Change Configuration List
+CHGCFGLE
+*CMD
+
+QSYS
+Change Cfg List Entries
+CHGCLNUP
+*CMD
+
+QSYS
+Change Cleanup
+CHGCLS
+*CMD
+
+QSYS
+Change Class
+CHGCLURCY
+*CMD
+
+QSYS
+Change Cluster Recovery
+CHGCMD
+*CMD
+
+QSYS
+Change Command
+CHGCMDDFT
+*CMD
+
+QSYS
+Change Command Default
+CHGCMNE
+*CMD
+
+QSYS
+Change Communications Entry
+CHGCOMSNMP
+*CMD
+
+QSYS
+Change Community for SNMP
+CHGCOSD
+*CMD
+
+QSYS
+Change Class-of-Service Desc
+CHGCRQD
+*CMD
+
+QSYS
+Change CRQ Description
+CHGCSI
+*CMD
+
+QSYS
+Change Comm Side Information
+CHGCTLAPPC
+*CMD
+
+QSYS
+Change Ctl Desc (APPC)
+CHGCTLASC
+*CMD
+
+QSYS
+Change Ctl Desc (Async)
+CHGCTLBSC
+*CMD
+
+QSYS
+Change Ctl Desc (BSC)
+CHGCTLFNC
+*CMD
+
+QSYS
+Change Ctl Desc (Finance)
+CHGCTLHOST
+*CMD
+
+QSYS
+Change Ctl Desc (SNA Host)
+CHGCTLLWS
+*CMD
+
+QSYS
+Change Ctl Desc (Local WS)
+CHGCTLNET
+*CMD
+
+QSYS
+Change Ctl Desc (Network)
+CHGCTLRTL
+*CMD
+
+QSYS
+Change Ctl Desc (Retail)
+CHGCTLRWS
+*CMD
+
+QSYS
+Change Ctl Desc (Remote WS)
+CHGCTLTAP
+*CMD
+
+QSYS
+Change Ctl Desc (Tape)
+CHGCTLVWS
+*CMD
+
+QSYS
+Change Ctl Desc (Virtual WS)
+CHGCURDIR
+*CMD
+
+QSYS
+Change Current Directory
+CHGCURLIB
+*CMD
+
+QSYS
+Change Current Library
+CHGDBG
+*CMD
+
+QSYS
+Change Debug
+CHGDDMF
+*CMD
+
+QSYS
+Change DDM File
+CHGDDMTCPA
+*CMD
+
+QSYS
+Change DDM TCP/IP Attributes
+CHGDEVAPPC
+*CMD
+
+QSYS
+Change Device Desc (APPC)
+CHGDEVASC
+*CMD
+
+QSYS
+Change Device Desc (Async)
+CHGDEVASP
+*CMD
+
+QSYS
+Change Device Desc (ASP)
+CHGDEVBSC
+*CMD
+
+QSYS
+Change Device Desc (BSC)
+CHGDEVCRP
+*CMD
+
+QSYS
+Change Device Desc (Crypto)
+CHGDEVDKT
+*CMD
+
+QSYS
+Change Device Desc (Diskette)
+CHGDEVDSP
+*CMD
+
+QSYS
+Change Device Desc (Display)
+CHGDEVFNC
+*CMD
+
+QSYS
+Change Device Desc (Finance)
+CHGDEVHOST
+*CMD
+
+QSYS
+Change Device Desc (SNA Host)
+CHGDEVINTR
+*CMD
+
+QSYS
+Change Device Desc (Intra)
+CHGDEVMLB
+*CMD
+
+QSYS
+Change Device Desc (Media Lib)
+CHGDEVNET
+*CMD
+
+QSYS
+Change Device Desc (Network)
+CHGDEVNWSH
+*CMD
+
+QSYS
+Change Device Desc (NWSH)
+CHGDEVOPT
+*CMD
+
+QSYS
+Change Device Desc (Optical)
+CHGDEVPRT
+*CMD
+
+QSYS
+Change Device Desc (Printer)
+CHGDEVRTL
+*CMD
+
+QSYS
+Change Device Desc (Retail)
+CHGDEVSNPT
+*CMD
+
+QSYS
+Change Device Desc (SNPT)
+CHGDEVSNUF
+*CMD
+
+QSYS
+Change Device Desc (SNUF)
+CHGDEVTAP
+*CMD
+
+QSYS
+Change Device Desc (Tape)
+CHGDHCPA
+*CMD
+
+QSYS
+Change DHCP Attributes
+CHGDHCPSVR
+*CMD
+
+QSYS
+Change DHCP Server
+CHGDIRE
+*CMD
+
+QSYS
+Change Directory Entry
+CHGDIRSHD
+*CMD
+
+QSYS
+Change Directory Shadow System
+CHGDKTF
+*CMD
+
+QSYS
+Change Diskette File
+CHGDLOAUD
+*CMD
+
+QSYS
+Change DLO Auditing Level
+CHGDLOAUT
+*CMD
+
+QSYS
+Change DLO Authority
+CHGDLOOWN
+*CMD
+
+QSYS
+Change DLO Owner
+CHGDLOPGP
+*CMD
+
+QSYS
+Change DLO Primary Group
+CHGDNSA
+*CMD
+PRX
+QSYS
+Change DNS Server Attributes
+CHGDOCD
+*CMD
+
+QSYS
+Change Document Description
+CHGDOMSVR
+*CMD
+PRX
+QSYS
+Change Domino Server
+CHGDSPF
+*CMD
+
+QSYS
+Change Display File
+CHGDSTA
+*CMD
+
+QSYS
+Change Distribution Attributes
+CHGDSTD
+*CMD
+
+QSYS
+Change Distribution
+CHGDSTL
+*CMD
+
+QSYS
+Change Distribution List
+CHGDSTPWD
+*CMD
+
+QSYS
+Change IBM Service Tools Pwd
+CHGDTA
+*CMD
+
+QSYS
+Change Data
+CHGDTAARA
+*CMD
+
+QSYS
+Change Data Area
+CHGEMLCFGE
+*CMD
+
+QSYS
+Change Configuration Entry
+CHGENVVAR
+*CMD
+
+QSYS
+Change Environment Variable
+CHGEWCBCDE
+*CMD
+
+QSYS
+Change EWC Barcode Entry
+CHGEWCM
+*CMD
+
+QSYS
+Change Wireless Ctl Member
+CHGEWCPTCE
+*CMD
+
+QSYS
+Change EWC PTC Entry
+CHGEWLM
+*CMD
+
+QSYS
+Change Wireless Line Member
+CHGFCNUSG
+*CMD
+
+QSYS
+Change Function Usage
+CHGFNTRSC
+*CMD
+
+QSYS
+Change Font Resource
+CHGFNTTBLE
+*CMD
+
+QSYS
+Change Font Table Entry
+CHGFTPA
+*CMD
+PRX
+QSYS
+Change FTP Attributes
+CHGFTR
+*CMD
+
+QSYS
+Change Filter
+CHGGRPA
+*CMD
+
+QSYS
+Change Group Attributes
+CHGHLLPTR
+*CMD
+
+QSYS
+Change HLL Pointer
+CHGHTTPA
+*CMD
+PRX
+QSYS
+Change HTTP Attributes
+CHGICFDEVE
+*CMD
+
+QSYS
+Change ICF Device Entry
+CHGICFF
+*CMD
+
+QSYS
+Change ICF File
+CHGIMGCLG
+*CMD
+
+QSYS
+Change Image Catalog
+CHGIMGCLGE
+*CMD
+
+QSYS
+Change Image Catalog Entry
+CHGIPSIFC
+*CMD
+
+QSYS
+Change IP over SNA Interface
+CHGIPSLOC
+*CMD
+
+QSYS
+Change IP over SNA Location
+CHGIPSTOS
+*CMD
+
+QSYS
+Change IP over SNA TOS
+CHGJOB
+*CMD
+
+QSYS
+Change Job
+CHGJOBD
+*CMD
+
+QSYS
+Change Job Description
+CHGJOBMLBA
+*CMD
+
+QSYS
+Change Job MLB Attributes
+CHGJOBQ
+*CMD
+
+QSYS
+Change Job Queue
+CHGJOBQE
+*CMD
+
+QSYS
+Change Job Queue Entry
+CHGJOBSCDE
+*CMD
+
+QSYS
+Change Job Schedule Entry
+CHGJRNOBJ
+*CMD
+
+QSYS
+Change Journaled Object
+CHGKBDMAP
+*CMD
+
+QSYS
+Change Keyboard Map
+CHGKRBPWD
+*CMD
+
+QSYS
+Change Kerberos Password
+CHGLANADPI
+*CMD
+
+QSYS
+Change LAN Adapter Information
+CHGLF
+*CMD
+
+QSYS
+Change Logical File
+CHGLFM
+*CMD
+
+QSYS
+Change Logical File Member
+CHGLIB
+*CMD
+
+QSYS
+Change Library
+CHGLIBL
+*CMD
+
+QSYS
+Change Library List
+CHGLINASC
+*CMD
+
+QSYS
+Change Line Desc (Async)
+CHGLINBSC
+*CMD
+
+QSYS
+Change Line Desc (BSC)
+CHGLINDDI
+*CMD
+
+QSYS
+Change Line Desc (DDI)
+CHGLINETH
+*CMD
+
+QSYS
+Change Line Desc (Ethernet)
+CHGLINFAX
+*CMD
+
+QSYS
+Change Line Desc (Fax)
+CHGLINFR
+*CMD
+
+QSYS
+Change Line Desc (Frame Relay)
+CHGLINPPP
+*CMD
+
+QSYS
+Change Line Desc (PPP)
+CHGLINSDLC
+*CMD
+
+QSYS
+Change Line Desc (SDLC)
+CHGLINTDLC
+*CMD
+
+QSYS
+Change Line Desc (TDLC)
+CHGLINTRN
+*CMD
+
+QSYS
+Change Line Desc (Token-Ring)
+CHGLINWLS
+*CMD
+
+QSYS
+Change Line Desc (Wireless)
+CHGLINX25
+*CMD
+
+QSYS
+Change Line Desc (X.25)
+CHGLPDA
+*CMD
+PRX
+QSYS
+Change LPD Attributes
+CHGMNU
+*CMD
+
+QSYS
+Change Menu
+CHGMOD
+*CMD
+
+QSYS
+Change Module
+CHGMODD
+*CMD
+
+QSYS
+Change Mode Description
+CHGMSGD
+*CMD
+
+QSYS
+Change Message Description
+CHGMSGF
+*CMD
+
+QSYS
+Change Message File
+CHGMSGQ
+*CMD
+
+QSYS
+Change Message Queue
+CHGNCK
+*CMD
+
+QSYS
+Change Nickname
+CHGNODGRPA
+*CMD
+
+QSYS
+Change Node Group Attributes
+CHGNTBD
+*CMD
+
+QSYS
+Change NetBIOS Description
+CHGNTPA
+*CMD
+
+QSYS
+Change SNTP Attributes
+CHGNWIFR
+*CMD
+
+QSYS
+Change Network Interface (FR)
+CHGNWSD
+*CMD
+
+QSYS
+Change Network Server Desc
+CHGNWSSTG
+*CMD
+
+QSYS
+Change NWS Storage Space
+CHGNWSUSRA
+*CMD
+
+QSYS
+Change NWS User Attributes
+CHGOBJAUD
+*CMD
+
+QSYS
+Change Object Auditing
+CHGOBJD
+*CMD
+
+QSYS
+Change Object Description
+CHGOBJOWN
+*CMD
+
+QSYS
+Change Object Owner
+CHGOBJPGP
+*CMD
+
+QSYS
+Change Object Primary Group
+CHGOPTVOL
+*CMD
+
+QSYS
+Change Optical Volume
+CHGOSPFA
+*CMD
+
+QSYS
+Change OSPF Attributes
+CHGOSPFARA
+*CMD
+
+QSYS
+Change OSPF Area
+CHGOSPFIFC
+*CMD
+
+QSYS
+Change OSPF Interface
+CHGOSPFLNK
+*CMD
+
+QSYS
+Change OSPF Virtual Link
+CHGOSPFRNG
+*CMD
+
+QSYS
+Change OSPF Range
+CHGOUTQ
+*CMD
+
+QSYS
+Change Output Queue
+CHGOWN
+*CMD
+
+QSYS
+Change Owner
+CHGPCOPRF
+*CMD
+PRX
+QSYS
+Change PC Organizer Profile
+CHGPDGPRF
+*CMD
+
+QSYS
+Change PDG Profile
+CHGPDMDFT
+*CMD
+PRX
+QSYS
+Change PDM Defaults
+CHGPF
+*CMD
+
+QSYS
+Change Physical File
+CHGPFCST
+*CMD
+
+QSYS
+Change PF Constraint
+CHGPFM
+*CMD
+
+QSYS
+Change Physical File Member
+CHGPFTRG
+*CMD
+
+QSYS
+Change PF Trigger
+CHGPGM
+*CMD
+
+QSYS
+Change Program
+CHGPGMVAR
+*CMD
+
+QSYS
+Change Program Variable
+CHGPGP
+*CMD
+
+QSYS
+Change Primary Group
+CHGPJ
+*CMD
+
+QSYS
+Change Prestart Job
+CHGPJE
+*CMD
+
+QSYS
+Change Prestart Job Entry
+CHGPOPA
+*CMD
+PRX
+QSYS
+Change POP Server Attributes
+CHGPRBACNE
+*CMD
+
+QSYS
+Change Problem Action Entry
+CHGPRBSLTE
+*CMD
+
+QSYS
+Change Problem Selection Entry
+CHGPRF
+*CMD
+
+QSYS
+Change Profile
+CHGPRTF
+*CMD
+
+QSYS
+Change Printer File
+CHGPRXCMD
+*CMD
+
+QSYS
+Change Proxy Command
+CHGPSFCFG
+*CMD
+
+QSYS
+Change PSF Configuration
+CHGPWD
+*CMD
+
+QSYS
+Change Password
+CHGPWRSCD
+*CMD
+
+QSYS
+Change Power On/Off Schedule
+CHGPWRSCDE
+*CMD
+
+QSYS
+Change Power Schedule Entry
+CHGQRYA
+*CMD
+
+QSYS
+Change Query Attributes
+CHGRDBDIRE
+*CMD
+
+QSYS
+Change RDB Directory Entry
+CHGRIPA
+*CMD
+
+QSYS
+Change RIP Attributes
+CHGRIPFLT
+*CMD
+
+QSYS
+Change RIP Filter
+CHGRIPIFC
+*CMD
+
+QSYS
+Change RIP Interface
+CHGRMTJRN
+*CMD
+
+QSYS
+Change Remote Journal
+CHGRTDA
+*CMD
+
+QSYS
+Change RouteD Attributes
+CHGRTGE
+*CMD
+
+QSYS
+Change Routing Entry
+CHGRWSPWD
+*CMD
+
+QSYS
+Change RWS Controller Password
+CHGRXCA
+*CMD
+PRX
+QSYS
+Change REXEC Attributes
+CHGSAVF
+*CMD
+
+QSYS
+Change Save File
+CHGSBSD
+*CMD
+
+QSYS
+Change Subsystem Description
+CHGSCHIDX
+*CMD
+
+QSYS
+Change Search Index
+CHGSECA
+*CMD
+
+QSYS
+Change Security Attributes
+CHGSHRPOOL
+*CMD
+
+QSYS
+Change Shared Storage Pool
+CHGSMTPA
+*CMD
+PRX
+QSYS
+Change SMTP Attributes
+CHGSMTPRLE
+*CMD
+
+QSYS
+Change Remote Login Entry
+CHGSNMPA
+*CMD
+
+QSYS
+Change SNMP Attributes
+CHGSPLFA
+*CMD
+
+QSYS
+Change Spooled File Attributes
+CHGSRCPF
+*CMD
+
+QSYS
+Change Source Physical File
+CHGSRVCFG
+*CMD
+
+QSYS
+Change Service Configuration
+CHGSRVPGM
+*CMD
+
+QSYS
+Change Service Program
+CHGSSNMAX
+*CMD
+
+QSYS
+Change Session Maximum
+CHGSVRAUTE
+*CMD
+
+QSYS
+Change Server Auth Entry
+CHGSYSDIRA
+*CMD
+
+QSYS
+Change System Dir Attributes
+CHGS36
+*CMD
+PRX
+QSYS
+Change S/36 Configuration
+CHGS36A
+*CMD
+PRX
+QSYS
+Change S/36 Environment Attr
+CHGS36MSGL
+*CMD
+PRX
+QSYS
+Change S/36 Message List
+CHGS36PGMA
+*CMD
+
+QSYS
+Change S/36 Program Attributes
+CHGS36PRCA
+*CMD
+
+QSYS
+Change S/36 Proc Attributes
+CHGS36SRCA
+*CMD
+
+QSYS
+Change S/36 Source Attributes
+CHGTAPCTG
+*CMD
+
+QSYS
+Change Tape Cartridge
+CHGTAPF
+*CMD
+
+QSYS
+Change Tape File
+CHGTCPA
+*CMD
+
+QSYS
+Change TCP/IP Attributes
+CHGTCPDMN
+*CMD
+
+QSYS
+Change TCP/IP Domain
+CHGTCPHTE
+*CMD
+
+QSYS
+Change TCP/IP Host Table Entry
+CHGTCPIFC
+*CMD
+
+QSYS
+Change TCP/IP Interface
+CHGTCPRTE
+*CMD
+
+QSYS
+Change TCP/IP Route
+CHGTCPSVR
+*CMD
+
+QSYS
+Change TCP/IP Server
+CHGTEFE
+*CMD
+PRX
+QSYS
+
+CHGTELNA
+*CMD
+PRX
+QSYS
+Change TELNET Attributes
+CHGTFTPA
+*CMD
+
+QSYS
+Change TFTP Attributes
+CHGTIMZON
+*CMD
+
+QSYS
+Change Time Zone Description
+CHGUSRAUD
+*CMD
+
+QSYS
+Change User Auditing
+CHGUSRPRF
+*CMD
+
+QSYS
+Change User Profile
+CHGUSRPRTI
+*CMD
+
+QSYS
+Change User Print Info
+CHGUSRSMTP
+*CMD
+PRX
+QSYS
+Change User SMTP
+CHGUSRSNMP
+*CMD
+
+QSYS
+Change User for SNMP
+CHGUSRTRC
+*CMD
+
+QSYS
+Change User Trace
+CHGVAR
+*CMD
+
+QSYS
+Change Variable
+CHGVFYLIST
+*CMD
+PRX
+QSYS
+
+CHGVTMAP
+*CMD
+PRX
+QSYS
+Change VT Keyboard Map
+CHGWSE
+*CMD
+
+QSYS
+Change Work Station Entry
+CHGWTR
+*CMD
+
+QSYS
+Change Writer
+CHKBLDJOB
+*CMD
+PRX
+QSYS
+
+CHKBLDSVR
+*CMD
+PRX
+QSYS
+
+CHKDKT
+*CMD
+
+QSYS
+Check Diskette
+CHKDLO
+*CMD
+
+QSYS
+Check Document Library Object
+CHKDNSCFG
+*CMD
+PRX
+QSYS
+Check DNS Configuration
+CHKDNSZNE
+*CMD
+PRX
+QSYS
+Check DNS Zone
+CHKIGCTBL
+*CMD
+
+QSYS
+Check DBCS Font Table
+CHKIN
+*CMD
+
+QSYS
+Check In Object
+CHKOBJ
+*CMD
+
+QSYS
+Check Object
+CHKOBJITG
+*CMD
+
+QSYS
+Check Object Integrity
+CHKOPTVOL
+*CMD
+
+QSYS
+Check Optical Volume
+CHKOUT
+*CMD
+
+QSYS
+Check Out Object
+CHKPWD
+*CMD
+
+QSYS
+Check Password
+CHKRCDLCK
+*CMD
+
+QSYS
+Check Record Locks
+CHKTAP
+*CMD
+
+QSYS
+Check Tape
+CHKVFYLIST
+*CMD
+PRX
+QSYS
+
+CLOF
+*CMD
+
+QSYS
+Close File
+CLOSE
+*CMD
+
+QSYS
+Close Database File
+CLRBPR
+*CMD
+PRX
+QSYS
+
+CLRDKT
+*CMD
+
+QSYS
+Clear Diskette
+CLRJOBQ
+*CMD
+
+QSYS
+Clear Job Queue
+CLRLIB
+*CMD
+
+QSYS
+Clear Library
+CLRMSGQ
+*CMD
+
+QSYS
+Clear Message Queue
+CLROUTQ
+*CMD
+
+QSYS
+Clear Output Queue
+CLRPFM
+*CMD
+
+QSYS
+Clear Physical File Member
+CLRPOOL
+*CMD
+
+QSYS
+Clear Pool
+CLRSAVF
+*CMD
+
+QSYS
+Clear Save File
+CLRSVRSEC
+*CMD
+
+QSYS
+Clear Server Security Data
+CLRTRCDTA
+*CMD
+
+QSYS
+Clear Trace Data
+CMD
+*CMD
+
+QSYS
+Command Definition
+CMPJRNIMG
+*CMD
+
+QSYS
+Compare Journal Images
+CMPPFM
+*CMD
+PRX
+QSYS
+Compare Physical File Member
+COMMIT
+*CMD
+
+QSYS
+Commit
+COPY
+*CMD
+
+QSYS
+Copy Object
+COPYRIGHT
+*CMD
+
+QSYS
+Copyright
+CPROBJ
+*CMD
+
+QSYS
+Compress Object
+CPY
+*CMD
+
+QSYS
+Copy Object
+CPYAUDJRNE
+*CMD
+
+QSYS
+Copy Audit Journal Entries
+CPYCFGL
+*CMD
+
+QSYS
+Copy Configuration List
+CPYDOC
+*CMD
+
+QSYS
+Copy Document
+CPYF
+*CMD
+
+QSYS
+Copy File
+CPYFRMARCF
+*CMD
+
+QSYS
+Copy From Archive File
+CPYFRMDIR
+*CMD
+
+QSYS
+Copy From Directory
+CPYFRMDKT
+*CMD
+
+QSYS
+Copy From Diskette
+CPYFRMIMPF
+*CMD
+
+QSYS
+Copy From Import File
+CPYFRMPCD
+*CMD
+PRX
+QSYS
+Copy From PC Document
+CPYFRMQRYF
+*CMD
+
+QSYS
+Copy From Query File
+CPYFRMSTMF
+*CMD
+
+QSYS
+Copy From Stream File
+CPYFRMTAP
+*CMD
+
+QSYS
+Copy From Tape
+CPYIGCSRT
+*CMD
+PRX
+QSYS
+Copy DBCS Master Sort Table
+CPYLIB
+*CMD
+
+QSYS
+Copy Library
+CPYOPT
+*CMD
+
+QSYS
+Copy Optical
+CPYSPLF
+*CMD
+
+QSYS
+Copy Spooled File
 CPYSRCF
 *CMD
 
 QSYS
 Copy Source File
+CPYTCPHT
+*CMD
+
+QSYS
+Copy TCP/IP Host Table
+CPYTEF
+*CMD
+PRX
+QSYS
+
+CPYTEFE
+*CMD
+PRX
+QSYS
+
+CPYTOARCF
+*CMD
+
+QSYS
+Copy To Archive File
+CPYTODIR
+*CMD
+
+QSYS
+Copy To Directory
+CPYTODKT
+*CMD
+
+QSYS
+Copy To Diskette
+CPYTOIMPF
+*CMD
+
+QSYS
+Copy To Import File
+CPYTOPCD
+*CMD
+PRX
+QSYS
+Copy To PC Document
+CPYTOSTMF
+*CMD
+
+QSYS
+Copy To Stream File
+CPYTOTAP
+*CMD
+
+QSYS
+Copy To Tape
+CPYVPNCFGF
+*CMD
+
+QSYS
+Copy VPN Configuration File
+CRTALRTBL
+*CMD
+
+QSYS
+Create Alert Table
+CRTAUTL
+*CMD
+
+QSYS
+Create Authorization List
+CRTBLDEVT
+*CMD
+PRX
+QSYS
+
+CRTBNDC
+*CMD
+PRX
+QSYS
+Create Bound C Program
+CRTBNDCBL
+*CMD
+PRX
+QSYS
+Create Bound COBOL Program
+CRTBNDCL
+*CMD
+
+QSYS
+Create Bound CL Program
+CRTBNDCPP
+*CMD
+PRX
+QSYS
+Create Bound C++ Program
+CRTBNDDIR
+*CMD
+
+QSYS
+Create Binding Directory
 CRTBNDRPG
 *CMD
 PRX
 QSYS
 Create Bound RPG Program
+CRTCBLMOD
+*CMD
+PRX
+QSYS
+Create COBOL Module
+CRTCBLPGM
+*CMD
+PRX
+QSYS
+Create COBOL Program
+CRTCFGL
+*CMD
+
+QSYS
+Create Configuration List
+CRTCKMKSF
+*CMD
+
+QSYS
+Create Keystore File
+CRTCLD
+*CMD
+
+QSYS
+Create C Locale Description
+CRTCLMOD
+*CMD
+
+QSYS
+Create CL Module
+CRTCLPGM
+*CMD
+
+QSYS
+Create CL Program
+CRTCMD
+*CMD
+
+QSYS
+Create Command
+CRTCMOD
+*CMD
+PRX
+QSYS
+Create C Module
+CRTCOSD
+*CMD
+
+QSYS
+Create Class-of-Service Desc
+CRTCPPMOD
+*CMD
+PRX
+QSYS
+Create C++ Module
+CRTCRQD
+*CMD
+
+QSYS
+Create CRQ Description
+CRTCSI
+*CMD
+
+QSYS
+Create Comm Side Information
+CRTCTLAPPC
+*CMD
+
+QSYS
+Create Ctl Desc (APPC)
+CRTCTLASC
+*CMD
+
+QSYS
+Create Ctl Desc (Async)
+CRTCTLBSC
+*CMD
+
+QSYS
+Create Ctl Desc (BSC)
+CRTCTLFNC
+*CMD
+
+QSYS
+Create Ctl Desc (Finance)
+CRTCTLHOST
+*CMD
+
+QSYS
+Create Ctl Desc (SNA Host)
+CRTCTLLWS
+*CMD
+
+QSYS
+Create Ctl Desc (Local WS)
+CRTCTLNET
+*CMD
+
+QSYS
+Create Ctl Desc (Network)
+CRTCTLRTL
+*CMD
+
+QSYS
+Create Ctl Desc (Retail)
+CRTCTLRWS
+*CMD
+
+QSYS
+Create Ctl Desc (Remote WS)
+CRTCTLTAP
+*CMD
+
+QSYS
+Create Ctl Desc (Tape)
+CRTCTLVWS
+*CMD
+
+QSYS
+Create Ctl Desc (Virtual WS)
+CRTDDMF
+*CMD
+
+QSYS
+Create DDM File
+CRTDDNSCFG
+*CMD
+PRX
+QSYS
+Create DDNS Configuration
+CRTDEVAPPC
+*CMD
+
+QSYS
+Create Device Desc (APPC)
+CRTDEVASC
+*CMD
+
+QSYS
+Create Device Desc (Async)
+CRTDEVASP
+*CMD
+
+QSYS
+Create Device Desc (ASP)
+CRTDEVBSC
+*CMD
+
+QSYS
+Create Device Desc (BSC)
+CRTDEVCRP
+*CMD
+
+QSYS
+Create Device Desc (Crypto)
+CRTDEVDKT
+*CMD
+
+QSYS
+Create Device Desc (Diskette)
+CRTDEVDSP
+*CMD
+
+QSYS
+Create Device Desc (Display)
+CRTDEVFNC
+*CMD
+
+QSYS
+Create Device Desc (Finance)
+CRTDEVHOST
+*CMD
+
+QSYS
+Create Device Desc (SNA Host)
+CRTDEVINTR
+*CMD
+
+QSYS
+Create Device Desc (Intra)
+CRTDEVMLB
+*CMD
+
+QSYS
+Create Device Desc (Media Lib)
+CRTDEVNET
+*CMD
+
+QSYS
+Create Device Desc (Network)
+CRTDEVNWSH
+*CMD
+
+QSYS
+Create Device Desc (NWSH)
+CRTDEVOPT
+*CMD
+
+QSYS
+Create Device Desc (Optical)
+CRTDEVPRT
+*CMD
+
+QSYS
+Create Device Desc (Printer)
+CRTDEVRTL
+*CMD
+
+QSYS
+Create Device Desc (Retail)
+CRTDEVSNPT
+*CMD
+
+QSYS
+Create Device Desc (SNPT)
+CRTDEVSNUF
+*CMD
+
+QSYS
+Create Device Desc (SNUF)
+CRTDEVTAP
+*CMD
+
+QSYS
+Create Device Desc (Tape)
+CRTDFUDSPF
+*CMD
+PRX
+QSYS
+Create DFU Display File
+CRTDIR
+*CMD
+
+QSYS
+Create Directory
+CRTDKTF
+*CMD
+
+QSYS
+Create Diskette File
+CRTDOC
+*CMD
+
+QSYS
+Create Document
+CRTDSPF
+*CMD
+
+QSYS
+Create Display File
+CRTDSTL
+*CMD
+
+QSYS
+Create Distribution List
+CRTDTAARA
+*CMD
+
+QSYS
+Create Data Area
+CRTDTADCT
+*CMD
+
+QSYS
+Create Data Dictionary
+CRTDTAQ
+*CMD
+
+QSYS
+Create Data Queue
+CRTDUPOBJ
+*CMD
+
+QSYS
+Create Duplicate Object
+CRTEDTD
+*CMD
+
+QSYS
+Create Edit Description
+CRTERRRPT
+*CMD
+PRX
+QSYS
+
+CRTFLR
+*CMD
+
+QSYS
+Create Folder
+CRTFNTRSC
+*CMD
+
+QSYS
+Create Font Resource
+CRTFNTTBL
+*CMD
+
+QSYS
+Create Font Table
+CRTFORMDF
+*CMD
+
+QSYS
+Create Form Definition
+CRTFTR
+*CMD
+
+QSYS
+Create Filter
+CRTGSS
+*CMD
+
+QSYS
+Create Graphics Symbol Set
+CRTICFF
+*CMD
+
+QSYS
+Create ICF File
+CRTIGCDCT
+*CMD
+
+QSYS
+Create DBCS Conversion Dict
+CRTIMGCLG
+*CMD
+
+QSYS
+Create Image Catalog
+CRTJOBD
+*CMD
+
+QSYS
+Create Job Description
+CRTJOBQ
+*CMD
+
+QSYS
+Create Job Queue
+CRTJRN
+*CMD
+
+QSYS
+Create Journal
+CRTJRNRCV
+*CMD
+
+QSYS
+Create Journal Receiver
+CRTLF
+*CMD
+
+QSYS
+Create Logical File
+CRTLIB
+*CMD
+
+QSYS
+Create Library
+CRTLINASC
+*CMD
+
+QSYS
+Create Line Desc (Async)
+CRTLINBSC
+*CMD
+
+QSYS
+Create Line Desc (BSC)
+CRTLINDDI
+*CMD
+
+QSYS
+Create Line Desc (DDI)
+CRTLINETH
+*CMD
+
+QSYS
+Create Line Desc (Ethernet)
+CRTLINFAX
+*CMD
+
+QSYS
+Create Line Desc (Fax)
+CRTLINFR
+*CMD
+
+QSYS
+Create Line Desc (Frame Relay)
+CRTLINPPP
+*CMD
+
+QSYS
+Create Line Desc (PPP)
+CRTLINSDLC
+*CMD
+
+QSYS
+Create Line Desc (SDLC)
+CRTLINTDLC
+*CMD
+
+QSYS
+Create Line Desc (TDLC)
+CRTLINTRN
+*CMD
+
+QSYS
+Create Line Desc (Token-Ring)
+CRTLINWLS
+*CMD
+
+QSYS
+Create Line Desc (Wireless)
+CRTLINX25
+*CMD
+
+QSYS
+Create Line Desc (X.25)
+CRTLOCALE
+*CMD
+
+QSYS
+Create Locale
+CRTMNU
+*CMD
+
+QSYS
+Create Menu
+CRTMODD
+*CMD
+
+QSYS
+Create Mode Description
+CRTMSGF
+*CMD
+
+QSYS
+Create Message File
+CRTMSGFMNU
+*CMD
+PRX
+QSYS
+Create Menu from Msg Files
+CRTMSGQ
+*CMD
+
+QSYS
+Create Message Queue
+CRTNODGRP
+*CMD
+
+QSYS
+Create Node Group
+CRTNODL
+*CMD
+
+QSYS
+Create Node List
+CRTNTBD
+*CMD
+
+QSYS
+Create NetBIOS Description
+CRTNWIFR
+*CMD
+
+QSYS
+Create Network Interface (FR)
+CRTNWSD
+*CMD
+
+QSYS
+Create Network Server Desc
+CRTNWSSTG
+*CMD
+
+QSYS
+Create NWS Storage Space
+CRTOBJLIST
+*CMD
+PRX
+QSYS
+
+CRTOUTQ
+*CMD
+
+QSYS
+Create Output Queue
+CRTOVL
+*CMD
+
+QSYS
+Create Overlay
+CRTPAGDFN
+*CMD
+
+QSYS
+Create Page Definition
+CRTPAGSEG
+*CMD
+
+QSYS
+Create Page Segment
+CRTPDG
+*CMD
+
+QSYS
+Create Print Descriptor Group
 CRTPF
 *CMD
 
 QSYS
 Create Physical File
+CRTPGM
+*CMD
+
+QSYS
+Create Program
+CRTPKGF
+*CMD
+PRX
+QSYS
+
+CRTPNLGRP
+*CMD
+
+QSYS
+Create Panel Group
+CRTPRDBPR
+*CMD
+PRX
+QSYS
+
+CRTPRTF
+*CMD
+
+QSYS
+Create Printer File
+CRTPRXCMD
+*CMD
+
+QSYS
+Create Proxy Command
+CRTPSFCFG
+*CMD
+
+QSYS
+Create PSF Configuration
+CRTQMFORM
+*CMD
+
+QSYS
+Create Query Management Form
+CRTQMQRY
+*CMD
+
+QSYS
+Create Query Management Query
+CRTRNDCCFG
+*CMD
+PRX
+QSYS
+Create RNDC Configuration
+CRTRPGMOD
+*CMD
+PRX
+QSYS
+Create RPG Module
+CRTRPGPGM
+*CMD
+PRX
+QSYS
+Create RPG/400 Program
+CRTRPTPGM
+*CMD
+PRX
+QSYS
+Create Auto Report RPG Program
+CRTSAVF
+*CMD
+
+QSYS
+Create Save File
+CRTSBOM
+*CMD
+PRX
+QSYS
+
+CRTSCHIDX
+*CMD
+
+QSYS
+Create Search Index
+CRTSPADCT
+*CMD
+
+QSYS
+Create Spelling Aid Dictionary
+CRTSQLCBL
+*CMD
+PRX
+QSYS
+Create SQL COBOL Program
+CRTSQLCBLI
+*CMD
+PRX
+QSYS
+Create SQL ILE COBOL Object
+CRTSQLCI
+*CMD
+PRX
+QSYS
+Create SQL ILE C object
+CRTSQLCPPI
+*CMD
+PRX
+QSYS
+Create SQL ILE C++ Object
+CRTSQLPKG
+*CMD
+
+QSYS
+Create SQL Package
+CRTSQLPLI
+*CMD
+PRX
+QSYS
+Create SQL PL/I Program
+CRTSQLRPG
+*CMD
+PRX
+QSYS
+Create SQL RPG Program
+CRTSQLRPGI
+*CMD
+PRX
+QSYS
+Create SQL ILE RPG Object
+CRTSRCPF
+*CMD
+
+QSYS
+Create Source Physical File
+CRTSRVCFG
+*CMD
+
+QSYS
+Create Service Configuration
+CRTSRVPGM
+*CMD
+
+QSYS
+Create Service Program
+CRTS36CBL
+*CMD
+PRX
+QSYS
+Create S/36 COBOL Program
+CRTS36DSPF
+*CMD
+PRX
+QSYS
+Create S/36 Display File
+CRTS36MNU
+*CMD
+PRX
+QSYS
+Create S/36 Menu
+CRTS36MSGF
+*CMD
+PRX
+QSYS
+Create S/36 Message File
+CRTS36RPG
+*CMD
+PRX
+QSYS
+Create RPG II Program
+CRTS36RPGR
+*CMD
+PRX
+QSYS
+Create Console Display File
+CRTS36RPT
+*CMD
+PRX
+QSYS
+Create S/36 RPG II Auto Report
+CRTTAPCGY
+*CMD
+
+QSYS
+Create Tape Category
+CRTTAPF
+*CMD
+
+QSYS
+Create Tape File
+CRTTBL
+*CMD
+
+QSYS
+Create Table
+CRTTEF
+*CMD
+PRX
+QSYS
+
+CRTTIMZON
+*CMD
+
+QSYS
+Create Time Zone Description
+CRTUSRPRF
+*CMD
+
+QSYS
+Create User Profile
+CRTVFYLIST
+*CMD
+PRX
+QSYS
+
+CRTWSCST
+*CMD
+
+QSYS
+Create WSCST
+CVTCLSRC
+*CMD
+
+QSYS
+Convert CL Source
+CVTDAT
+*CMD
+
+QSYS
+Convert Date
+CVTDLSNAM
+*CMD
+
+QSYS
+Convert DLS Name
+CVTEDU
+*CMD
+
+QSYS
+Convert Education
+CVTIPSIFC
+*CMD
+
+QSYS
+Convert IP Address
+CVTIPSLOC
+*CMD
+
+QSYS
+Convert Network ID / Location
+CVTNAMSMTP
+*CMD
+PRX
+QSYS
+Convert SMTP Names
+CVTOPTBKU
+*CMD
+
+QSYS
+Convert Optical Backup
+CVTOVLPFM
+*CMD
+PRX
+QSYS
+Convert Overlay to PFM
+CVTPAGSPFM
+*CMD
+PRX
+QSYS
+Convert Page Segment to PFM
+CVTPCDPAGS
+*CMD
+PRX
+QSYS
+Convert PCD to Page Segment
+CVTPFMPAGS
+*CMD
+PRX
+QSYS
+Convert PFM to Page Segment
+CVTRPCSRC
+*CMD
+
+QSYS
+Convert RPC Source
+CVTRPGSRC
+*CMD
+PRX
+QSYS
+Convert RPG Source
+CVTTOFLR
+*CMD
+PRX
+QSYS
+Convert To Folder
+CVTUSRCERT
+*CMD
+
+QSYS
+Convert User Certificate
+DATA
+*CMD
+
+QSYS
+Data
+DCL
+*CMD
+
+QSYS
+Declare CL Variable
+DCLF
+*CMD
+
+QSYS
+Declare File
+DCLPRCOPT
+*CMD
+
+QSYS
+Declare Processing Options
+DCPOBJ
+*CMD
+
+QSYS
+Decompress Object
+DEL
+*CMD
+
+QSYS
+Remove Link
+DEP
+*CMD
+
+QSYS
+Dependent Definition
+DIG
+*CMD
+PRX
+QSYS
+Start DIG Query
+DLCOBJ
+*CMD
+
+QSYS
+Deallocate Object
+DLTALR
+*CMD
+
+QSYS
+Delete Alert
+DLTALRTBL
+*CMD
+
+QSYS
+Delete Alert Table
+DLTAUTHLR
+*CMD
+
+QSYS
+Delete Authority Holder
+DLTAUTL
+*CMD
+
+QSYS
+Delete Authorization List
+DLTBLDEVT
+*CMD
+PRX
+QSYS
+
+DLTBNDDIR
+*CMD
+
+QSYS
+Delete Binding Directory
+DLTCFGL
+*CMD
+
+QSYS
+Delete Configuration List
+DLTCLD
+*CMD
+
+QSYS
+Delete C Locale Description
+DLTCLS
+*CMD
+
+QSYS
+Delete Class
+DLTCMD
+*CMD
+
+QSYS
+Delete Command
+DLTCNNL
+*CMD
+
+QSYS
+Delete Connection List
+DLTCOSD
+*CMD
+
+QSYS
+Delete Class-of-Service Desc
+DLTCRG
+*CMD
+
+QSYS
+Delete Cluster Resource Group
+DLTCRQD
+*CMD
+
+QSYS
+Delete CRQ Description
+DLTCSI
+*CMD
+
+QSYS
+Delete Comm Side Information
+DLTCTLD
+*CMD
+
+QSYS
+Delete Controller Description
+DLTDEVD
+*CMD
+
+QSYS
+Delete Device Description
+DLTDEVMLB
+*CMD
+
+QSYS
+Delete Device Media Library
+DLTDFUPGM
+*CMD
+
+QSYS
+Delete DFU Program
+DLTDKTLBL
+*CMD
+
+QSYS
+Delete Diskette Label
+DLTDLO
+*CMD
+
+QSYS
+Delete Document Library Object
+DLTDOCL
+*CMD
+
+QSYS
+Delete Document List
+DLTDST
+*CMD
+
+QSYS
+Delete Distribution
+DLTDSTL
+*CMD
+
+QSYS
+Delete Distribution List
+DLTDTAARA
+*CMD
+
+QSYS
+Delete Data Area
+DLTDTADCT
+*CMD
+
+QSYS
+Delete Data Dictionary
+DLTDTAQ
+*CMD
+
+QSYS
+Delete Data Queue
+DLTEDTD
+*CMD
+
+QSYS
+Delete Edit Description
+DLTF
+*CMD
+
+QSYS
+Delete File
+DLTFNTRSC
+*CMD
+
+QSYS
+Delete Font Resource
+DLTFNTTBL
+*CMD
+
+QSYS
+Delete Font Table
+DLTFORMDF
+*CMD
+
+QSYS
+Delete Form Definition
+DLTFTR
+*CMD
+
+QSYS
+Delete Filter
+DLTGSS
+*CMD
+
+QSYS
+Delete Graphic Symbol Set
+DLTIGCDCT
+*CMD
+
+QSYS
+Delete DBCS Conversion Dict
+DLTIGCSRT
+*CMD
+
+QSYS
+Delete DBCS Sort Table
+DLTIGCTBL
+*CMD
+
+QSYS
+Delete DBCS Font Table
+DLTIMGCLG
+*CMD
+
+QSYS
+Delete Image Catalog
+DLTINTSVR
+*CMD
+PRX
+QSYS
+Delete Integrated Server
+DLTIPXD
+*CMD
+
+QSYS
+Delete IPX Description
+DLTJOBD
+*CMD
+
+QSYS
+Delete Job Description
+DLTJOBQ
+*CMD
+
+QSYS
+Delete Job Queue
+DLTJRN
+*CMD
+
+QSYS
+Delete Journal
+DLTJRNRCV
+*CMD
+
+QSYS
+Delete Journal Receiver
+DLTKRBCCF
+*CMD
+
+QSYS
+Delete Credentials Cache File
+DLTLIB
+*CMD
+
+QSYS
+Delete library
+DLTLIND
+*CMD
+
+QSYS
+Delete Line Description
+DLTLNXSVR
+*CMD
+PRX
+QSYS
+Delete Linux Server
+DLTLOCALE
+*CMD
+
+QSYS
+Delete Locale
+DLTMEDDFN
+*CMD
+
+QSYS
+Delete Media Definition
+DLTMGTCOL
+*CMD
+
+QSYS
+Delete Management Collection
+DLTMNU
+*CMD
+
+QSYS
+Delete Menu
+DLTMOD
+*CMD
+
+QSYS
+Delete Module
+DLTMODD
+*CMD
+
+QSYS
+Delete Mode Description
+DLTMSGF
+*CMD
+
+QSYS
+Delete Message File
+DLTMSGQ
+*CMD
+
+QSYS
+Delete Message Queue
+DLTNETF
+*CMD
+
+QSYS
+Delete Network File
+DLTNODGRP
+*CMD
+
+QSYS
+Delete Node Group
+DLTNODL
+*CMD
+
+QSYS
+Delete Node List
+DLTNTBD
+*CMD
+
+QSYS
+Delete NetBIOS Descriptions
+DLTNWID
+*CMD
+
+QSYS
+Delete Network Interface Desc
+DLTNWSD
+*CMD
+
+QSYS
+Delete Network Server Desc
+DLTNWSSTG
+*CMD
+
+QSYS
+Delete NWS Storage Space
+DLTOBJ
+*CMD
+
+QSYS
+Delete Object
+DLTOUTQ
+*CMD
+
+QSYS
+Delete Output Queue
+DLTOVL
+*CMD
+
+QSYS
+Delete Overlay
+DLTOVR
+*CMD
+
+QSYS
+Delete Override
+DLTOVRDEVE
+*CMD
+
+QSYS
+Delete Override Pgm Dev Entry
+DLTPAGDFN
+*CMD
+
+QSYS
+Delete Page Definition
+DLTPAGSEG
+*CMD
+
+QSYS
+Delete Page Segment
+DLTPDFMAP
+*CMD
+
+QSYS
+Delete PDF Map
+DLTPDG
+*CMD
+
+QSYS
+Delete Print Descriptor Group
+DLTPGM
+*CMD
+
+QSYS
+Delete Program
+DLTPNLGRP
+*CMD
+
+QSYS
+Delete Panel Group
+DLTPSFCFG
+*CMD
+
+QSYS
+Delete PSF Configuration
+DLTQMFORM
+*CMD
+
+QSYS
+Delete Query Management Form
+DLTQMQRY
+*CMD
+
+QSYS
+Delete Query Management Query
+DLTQRY
+*CMD
+
+QSYS
+Delete Query
+DLTSBSD
+*CMD
+
+QSYS
+Delete Subsystem Description
+DLTSCHIDX
+*CMD
+
+QSYS
+Delete Search Index
+DLTSPADCT
+*CMD
+
+QSYS
+Delete Spelling Aid Dictionary
+DLTSPLF
+*CMD
+
+QSYS
+Delete Spooled File
+DLTSQLPKG
+*CMD
+
+QSYS
+Delete SQL Package
+DLTSRVCFG
+*CMD
+
+QSYS
+Delete Service Configuration
+DLTSRVPGM
+*CMD
+
+QSYS
+Delete Service Program
+DLTTAPCGY
+*CMD
+
+QSYS
+Delete Tape Category
+DLTTBL
+*CMD
+
+QSYS
+Delete Table
+DLTTEF
+*CMD
+PRX
+QSYS
+
+DLTTIMZON
+*CMD
+
+QSYS
+Delete Time Zone Description
+DLTUSRIDX
+*CMD
+
+QSYS
+Delete User Index
+DLTUSRPRF
+*CMD
+
+QSYS
+Delete User Profile
+DLTUSRQ
+*CMD
+
+QSYS
+Delete User Queue
+DLTUSRSPC
+*CMD
+
+QSYS
+Delete User Space
+DLTUSRTRC
+*CMD
+
+QSYS
+Delete User Trace
+DLTVFYLIST
+*CMD
+PRX
+QSYS
+
+DLTWNTSVR
+*CMD
+PRX
+QSYS
+Delete Windows Server
+DLTWSCST
+*CMD
+
+QSYS
+Delete WSCST
+DLYJOB
+*CMD
+
+QSYS
+Delay Job
+DMPCLPGM
+*CMD
+
+QSYS
+Dump CL Program
+DMPCLUTRC
+*CMD
+
+QSYS
+Dump Cluster Trace
+DMPDNSJRNF
+*CMD
+PRX
+QSYS
+Dump DNS Journal File
+DMPUSRTRC
+*CMD
+
+QSYS
+Dump User Trace
+DO
+*CMD
+
+QSYS
+Do Group
+DOFOR
+*CMD
+
+QSYS
+Do For
+DOUNTIL
+*CMD
+
+QSYS
+Do Until
+DOWHILE
+*CMD
+
+QSYS
+Do While
+DSCJOB
+*CMD
+
+QSYS
+Disconnect Job
+DSPACC
+*CMD
+
+QSYS
+Display Access Code
+DSPACCAUT
+*CMD
+
+QSYS
+Display Access Code Authority
+DSPACTPJ
+*CMD
+
+QSYS
+Display Active Prestart Jobs
+DSPAPPNINF
+*CMD
+
+QSYS
+Display APPN Information
+DSPASPSTS
+*CMD
+
+QSYS
+Display ASP Status
+DSPAUDJRNE
+*CMD
+
+QSYS
+Display Audit Journal Entries
+DSPAUT
+*CMD
+
+QSYS
+Display Authority
+DSPAUTHLR
+*CMD
+
+QSYS
+Display Authority Holder
+DSPAUTL
+*CMD
+
+QSYS
+Display Authorization List
+DSPAUTLDLO
+*CMD
+
+QSYS
+Display Authorization List DLO
+DSPAUTLOBJ
+*CMD
+
+QSYS
+Display Authorization List Obj
+DSPAUTUSR
+*CMD
+
+QSYS
+Display Authorized Users
+DSPBCKSTS
+*CMD
+
+QSYS
+Display Backup Status
+DSPBCKUP
+*CMD
+
+QSYS
+Display Backup Options
+DSPBCKUPL
+*CMD
+
+QSYS
+Display Backup List
+DSPBKP
+*CMD
+
+QSYS
+Display Breakpoints
+DSPBNDDIR
+*CMD
+
+QSYS
+Display Binding Directory
+DSPCDEFNT
+*CMD
+
+QSYS
+Display Coded Font
+DSPCFGL
+*CMD
+
+QSYS
+Display Configuration List
+DSPCKMKSFE
+*CMD
+
+QSYS
+Display Keystore File Entry
+DSPCLS
+*CMD
+
+QSYS
+Display Class
+DSPCMD
+*CMD
+
+QSYS
+Display Command
+DSPCNNL
+*CMD
+
+QSYS
+Display Connection List
+DSPCNNSTS
+*CMD
+
+QSYS
+Display Connection Status
+DSPCOSD
+*CMD
+
+QSYS
+Display Class-of-Service Desc
+DSPCPCST
+*CMD
+
+QSYS
+Display CHKPND Constraint
+DSPCSI
+*CMD
+
+QSYS
+Display Comm Side Information
+DSPCTLD
+*CMD
+
+QSYS
+Display Controller Description
+DSPCURDIR
+*CMD
+
+QSYS
+Display Current Directory
+DSPDBG
+*CMD
+
+QSYS
+Display Debug
+DSPDBGWCH
+*CMD
+
+QSYS
+Display Debug Watch
+DSPDBR
+*CMD
+
+QSYS
+Display Data Base Relations
+DSPDDMF
+*CMD
+
+QSYS
+Display DDM File
+DSPDEVD
+*CMD
+
+QSYS
+Display Device Description
+DSPDIRE
+*CMD
+
+QSYS
+Display Directory Entries
+DSPDKT
+*CMD
+
+QSYS
+Display Diskette
+DSPDLFA
+*CMD
+
+QSYS
+Display DL File Attributes
+DSPDLOAUD
+*CMD
+
+QSYS
+Display DLO Auditing Level
+DSPDLOAUT
+*CMD
+
+QSYS
+Display DLO Authority
+DSPDLONAM
+*CMD
+
+QSYS
+Display DLO Name
+DSPDOC
+*CMD
+
+QSYS
+Display Document
+DSPDOMCSL
+*CMD
+PRX
+QSYS
+Display Domino Console
+DSPDSTL
+*CMD
+
+QSYS
+Display Distribution List
+DSPDSTSRV
+*CMD
+
+QSYS
+Display Distribution Services
+DSPDTA
+*CMD
+
+QSYS
+Display Data
+DSPDTAARA
+*CMD
+
+QSYS
+Display Data Area
+DSPDTADCT
+*CMD
+
+QSYS
+Display Data Dictionary
+DSPEDTD
+*CMD
+
+QSYS
+Display Edit Description
+DSPEWCBCDE
+*CMD
+
+QSYS
+Display EWC Barcode Entry
+DSPEWCM
+*CMD
+
+QSYS
+Display Wireless Ctl Member
+DSPEWCPTCE
+*CMD
+
+QSYS
+Display EWC PTC Entry
+DSPEWLM
+*CMD
+
+QSYS
+Display Wireless Line Member
+DSPF
+*CMD
+
+QSYS
+Display File
+DSPFCNUSG
+*CMD
+
+QSYS
+Display Function Usage
+DSPFD
+*CMD
+
+QSYS
+Display File Description
+DSPFFD
+*CMD
+
+QSYS
+Display File Field Description
+DSPFLR
+*CMD
+
+QSYS
+Display Folder
+DSPFMWSTS
+*CMD
+
+QSYS
+Display Firmware Status
+DSPFNTRSCA
+*CMD
+
+QSYS
+Display Font Resource Attr
+DSPFNTTBL
+*CMD
+
+QSYS
+Display Font Table
+DSPHDWRSC
+*CMD
+
+QSYS
+Display Hardware Resources
+DSPHFS
+*CMD
+
+QSYS
+Display Hierarchical File Sys.
+DSPHLPDOC
+*CMD
+
+QSYS
+Display Help Document
+DSPIGCDCT
+*CMD
+
+QSYS
+Display DBCS Conversion Dict
+DSPIPLA
+*CMD
+
+QSYS
+Display IPL Attributes
+DSPIPXD
+*CMD
+
+QSYS
+Display IPX Description
+DSPJOB
+*CMD
+
+QSYS
+Display Job
+DSPJOBD
+*CMD
+
+QSYS
+Display Job Description
+DSPJOBLOG
+*CMD
+
+QSYS
+Display Job Log
+DSPJOBTBL
+*CMD
+
+QSYS
+Display Job Tables
+DSPJRN
+*CMD
+
+QSYS
+Display Journal
+DSPJRNRCVA
+*CMD
+
+QSYS
+Display Journal Receiver Atr
+DSPJVMJOB
+*CMD
+PRX
+QSYS
+Display JVM Jobs
+DSPKBDMAP
+*CMD
+
+QSYS
+Display Keyboard Map
+DSPKRBCCF
+*CMD
+
+QSYS
+Display Credentials Cache File
+DSPKRBKTE
+*CMD
+
+QSYS
+Display Keytab Entries
+DSPLANADPP
+*CMD
+
+QSYS
+Display LAN Adapter Profile
+DSPLANMLB
+*CMD
+
+QSYS
+Display LAN Media Library
+DSPLANSTS
+*CMD
+
+QSYS
+Display LAN Status
+DSPLIB
+*CMD
+
+QSYS
+Display Library
+DSPLIBD
+*CMD
+
+QSYS
+Display Library Description
+DSPLIBL
+*CMD
+
+QSYS
+Display Library List
+DSPLIND
+*CMD
+
+QSYS
+Display Line Description
+DSPLNK
+*CMD
+
+QSYS
+Display Object Links
+DSPLOG
+*CMD
+
+QSYS
+Display Log
+DSPMFSINF
+*CMD
+
+QSYS
+Display Mounted FS Information
+DSPMNUA
+*CMD
+
+QSYS
+Display Menu Attributes
+DSPMOD
+*CMD
+
+QSYS
+Display Module
+DSPMODD
+*CMD
+
+QSYS
+Display Mode Description
+DSPMODSRC
+*CMD
+
+QSYS
+Display Module Source
+DSPMODSTS
+*CMD
+
+QSYS
+Display Mode Status
+DSPMSG
+*CMD
+
+QSYS
+Display Messages
+DSPMSGD
+*CMD
+
+QSYS
+Display Message Description
+DSPNCK
+*CMD
+
+QSYS
+Display Nickname
+DSPNETA
+*CMD
+
+QSYS
+Display Network Attributes
+DSPNODGRP
+*CMD
+
+QSYS
+Display Node Group
+DSPNTBD
+*CMD
+
+QSYS
+Display NetBIOS Description
+DSPNWID
+*CMD
+
+QSYS
+Display Network Interface Desc
+DSPNWSA
+*CMD
+
+QSYS
+Display NWS Attributes
+DSPNWSD
+*CMD
+
+QSYS
+Display Network Server Desc
+DSPNWSSTG
+*CMD
+
+QSYS
+Display NWS Storage Space
+DSPNWSUSRA
+*CMD
+
+QSYS
+Display NWS User Attributes
+DSPOBJAUT
+*CMD
+
+QSYS
+Display Object Authority
+DSPOBJD
+*CMD
+
+QSYS
+Display Object Description
+DSPOPCLNK
+*CMD
+PRX
+QSYS
+
+DSPOPT
+*CMD
+
+QSYS
+Display Optical
+DSPOPTLCK
+*CMD
+
+QSYS
+Display Optical Locks
+DSPOPTSVR
+*CMD
+
+QSYS
+Display Optical Server
+DSPOSPF
+*CMD
+
+QSYS
+Display OSPF
+DSPOVR
+*CMD
+
+QSYS
+Display Override
+DSPPDGPRF
+*CMD
+
+QSYS
+Display PDG Profile
+DSPPFM
+*CMD
+
+QSYS
+Display Physical File Member
+DSPPGM
+*CMD
+
+QSYS
+Display Program
+DSPPGMADP
+*CMD
+
+QSYS
+Display Program Adopt
+DSPPGMREF
+*CMD
+
+QSYS
+Display Program References
+DSPPGMVAR
+*CMD
+
+QSYS
+Display Program Variable
+DSPPRB
+*CMD
+
+QSYS
+Display Problems
+DSPPSFCFG
+*CMD
+
+QSYS
+Display PSF Configuration
+DSPPWRSCD
+*CMD
+
+QSYS
+Display Power On/Off Schedule
+DSPRCDLCK
+*CMD
+
+QSYS
+Display Record Locks
+DSPRCYAP
+*CMD
+
+QSYS
+Dsp Recovery for Access Paths
+DSPRDBDIRE
+*CMD
+
+QSYS
+Display RDB Directory Entries
+DSPRIP
+*CMD
+
+QSYS
+Display RIP Information
+DSPRMTDFN
+*CMD
+
+QSYS
+Display Remote Definition
+DSPSAVF
+*CMD
+
+QSYS
+Display Save File
+DSPSBSD
+*CMD
+
+QSYS
+Display Subsystem Description
+DSPSECA
+*CMD
+
+QSYS
+Display Security Attributes
+DSPSECAUD
+*CMD
+
+QSYS
+Display Security Auditing
+DSPSFWRSC
+*CMD
+
+QSYS
+Display Software Resources
+DSPSOCSTS
+*CMD
+
+QSYS
+Display Sphere of Control Sts
+DSPSPLF
+*CMD
+
+QSYS
+Display Spooled File
+DSPSRVA
+*CMD
+
+QSYS
+Display Service Attributes
+DSPSRVPGM
+*CMD
+
+QSYS
+Display Service Program
+DSPSSTUSR
+*CMD
+
+QSYS
+Display Service Tools User ID
+DSPSVRAUTE
+*CMD
+
+QSYS
+Display Server Auth Entries
+DSPSYSSTS
+*CMD
+
+QSYS
+Display System Status
+DSPSYSVAL
+*CMD
+
+QSYS
+Display System Value
+DSPS36
+*CMD
+PRX
+QSYS
+Display S/36 Configuration
+DSPTAP
+*CMD
+
+QSYS
+Display Tape
+DSPTAPCGY
+*CMD
+
+QSYS
+Display Tape Category
+DSPTAPCTG
+*CMD
+
+QSYS
+Display Tape Cartridge
+DSPTAPSTS
+*CMD
+
+QSYS
+Display Tape Status
+DSPTM
+*CMD
+
+QSYS
+Display Trademarks
+DSPTRC
+*CMD
+
+QSYS
+Display Trace
+DSPTRCDTA
+*CMD
+
+QSYS
+Display Trace Data
+DSPUDFS
+*CMD
+
+QSYS
+Display User-Defined FS
+DSPUSRPMN
+*CMD
+
+QSYS
+Display User Permission
+DSPUSRPRF
+*CMD
+
+QSYS
+Display User Profile
+DSPUSRPRTI
+*CMD
+
+QSYS
+Display User Print Info
+DSPVFYLIST
+*CMD
+PRX
+QSYS
+
+DSPVTMAP
+*CMD
+PRX
+QSYS
+Display VT Keyboard Map
+DSPWEBQRY
+*CMD
+PRX
+QSYS
+WEBQRY Status Command
+DSPWSUSR
+*CMD
+
+QSYS
+Display Work Station User
+DUPDKT
+*CMD
+
+QSYS
+Duplicate Diskette
+DUPOPT
+*CMD
+
+QSYS
+Duplicate Optical
+DUPTAP
+*CMD
+
+QSYS
+Duplicate Tape
+EDTAUTL
+*CMD
+
+QSYS
+Edit Authorization List
+EDTBCKUPL
+*CMD
+
+QSYS
+Edit Backup List
+EDTDLOAUT
+*CMD
+
+QSYS
+Edit DLO Authority
+EDTDOC
+*CMD
+
+QSYS
+Edit Document
+EDTF
+*CMD
+
+QSYS
+Edit File
+EDTIGCDCT
+*CMD
+
+QSYS
+Edit DBCS Conversion Dict
+EDTLIBL
+*CMD
+
+QSYS
+Edit Library List
+EDTOBJAUT
+*CMD
+
+QSYS
+Edit Object Authority
+EDTS36PGMA
+*CMD
+
+QSYS
+Edit S/36 Program Attributes
+EDTS36PRCA
+*CMD
+
+QSYS
+Edit S/36 Procedure Attributes
+EDTS36SRCA
+*CMD
+
+QSYS
+Edit S/36 Source Attributes
+EDTWSOAUT
+*CMD
+PRX
+QSYS
+Edit Workstation Object Aut
+EJTEMLOUT
+*CMD
+
+QSYS
+Eject Emulation Output
+ELEM
+*CMD
+
+QSYS
+Element Definition
+ELSE
+*CMD
+
+QSYS
+Else
+EMLPRTKEY
+*CMD
+
+QSYS
+Emulate Printer Keys
+ENDACCWEB
+*CMD
+PRX
+QSYS
+End Access for Web
+ENDAGTSRV
+*CMD
+
+QSYS
+End Agent Services
+ENDBCHJOB
+*CMD
+
+QSYS
+End Batch Job
+ENDBLDIMPT
+*CMD
+PRX
+QSYS
+
+ENDCBLDBG
+*CMD
+PRX
+QSYS
+End COBOL Debug
+ENDCLNUP
+*CMD
+
+QSYS
+End Cleanup
+ENDCMTCTL
+*CMD
+
+QSYS
+End Commitment Control
+ENDCPYSCN
+*CMD
+
+QSYS
+End Copy Screen
+ENDCTLRCY
+*CMD
+
+QSYS
+End Controller Recovery
+ENDDBG
+*CMD
+
+QSYS
+End Debug Mode
+ENDDBGSVR
+*CMD
+
+QSYS
+End Debug Server
+ENDDBMON
+*CMD
+
+QSYS
+End Database Monitor
+ENDDEVRCY
+*CMD
+
+QSYS
+End Device Recovery
+ENDDIRSHD
+*CMD
+
+QSYS
+End Directory Shadowing
+ENDDO
+*CMD
+
+QSYS
+End Do Group
+ENDDOMSVR
+*CMD
+PRX
+QSYS
+End Domino Server
+ENDEPMENV
+*CMD
+
+QSYS
+End EPM Environments
+ENDGRPJOB
+*CMD
+
+QSYS
+End Group Job
+ENDINP
+*CMD
+
+QSYS
+End Input
+ENDISDB
+*CMD
+PRX
+QSYS
+End ISDB
+ENDJOB
+*CMD
+
+QSYS
+End Job
+ENDJRN
+*CMD
+
+QSYS
+End Journal
+ENDJRNAP
+*CMD
+
+QSYS
+End Journal Access Path
+ENDJRNLIB
+*CMD
+
+QSYS
+End Journal Library
+ENDJRNOBJ
+*CMD
+
+QSYS
+End Journal Object
+ENDJRNPF
+*CMD
+
+QSYS
+End Journal Physical File
+ENDLINRCY
+*CMD
+
+QSYS
+End Line Recovery
+ENDLOGSVR
+*CMD
+
+QSYS
+End Job Log Server
+ENDMOD
+*CMD
+
+QSYS
+End Mode
+ENDNWIRCY
+*CMD
+
+QSYS
+End Network Interface Recovery
+ENDPASTHR
+*CMD
+
+QSYS
+End Pass-Through
+ENDPGM
+*CMD
+
+QSYS
+End Program
+ENDPGMEXP
+*CMD
+
+QSYS
+End Program Export List
+ENDPJ
+*CMD
+
+QSYS
+End Prestart Jobs
+ENDPRTEML
+*CMD
+
+QSYS
+End Printer Emulation
+ENDRCV
+*CMD
+
+QSYS
+End Receive
+ENDRDR
+*CMD
+
+QSYS
+End Reader
+ENDREPBPR
+*CMD
+PRX
+QSYS
+
+ENDRQS
+*CMD
+
+QSYS
+End Request
+ENDSBS
+*CMD
+
+QSYS
+End Subsystem
+ENDSELECT
+*CMD
+
+QSYS
+End Select
+ENDSRVJOB
+*CMD
+
+QSYS
+End Service Job
+ENDSUBR
+*CMD
+
+QSYS
+End Subroutine
+ENDSYS
+*CMD
+
+QSYS
+End System
+ENDS36
+*CMD
+PRX
+QSYS
+End S/36 Session
+ENDTIESSN
+*CMD
+
+QSYS
+End TIE Session
+ENDVFYMON
+*CMD
+PRX
+QSYS
+
+ENDVPNCNN
+*CMD
+
+QSYS
+End VPN Connection
+ENDWEBQRY
+*CMD
+PRX
+QSYS
+WEBQRY End Command
+ENDWTR
+*CMD
+
+QSYS
+End Writer
+ERASE
+*CMD
+
+QSYS
+Remove Link
+EXPORT
+*CMD
+
+QSYS
+Export a Program Symbol
+EXTPGMINF
+*CMD
+
+QSYS
+Extract Program Information
+FILDOC
+*CMD
+
+QSYS
+File Document
+FMTDTA
+*CMD
+
+QSYS
+Format Data
+FNDSTRPDM
+*CMD
+PRX
+QSYS
+Find String Using PDM
+FNDSTRPDM2
+*CMD
+PRX
+QSYS
+Find String with List
+FTP
+*CMD
+PRX
+QSYS
+Start TCP/IP File Transfer
+GENCAT
+*CMD
+
+QSYS
+Generate Message Catalog
+GENCKMKSFE
+*CMD
+
+QSYS
+Generate Keystore File Entry
+GENCMDDOC
+*CMD
+
+QSYS
+Generate Command Documentation
+GENCSRC
+*CMD
+PRX
+QSYS
+Generate C/C++ Source
+GENDNSDSRR
+*CMD
+PRX
+QSYS
+Generate DNSSEC DS RR
+GENDNSKEY
+*CMD
+PRX
+QSYS
+Generate DNS Key
+GENJVMDMP
+*CMD
+PRX
+QSYS
+Generate JVM Dump
+GETBLDOPTE
+*CMD
+PRX
+QSYS
+
+GETTEFE
+*CMD
+PRX
+QSYS
+
+GO
+*CMD
+
+QSYS
+Go to Menu
+GOTO
+*CMD
+
+QSYS
+Go To
+GRTOBJAUT
+*CMD
+
+QSYS
+Grant Object Authority
+GRTUSRAUT
+*CMD
+
+QSYS
+Grant User Authority
+GRTUSRPMN
+*CMD
+
+QSYS
+Grant User Permission
+GRTWSOAUT
+*CMD
+PRX
+QSYS
+Grant Workstation Object Aut
+HLDJOB
+*CMD
+
+QSYS
+Hold Job
+HLDJOBQ
+*CMD
+
+QSYS
+Hold Job Queue
+HLDJOBSCDE
+*CMD
+
+QSYS
+Hold Job Schedule Entry
+HLDOUTQ
+*CMD
+
+QSYS
+Hold Output Queue
+HLDRDR
+*CMD
+
+QSYS
+Hold Reader
+HLDSPLF
+*CMD
+
+QSYS
+Hold Spooled File
+HLDWTR
+*CMD
+
+QSYS
+Hold Writer
+HOST
+*CMD
+PRX
+QSYS
+Start HOST Query
+ICLEAR
+*CMD
+PRX
+QSYS
+Server Clear Memory Command
+ICLRDIR
+*CMD
+PRX
+QSYS
+Server Clear Temp Directory
+IF
+*CMD
+
+QSYS
+If
+INCLUDE
+*CMD
+
+QSYS
+Include CL Source
+INSINTSVR
+*CMD
+PRX
+QSYS
+Install Integrated Server
+INSWNTSVR
+*CMD
+PRX
+QSYS
+Install Windows Server
+INZDKT
+*CMD
+
+QSYS
+Initialize Diskette
+INZDLFM
+*CMD
+
+QSYS
+Initialize DLFM
+INZOPT
+*CMD
+
+QSYS
+Initialize Optical
+INZPCS
+*CMD
+PRX
+QSYS
+Initialize IBM i Access
+INZPFM
+*CMD
+
+QSYS
+Initialize Physical File Mbr
+INZTAP
+*CMD
+
+QSYS
+Initialize Tape
+ISAVEDIA
+*CMD
+PRX
+QSYS
+Server Save Diagnostic Command
+ISHOW
+*CMD
+PRX
+QSYS
+Server Status Command
+ISHOWLOG
+*CMD
+PRX
+QSYS
+Server Show Log Command
+ISTART
+*CMD
+PRX
+QSYS
+Server Start Command
+ISTOP
+*CMD
+PRX
+QSYS
+Server Stop Command
+ITERATE
+*CMD
+
+QSYS
+Iterate
+ITRCOFF
+*CMD
+PRX
+QSYS
+Server TRACEOFF Command
+ITRCON
+*CMD
+PRX
+QSYS
+Server TRACEON Command
+JAVA
+*CMD
+PRX
+QSYS
+Run Java Program
+LEAVE
+*CMD
+
+QSYS
+Leave
+LNKDTADFN
+*CMD
+
+QSYS
+Link/Unlink Data Definition
+LODIMGCLG
+*CMD
+
+QSYS
+Load or Unload Image Catalog
+LODIMGCLGE
+*CMD
+
+QSYS
+Load/Unload/Mount IMGCLG Entry
+LODIPFTR
+*CMD
+
+QSYS
+Load/Unload IP Filter
+LODRUN
+*CMD
+
+QSYS
+Load and Run
+LPR
+*CMD
+PRX
+QSYS
+Send TCP/IP Spooled File
+MD
+*CMD
+
+QSYS
+Create Directory
+MKDIR
+*CMD
+
+QSYS
+Create Directory
 MONMSG
 *CMD
 
 QSYS
 Monitor Message
+MOV
+*CMD
+
+QSYS
+Move Object
+MOVDOC
+*CMD
+
+QSYS
+Move Document
+MOVE
+*CMD
+
+QSYS
+Move Object
+MOVOBJ
+*CMD
+
+QSYS
+Move Object
+MRGFORMD
+*CMD
+PRX
+QSYS
+Merge Form Description
+MRGMSGCLG
+*CMD
+
+QSYS
+Merge Message Catalog
+MRGMSGF
+*CMD
+
+QSYS
+Merge Message File
+MRGPKG
+*CMD
+PRX
+QSYS
+
+MRGSRC
+*CMD
+PRX
+QSYS
+Merge Source
+MRGTCPHT
+*CMD
+
+QSYS
+Merge TCP/IP Host Table
+NETSTAT
+*CMD
+
+QSYS
+Work with TCP/IP Network Sts
+NSLOOKUP
+*CMD
+PRX
+QSYS
+Start NSLOOKUP Query
+NSUPDATE
+*CMD
+PRX
+QSYS
+Run DNS Update
+OPNDBF
+*CMD
+
+QSYS
+Open Data Base File
+OPNQRYF
+*CMD
+
+QSYS
+Open Query File
+OTHERWISE
+*CMD
+
+QSYS
+Otherwise
+OVRDBF
+*CMD
+
+QSYS
+Override with Data Base File
+OVRDKTF
+*CMD
+
+QSYS
+Override with Diskette File
+OVRDSPF
+*CMD
+
+QSYS
+Override with Display File
+OVRICFDEVE
+*CMD
+
+QSYS
+Override ICF Pgm Device Entry
+OVRICFF
+*CMD
+
+QSYS
+Override ICF File
+OVRMSGF
+*CMD
+
+QSYS
+Override Message File
+OVRPRTF
+*CMD
+
+QSYS
+Override with Printer File
+OVRSAVF
+*CMD
+
+QSYS
+Override with Save File
+OVRTAPF
+*CMD
+
+QSYS
+Override with Tape File
+PARM
+*CMD
+
+QSYS
+Parameter Definition
+PGM
+*CMD
+
+QSYS
+Program
+PING
+*CMD
+
+QSYS
+Verify TCP/IP Connection
+PMTCTL
+*CMD
+
+QSYS
+Prompt Control Definition
+POSDBF
+*CMD
+
+QSYS
+Position Data Base File
+PRTADPOBJ
+*CMD
+
+QSYS
+Print Adopting Objects
+PRTAFPDTA
+*CMD
+
+QSYS
+Print AFP Data
+PRTCMDUSG
+*CMD
+
+QSYS
+Print Command Usage
+PRTCMNSEC
+*CMD
+
+QSYS
+Print Communications Security
+PRTDEVADR
+*CMD
+
+QSYS
+Print Device Addresses
+PRTDOC
+*CMD
+
+QSYS
+Print Document
+PRTIPSCFG
+*CMD
+
+QSYS
+Print IP over SNA
+PRTJOBDAUT
+*CMD
+
+QSYS
+Print JOBD Authority
+PRTJVMJOB
+*CMD
+PRX
+QSYS
+Print JVM Job
+PRTOPCACT
+*CMD
+PRX
+QSYS
+
+PRTOPCJOB
+*CMD
+PRX
+QSYS
+
+PRTPFDDTA
+*CMD
+PRX
+QSYS
+Print PFD Data
+PRTPUBAUT
+*CMD
+
+QSYS
+Print Publicly Auth Objects
+PRTPVTAUT
+*CMD
+
+QSYS
+Print Private Authorities
+PRTQAUT
+*CMD
+
+QSYS
+Print Queue Authority
+PRTSBSDAUT
+*CMD
+
+QSYS
+Print Subsystem Description
+PRTSQLINF
+*CMD
+
+QSYS
+Print SQL Information
+PRTSWL
+*CMD
+
+QSYS
+Print Stop Word List
+PRTSYSSECA
+*CMD
+
+QSYS
+Print System Security Attr
+PRTTCPPTP
+*CMD
+
+QSYS
+Print Point-to-Point Profile
+PRTTRGPGM
+*CMD
+
+QSYS
+Print Trigger Programs
+PRTUSROBJ
+*CMD
+
+QSYS
+Print User Objects
+PRTUSRPRF
+*CMD
+
+QSYS
+Print User Profile
+QPZA007795
+*CMD
+
+QSYS
+Start Database Monitor
+QPZA007868
+*CMD
+
+QSYS
+Run SQL
+QPZA008224
+*CMD
+
+QSYS
+Work with Spooled Files
+QPZA008331
+*CMD
+
+QSYS
+Change SNMP Attributes
+QRYDOCLIB
+*CMD
+
+QSYS
+Query Document Library
+QRYDST
+*CMD
+
+QSYS
+Query Distributions
+QRYTIEF
+*CMD
+
+QSYS
+Query TIE Files
+QSH
+*CMD
+PRX
+QSYS
+Start QSH
+QUAL
+*CMD
+
+QSYS
+Qualifier Definition
+RCLACTGRP
+*CMD
+
+QSYS
+Reclaim Activation Group
+RCLDDMCNV
+*CMD
+
+QSYS
+Reclaim DDM Conversations
+RCLDLO
+*CMD
+
+QSYS
+Reclaim Document Lib Object
+RCLLIB
+*CMD
+
+QSYS
+Reclaim Library
+RCLLNK
+*CMD
+
+QSYS
+Reclaim Object Links
+RCLRSC
+*CMD
+
+QSYS
+Reclaim Resources
+RCVDST
+*CMD
+
+QSYS
+Receive Distribution
+RCVF
+*CMD
+
+QSYS
+Receive File
+RCVJRNE
+*CMD
+
+QSYS
+Receive Journal Entry
+RCVMSG
+*CMD
+
+QSYS
+Receive Message
+RCVNETF
+*CMD
+
+QSYS
+Receive Network File
+RCVTIEF
+*CMD
+
+QSYS
+Receive TIE File
+RD
+*CMD
+
+QSYS
+Remove Directory
+REN
+*CMD
+
+QSYS
+Rename Object
+REPBPR
+*CMD
+PRX
+QSYS
+
+REPOBJ
+*CMD
+PRX
+QSYS
+
+RETURN
+*CMD
+
+QSYS
+Return
+RGZDLO
+*CMD
+
+QSYS
+Reorganize Document Lib Object
+RGZPFM
+*CMD
+
+QSYS
+Reorganize Physical File Mbr
+RLSJOB
+*CMD
+
+QSYS
+Release Job
+RLSJOBQ
+*CMD
+
+QSYS
+Release Job Queue
+RLSJOBSCDE
+*CMD
+
+QSYS
+Release Job Schedule Entry
+RLSOUTQ
+*CMD
+
+QSYS
+Release Output Queue
+RLSRDR
+*CMD
+
+QSYS
+Release Reader
+RLSSPLF
+*CMD
+
+QSYS
+Release Spooled File
+RLSWTR
+*CMD
+
+QSYS
+Release Writer
+RMDIR
+*CMD
+
+QSYS
+Remove Directory
+RMVACCWEB
+*CMD
+PRX
+QSYS
+Remove Access for Web
+RMVAJE
+*CMD
+
+QSYS
+Remove Autostart Job Entry
+RMVALRD
+*CMD
+
+QSYS
+Remove Alert Description
+RMVAUTLE
+*CMD
+
+QSYS
+Remove Auth List Entry
+RMVBKP
+*CMD
+
+QSYS
+Remove Breakpoint
+RMVBLDOPTE
+*CMD
+PRX
+QSYS
+
+RMVBNDDIRE
+*CMD
+
+QSYS
+Remove Binding Directory Entry
+RMVBUILDER
+*CMD
+PRX
+QSYS
+
+RMVCFGLE
+*CMD
+
+QSYS
+Remove Cfg List Entries
+RMVCKMKSFE
+*CMD
+
+QSYS
+Remove Keystore File Entry
+RMVCMNE
+*CMD
+
+QSYS
+Remove Communications Entry
+RMVCOMSNMP
+*CMD
+
+QSYS
+Remove Community for SNMP
+RMVDIR
+*CMD
+
+QSYS
+Remove Directory
+RMVDIRE
+*CMD
+
+QSYS
+Remove Directory Entry
+RMVDIRSHD
+*CMD
+
+QSYS
+Remove Directory Shadow System
+RMVDLOAUT
+*CMD
+
+QSYS
+Remove DLO Authority
+RMVDSTLE
+*CMD
+
+QSYS
+Remove Distribution List Entry
+RMVEMLCFGE
+*CMD
+
+QSYS
+Remove Configuration Entry
+RMVENVVAR
+*CMD
+
+QSYS
+Remove Environment Variable
+RMVEWCBCDE
+*CMD
+
+QSYS
+Remove EWC Barcode Entry
+RMVEWCPTCE
+*CMD
+
+QSYS
+Remove EWC PTC Entry
+RMVFNTTBLE
+*CMD
+
+QSYS
+Remove Font Table Entry
+RMVFTRACNE
+*CMD
+
+QSYS
+Remove Filter Action Entry
+RMVFTRSLTE
+*CMD
+
+QSYS
+Remove Filter Selection Entry
+RMVICFDEVE
+*CMD
+
+QSYS
+Remove ICF Device Entry
+RMVIMGCLGE
+*CMD
+
+QSYS
+Remove Image Catalog Entry
+RMVIPSIFC
+*CMD
+
+QSYS
+Remove IP over SNA Interface
+RMVIPSLOC
+*CMD
+
+QSYS
+Remove IP over SNA Location
+RMVIPSRTE
+*CMD
+
+QSYS
+Remove IP over SNA Route
+RMVJOBQE
+*CMD
+
+QSYS
+Remove Job Queue Entry
+RMVJOBSCDE
+*CMD
+
+QSYS
+Remove Job Schedule Entry
+RMVJRNCHG
+*CMD
+
+QSYS
+Remove Journaled Changes
+RMVKRBKTE
+*CMD
+
+QSYS
+Remove Kerberos Keytab Entry
+RMVLANADPI
+*CMD
+
+QSYS
+Remove LAN Adapter Information
+RMVLIBLE
+*CMD
+
+QSYS
+Remove Library List Entry
+RMVLNK
+*CMD
+
+QSYS
+Remove Link
+RMVM
+*CMD
+
+QSYS
+Remove Member
+RMVMSG
+*CMD
+
+QSYS
+Remove Message
+RMVMSGD
+*CMD
+
+QSYS
+Remove Message Description
+RMVNCK
+*CMD
+
+QSYS
+Remove Nickname
+RMVNETTBLE
+*CMD
+
+QSYS
+Remove Network Table Entry
+RMVNODLE
+*CMD
+
+QSYS
+Remove Node List Entry
+RMVNWSSTGL
+*CMD
+
+QSYS
+Remove Server Storage Link
+RMVOSPFARA
+*CMD
+
+QSYS
+Remove OSPF Area
+RMVOSPFIFC
+*CMD
+
+QSYS
+Remove OSPF Interface
+RMVOSPFLNK
+*CMD
+
+QSYS
+Remove OSPF Virtual Link
+RMVOSPFRNG
+*CMD
+
+QSYS
+Remove OSPF Range
+RMVPCLTBLE
+*CMD
+
+QSYS
+Remove Protocol Table Entry
+RMVPFCST
+*CMD
+
+QSYS
+Remove PF Constraint
+RMVPFTRG
+*CMD
+
+QSYS
+Remove Physical File Trigger
+RMVPGM
+*CMD
+
+QSYS
+Remove Program
+RMVPJE
+*CMD
+
+QSYS
+Remove Prestart Job Entry
+RMVPRDBPR
+*CMD
+PRX
+QSYS
+
+RMVRDBDIRE
+*CMD
+
+QSYS
+Remove RDB Directory Entry
+RMVREXBUF
+*CMD
+
+QSYS
+Remove REXX Buffer
+RMVRIPACP
+*CMD
+
+QSYS
+Remove RIP Accepted Route
+RMVRIPFLT
+*CMD
+
+QSYS
+Remove RIP Filter
+RMVRIPIFC
+*CMD
+
+QSYS
+Remove RIP Interface
+RMVRIPIGN
+*CMD
+
+QSYS
+Remove Ignored RIP Neighbor
+RMVRMTJRN
+*CMD
+
+QSYS
+Remove Remote Journal
+RMVRTGE
+*CMD
+
+QSYS
+Remove Routing Entry
+RMVSCHIDXE
+*CMD
+
+QSYS
+Remove Search Index Entry
+RMVSMTPLE
+*CMD
+PRX
+QSYS
+Remove SMTP List Entry
+RMVSMTPRLE
+*CMD
+
+QSYS
+Remove Remote Login Entry
+RMVSOCE
+*CMD
+
+QSYS
+Remove Sphere of Control Entry
+RMVSRVTBLE
+*CMD
+
+QSYS
+Remove Service Table Entry
+RMVSVRAUTE
+*CMD
+
+QSYS
+Remove Server Auth Entry
+RMVTAPCTG
+*CMD
+
+QSYS
+Remove Tape Cartridge
+RMVTCPHTE
+*CMD
+
+QSYS
+Remove TCP/IP Host Table Entry
+RMVTCPIFC
+*CMD
+
+QSYS
+Remove TCP/IP Interface
+RMVTCPPORT
+*CMD
+
+QSYS
+Remove TCP/IP Port Restriction
+RMVTCPPTP
+*CMD
+
+QSYS
+Remove Point-to-Point Profile
+RMVTCPRSI
+*CMD
+
+QSYS
+Remove TCP/IP Remote System
+RMVTCPRTE
+*CMD
+
+QSYS
+Remove TCP/IP Route
+RMVTCPSVR
+*CMD
+
+QSYS
+Remove TCP/IP Server
+RMVTCPTBL
+*CMD
+
+QSYS
+Remove TCP/IP Table
+RMVTEFE
+*CMD
+PRX
+QSYS
+
+RMVTRC
+*CMD
+
+QSYS
+Remove Trace
+RMVUSRSMTP
+*CMD
+PRX
+QSYS
+Remove User SMTP
+RMVUSRSNMP
+*CMD
+
+QSYS
+Remove User for SNMP
+RMVWSE
+*CMD
+
+QSYS
+Remove Work Station Entry
+RNDC
+*CMD
+PRX
+QSYS
+Run RNDC Command
+RNM
+*CMD
+
+QSYS
+Rename Object
+RNMDIRE
+*CMD
+
+QSYS
+Rename Directory Entry
+RNMDKT
+*CMD
+
+QSYS
+Rename Diskette
+RNMDLO
+*CMD
+
+QSYS
+Rename Document Library Object
+RNMDSTL
+*CMD
+
+QSYS
+Rename Distribution List
+RNMLANADPI
+*CMD
+
+QSYS
+Rename LAN Adapter
+RNMM
+*CMD
+
+QSYS
+Rename Member
+RNMNCK
+*CMD
+
+QSYS
+Rename Nickname
+RNMOBJ
+*CMD
+
+QSYS
+Rename Object
+RNMTCPHTE
+*CMD
+
+QSYS
+Rename TCP/IP Host Table Entry
+ROLLBACK
+*CMD
+
+QSYS
+Rollback
+RPCGEN
+*CMD
+
+QSYS
+Convert RPC Source
+RPLDOC
+*CMD
+
+QSYS
+Replace Document
+RRTJOB
+*CMD
+
+QSYS
+Reroute Job
+RSMBKP
+*CMD
+
+QSYS
+Resume Breakpoint
+RSMCTLRCY
+*CMD
+
+QSYS
+Resume Controller Recovery
+RSMDEVRCY
+*CMD
+
+QSYS
+Resume Device Recovery
+RSMLINRCY
+*CMD
+
+QSYS
+Resume Line Recovery
+RSMNWIRCY
+*CMD
+
+QSYS
+Resume NWI Recovery
+RSTBLDEVT
+*CMD
+PRX
+QSYS
+
+RSTBUILDER
+*CMD
+PRX
+QSYS
+
+RSTPRDBPR
+*CMD
+PRX
+QSYS
+
+RTNSUBR
+*CMD
+
+QSYS
+Return from Subroutine
+RTVAUTLE
+*CMD
+
+QSYS
+Retrieve Auth List Entry
+RTVBCKUP
+*CMD
+
+QSYS
+Retrieve Backup Options
+RTVBLDSTS
+*CMD
+PRX
+QSYS
+
+RTVBLDTYPE
+*CMD
+PRX
+QSYS
+
+RTVBNDSRC
+*CMD
+
+QSYS
+Retrieve Binder Source
+RTVCFGSRC
+*CMD
+
+QSYS
+Retrieve Configuration Source
+RTVCFGSTS
+*CMD
+
+QSYS
+Retrieve Configuration Status
+RTVCLDSRC
+*CMD
+
+QSYS
+Retrieve C Locale Description
+RTVCLNUP
+*CMD
+
+QSYS
+Retrieve Cleanup
+RTVCLSRC
+*CMD
+
+QSYS
+Retrieve CL Source
+RTVCURDIR
+*CMD
+
+QSYS
+Retrieve Current Directory
+RTVDLONAM
+*CMD
+
+QSYS
+Retrieve DLO Name
+RTVDOC
+*CMD
+
+QSYS
+Retrieve Document
+RTVDTAARA
+*CMD
+
+QSYS
+Retrieve Data Area
+RTVGRPA
+*CMD
+
+QSYS
+Retrieve Group Attributes
+RTVIMGCLG
+*CMD
+
+QSYS
+Retrieve Image Catalog
+RTVJOBA
+*CMD
+
+QSYS
+Retrieve Job Attributes
+RTVJRNE
+*CMD
+
+QSYS
+Retrieve Journal Entry
+RTVLIBD
+*CMD
+
+QSYS
+Retrieve Library Description
+RTVMBRD
+*CMD
+
+QSYS
+Retrieve Member Description
+RTVMSG
+*CMD
+
+QSYS
+Retrieve Message
+RTVNETA
+*CMD
+
+QSYS
+Retrieve Network Attributes
+RTVOBJD
+*CMD
+
+QSYS
+Retrieve Object Description
+RTVPDGPRF
+*CMD
+
+QSYS
+Retrieve PDG Profile
+RTVPWRSCDE
+*CMD
+
+QSYS
+Retrieve Power Schedule Entry
+RTVQMFORM
+*CMD
+
+QSYS
+Retrieve Query Management Form
+RTVQMQRY
+*CMD
+
+QSYS
+Retrieve Query Mgmt Query
+RTVSWLSRC
+*CMD
+
+QSYS
+Retrieve Stop Word List Source
+RTVSYSVAL
+*CMD
+
+QSYS
+Retrieve System Value
+RTVS36A
+*CMD
+PRX
+QSYS
+Retrieve S/36 Environment Attr
+RTVTBLSRC
+*CMD
+
+QSYS
+Retrieve Table Source
+RTVUSRPRF
+*CMD
+
+QSYS
+Retrieve User Profile
+RTVUSRPRTI
+*CMD
+
+QSYS
+Retrieve User Print Info
+RTVWSCST
+*CMD
+
+QSYS
+Retrieve WSCST source
+RUNBCKUP
+*CMD
+
+QSYS
+Run Backup
+RUNDNSUPD
+*CMD
+PRX
+QSYS
+Run DNS Update
+RUNDOMCMD
+*CMD
+PRX
+QSYS
+Run Domino Command
+RUNJVA
+*CMD
+PRX
+QSYS
+Run Java Program
+RUNQRY
+*CMD
+
+QSYS
+Run Query
+RUNRMTCMD
+*CMD
+
+QSYS
+Run Remote Command
+RUNRNDCCMD
+*CMD
+PRX
+QSYS
+Run RNDC Command
+RUNSQL
+*CMD
+
+QSYS
+Run SQL
+RUNSQLSTM
+*CMD
+
+QSYS
+Run SQL Statements
+RUNWEBQRY
+*CMD
+PRX
+QSYS
+Run Java batch in WebQuery
+RVKACCAUT
+*CMD
+
+QSYS
+Revoke Access Code Authority
+RVKOBJAUT
+*CMD
+
+QSYS
+Revoke Object Authority
+RVKUSRPMN
+*CMD
+
+QSYS
+Revoke User Permission
+RVKWSOAUT
+*CMD
+PRX
+QSYS
+Revoke Workstation Object Aut
+SAV
+*CMD
+
+QSYS
+Save Object
+SAVBLDEVT
+*CMD
+PRX
+QSYS
+
+SAVBUILDER
+*CMD
+PRX
+QSYS
+
+SAVCFG
+*CMD
+
+QSYS
+Save Configuration
+SAVCHGOBJ
+*CMD
+
+QSYS
+Save Changed Objects
+SAVDLO
+*CMD
+
+QSYS
+Save Document Library Object
+SAVDOMBRM
+*CMD
+PRX
+QSYS
+Save Domino Server using BRMS
+SAVLIB
+*CMD
+
+QSYS
+Save Library
+SAVOBJ
+*CMD
+
+QSYS
+Save Object
+SAVPRDBPR
+*CMD
+PRX
+QSYS
+
+SAVRST
+*CMD
+PRX
+QSYS
+Save Restore
+SAVRSTCFG
+*CMD
+PRX
+QSYS
+Save Restore Configuration
+SAVRSTCHG
+*CMD
+PRX
+QSYS
+Save Restore Changed Objects
+SAVRSTDLO
+*CMD
+PRX
+QSYS
+Save Restore Doc/Lib Object
+SAVRSTLIB
+*CMD
+PRX
+QSYS
+Save Restore Library
+SAVRSTOBJ
+*CMD
+PRX
+QSYS
+Save Restore Object
+SAVSAVFDTA
+*CMD
+
+QSYS
+Save Save File Data
+SAVSECDTA
+*CMD
+
+QSYS
+Save Security Data
+SAVSYS
+*CMD
+
+QSYS
+Save System
+SAVSYSINF
+*CMD
+
+QSYS
+Save System Information
+SAVS36F
+*CMD
+
+QSYS
+Save S/36 File
+SAVS36LIBM
+*CMD
+
+QSYS
+Save S/36 Library Members
+SBMCODEJOB
+*CMD
+PRX
+QSYS
+Submit CODE Batch Job
+SBMDBJOB
+*CMD
+
+QSYS
+Submit Data Base Jobs
+SBMDKTJOB
+*CMD
+
+QSYS
+Submit Diskette Jobs
+SBMDOMCMD
+*CMD
+PRX
+QSYS
+Submit Domino Command
+SBMJOB
+*CMD
+
+QSYS
+Submit Job
+SBMNETJOB
+*CMD
+
+QSYS
+Submit Network Job
+SBMRMTCMD
+*CMD
+
+QSYS
+Submit Remote Command
+SELECT
+*CMD
+
+QSYS
+Select
+SETASPGRP
+*CMD
+
+QSYS
+Set ASP Group
+SETATNPGM
+*CMD
+
+QSYS
+Set Attention Program
+SETCSTDTA
+*CMD
+PRX
+QSYS
+Set Customization Data
+SETDNSRVK
+*CMD
+PRX
+QSYS
+Set DNSSEC REVOKE Bit
+SETDOMENV
+*CMD
+PRX
+QSYS
+Set Domino Environment
+SETKBDMAP
+*CMD
+
+QSYS
+Set Keyboard Map
+SETOBJACC
+*CMD
+
+QSYS
+Set Object Access
+SETPGMINF
+*CMD
+
+QSYS
+Set Program Information
+SETTAPCGY
+*CMD
+
+QSYS
+Set Tape Category
+SETVTMAP
+*CMD
+PRX
+QSYS
+Set VT Keyboard Map
+SETVTTBL
+*CMD
+PRX
+QSYS
+Set VT Mapping Tables
+SIGNOFF
+*CMD
+
+QSYS
+Sign Off
+SLTCMD
+*CMD
+
+QSYS
+Select Command
+SNDARPRQS
+*CMD
+
+QSYS
+Send ARP Request
+SNDBRKMSG
+*CMD
+
+QSYS
+Send Break Message
+SNDDST
+*CMD
+
+QSYS
+Send Distribution
+SNDF
+*CMD
+
+QSYS
+Send File
+SNDJRNE
+*CMD
+
+QSYS
+Send Journal Entry
+SNDMSG
+*CMD
+
+QSYS
+Send Message
+SNDNETF
+*CMD
+
+QSYS
+Send Network File
+SNDNETMSG
+*CMD
+
+QSYS
+Send Network Message
+SNDNETSPLF
+*CMD
+
+QSYS
+Send Network Spooled File
+SNDPGMMSG
+*CMD
+
+QSYS
+Send Program Message
+SNDRCVF
+*CMD
+
+QSYS
+Send/Receive File
+SNDRPY
+*CMD
+
+QSYS
+Send Reply
+SNDSMTPEMM
+*CMD
+PRX
+QSYS
+Send SMTP E-mail Message
+SNDTCPSPLF
+*CMD
+PRX
+QSYS
+Send TCP/IP Spooled File
+SNDTIEF
+*CMD
+
+QSYS
+Send TIE File
+SNDUSRMSG
+*CMD
+
+QSYS
+Send User Message
+STATFS
+*CMD
+
+QSYS
+Display Mounted FS Information
+STRACCWEB
+*CMD
+PRX
+QSYS
+Start Access for Web
+STRAFPU
+*CMD
+PRX
+QSYS
+Start AFP Utilities
+STRAGTSRV
+*CMD
+
+QSYS
+Start Agent Services
+STRAPF
+*CMD
+PRX
+QSYS
+Advanced Printer Function
+STRBLDIMPT
+*CMD
+PRX
+QSYS
+
+STRBLDSVR
+*CMD
+PRX
+QSYS
+
+STRCBLDBG
+*CMD
+PRX
+QSYS
+Start COBOL Debug
+STRCGU
+*CMD
+PRX
+QSYS
+Start CGU
+STRCLNUP
+*CMD
+
+QSYS
+Start Cleanup
+STRCMTCTL
+*CMD
+
+QSYS
+Start Commitment Control
+STRCODE
+*CMD
+PRX
+QSYS
+Start CODE
+STRCODECMD
+*CMD
+PRX
+QSYS
+Start CODE Command
+STRCPYSCN
+*CMD
+
+QSYS
+Start Copy Screen
+STRDBG
+*CMD
+
+QSYS
+Start Debug
+STRDBGSVR
+*CMD
+
+QSYS
+Start Debug Server
+STRDBMON
+*CMD
+
+QSYS
+Start Database Monitor
+STRDBRDR
+*CMD
+
+QSYS
+Start Data Base Reader
+STRDFU
+*CMD
+
+QSYS
+Start DFU
+STRDIGQRY
+*CMD
+PRX
+QSYS
+Start DIG Query
+STRDIRSHD
+*CMD
+
+QSYS
+Start Directory Shadowing
+STRDKTRDR
+*CMD
+
+QSYS
+Start Diskette Reader
+STRDKTWTR
+*CMD
+
+QSYS
+Start Diskette Writer
+STRDNSQRY
+*CMD
+PRX
+QSYS
+Start NSLOOKUP Query
+STRDOMSVR
+*CMD
+PRX
+QSYS
+Start Domino Server
+STREDU
+*CMD
+
+QSYS
+Start Education
+STREML3270
+*CMD
+
+QSYS
+Start 3270 Display Emulation
+STREPMENV
+*CMD
+
+QSYS
+Start EPM Environment
+STRFMA
+*CMD
+
+QSYS
+Start Font Management Aid
+STRHOSTQRY
+*CMD
+PRX
+QSYS
+Start HOST Query
+STRIDD
+*CMD
+
+QSYS
+Start IDDU
+STRIMPSMTP
+*CMD
+PRX
+QSYS
+Start Import for SMTP Users
+STRISDB
+*CMD
+PRX
+QSYS
+Start ISDB
+STRITF
+*CMD
+
+QSYS
+Start ITF
+STRJRN
+*CMD
+
+QSYS
+Start Journal
+STRJRNAP
+*CMD
+
+QSYS
+Start Journal Access Path
+STRJRNLIB
+*CMD
+
+QSYS
+Start Journal Library
+STRJRNOBJ
+*CMD
+
+QSYS
+Start Journal Object
+STRJRNPF
+*CMD
+
+QSYS
+Start Journal Physical File
+STRLOGSVR
+*CMD
+
+QSYS
+Start Job Log Server
+STRMOD
+*CMD
+
+QSYS
+Start Mode
+STROVLU
+*CMD
+PRX
+QSYS
+Start Overlay Utility
+STRPASTHR
+*CMD
+
+QSYS
+Start Pass-Through
+STRPCCMD
+*CMD
+PRX
+QSYS
+Start PC Command
+STRPCO
+*CMD
+PRX
+QSYS
+Start PC Organizer
+STRPDM
+*CMD
+PRX
+QSYS
+Start PDM
+STRPFU
+*CMD
+PRX
+QSYS
+Start Print Format Utility
+STRPGMEXP
+*CMD
+
+QSYS
+Start Program Export List
+STRPGMMNU
+*CMD
+
+QSYS
+Start Programmer Menu
+STRPJ
+*CMD
+
+QSYS
+Start Prestart Jobs
+STRPRTEML
+*CMD
+
+QSYS
+Start Printer Emulation
+STRPRTWTR
+*CMD
+
+QSYS
+Start Printer Writer
+STRQM
+*CMD
+PRX
+QSYS
+Start DB2 UDB Query Manager
+STRQMPRC
+*CMD
+
+QSYS
+Start Query Management Proc
+STRQMQRY
+*CMD
+
+QSYS
+Start Query Management Query
+STRQRY
+*CMD
+
+QSYS
+Start Query
+STRQSH
+*CMD
+PRX
+QSYS
+Start QSH
+STRQST
+*CMD
+
+QSYS
+Start Question and Answer
+STRREXPRC
+*CMD
+
+QSYS
+Start REXX Procedure
+STRRLU
+*CMD
+PRX
+QSYS
+Start Report Layout Utility
+STRRMTWTR
+*CMD
+
+QSYS
+Start Remote Writer
+STRRSESVR
+*CMD
+PRX
+QSYS
+Start RSE Server
+STRSAVSYNC
+*CMD
+
+QSYS
+Start Save Synchronization
+STRSBS
+*CMD
+
+QSYS
+Start Subsystem
+STRSCHIDX
+*CMD
+
+QSYS
+Start Search Index
+STRSDA
+*CMD
+PRX
+QSYS
+Start SDA
+STRSEU
+*CMD
+PRX
+QSYS
+Start Source Entry Utility
+STRSPTN
+*CMD
+
+QSYS
+Start Support Network
+STRSQL
+*CMD
+PRX
+QSYS
+Start SQL Interactive Session
+STRSRVJOB
+*CMD
+
+QSYS
+Start Service Job
+STRS36
+*CMD
+PRX
+QSYS
+Start S/36 Session
+STRS36PRC
+*CMD
+PRX
+QSYS
+Start S/36 Procedure
+STRTCPFTP
+*CMD
+PRX
+QSYS
+Start TCP/IP File Transfer
+STRTCPTELN
+*CMD
+PRX
+QSYS
+Start TCP/IP TELNET
+STRTIESSN
+*CMD
+
+QSYS
+Start TIE Session
+STRVFYMON
+*CMD
+PRX
+QSYS
+
+STRVPNCNN
+*CMD
+
+QSYS
+Start VPN Connection
+STRWEBQRY
+*CMD
+PRX
+QSYS
+WEBQRY Start Command
+SUBR
+*CMD
+
+QSYS
+Subroutine
+TELNET
+*CMD
+PRX
+QSYS
+Start TCP/IP TELNET
+TFRBCHJOB
+*CMD
+
+QSYS
+Transfer Batch Job
+TFRCTL
+*CMD
+
+QSYS
+Transfer Control
+TFRGRPJOB
+*CMD
+
+QSYS
+Transfer to Group Job
+TFRJOB
+*CMD
+
+QSYS
+Transfer Job
+TFRPASTHR
+*CMD
+
+QSYS
+Transfer Pass-Through
+TFRSECJOB
+*CMD
+
+QSYS
+Transfer Secondary Job
+TRACEROUTE
+*CMD
+
+QSYS
+Trace TCP/IP Route
+TRCREX
+*CMD
+
+QSYS
+Trace REXX
+TRCTCPRTE
+*CMD
+
+QSYS
+Trace TCP/IP Route
+TRCWEBQRY
+*CMD
+PRX
+QSYS
+WEBQRY Trace / Save Command
+TRNCKMKSF
+*CMD
+
+QSYS
+Translate Keystore File
+UPDBUILDER
+*CMD
+PRX
+QSYS
+
+UPDDOMSVR
+*CMD
+PRX
+QSYS
+Update Domino Server
+UPDDTA
+*CMD
+
+QSYS
+Update Data with Temp Program
+UPDPGM
+*CMD
+
+QSYS
+Update Program
+UPDSRVPGM
+*CMD
+
+QSYS
+Update Service Program
+VFYAPPCCNN
+*CMD
+
+QSYS
+Verify APPC Connection
+VFYBPR
+*CMD
+PRX
+QSYS
+
+VFYIMGCLG
+*CMD
+
+QSYS
+Verify Image Catalog
+VFYOBJ
+*CMD
+PRX
+QSYS
+
+VFYOPCCNN
+*CMD
+PRX
+QSYS
+
+VFYSRVCFG
+*CMD
+
+QSYS
+Verify Service Configuration
+VFYTCPCNN
+*CMD
+
+QSYS
+Verify TCP/IP Connection
+VRYCFG
+*CMD
+
+QSYS
+Vary Configuration
+WAIT
+*CMD
+
+QSYS
+Wait
+WHEN
+*CMD
+
+QSYS
+When
+WRKACTJOB
+*CMD
+
+QSYS
+Work with Active Jobs
+WRKALR
+*CMD
+
+QSYS
+Work with Alerts
+WRKALRD
+*CMD
+
+QSYS
+Work with Alert Descriptions
+WRKALRTBL
+*CMD
+
+QSYS
+Work with Alert Table
+WRKAPPNSTS
+*CMD
+
+QSYS
+Work with APPN Status
+WRKARMJOB
+*CMD
+
+QSYS
+Work with ARM Jobs
+WRKASPJOB
+*CMD
+
+QSYS
+Work with ASP Jobs
+WRKAUT
+*CMD
+
+QSYS
+Work with Authority
+WRKAUTL
+*CMD
+
+QSYS
+Work with Authorization Lists
+WRKBLDID
+*CMD
+PRX
+QSYS
+
+WRKBLDJOB
+*CMD
+PRX
+QSYS
+
+WRKBLDOPT
+*CMD
+PRX
+QSYS
+
+WRKBLDSVR
+*CMD
+PRX
+QSYS
+
+WRKBNDDIR
+*CMD
+
+QSYS
+Work with Binding Directories
+WRKBNDDIRE
+*CMD
+
+QSYS
+Work with Binding Dir Entries
+WRKBPRINF
+*CMD
+PRX
+QSYS
+
+WRKBPTBL
+*CMD
+
+QSYS
+Work with BOOTP table
+WRKCFGL
+*CMD
+
+QSYS
+Work with Configuration Lists
+WRKCFGSTS
+*CMD
+
+QSYS
+Work with Configuration Status
+WRKCHTFMT
+*CMD
+
+QSYS
+Work with Chart Formats
+WRKCLS
+*CMD
+
+QSYS
+Work with Classes
+WRKCMD
+*CMD
+
+QSYS
+Work with Commands
+WRKCMTDFN
+*CMD
+
+QSYS
+Work with Commitment Def
+WRKCNNL
+*CMD
+
+QSYS
+Work with Connection Lists
+WRKCOSD
+*CMD
+
+QSYS
+Work with COS Descriptions
+WRKCSI
+*CMD
+
+QSYS
+Work Comm Side Information
+WRKCTLD
+*CMD
+
+QSYS
+Work with Ctl Descriptions
+WRKDBFIDD
+*CMD
+
+QSYS
+Work with DB Files using IDDU
+WRKDDMF
+*CMD
+
+QSYS
+Work with DDM Files
+WRKDEVD
+*CMD
+
+QSYS
+Work with Device Descriptions
+WRKDIRE
+*CMD
+
+QSYS
+Work with Directory Entries
+WRKDIRLOC
+*CMD
+
+QSYS
+Work with Directory Locations
+WRKDIRSHD
+*CMD
+
+QSYS
+Work with Dir Shadow Systems
+WRKDOC
+*CMD
+
+QSYS
+Work with Documents
+WRKDOCLIB
+*CMD
+
+QSYS
+Work with Document Libraries
+WRKDOCPRTQ
+*CMD
+
+QSYS
+Work with Document Print Queue
+WRKDOMCSL
+*CMD
+PRX
+QSYS
+Work with Domino Console
+WRKDOMSVR
+*CMD
+PRX
+QSYS
+Work with Domino Servers
+WRKDSKSTS
+*CMD
+
+QSYS
+Work with Disk Status
+WRKDSTL
+*CMD
+
+QSYS
+Work with Distribution Lists
+WRKDTAARA
+*CMD
+
+QSYS
+Work with Data Areas
+WRKDTADCT
+*CMD
+
+QSYS
+Work with Data Dictionaries
+WRKDTADFN
+*CMD
+
+QSYS
+Work with Data Definitions
+WRKDTAQ
+*CMD
+
+QSYS
+Work with Data Queues
+WRKEDTD
+*CMD
+
+QSYS
+Work with Edit Descriptions
+WRKENVVAR
+*CMD
+
+QSYS
+Work with Environment Var
+WRKF
+*CMD
+
+QSYS
+Work with Files
+WRKFCNUSG
+*CMD
+
+QSYS
+Work with Function Usage
+WRKFLR
+*CMD
+
+QSYS
+Work with Folders
+WRKFNTRSC
+*CMD
+
+QSYS
+Work with Font Resources
+WRKFORMDF
+*CMD
+
+QSYS
+Work with Form Definitions
+WRKFTR
+*CMD
+
+QSYS
+Work with Filters
+WRKFTRACNE
+*CMD
+
+QSYS
+Work with Ftr Action Entry
+WRKFTRSLTE
+*CMD
+
+QSYS
+Work with Ftr Selection Entry
+WRKGSS
+*CMD
+
+QSYS
+Work with Graphics Symbol Sets
+WRKHDWPRD
+*CMD
+
+QSYS
+Work with Hardware Products
+WRKHDWRSC
+*CMD
+
+QSYS
+Work with Hardware Resources
+WRKHLDOPTF
+*CMD
+
+QSYS
+Work with Held Optical Files
+WRKIMGCLG
+*CMD
+
+QSYS
+Work with Image Catalogs
+WRKIMGCLGE
+*CMD
+
+QSYS
+Work with Catalog Entries
+WRKIPXD
+*CMD
+
+QSYS
+Work with IPX Descriptions
+WRKJOB
+*CMD
+
+QSYS
+Work with Job
+WRKJOBD
+*CMD
+
+QSYS
+Work with Job Descriptions
+WRKJOBLOG
+*CMD
+
+QSYS
+Work with Job Logs
+WRKJOBQ
+*CMD
+
+QSYS
+Work with Job Queue
+WRKJOBQD
+*CMD
+
+QSYS
+Work with Job Queue Desc
+WRKJOBSCDE
+*CMD
+
+QSYS
+Work with Job Schedule Entries
+WRKJRNA
+*CMD
+
+QSYS
+Work with Journal Attributes
+WRKJRNRCV
+*CMD
+
+QSYS
+Work with Journal Receivers
+WRKJVMJOB
+*CMD
+PRX
+QSYS
+Work with JVM Jobs
+WRKLANADPT
+*CMD
+
+QSYS
+Work With LAN Adapters
+WRKLIB
+*CMD
+
+QSYS
+Work with Libraries
+WRKLIBPDM
+*CMD
+PRX
+QSYS
+Work with Libraries Using PDM
+WRKLIND
+*CMD
+
+QSYS
+Work with Line Descriptions
+WRKLNK
+*CMD
+
+QSYS
+Work with Object Links
+WRKMBRPDM
+*CMD
+PRX
+QSYS
+Work with Members Using PDM
+WRKMLBRSCQ
+*CMD
+
+QSYS
+Work with MLB Resource Queue
+WRKMLBSTS
+*CMD
+
+QSYS
+Work with Media Library Status
+WRKMNU
+*CMD
+
+QSYS
+Work with Menus
+WRKMOD
+*CMD
+
+QSYS
+Work with Module
+WRKMODD
+*CMD
+
+QSYS
+Work with Mode Descriptions
+WRKMSG
+*CMD
+
+QSYS
+Work with Messages
+WRKMSGD
+*CMD
+
+QSYS
+Work with Message Descriptions
+WRKMSGF
+*CMD
+
+QSYS
+Work with Message Files
+WRKMSGQ
+*CMD
+
+QSYS
+Work with Message Queues
+WRKNAMSMTP
+*CMD
+PRX
+QSYS
+Work with Names for SMTP
+WRKNCK
+*CMD
+
+QSYS
+Work With Nickname
+WRKNETF
+*CMD
+
+QSYS
+Work with Network Files
+WRKNETJOBE
+*CMD
+
+QSYS
+Work with Network Job Entries
+WRKNETTBLE
+*CMD
+
+QSYS
+Work with Network Table Entry
+WRKNODL
+*CMD
+
+QSYS
+Work with Node List
+WRKNODLE
+*CMD
+
+QSYS
+Work with Node List Entries
+WRKNTBD
+*CMD
+
+QSYS
+Work with NetBIOS Descriptions
+WRKNWID
+*CMD
+
+QSYS
+Work with Network Interfaces
+WRKNWSD
+*CMD
+
+QSYS
+Work with Network Servers
+WRKNWSENR
+*CMD
+
+QSYS
+Work with NWS User Enrollment
+WRKNWSSTG
+*CMD
+
+QSYS
+Work with NWS Storage Spaces
+WRKNWSSTS
+*CMD
+
+QSYS
+Work with NWS Status
+WRKOBJ
+*CMD
+
+QSYS
+Work with Objects
+WRKOBJLCK
+*CMD
+
+QSYS
+Work with Object Locks
+WRKOBJOWN
+*CMD
+
+QSYS
+Work with Objects by Owner
+WRKOBJPDM
+*CMD
+PRX
+QSYS
+Work with Objects Using PDM
+WRKOBJPGP
+*CMD
+
+QSYS
+Work Objects by Primary Group
+WRKOBJPVT
+*CMD
+
+QSYS
+Work Objects by Private Auth
+WRKOPCACT
+*CMD
+PRX
+QSYS
+
+WRKOPTDIR
+*CMD
+
+QSYS
+Work with Optical Directories
+WRKOPTF
+*CMD
+
+QSYS
+Work with Optical Files
+WRKOPTVOL
+*CMD
+
+QSYS
+Work with Optical Volumes
+WRKOUTQ
+*CMD
+
+QSYS
+Work with Output Queue
+WRKOUTQD
+*CMD
+
+QSYS
+Work with OUTQ Description
+WRKOVL
+*CMD
+
+QSYS
+Work with Overlays
+WRKPAGDFN
+*CMD
+
+QSYS
+Work with Page Definitions
+WRKPAGSEG
+*CMD
+
+QSYS
+Work with Page Segments
+WRKPCLTBLE
+*CMD
+
+QSYS
+Work with Protocol Table Entry
+WRKPFCST
+*CMD
+
+QSYS
+Work with PF Constraints
+WRKPFDL
+*CMD
+
+QSYS
+Work with PF DataLinks
+WRKPGM
+*CMD
+
+QSYS
+Work with Programs
+WRKPMRMTS
+*CMD
+
+QSYS
+Work With Remote Systems
+WRKPMRPTO
+*CMD
+
+QSYS
+Work With Omissions
+WRKPMSCH
+*CMD
+
+QSYS
+Work With Scheduled Jobs
+WRKPNLGRP
+*CMD
+
+QSYS
+Work with Panel Groups
+WRKPRDBPR
+*CMD
+PRX
+QSYS
+
+WRKPRDINF
+*CMD
+
+QSYS
+Work with Product Information
+WRKPRTSTS
+*CMD
+
+QSYS
+Work with Printing Status
+WRKPSFCFG
+*CMD
+
+QSYS
+Work with PSF Configuration
+WRKQMFORM
+*CMD
+
+QSYS
+Work with Query Mgmt Forms
+WRKQMQRY
+*CMD
+
+QSYS
+Work with Query Mgmt Queries
+WRKQRY
+*CMD
+PRX
+QSYS
+Work With Queries
+WRKQST
+*CMD
+
+QSYS
+Work with Questions
+WRKRDBDIRE
+*CMD
+
+QSYS
+Work with RDB Directory Entry
+WRKRDR
+*CMD
+
+QSYS
+Work with Readers
+WRKREGINF
+*CMD
+
+QSYS
+Work with Registration Info
+WRKRPYLE
+*CMD
+
+QSYS
+Work with Reply List Entries
+WRKRTDCFG
+*CMD
+
+QSYS
+Work with RouteD Configuration
+WRKSBMJOB
+*CMD
+
+QSYS
+Work with Submitted Jobs
+WRKSBS
+*CMD
+
+QSYS
+Work with Subsystems
+WRKSBSD
+*CMD
+
+QSYS
+Work with Subsystem Desc
+WRKSBSJOB
+*CMD
+
+QSYS
+Work with Subsystem Jobs
+WRKSCHIDX
+*CMD
+
+QSYS
+Work with Search Indexes
+WRKSCHIDXE
+*CMD
+
+QSYS
+Work Search Index Entry
+WRKSFWAGR
+*CMD
+
+QSYS
+Work with Software Agreements
+WRKSHRPOOL
+*CMD
+
+QSYS
+Work with Shared Storage Pools
+WRKSMTPEMM
+*CMD
+PRX
+QSYS
+Work with SMTP E-mail Messages
+WRKSMTPUSR
+*CMD
+PRX
+QSYS
+Work with All SMTP Users
+WRKSOC
+*CMD
+
+QSYS
+Work with Sphere of Control
+WRKSPADCT
+*CMD
+
+QSYS
+Work with Spelling Aid Dict
+WRKSPLF
+*CMD
+
+QSYS
+Work with Spooled Files
+WRKSPLFA
+*CMD
+
+QSYS
+Work with Spooled File Attr
+WRKSRVPGM
+*CMD
+
+QSYS
+Work with Service Program
+WRKSRVTBLE
+*CMD
+
+QSYS
+Work with Service Table Entry
+WRKSYSSTS
+*CMD
+
+QSYS
+Work with System Status
+WRKSYSVAL
+*CMD
+
+QSYS
+Work with System Value
+WRKS36
+*CMD
+PRX
+QSYS
+Work with S/36 Configuration
+WRKS36PGMA
+*CMD
+
+QSYS
+Work with S/36 Program Attr
+WRKS36PRCA
+*CMD
+
+QSYS
+Work with S/36 Procedure Attr
+WRKS36SRCA
+*CMD
+
+QSYS
+Work with S/36 Source Attr
+WRKTAPCTG
+*CMD
+
+QSYS
+Work with Tape Cartridge
+WRKTBL
+*CMD
+
+QSYS
+Work with Tables
+WRKTCPPTP
+*CMD
+
+QSYS
+Work with Point-to-Point TCPIP
+WRKTCPSTS
+*CMD
+
+QSYS
+Work with TCP/IP Network Sts
+WRKTEF
+*CMD
+PRX
+QSYS
+
+WRKTIE
+*CMD
+
+QSYS
+Work with TIE
+WRKTIMZON
+*CMD
+
+QSYS
+Work with Time Zone Desc
+WRKUSRJOB
+*CMD
+
+QSYS
+Work with User Jobs
+WRKUSRPRF
+*CMD
+
+QSYS
+Work with User Profiles
+WRKVFYLIST
+*CMD
+PRX
+QSYS
+
+WRKWTR
+*CMD
+
+QSYS
+Work with Writers

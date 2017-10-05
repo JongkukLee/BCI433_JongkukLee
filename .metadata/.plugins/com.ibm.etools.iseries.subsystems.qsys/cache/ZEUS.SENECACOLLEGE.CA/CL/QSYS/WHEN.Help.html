@@ -1,0 +1,159 @@
+
+  <!doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+  <html>
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>When  (WHEN)</title>
+</head>
+<body bgcolor="white">
+<a name="WHEN.Top_Of_Page"></a>
+<h2>When  (WHEN)</h2>
+<table width="100%">
+<tr>
+<td align="left" valign="top"><b>Where allowed to run:  </b>
+<ul><li>Batch program (*BPGM)</li>
+<li>Interactive program (*IPGM)</li>
+</ul><b>Threadsafe:  </b>Yes
+</td>
+<td align="right" valign="top">
+<a href="#WHEN.PARAMETERS.TABLE">Parameters</a><br>
+<a href="#WHEN.COMMAND.EXAMPLES">Examples</a><br>
+<a href="#WHEN.ERROR.MESSAGES">Error messages</a></td>
+</tr>
+</table>
+
+<div> <a name="WHEN"></a>
+<p>The When (WHEN) command evaluates a logical expression and conditionally processes CL program or ILE CL procedure commands according to the evaluation of the expression.  If the logical expression is true (a logical 1), the command (or the group of commands in a Do group) specified in the THEN parameter is processed, and all subsequent When and Otherwise commands in the Select command group are not processed.  If the result of the logical expression is false (a logical 0), control passes to the next sequential When or Otherwise command in the Select group.
+</p>
+<p>When an IF, DO, DOWHILE, DOUNTIL, or DOFOR command is specified on the THEN parameter, the entire group of commands is bypassed if the result of the logical expression is false.  Control passes to the next When, Otherwise, or End Select command.
+</p>
+<p>When the command or Do group specified by the the THEN parameter is completed, control passes to the next command following the End Select command and processing continues from that command.
+</p>
+<p><b>Restrictions:</b>
+</p>
+<ul>
+<li>This command is valid only within a CL program or ILE CL procedure.
+</li>
+<li>This command is valid only within a SELECT-ENDSELECT command group.
+</li>
+</ul>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#WHEN.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+
+<div>
+<h3><a name="WHEN.PARAMETERS.TABLE">Parameters</a></h3>
+<table cellspacing="0" cellpadding="4" border="1"><tr>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Keyword</th>
+<th width="15%" align="left" valign="bottom" bgcolor="aqua">Description</th>
+<th width="30%" align="left" valign="bottom" bgcolor="aqua">Choices</th>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Notes</th>
+</tr>
+<tr>
+<td valign="top"><a href="#WHEN.COND"><b>COND</b></a></td>
+<td valign="top">Condition</td>
+<td valign="top"><i>Logical value</i></td>
+<td valign="top">Required, Positional 1</td>
+</tr>
+<tr>
+<td valign="top"><a href="#WHEN.THEN"><b>THEN</b></a></td>
+<td valign="top">Command</td>
+<td valign="top"><i>Command string</i></td>
+<td valign="top">Optional, Positional 2</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr><td align="right"><a href="#WHEN.Top_Of_Page">Top</a></td></tr>
+</table>
+</div>
+<div> <a name="WHEN.COND"></a>
+<h3>Condition (COND)</h3>
+<p>Specifies the logical expression that is evaluated to determine a condition in the program and what is done next.  Refer to "Logical Expressions" in the CL topic collection in the Programming category in the IBM i Information Center at http://www.ibm.com/systems/i/infocenter/ for a description of logical expressions.  Note that variables, constants, and the %SUBSTRING, %SWITCH, and %BINARY built-in functions can be used within the expression.
+</p>
+<p>To test if a pointer has a null value, the CL pointer variable can be compared to the special value *NULL if the CL source is being compiled with the Create CL Module (CRTCLMOD) or Create Bound CL Program (CRTBNDCL) command.  If the CL source is being compiled with the Create CL Program (CRTCLPGM) command, compare the CL pointer variable to another CL pointer variable that was declared with ADDRESS(*NULL) and has not been changed.
+</p>
+<p>This is a required parameter.
+</p>
+<dl>
+<dt><b><i>logical-value</i></b></dt>
+<dd>Specify the name of a CL logical variable or a logical expression.
+</dd>
+</dl>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#WHEN.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="WHEN.THEN"></a>
+<h3>Command (THEN)</h3>
+<p>Specifies the command or group of commands (in a Do group or If command) that are processed if the result of evaluating the logical expression is true.  After the command or Do group is processed, control is passed to the next command <i>after</i> the ENDSELECT command associated with this WHEN command.  If the command specified in this parameter is a DO, DOWHILE, DOUNTIL, or DOFOR command, all commands within the Do group are considered to be the command specified by the parameter.
+</p>
+<p>If no command is specified on the THEN parameter (a null THEN), control is passed to the next command <i>after</i> the ENDSELECT command associated with this WHEN command.
+</p>
+<p>If a DO command is specified, only the DO command (not the commands specified within the Do group) is within the parentheses.  For example:
+</p>
+<p>
+<pre>
+WHEN COND(&amp;A *EQ &amp;B)  THEN(DO)
+  CMD1
+  CMD2
+  ...
+  ENDDO
+</pre>
+</p>
+<p>If the logical expression evaluates to true and no command is specified on the THEN parameter (a null THEN) control is passed to the next command <i>after</i> the ENDSELECT command associated with this WHEN command.
+</p>
+<p>Any CL command can be specified on the THEN parameter, except the following commands:
+</p>
+<ul>
+<li>ELSE
+</li>
+<li>PGM, ENDPGM
+</li>
+<li>ENDDO
+</li>
+<li>MONMSG
+</li>
+<li>DCL, DCLF
+</li>
+<li>WHEN, OTHERWISE, ENDSELECT
+</li>
+</ul>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#WHEN.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="WHEN.COMMAND.EXAMPLES">Examples</a> </h3>
+<p>
+<pre>
+DCL   VAR(&amp;NAME)  TYPE(*CHAR)  LEN(10)
+DCL   VAR(&amp;INT)  TYPE(*INT)  LEN(4)
+ :
+SELECT
+  WHEN   COND(&amp;NAME *EQ *CMD)  THEN(DO)
+    :   (group of CL commands)
+  ENDDO
+  WHEN   COND(&amp;INT *EQ 1 &amp; &amp;NAME *EQ *PGM)  THEN(DO)
+    :   (group of CL commands)
+  ENDDO
+ENDSELECT
+</pre>
+</p>
+<p>The WHEN specifies the command to run if its condition is evaluated to true.  The WHEN commands in a SELECT group are evaluated in the order they are encountered.  If a WHEN condition is not met, processing continues with the next command following the ENDSELECT command.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#WHEN.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="WHEN.ERROR.MESSAGES">Error messages</a> </h3>
+<p>None
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#WHEN.Top_Of_Page">Top</a></td></tr>
+</table>
+</body>
+</html>

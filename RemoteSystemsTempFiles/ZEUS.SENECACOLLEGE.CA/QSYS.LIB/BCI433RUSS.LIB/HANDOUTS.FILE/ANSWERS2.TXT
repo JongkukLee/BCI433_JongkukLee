@@ -1,0 +1,152 @@
+000100120918
+000200120918  2.Lab 2
+000300170905      One of our students has pointed out a gotcha when using RDi. He could not add any fields
+000400120918      or text to his screen design. I came over and closed the tab and reopened it.
+000500120918
+000600120918      We did not know why his session was locked. He emailed me later and said when you right click
+000700120918      on a DSPF member there is an Open With / Screen Designer option and a Browse With / Screen
+000800120918      Designer option.
+000900120918
+001000120918       He had accidentally clicked on the Browse With option and that was why he wasn't allowed
+001100120918       to make any changes.
+001200120918
+001300120919  3.  I am trying to run MARKSRPG and get the message it is not located in the LIBL. What is wrong?
+001400120919
+001500120919    If you are trying to run the version of MARKSRPG that was done for you that is stored in
+001600170905     BCI433LIB, this is what happens.
+001700120919
+001800170905     CALL MARKSRPG   - program Is not found (BCI433LIB is not on your library list)
+001900120919
+002000170905     CALL BCI433LIB/MARKSRPG  - program is found but bombs because it uses MARKSDSP which is also
+002100170905                                  in BCI433LIB and that library is still not on your library list.
+002200120919
+002300170905     ADDLIBLE BCI433LIB
+002400170905     CALL MARKSRPG  works fine and MARKSDSP used by the program is found in BCI433LIB.
+002500120919
+002600120919  4. Is there any help available for RPGLE or CLLE?
+002700120919
+002800120919      Here are two RPGLE manuals:
+002900120919
+003000120919      http://publib.boulder.ibm.com/infocenter/iseries/v6r1m0/topic/rzasd/sc092508.pdf
+003100120919
+003200120919      http://publib.boulder.ibm.com/infocenter/iseries/v6r1m0/topic/rzasc/sc092507.pdf
+003300120919
+003400120919   You can use the information center by selecting and clicking.
+003500120919
+003600120919   http://publib.boulder.ibm.com/infocenter/iseries/v6r1m0/index.jsp?topic=/rzahg/icmain.htm
+003700120919
+003800120919
+003900120919
+004000120919  5.  What does ILE stand for?
+004100120919         That stands for Integrated Language Environment.  RPGLE and CLLE are used in ILE.
+004200120919         You can create a RPGLE module and a CLLE module and combine them into  a single bound
+004300120919         program. The modules are not executable on their own they require an extra step where
+004400120919         all modules are bound into an executable program.
+004500120919
+004600120919         So far we are only creating programs that have a single module and the compiling command
+004700120919         we use produces a bound program in the same step.  CRTBNDCL and CRTBNDRPG
+004800120919
+004900170905  6.  I am having trouble controling the indentation.  RDi is
+005000120925      automatically giving me indentation that I don't want with my CLLE program.
+005100120925
+005200120925   > THIS DEFAULT SETTING IS A LITTLE FRUSTRATING. I DIDN'T WANT THIS
+005300120925     SETUP - UNFORTUNATELY THE FIX WAS MISSED DURING INSTALATION.
+005400120925
+005500120925     HERE IS HOW YOU CAN FIX IT IN RDp:
+005600120925
+005700120925     Click on Windows/Preferences
+005800120925
+005900120925     In the left pane click on the following:
+006000120925                 Remote Systems
+006100120925                     Remote Systems LPEX Editor
+006200120925                         IBMi Parsers
+006300120925                              CL
+006400120925
+006500120925                                x Automatic Indent
+006600120925                                x Automatic Formatting
+006700120925
+006800120925     When you click on CL you should see a window that has both
+006900120925     Automatic indent and Automatic formating checked off.
+007000120925     Deselect these.
+007100121101
+007200121101   7.  I can't find the Job Description QMUSRCAT on the sysem?
+007300121101
+007400121101     One of our enterprising students located it with the proper spelling.
+007500121101     It is called QPMUSRCAT.
+007600121109
+007700121109  8.  Whenever I try and run CALL DSPSYSLVLP PARM('*MSGLINE''*NO''*NO') from the command line it
+007800121109      throws the error of 'Pointer is not set for location referenced' for both &SOLUTION and &SHOWC
+007900121109      MD. When I debug it appears that the variables are not being initialized at the PGM (&OUTPUT &
+008000121109      SOLUTION &SHOWCMD) line.
+008100121109
+008200121109  > You need to include some spaces as delimiters between parameters.
+008300121109
+008400121109    CALL DSPSYSLVLP PARM('*MSGLINE'   '*NO'   '*NO')
+008500121101
+008600121113  9.  I noticed that the STUDENTRPG program is not showing the records in the same
+008700121113     order as I get with a Show in Table in RDp.  With RDp the first student number
+008800121113     is 111111111 and I get a first record with a different number when I run my program.
+008900121113
+009000121113   > That is because your program is ignoring the key field and RDp is not.
+009100121113   The first record put in your students file is not 111111111 and the RPG program
+009200121113   needs a special adjustment to recognize the access path.
+009300121113
+009400121113   The fix is to include a K for Record Address Type:
+009500121113
+009600121113   FSTUDENTS  IF   E           K DISK
+009700121113
+009800121113          Record
+009900121113       Address Type
+010000121113            K
+010100121113
+010200121113  10.  I am having a problem running the sample program for lab 10. I get an error with the
+010300121113       printer file.
+010400121113
+010500121113      That is because the program you are running checks the library list for the printer
+010600170905      file and your library which has your printer file comes before the BCI433LIB library
+010700121113      which also has the printer file.
+010800121113
+010900170905      To avoid that problem  type CHGCURLIB BCI433LIB
+011000121113                                  run the program
+011100121113                                  CHGCURLIB (back to your library)
+011200121113
+011300121118
+011400121118  11. I am having a problem compiling my program for lab 10. I am including the SENECAPAY
+011500121118  library as part of my library list.
+011600121118
+011700121118 >  Remember we discussed in class that RPG asks for the file name and record format names
+011800121118 to be different.  If we use the SQL CREATE TABLE statement to produce a file the file
+011900121118 and record format names are the same.
+012000121118
+012100121118 The solution was to include RENAME(FILENAME:FILENAMER ) under keywords with the file spec.
+012200121118 This is basically saying to rename the record format name of FILENAME to FILENAMER for
+012300121118 the program.
+012400121118
+012500121118  12.  It looks like my ALLSHIFT file is not picking up the access path correctly.
+012600121118
+012700121118  You need to include a "K" under Record Address Type so the access path for your file is used by
+012800121118  your program.
+012900121124
+013000121124  13. For lab 10, do we create our own display file or use the CONFIRMPAY one?
+013100121124
+013200121124   Create your own display file.  If you see "Your Name Here" you are accidentally picking up
+013300121124   mine from the library list.
+013400121124
+013500121124
+013600121124  14.  I can't find my error:
+013700121124
+013800121124            A          R ALLSHIFT                  PFILE('SENECAPAY/ALLSHIFT')
+013900121124
+014000121124    > Don't use quotes around the library and filename after PFILE.
+014100121209
+014200121209    15. How do you get both infield (I) and Outfield (O) in the blue jay example
+014300121209    using a logical file:
+014400121209
+014500121209     A          R AMERICANLG                PFILE(BASEBALL12/AMERICANLG)
+014600121209     A          K POSITION
+014700121209     A          K LNAME
+014800121209     A          K FNAME
+014900121209     A          S TEAM                      COMP(EQ 3)
+015000121209     A            POSITION                  COMP(EQ 'O')
+015100121209     A          S TEAM                      COMP(EQ 3)
+015200121209     A            POSITION                  COMP(EQ 'I')

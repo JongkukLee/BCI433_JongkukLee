@@ -1,0 +1,24 @@
+Thu Oct 05 09:36:33 EDT 2017
+ERROR org.eclipse.rse.ui  EVFF5008
+--------------------------------------------
+Thu Oct 05 09:36:33 EDT 2017
+ERROR org.eclipse.rse.ui  QSYSTempFileListener.upload trying to find editor wrapper
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:283)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:375)
+	at org.eclipse.jface.window.Window.createShell(Window.java:491)
+	at org.eclipse.jface.window.Window.create(Window.java:434)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1101)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.jface.dialogs.ErrorDialog.open(ErrorDialog.java:372)
+	at org.eclipse.rse.ui.messages.SystemMessageDialog.open(SystemMessageDialog.java:460)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.upload(QSYSTempFileListener.java:312)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.doResourceSynchronization(QSYSTempFileListener.java:97)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener.synchronizeTempWithRemote(SystemTempFileListener.java:718)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener$SynchResourcesJob.run(SystemTempFileListener.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+--------------------------------------------

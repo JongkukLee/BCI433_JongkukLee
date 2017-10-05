@@ -1,0 +1,1079 @@
+
+  <!doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+  <html>
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Retrieve User Profile  (RTVUSRPRF)</title>
+</head>
+<body bgcolor="white">
+<a name="RTVUSRPRF.Top_Of_Page"></a>
+<h2>Retrieve User Profile  (RTVUSRPRF)</h2>
+<table width="100%">
+<tr>
+<td align="left" valign="top"><b>Where allowed to run:  </b>Compiled CL program or interpreted REXX (*BPGM *IPGM *BREXX *IREXX)<br>
+<b>Threadsafe:  </b>No
+</td>
+<td align="right" valign="top">
+<a href="#RTVUSRPRF.PARAMETERS.TABLE">Parameters</a><br>
+<a href="#RTVUSRPRF.COMMAND.EXAMPLES">Examples</a><br>
+<a href="#RTVUSRPRF.ERROR.MESSAGES">Error messages</a></td>
+</tr>
+</table>
+
+<div> <a name="RTVUSRPRF"></a>
+<p>The Retrieve User Profile (RTVUSRPRF) command is used in a control language (CL) program or a REXX procedure to get one or more of the values that are stored and associated with a user.  The values are returned in the specified variables for the desired user.
+</p>
+<p>The parameter prompt text lists the minimum length for the variables next to the appropriate parameters you want to retrieve.  For character variables, a single number is shown.  For decimal variables, two numbers are shown.  The first number indicates the minimum variable length and the second number indicates the minimum number of decimal positions.
+</p>
+<p><b>Restrictions:</b>
+</p>
+<ul>
+<li>Read (*READ) authority is required for the user profile specified on the USRPRF parameter.
+</li>
+</ul>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+
+<div>
+<h3><a name="RTVUSRPRF.PARAMETERS.TABLE">Parameters</a></h3>
+<table cellspacing="0" cellpadding="4" border="1"><tr>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Keyword</th>
+<th width="15%" align="left" valign="bottom" bgcolor="aqua">Description</th>
+<th width="30%" align="left" valign="bottom" bgcolor="aqua">Choices</th>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Notes</th>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.USRPRF"><b>USRPRF</b></a></td>
+<td valign="top">User profile</td>
+<td valign="top"><i>Name</i>, <b><u>*CURRENT</u></b></td>
+<td valign="top">Optional, Positional 1</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.RTNUSRPRF"><b>RTNUSRPRF</b></a></td>
+<td valign="top">CL var for RTNUSRPRF    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.SPCAUT"><b>SPCAUT</b></a></td>
+<td valign="top">CL var for SPCAUT      (100)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.MAXSTGLRG"><b>MAXSTGLRG</b></a></td>
+<td valign="top">CL var for MAXSTGLRG    (20)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.STGUSEDLRG"><b>STGUSEDLRG</b></a></td>
+<td valign="top">CL var for STGUSEDLRG   (20)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.PTYLMT"><b>PTYLMT</b></a></td>
+<td valign="top">CL var for PTYLMT        (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.INLPGM"><b>INLPGM</b></a></td>
+<td valign="top">CL var for INLPGM       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.INLPGMLIB"><b>INLPGMLIB</b></a></td>
+<td valign="top">CL var for INLPGMLIB    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.JOBD"><b>JOBD</b></a></td>
+<td valign="top">CL var for JOBD         (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.JOBDLIB"><b>JOBDLIB</b></a></td>
+<td valign="top">CL var for JOBDLIB      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.GRPPRF"><b>GRPPRF</b></a></td>
+<td valign="top">CL var for GRPPRF       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.OWNER"><b>OWNER</b></a></td>
+<td valign="top">CL var for OWNER        (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.GRPAUT"><b>GRPAUT</b></a></td>
+<td valign="top">CL var for GRPAUT       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.ACGCDE"><b>ACGCDE</b></a></td>
+<td valign="top">CL var for ACGCDE       (15)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.MSGQ"><b>MSGQ</b></a></td>
+<td valign="top">CL var for MSGQ         (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.MSGQLIB"><b>MSGQLIB</b></a></td>
+<td valign="top">CL var for MSGQLIB      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.OUTQ"><b>OUTQ</b></a></td>
+<td valign="top">CL var for OUTQ         (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.OUTQLIB"><b>OUTQLIB</b></a></td>
+<td valign="top">CL var for OUTQLIB      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.TEXT"><b>TEXT</b></a></td>
+<td valign="top">CL var for TEXT         (50)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.PWDCHGDAT"><b>PWDCHGDAT</b></a></td>
+<td valign="top">CL var for PWDCHGDAT     (6)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.USRCLS"><b>USRCLS</b></a></td>
+<td valign="top">CL var for USRCLS       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.ASTLVL"><b>ASTLVL</b></a></td>
+<td valign="top">CL var for ASTLVL       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.SPCENV"><b>SPCENV</b></a></td>
+<td valign="top">CL var for SPCENV       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.CURLIB"><b>CURLIB</b></a></td>
+<td valign="top">CL var for CURLIB       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.INLMNU"><b>INLMNU</b></a></td>
+<td valign="top">CL var for INLMNU       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.INLMNULIB"><b>INLMNULIB</b></a></td>
+<td valign="top">CL var for INLMNULIB    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.LMTCPB"><b>LMTCPB</b></a></td>
+<td valign="top">CL var for LMTCPB       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.DLVRY"><b>DLVRY</b></a></td>
+<td valign="top">CL var for DLVRY        (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.SEV"><b>SEV</b></a></td>
+<td valign="top">CL var for SEV         (2 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.PRTDEV"><b>PRTDEV</b></a></td>
+<td valign="top">CL var for PRTDEV       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.ATNPGM"><b>ATNPGM</b></a></td>
+<td valign="top">CL var for ATNPGM       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.ATNPGMLIB"><b>ATNPGMLIB</b></a></td>
+<td valign="top">CL var for ATNPGMLIB    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.USROPT"><b>USROPT</b></a></td>
+<td valign="top">CL var for USROPT      (240)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.DSPSGNINF"><b>DSPSGNINF</b></a></td>
+<td valign="top">CL var for DSPSGNINF     (7)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.PWDEXPITV"><b>PWDEXPITV</b></a></td>
+<td valign="top">CL var for PWDEXPITV   (5 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.PWDEXP"><b>PWDEXP</b></a></td>
+<td valign="top">CL var for PWDEXP        (4)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.STATUS"><b>STATUS</b></a></td>
+<td valign="top">CL var for STATUS       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.PRVSIGN"><b>PRVSIGN</b></a></td>
+<td valign="top">CL var for PRVSIGN      (13)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.NOTVLDSIGN"><b>NOTVLDSIGN</b></a></td>
+<td valign="top">CL var for NOTVLDSIGN (11 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.LMTDEVSSN"><b>LMTDEVSSN</b></a></td>
+<td valign="top">CL var for LMTDEVSSN     (7)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.KBDBUF"><b>KBDBUF</b></a></td>
+<td valign="top">CL var for KBDBUF       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.LANGID"><b>LANGID</b></a></td>
+<td valign="top">CL var for LANGID       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.CNTRYID"><b>CNTRYID</b></a></td>
+<td valign="top">CL var for CNTRYID      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.CCSID"><b>CCSID</b></a></td>
+<td valign="top">CL var for CCSID       (5 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.SRTSEQ"><b>SRTSEQ</b></a></td>
+<td valign="top">CL var for SRTSEQ       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.SRTSEQLIB"><b>SRTSEQLIB</b></a></td>
+<td valign="top">CL var for SRTSEQLIB    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.OBJAUD"><b>OBJAUD</b></a></td>
+<td valign="top">CL var for OBJAUD       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.AUDLVL"><b>AUDLVL</b></a></td>
+<td valign="top">CL var for AUDLVL      (640)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.GRPAUTTYP"><b>GRPAUTTYP</b></a></td>
+<td valign="top">CL var for GRPAUTTYP    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.SUPGRPPRF"><b>SUPGRPPRF</b></a></td>
+<td valign="top">CL var for SUPGRPPRF   (150)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.UID"><b>UID</b></a></td>
+<td valign="top">CL var for UID        (10 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.GID"><b>GID</b></a></td>
+<td valign="top">CL var for GID        (10 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.SETJOBATR"><b>SETJOBATR</b></a></td>
+<td valign="top">CL var for SETJOBATR   (160)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.CHRIDCTL"><b>CHRIDCTL</b></a></td>
+<td valign="top">CL var for CHRIDCTL     (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.LCLPWDMGT"><b>LCLPWDMGT</b></a></td>
+<td valign="top">CL var for LCLPWDMGT    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.PWDCHGBLK"><b>PWDCHGBLK</b></a></td>
+<td valign="top">CL var for PWDCHGBLK    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.USREXPDATE"><b>USREXPDATE</b></a></td>
+<td valign="top">CL var for USREXPDATE    (6)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.USREXPITV"><b>USREXPITV</b></a></td>
+<td valign="top">CL var for USREXPITV   (5 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.USREXPACT"><b>USREXPACT</b></a></td>
+<td valign="top">CL var for USREXPACT    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.MAXSTG"><b>MAXSTG</b></a></td>
+<td valign="top">CL var for MAXSTG     (11 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVUSRPRF.STGUSED"><b>STGUSED</b></a></td>
+<td valign="top">CL var for STGUSED    (15 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+</div>
+<div> <a name="RTVUSRPRF.USRPRF"></a>
+<h3>User profile (USRPRF)</h3>
+<p>Specifies the user profile whose information you want to retrieve.  If a variable is specified, it must be 10 characters in length and contain a user name or the value *CURRENT.
+</p>
+<dl>
+<dt><b><u>*CURRENT</u></b></dt>
+<dd>The user profile that is currently running is used.
+</dd>
+<dt><b><i>name</i></b></dt>
+<dd>Specify the name of the user profile whose information you want to retrieve.
+</dd>
+</dl>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.RTNUSRPRF"></a>
+<h3>CL var for RTNUSRPRF    (10) (RTNUSRPRF)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the user profile.  In CL programs, this should be a 10-character variable.  If *CURRENT is specified for the <b>User profile (USRPRF)</b> parameter, the value returned is the currently running user profile name.  If a name is specified, that name is returned for this parameter.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.SPCAUT"></a>
+<h3>CL var for SPCAUT      (100) (SPCAUT)</h3>
+<p>Specifies the name of a variable that is used to retrieve the list of special authorities the user has.  In CL programs, this should be a 100-character variable.  The format returned is a list of up to 10 entries.  Each entry is 10 characters in length and each entry contains a special authority.  If there are fewer than 10 special authorities in the list, the remaining entries are padded on the right with blanks.  If the user has no special authorities, the first entry contains the value of *NONE, followed by blanks.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.MAXSTGLRG"></a>
+<h3>CL var for MAXSTGLRG    (20) (MAXSTGLRG)</h3>
+<p>Specifies the name of a variable that is used to retrieve the maximum amount of auxiliary storage that can be assigned to store permanent objects owned by the specified user.
+</p>
+<p>In CL programs, this should be a 20-character variable.  The value is returned in kilobytes (1 kilobyte (KB) equals 1024 bytes). The value returned will be a number or *NOMAX.  If the value is shorter than the length of the field, the value is padded on the right with blanks.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.STGUSEDLRG"></a>
+<h3>CL var for STGUSEDLRG   (20) (STGUSEDLRG)</h3>
+<p>Specifies the name of a variable that is used to get the amount of auxiliary storage that is currently being used to store permanent objects owned by the specified user profile.
+</p>
+<p>In CL programs, this should be a 20-character variable. The value is returned in kilobytes (1 kilobyte (KB) equals 1024 bytes). If the value is shorter than the length of the field, the value is padded on the right with blanks.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.PTYLMT"></a>
+<h3>CL var for PTYLMT        (1) (PTYLMT)</h3>
+<p>Specifies the name of a variable used to retrieve the highest scheduling priority the user is allowed to have for each job submitted to the system. In CL programs, the variable has a length of 1 character. This value controls the job processing priority that any job running under this user can have. This means that values specified in the JOBPTY and OUTPTY parameters of any job command cannot exceed the PTYLMT value specified for the user under which the job is run. The scheduling priority can have a value ranging from 0 through 9, where 0 is the highest priority and 9 is the lowest priority.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.INLPGM"></a>
+<h3>CL var for INLPGM       (10) (INLPGM)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the initial program that starts when the specified user signs on to the system.  In CL programs, this should be a 10-character variable.  If no initial program name is associated with the specified user, the value returned in the variable is *NONE.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.INLPGMLIB"></a>
+<h3>CL var for INLPGMLIB    (10) (INLPGMLIB)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the library that contains the initial program associated with the specified user.  In CL programs, this should be a 10-character variable.  If there is no initial program associated with the specified user, blanks are returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.JOBD"></a>
+<h3>CL var for JOBD         (10) (JOBD)</h3>
+<p>The name of a variable that is used to retrieve the name of the job description associated with the specified user.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.JOBDLIB"></a>
+<h3>CL var for JOBDLIB      (10) (JOBDLIB)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the library that contains the job description associated with the specified user.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.GRPPRF"></a>
+<h3>CL var for GRPPRF       (10) (GRPPRF)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the group profile.  In CL programs, this should be a 10-character variable.  If no group profile exists for the specified user profile, a value of *NONE is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.OWNER"></a>
+<h3>CL var for OWNER        (10) (OWNER)</h3>
+<p>Specifies the name of a variable that is used to retrieve the special value of *USRPRF or *GRPPRF.  This parameter The owner of newly created objects.  This is either the specified user or the user's group profile.  In CL programs, this should be a 10-character variable.  If no group profile exists for the specified user profile, the value returned in the variable is *USRPRF.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.GRPAUT"></a>
+<h3>CL var for GRPAUT       (10) (GRPAUT)</h3>
+<p>Specifies the name of a variable used to retrieve the authority granted to the group profile for newly-created objects.  The special value of *NONE, *CHANGE, *ALL, *USE, or *EXCLUDE is returned in the variable.  If there is no group profile for the specified user, or if the group profile is the owner of the objects the specified user creates, the special value returned is *NONE.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.ACGCDE"></a>
+<h3>CL var for ACGCDE       (15) (ACGCDE)</h3>
+<p>The name of a variable that is used to retrieve the value of the accounting code assigned to the specified user.  In CL programs, this should be a 15-character variable.  If no accounting code exists for the user profile, blanks are returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.MSGQ"></a>
+<h3>CL var for MSGQ         (10) (MSGQ)</h3>
+<p>The name of a variable that is used to retrieve the name of the message queue associated with the specified user.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.MSGQLIB"></a>
+<h3>CL var for MSGQLIB      (10) (MSGQLIB)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the library that contains the message queue associated with the specified user.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.OUTQ"></a>
+<h3>CL var for OUTQ         (10) (OUTQ)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the output queue associated with the specified user.  In CL programs, this should be a 10-character variable.  The special value *DEV or *WRKSTN is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.OUTQLIB"></a>
+<h3>CL var for OUTQLIB      (10) (OUTQLIB)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the library that contains the output queue associated with the specified user.  In CL programs, this should be a 10-character variable.  Blanks are returned if the current value for the <b>Output queue (OUTQ)</b> parameter is *DEV or *WRKSTN.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.TEXT"></a>
+<h3>CL var for TEXT         (50) (TEXT)</h3>
+<p>Specifies the name of a variable that is used to retrieve the user-defined description for the specified user profile.  In CL programs, this should be a 50-character variable.  If there is no text associated with the user, blanks are returned in the CL variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.PWDCHGDAT"></a>
+<h3>CL var for PWDCHGDAT     (6) (PWDCHGDAT)</h3>
+<p>Specifies the name of a variable that is used to retrieve the date when the password for the specified user was last changed.  The date is returned in the form YYMMDD.  In CL programs, this should be a 6-character variable.  If the user does not have a date, blanks are returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.USRCLS"></a>
+<h3>CL var for USRCLS       (10) (USRCLS)</h3>
+<p>Specifies the name of a variable that is used to retrieve the user class for the specified user.  A special value of *USER, *SYSOPR, *PGMR, *SECADM, or *SECOFR is returned in the variable.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.ASTLVL"></a>
+<h3>CL var for ASTLVL       (10) (ASTLVL)</h3>
+<p>Specifies the name of a variable that is used to retrieve the assistance level for the specified user.  A special value of *SYSVAL, *BASIC, *INTERMED, or *ADVANCED is returned in the variable.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.SPCENV"></a>
+<h3>CL var for SPCENV       (10) (SPCENV)</h3>
+<p>Specifies the name of a variable that is the starting environment for the specified user.  A special value of *SYSVAL, *NONE, or *S36 is returned in the variable.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.CURLIB"></a>
+<h3>CL var for CURLIB       (10) (CURLIB)</h3>
+<p>The name of the variable that is used to retrieve the name of the job's default library for the specified user.  A value of *CRTDFT is returned in the variable if no current library exists for this user.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.INLMNU"></a>
+<h3>CL var for INLMNU       (10) (INLMNU)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the initial menu that is shown when the specified user signs on to the system.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.INLMNULIB"></a>
+<h3>CL var for INLMNULIB    (10) (INLMNULIB)</h3>
+<p>The name of the variable that is used to retrieve the library name that contains the initial menu.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.LMTCPB"></a>
+<h3>CL var for LMTCPB       (10) (LMTCPB)</h3>
+<p>Specifies the name of a variable that is used to retrieve the values for the limits to which users can change their user profiles and run commands.  In CL programs, this should be a 10-character variable.  A special value of *NO, *YES, or *PARTIAL is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.DLVRY"></a>
+<h3>CL var for DLVRY        (10) (DLVRY)</h3>
+<p>Specifies the name of a variable that is used to retrieve the message control delivery value for the specified user profile.  In CL programs, this should be a 10-character variable.  The special value of *NOTIFY, *BREAK, *HOLD, or *DFT is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.SEV"></a>
+<h3>CL var for SEV         (2 0) (SEV)</h3>
+<p>Specifies the name of a variable that is used to retrieve the message control severity level for the specified user.  In CL programs this should be a variable length of (2 0).
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.PRTDEV"></a>
+<h3>CL var for PRTDEV       (10) (PRTDEV)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the printer device for the specified user.  In CL programs, this should be a 10-character variable.  A value of *SYSVAL is returned if the printer device name is from the system value QPRTDEV.  A value of *WRKSTN is returned if the printer device name is from the printer device assigned to the user's work station.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.ATNPGM"></a>
+<h3>CL var for ATNPGM       (10) (ATNPGM)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the Attention key handling program for the specified user.  In CL programs, the variable has a length of 10 characters.  A value of *SYSVAL if the attention key handling program is from system value QATNPGM.  A value of *NONE is returned if no Attention key handling program was specified for this user.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.ATNPGMLIB"></a>
+<h3>CL var for ATNPGMLIB    (10) (ATNPGMLIB)</h3>
+<p>Specifies the name of a variable that is used to retrieve the name of the Attention key handling program library for the specified user.  In CL programs, this should be a 10-character variable.  If *NONE is the current value for the <b>Attention program (ATNPGM)</b> parameter, blanks are returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.USROPT"></a>
+<h3>CL var for USROPT      (240) (USROPT)</h3>
+<p>Specifies the name of a variable that is used to retrieve the list of values for user options for the specified user.  In CL programs, this should be a 240-character variable.  The special value of *NONE or a list of values is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.DSPSGNINF"></a>
+<h3>CL var for DSPSGNINF     (7) (DSPSGNINF)</h3>
+<p>Specifies the name of a variable that is used to retrieve the sign-on information display indicator for the specified user.  In CL programs, this should be a 7-character variable.  The special value of *SYSVAL, *YES, or *NO is returned in the variable.  If *SYSVAL is returned, the display sign-on information indicator is from the system value QDSPSGNINF.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.PWDEXPITV"></a>
+<h3>CL var for PWDEXPITV   (5 0) (PWDEXPITV)</h3>
+<p>Specifies the name of a variable that is used to retrieve the password expiration interval for the specified user.  In CL programs, the variable specified must be packed (5,0) in length.  The value returned is either a number ranging from 1 through 366, 0 if it is *SYSVAL, or -1 if it is *NOMAX.  If 0 is returned (*SYSVAL), then the password expiration interval is from the system value QPWDEXPITV.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.PWDEXP"></a>
+<h3>CL var for PWDEXP        (4) (PWDEXP)</h3>
+<p>Specifies the name of a variable that is used to retrieve the password expired indicator for the specified user.  In CL programs, this should be a 4-character variable.  The special value of *YES or *NO is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.STATUS"></a>
+<h3>CL var for STATUS       (10) (STATUS)</h3>
+<p>The name of a variable that is used to retrieve the status of the specified user profile.  In CL programs, this should be a 10-character variable.  The special value of *ENABLED or *DISABLED is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.PRVSIGN"></a>
+<h3>CL var for PRVSIGN      (13) (PRVSIGN)</h3>
+<p>Specifies the name of a variable that is used to retrieve the previous sign-on date and time for the specified user.  The date and time are returned in the form CYYMMDDHHMMSS.  In CL programs, this should be a 13-character variable.  If the user has not signed on previously, blanks are returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.NOTVLDSIGN"></a>
+<h3>CL var for NOTVLDSIGN (11 0) (NOTVLDSIGN)</h3>
+<p>Specifies the name of a variable that is used to retrieve the number of password verification attempts that were not valid for the specified user.  In CL programs, the variable specified must be packed (11 0) in length.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.LMTDEVSSN"></a>
+<h3>CL var for LMTDEVSSN     (7) (LMTDEVSSN)</h3>
+<p>Specifies the name of a variable that is used to retrieve the limit device sessions indicator for the specified user.  A value of *SYSVAL, *YES, *NO, 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9 can be returned in the CL variable.  If *SYSVAL is returned, the limit device sessions indicator is from the system value QLMTDEVSSN.  In CL programs, this should be a 7-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.KBDBUF"></a>
+<h3>CL var for KBDBUF       (10) (KBDBUF)</h3>
+<p>Specifies the name of a variable that is used to retrieve the keyboard buffering value for the specified user.  The special value of *SYSVAL, *NO, *TYPEAHEAD, or *YES is returned in the CL variable.  If *SYSVAL is returned, the keyboard buffering value is the same as the system value QKBDBUF.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.LANGID"></a>
+<h3>CL var for LANGID       (10) (LANGID)</h3>
+<p>Specifies the name of a variable that is used to retrieve the language identifier for the specified user.  The special value *SYSVAL or the language identifier is returned in the variable.  If *SYSVAL is returned, the language identifier for the user is determined by the QLANGID system value.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.CNTRYID"></a>
+<h3>CL var for CNTRYID      (10) (CNTRYID)</h3>
+<p>Specifies the name of a variable that is used to retrieve the country or region identifier for the specified user.  The special value *SYSVAL or the country or region identifier is returned in the variable.  If *SYSVAL is returned, the country or region identifier for the user is determined by the QCNTRYID system value.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.CCSID"></a>
+<h3>CL var for CCSID       (5 0) (CCSID)</h3>
+<p>Specifies the name of a variable that is used to retrieve the coded character set identifier (CCSID) for the specified user.  A 5-digit value is returned or, if the system value QCCSID is used to determine the CCSID for the user, a value of -2 is returned.  In CL programs, this should be a decimal variable length of (5 0).
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.SRTSEQ"></a>
+<h3>CL var for SRTSEQ       (10) (SRTSEQ)</h3>
+<p>Specifies the name of a variable used to retrieve the sort sequence table for the specified user.  The value returned is one of the following:  *HEX, *LANGIDUNQ, *LANGIDSHR, *SYSVAL, or the 10-character table identifier.  If *SYSVAL is returned, the table identifier for the user is determined by the QSRTSEQ system value.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.SRTSEQLIB"></a>
+<h3>CL var for SRTSEQLIB    (10) (SRTSEQLIB)</h3>
+<p>Specifies the name of a variable used to retrieve the sort sequence table library for the specified user.  The value returned is the 10-character library identifier.  The variable is set to blanks unless a sort sequence table name is specified.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.OBJAUD"></a>
+<h3>CL var for OBJAUD       (10) (OBJAUD)</h3>
+<p>The name of a 10-character variable that is used to retrieve the object auditing value for the specified user.  The special value of *NONE, *CHANGE, or *ALL, as specified on the Change User Audit (CHGUSRAUD) command, is returned in the variable.  When the user of this command does not have either *ALLOBJ or *AUDIT special authority, *NOTAVL is returned.  When less than 10 characters are returned, the variable is padded on the right with blanks.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.AUDLVL"></a>
+<h3>CL var for AUDLVL      (640) (AUDLVL)</h3>
+<p>Specifies the name of a variable used to retrieve the action auditing values for the specified user.  In CL programs, the variable has a length of 640 characters.  The format returned is a list of a maximum of 64 action auditing values, with each value being 10 characters long. If there are fewer than 64 action auditing values to be returned, the remaining values are padded on the right with blanks.
+</p>
+<p>If the user of this command does not have either *ALLOBJ or *AUDIT special authority, the first value returned will be *NOTAVL followed by blanks.
+</p>
+<p>If the user has no action auditing values, the first value returned will be *NONE followed by blanks.
+</p>
+<p>If the user has action auditing values, one or more of the following special values, as specified in the Change User Audit (CHGUSRAUD) command, is returned in the variable.
+</p>
+<ul>
+<li>*AUTFAIL
+</li>
+<li>*CMD
+</li>
+<li>*CREATE
+</li>
+<li>*DELETE
+</li>
+<li>*JOBBAS
+</li>
+<li>*JOBCHGUSR
+</li>
+<li>*JOBDTA
+</li>
+<li>*NETBAS
+</li>
+<li>*NETCLU
+</li>
+<li>*NETCMN
+</li>
+<li>*NETFAIL
+</li>
+<li>*NETSCK
+</li>
+<li>*OBJMGT
+</li>
+<li>*OFCSRV
+</li>
+<li>*OPTICAL
+</li>
+<li>*PGMADP
+</li>
+<li>*PGMFAIL
+</li>
+<li>*PRTDTA
+</li>
+<li>*SAVRST
+</li>
+<li>*SECCFG
+</li>
+<li>*SECDIRSRV
+</li>
+<li>*SECIPC
+</li>
+<li>*SECNAS
+</li>
+<li>*SECRUN
+</li>
+<li>*SECSCKD
+</li>
+<li>*SECURITY
+</li>
+<li>*SECVFY
+</li>
+<li>*SECVLDL
+</li>
+<li>*SERVICE
+</li>
+<li>*SPLFDTA
+</li>
+<li>*SYSMGT
+</li>
+</ul>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.GRPAUTTYP"></a>
+<h3>CL var for GRPAUTTYP    (10) (GRPAUTTYP)</h3>
+<p>Specifies the name of a variable used to retrieve the type of authority to be granted to the group profile for newly-created objects.  In CL programs, the variable has a length of 10 characters.  The special value of *PRIVATE or *PGP is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.SUPGRPPRF"></a>
+<h3>CL var for SUPGRPPRF   (150) (SUPGRPPRF)</h3>
+<p>Specifies the name of a variable used to retrieve the supplemental group profiles for the specified user.  In CL programs, the variable has a length of 150 characters.  The format returned is a list of up to 15 supplemental group profiles, with each entry 10 characters long.  If there are fewer than 15 supplemental groups in the list, the remaining entries are padded on the right with blanks.  If the user has no supplemental groups, the first entry contains the value of *NONE followed by blanks.
+</p>
+<p>The supplemental group profiles are returned in the following format:
+</p>
+<p>
+<pre>
+<b>Entry-1</b>
+   Supplemental group profile CHAR(10)
+<b>Entry-2</b>
+   Supplemental group profile CHAR(10)
+    .
+    .
+    .
+<b>Entry-15</b>
+Supplemental group profile CHAR(10)
+</pre>
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.UID"></a>
+<h3>CL var for UID        (10 0) (UID)</h3>
+<p>Specifies the name of a variable used to retrieve the user ID number (uid) for the specified user.  In CL programs, this should be a decimal variable length of (10 0).
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.GID"></a>
+<h3>CL var for GID        (10 0) (GID)</h3>
+<p>Specifies the name of a variable used to retrieve the group ID number (gid) for the specified user.  In CL programs, this should be a decimal variable length of (10 0).  The value returned is either a 10-digit value or a value of 0 if the gid is *NONE.  The variable must be a 10-digit value with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.SETJOBATR"></a>
+<h3>CL var for SETJOBATR   (160) (SETJOBATR)</h3>
+<p>Specifies the name of a variable used to retrieve the job attributes set from the LOCALE path name of the specified user.  In CL programs, the variable has a length of 160 characters.  The format returned is a list of up to 16 job attributes that are set, with each entry 10 characters long.  If there are fewer than 16 attributes in the list, the remaining entries are padded on the right with blanks. If no attributes are set from the locale path name for the user, the first entry contains the value of *NONE followed by blanks.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.CHRIDCTL"></a>
+<h3>Character identifier control (CHRIDCTL)</h3>
+<p>Specifies the name of a variable used to retrieve the character identifier control for the specified user. In CL programs, this variable should have a length of 10 characters. The special value of *DEVD, *JOBCCSID, or *SYSVAL is returned in the variable.  If *SYSVAL is returned, the CHRID control for the user is determined by the QCHRIDCTL system value.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.LCLPWDMGT"></a>
+<h3>CL var for LCLPWDMGT    (10) (LCLPWDMGT)</h3>
+<p>Specifies the name of a variable used to retrieve local password management for the specified user. In CL programs, this variable should have a length of 10 characters. The special value of *YES or *NO is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.PWDCHGBLK"></a>
+<h3>CL var for PWDCHGBLK    (10) (PWDCHGBLK)</h3>
+<p>Specifies the name of a variable used to retrieve the block password change value for the specified user. A value of *NONE, *SYSVAL, or 1-99 can be returned in the CL variable.  If *SYSVAL is returned, the block password change value for the user is determined by the QPWDCHGBLK system value.  In CL programs, this should be a 10-character variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.USREXPDATE"></a>
+<h3>CL var for USREXPDATE    (6) (USREXPDATE)</h3>
+<p>Specifies the name of a variable that is used to retrieve the date when the user profile expires.  The date is returned in the form YYMMDD.  In CL programs, this should be a 6-character variable.  If the user profile will not expire, blanks are returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.USREXPITV"></a>
+<h3>CL var for USREXPITV   (5 0) (USREXPITV)</h3>
+<p>Specifies the name of a variable that is used to retrieve the user expiration interval for the specified user.  In CL programs, the variable specified must be packed (5,0) in length.  The value returned is either a number ranging from 1 through 366, or 0 if the user profile does not have a user expiration interval.  If a value other than 0 is returned, the User expiration date field (USREXPDATE) contains the date when the user profile expires.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.USREXPACT"></a>
+<h3>CL var for USREXPACT    (10) (USREXPACT)</h3>
+<p>Specifies the name of a variable that is used to retrieve the action when the user profile expires.  In CL programs, this should be a 10-character variable.  The special value of *NONE, *DISABLE, or *DELETE is returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.MAXSTG"></a>
+<h3>CL var for MAXSTG     (11 0) (MAXSTG)</h3>
+<p>Specifies the name of a variable that is used to retrieve the maximum amount of auxiliary storage that can be assigned to store permanent objects owned by the specified user.
+</p>
+<p>In CL programs, this should be a decimal variable length of (11 0).  The variable must be an 11-digit value with no decimal positions.  The value returned is either an 11-digit value in kilobytes (1 kilobyte (KB) equals 1024 bytes), -1 if it is *NOMAX, or -2 if the maximum auxiliary storage is larger than 2,147,483,647. Use the <b>CL var for MAXSTGLRG    (20) (MAXSTGLRG)</b> parmeter to retrieve a value larger than 2,147,483,647.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVUSRPRF.STGUSED"></a>
+<h3>CL var for STGUSED    (15 0) (STGUSED)</h3>
+<p>Specifies the name of a variable that is used to get the amount of auxiliary storage that is currently being used to store permanent objects owned by the specified user profile.
+</p>
+<p>In CL programs, this should be a decimal variable length of (15 0).  The variable must be a 15-digit value with no decimal positions.  The value returned is either a 15-digit value in kilobytes (1 kilobyte (KB) equals 1024 bytes) or -2 if the auxiliary storage used is larger than 2,147,483,647. Use the <b>CL var for STGUSEDLRG   (20) (STGUSEDLRG)</b> parameter to retrieve a value larger than 2,147,483,647.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="RTVUSRPRF.COMMAND.EXAMPLES">Examples</a> </h3>
+<p>
+<pre>
+CRTUSRPRF   USRPRF(SMITH)  SPCAUT(*SAVSYS *SECADM)
+            MAXSTG(*NOMAX)  PTYLMT(4)
+            INLPGM(*NONE)  MSGQ(QGPL/SMITHMQ)
+            OUTQ(QGPL/QSMITH)  TEXT('John Smith User Profile')
+</pre>
+</p>
+<p>If the SMITH user profile is created using the above command, when user SMITH calls a CL program containing the following:
+</p>
+<p>
+<pre>
+DCL   &amp;UNAME    *CHAR  10
+DCL   &amp;URIGHT   *CHAR  100
+DCL   &amp;IPGM     *CHAR  10
+DCL   &amp;IPGMLB   *CHAR  10
+DCL   &amp;UMSGQ    *CHAR  10
+DCL   &amp;UMSQLB   *CHAR  10
+DCL   &amp;USED     *CHAR  10
+ :
+RTVUSRPRF   USRPRF(*CURRENT)  STGUSED(&amp;USED)  +
+            RTNUSRPRF(&amp;UNAME)  SPCAUT(&amp;URIGHT)  +
+            INLPGM(&amp;IPGM)  INLPGMLIB(&amp;IPGMLB)
+</pre>
+</p>
+<p>This command retrieves the user profile information for the job's current user profile and returns the information into the following CL program variables:
+</p>
+<p>
+<pre>
+&amp;UNAME      'SMITH      '
+&amp;URIGHT    |'*SAVSYS   *SECADM   ...              |
+           |____________100 characters____________|
+&amp;IPGM       '*NONE      '
+&amp;IPGMLB     '           '
+</pre>
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="RTVUSRPRF.ERROR.MESSAGES">Error messages</a> </h3>
+<p><b><u>*ESCAPE Messages</u></b>
+</p>
+<dl>
+<dt><b>CPF2203</b></dt>
+<dd>User profile &amp;1 not correct.
+</dd>
+<dt><b>CPF2204</b></dt>
+<dd>User profile &amp;1 not found.
+</dd>
+<dt><b>CPF2213</b></dt>
+<dd>Not able to allocate user profile &amp;1.
+</dd>
+<dt><b>CPF2217</b></dt>
+<dd>Not authorized to user profile &amp;1.
+</dd>
+<dt><b>CPF2225</b></dt>
+<dd>Not able to allocate internal system object.
+</dd>
+<dt><b>CPF8134</b></dt>
+<dd>User profile &amp;4 damaged.
+</dd>
+</dl>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVUSRPRF.Top_Of_Page">Top</a></td></tr>
+</table>
+</body>
+</html>

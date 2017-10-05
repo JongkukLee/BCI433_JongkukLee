@@ -1,0 +1,92 @@
+000100171005             PGM
+000101171005             DCLF       LAB4DSP1
+000102171005             DCL        &PRVSIGN    *CHAR 13
+000104171004             DCL        &DATE *CHAR 20
+000108171004             DCL        &MSGQ        *CHAR 10
+000123171004             DCL        &MSGQLIB     *CHAR 10
+000124171004             DCL        &QPWDMAXLEN *DEC 5
+000125171004             DCL        &QACTJOB    *DEC 5
+000126171004             DCL        &QSRLNBR *CHAR 8
+000127171004             DCL        &QIPLSTS *CHAR 1
+000128171004             DCL        &QCURSYM *CHAR 1
+000129171005             DCL        &QACTJOB_T *CHAR 5
+000131171005             DCL        &QLEN_T *CHAR 3
+000132171004
+000133170927             /* Pass the retrieve data in the display file then use the physical file */
+000134170927             SNDRCVF
+000135170927             DOWHILE    (&IN03 = '0') /* If F3, escape the loop */
+000136171004
+000137171004                /* IF         (&IN21 = '1')    CALL       QUSCMDLN */
+000138171004
+000140171004
+000141171004
+000142171004
+000143171004                /* ELSE       DO */
+000144171004
+000145171004                SELECT
+000146171005                   WHEN       (&IN21 = '1') DO
+000147171005                      CALL       QUSCMDLN
+000148171005                      CHGVAR     &IN21 '0'
+000149171005                   ENDDO
+000150171005
+000151171004                   WHEN       (&OPTION = '1' *OR &OPTION = '01') DO
+000152171004                      RTVSYSVAL  SYSVAL(QCURSYM)  RTNVAR(&QCURSYM)
+000153171004                      CHGVAR     &MSGTXT ('The currency symbol is set to ' *BCAT &QCURSYM)
+000154171004                   ENDDO
+000155171004                   WHEN       (&OPTION = '2' *OR &OPTION = '02') CALLSUBR OPTION2
+000156171004                   WHEN       (&OPTION = '3' *OR &OPTION = '03') DO
+000157171004                      RTVUSRPRF  MSGQ(&MSGQ) MSGQLIB(&MSGQLIB)
+000158171005                      CHGVAR     &MSGTXT ('Signed on Users message queue is ' *CAT &MSGQLIB +
+000159171005                                   *TCAT '/' *TCAT &MSGQ)
+000160171004                   ENDDO
+000161171004                   WHEN       (&OPTION = '4' *OR &OPTION = '04') DO
+000162171004                      RTVSYSVAL  SYSVAL(QACTJOB)  RTNVAR(&QACTJOB)
+000163171004                      CHGVAR     &QACTJOB_T &QACTJOB
+000164171005                      CHGVAR     &MSGTXT ('Initial number of active jobs for which storage is +
+000165171005                                   allocated is: ' *CAT &QACTJOB_T)
+000166171004                   ENDDO
+000167171004                   WHEN       (&OPTION = '5' *OR &OPTION = '05') DO
+000168171004                      RTVSYSVAL  SYSVAL(QSRLNBR)  RTNVAR(&QSRLNBR)
+000169171005                      CHGVAR     &MSGTXT ('The system serial number is  ' *CAT &QSRLNBR)
+000171171004                   ENDDO
+000172171004                   WHEN       (&OPTION = '6' *OR &OPTION = '06') DO
+000173171004                      RTVSYSVAL  SYSVAL(QPWDMAXLEN)  RTNVAR(&QPWDMAXLEN)
+000174171005                      CHGVAR     &QLEN_T &QPWDMAXLEN
+000175171005                      CHGVAR     &MSGTXT ('Maximum password length is ' *CAT &QLEN_T)
+000176171004                   ENDDO
+000177171004
+000178171004
+000179171004                   WHEN       (&OPTION = '7' *OR &OPTION = '07') DO
+000180171005                      RTVUSRPRF  PRVSIGN(&PRVSIGN) MSGQ(&MSGQ)
+000181171005                      CHGVAR     &DATE (%SST(&PRVSIGN 4 2) *CAT '/' *CAT %SST(&PRVSIGN 6 2) +
+000182171005                                   *CAT '/' *CAT %SST(&PRVSIGN 2 2) *CAT ' ' *CAT +
+000183171005                                   %SST(&PRVSIGN 10 2) *CAT ':' *CAT %SST(&PRVSIGN 12 2) *CAT  +
+000184171005                                   ':' *CAT %SST(&PRVSIGN 14 2))
+000188171005                      CHGVAR     &MSGTXT ('Previous sign on for user ' *CAT &MSGQ *TCAT ' was +
+000189171005                                   on ' *CAT &DATE)
+000191171005                   ENDDO
+000192171005                   OTHERWISE  CHGVAR &IN30 '1'
+000195170927                ENDSELECT
+000196170927                SNDRCVF
+000197170927                CHGVAR     &IN30 '0'
+000198170927                CHGVAR     &MSGTXT ' '
+000199171004                /* ENDDO */
+000200170927             ENDDO
+000201170927
+000202170928             SUBR       OPTION2
+000203170927                /* Retrieve system value */
+000204171004                RTVSYSVAL  SYSVAL(QIPLSTS)  RTNVAR(&QIPLSTS)
+000205171004                SELECT
+000206171004                   WHEN       (&QIPLSTS = '0') CHGVAR  &MSGTXT  ('IPL status indicator is ' +
+000207171004                                *CAT &QIPLSTS *CAT '=Operator panel IPL.')
+000208171004                   WHEN       (&QIPLSTS = '1') CHGVAR  &MSGTXT  ('IPL status indicator is ' +
+000209171004                                *CAT &QIPLSTS *CAT '=auto-IPL after power restored.')
+000210171004                   WHEN       (&QIPLSTS = '2') CHGVAR  &MSGTXT  ('IPL status indicator is ' +
+000211171004                                *CAT &QIPLSTS *CAT '=restart IPL.')
+000212171004                   WHEN       (&QIPLSTS = '3') CHGVAR  &MSGTXT  ('IPL status indicator is ' +
+000213171004                                *CAT &QIPLSTS *CAT '=time of day IPL.')
+000214171004                   WHEN       (&QIPLSTS = '4') CHGVAR  &MSGTXT  ('IPL status indicator is ' +
+000215171004                                *CAT &QIPLSTS *CAT '=remote IPL.')
+000216171004                ENDSELECT
+000217170927             ENDSUBR
+000218171004             ENDPGM

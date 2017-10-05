@@ -1,0 +1,1086 @@
+
+  <!doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+  <html>
+<head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Retrieve Job Attributes  (RTVJOBA)</title>
+</head>
+<body bgcolor="white">
+<a name="RTVJOBA.Top_Of_Page"></a>
+<h2>Retrieve Job Attributes  (RTVJOBA)</h2>
+<table width="100%">
+<tr>
+<td align="left" valign="top"><b>Where allowed to run:  </b>Compiled CL program or interpreted REXX (*BPGM *IPGM *BREXX *IREXX)<br>
+<b>Threadsafe:  </b>Conditional
+</td>
+<td align="right" valign="top">
+<a href="#RTVJOBA.PARAMETERS.TABLE">Parameters</a><br>
+<a href="#RTVJOBA.COMMAND.EXAMPLES">Examples</a><br>
+<a href="#RTVJOBA.ERROR.MESSAGES">Error messages</a></td>
+</tr>
+</table>
+
+<div> <a name="RTVJOBA"></a>
+<p>The Retrieve Job Attributes (RTVJOBA) command is used in a CL program or REXX procedure to retrieve the values of one or more job attributes and place the values into the specified variable.  The attributes are retrieved for the job in which this command is used.
+</p>
+<p>The CL prompt for this command lists the minimum length for retrieved variables next to the appropriate parameters.  For character variables, a single number is shown.  For decimal variables, two numbers are shown.  The first number indicates the minimum variable length and the second number indicates the minimum number of decimal positions.
+</p>
+<p><b>Restrictions:</b>
+</p>
+<ol>
+<li>This command is valid only within a CL program or a REXX procedure.
+</li>
+<li>This command is conditionally threadsafe.  Refer to <b>Considerations for Attribute Scope and Thread Safety</b> for additional information.
+</li>
+</ol>
+<p><b>Considerations for Attribute Scope and Thread Safety:</b>
+</p>
+<p>This command is intended to be used to retrieve job attributes for the job in which the command is used. However, if a job attribute does not exist because the attribute is now supported at the thread level only, then the thread attribute is retrieved for the thread in which this command is used.
+</p>
+<p>The Scope column shows whether the attribute is scoped to the Job or to the Thread.
+</p>
+<p>The Threadsafe column indicates if the attributes are considered to be threadsafe.
+</p>
+<p><b>Yes:</b> - Attributes marked with this value can be retrieved safely from either the initial thread or from a secondary thread.
+</p>
+<p><b>No:</b> - Attributes marked with this value are not threadsafe, and should not be retrieved in a multi-threaded job.
+</p>
+<p><b>Attribute Scope and Thread Safety Table:</b>
+</p>
+<table border="1">
+<tr>
+<td>
+<p>
+<pre>
+Attribute                                            Scope    Threadsafe
+----------------------------                         ------   ----------
+ASP group name (ASPGRP)                              Thread       Yes
+Break message handling (BRKMSG)                      Job          Yes
+Character identifier control (CHRIDCTL)              Job          Yes
+Coded character set ID (CCSID)                       Job          Yes
+Country or region ID (CNTRYID)                       Job          Yes
+Current library (CURLIB)                             Thread       Yes
+Current user profile (CURUSER)                       Thread       Yes
+Date format (DATFMT)                                 Job          Yes
+Date separator (DATSEP)                              Job          Yes
+Day of week (DAYOFWEEK)                              Job          Yes
+DDM conversation handling (DDMCNV)                   Job          Yes
+Decimal format (DECFMT)                              Job          Yes
+Default coded character set identifier (DFTCCSID)    Job          Yes
+Default wait (DFTWAIT)                               Job          Yes
+Device recovery action (DEVRCYACN)                   Job          Yes
+End status (ENDSTS)                                  Job          Yes
+Inquiry message reply (INQMSGRPY)                    Job          Yes
+Job accounting code (ACGCDE)                         Job          Yes
+Job date with century (CYMDDATE)                     Job          Yes
+Job date without century (DATE)                      Job          Yes
+Job local date and time (DATETIME)                   Job          Yes
+Job log output (LOGOUTPUT)                           Job          Yes
+Job message queue full action (JOBMSGQFL)            Job          Yes
+Job message queue maximum size (JOBMSGQMX)           Job          Yes
+Job name (JOB)                                       Job          Yes
+Job number (NBR)                                     Job          Yes
+Job subtype (SUBTYPE)                                Job          Yes
+Job switches (SWS)                                   Job          Yes
+Job type (TYPE)                                      Job          Yes
+Language ID (LANGID)                                 Job          Yes
+Logging level (LOGLVL)                               Job          Yes
+Logging of CL programs (LOGCLPGM)                    Job          Yes
+Logging severity (LOGSEV)                            Job          Yes
+Logging text (LOGTYPE)                               Job          Yes
+Output queue library name (OUTQLIB)                  Job          Yes
+Output queue name (OUTQ)                             Job          Yes
+Print key format (PRTKEYFMT)                         Job          Yes
+Print text (PRTTXT)                                  Job          Yes
+Printer device name (PRTDEV)                         Job          Yes
+Program return code (RTNCDE)                         Job          No
+Purge (PURGE)                                        Job          Yes
+Resource affinity group (RSCAFNGRP)                  Job          Yes
+Run priority (RUNPTY)                                Job          Yes
+Sort sequence (SRTSEQ)                               Job          Yes
+Sort sequence library (SRTSEQLIB)                    Job          Yes
+Spooled file action (SPLFACN)                        Job          Yes
+Status message handling (STSMSG)                     Job          Yes
+Submitter's message queue library name (SBMMSGQLIB)  Job          Yes
+Submitter's message queue name (SBMMSGQ)             Job          Yes
+System library list (SYSLIBL)                        Thread       Yes
+Thread resource affinity (THDRSCAFN)                 Thread       Yes
+Time separator (TIMSEP)                              Job          Yes
+Time slice (TIMESLICE)                               Job          Yes
+Time-slice end pool (TSEPOOL)                        Job          Yes
+Time zone abbreviated name (TIMZONABBR)              Job          Yes
+Time zone description (TIMZON)                       Job          Yes
+Time zone full name (TIMZONFULL)                     Job          Yes
+Time zone offset (TIMOFFSET)                         Job          Yes
+User library list (USRLIBL)                          Thread       Yes
+User name (USER)                                     Job          Yes
+Year offset (YEAROFS)                                Job          Yes
+</pre>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+
+<div>
+<h3><a name="RTVJOBA.PARAMETERS.TABLE">Parameters</a></h3>
+<table cellspacing="0" cellpadding="4" border="1"><tr>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Keyword</th>
+<th width="15%" align="left" valign="bottom" bgcolor="aqua">Description</th>
+<th width="30%" align="left" valign="bottom" bgcolor="aqua">Choices</th>
+<th width="10%" align="left" valign="bottom" bgcolor="aqua">Notes</th>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.JOB"><b>JOB</b></a></td>
+<td valign="top">CL var for JOB          (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional, Positional 1</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.USER"><b>USER</b></a></td>
+<td valign="top">CL var for USER         (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional, Positional 2</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.NBR"><b>NBR</b></a></td>
+<td valign="top">CL var for NBR           (6)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional, Positional 3</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.CURUSER"><b>CURUSER</b></a></td>
+<td valign="top">CL var for CURUSER      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TYPE"><b>TYPE</b></a></td>
+<td valign="top">CL var for TYPE          (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SUBTYPE"><b>SUBTYPE</b></a></td>
+<td valign="top">CL var for SUBTYPE       (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SYSLIBL"><b>SYSLIBL</b></a></td>
+<td valign="top">CL var for SYSLIBL     (165)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.CURLIB"><b>CURLIB</b></a></td>
+<td valign="top">CL var for CURLIB       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.USRLIBL"><b>USRLIBL</b></a></td>
+<td valign="top">CL var for USRLIBL    (2750)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.ASPGRP"><b>ASPGRP</b></a></td>
+<td valign="top">CL var for ASPGRP       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.LOGLVL"><b>LOGLVL</b></a></td>
+<td valign="top">CL var for LOGLVL        (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.LOGSEV"><b>LOGSEV</b></a></td>
+<td valign="top">CL var for LOGSEV      (2 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.LOGTYPE"><b>LOGTYPE</b></a></td>
+<td valign="top">CL var for LOGTYPE      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.LOGCLPGM"><b>LOGCLPGM</b></a></td>
+<td valign="top">CL var for LOGCLPGM     (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.LOGOUTPUT"><b>LOGOUTPUT</b></a></td>
+<td valign="top">CL var for LOGOUTPUT    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.JOBMSGQMX"><b>JOBMSGQMX</b></a></td>
+<td valign="top">CL var for JOBMSGQMX   (2 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.JOBMSGQFL"><b>JOBMSGQFL</b></a></td>
+<td valign="top">CL var for JOBMSGQFL    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.INQMSGRPY"><b>INQMSGRPY</b></a></td>
+<td valign="top">CL var for INQMSGRPY    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.STSMSG"><b>STSMSG</b></a></td>
+<td valign="top">CL var for STSMSG        (7)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.BRKMSG"><b>BRKMSG</b></a></td>
+<td valign="top">CL var for BRKMSG        (7)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DEVRCYACN"><b>DEVRCYACN</b></a></td>
+<td valign="top">CL var for DEVRCYACN    (13)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.RTNCDE"><b>RTNCDE</b></a></td>
+<td valign="top">CL var for RTNCDE      (5 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.ENDSTS"><b>ENDSTS</b></a></td>
+<td valign="top">CL var for ENDSTS        (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.PRTDEV"><b>PRTDEV</b></a></td>
+<td valign="top">CL var for PRTDEV       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.OUTQ"><b>OUTQ</b></a></td>
+<td valign="top">CL var for OUTQ         (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.OUTQLIB"><b>OUTQLIB</b></a></td>
+<td valign="top">CL var for OUTQLIB      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SPLFACN"><b>SPLFACN</b></a></td>
+<td valign="top">CL var for SPLFACN      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.PRTTXT"><b>PRTTXT</b></a></td>
+<td valign="top">CL var for PRTTXT       (30)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.PRTKEYFMT"><b>PRTKEYFMT</b></a></td>
+<td valign="top">CL var for PRTKEYFMT    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SRTSEQ"><b>SRTSEQ</b></a></td>
+<td valign="top">CL var for SRTSEQ       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SRTSEQLIB"><b>SRTSEQLIB</b></a></td>
+<td valign="top">CL var for SRTSEQLIB    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.LANGID"><b>LANGID</b></a></td>
+<td valign="top">CL var for LANGID        (3)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.CNTRYID"><b>CNTRYID</b></a></td>
+<td valign="top">CL var for CNTRYID       (2)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.CCSID"><b>CCSID</b></a></td>
+<td valign="top">CL var for CCSID       (5 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DFTCCSID"><b>DFTCCSID</b></a></td>
+<td valign="top">CL var for DFTCCSID    (5 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.CHRIDCTL"><b>CHRIDCTL</b></a></td>
+<td valign="top">CL var for CHRIDCTL     (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DECFMT"><b>DECFMT</b></a></td>
+<td valign="top">CL var for DECFMT        (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DATFMT"><b>DATFMT</b></a></td>
+<td valign="top">CL var for DATFMT        (4)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DATSEP"><b>DATSEP</b></a></td>
+<td valign="top">CL var for DATSEP        (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TIMSEP"><b>TIMSEP</b></a></td>
+<td valign="top">CL var for TIMSEP        (1)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DATE"><b>DATE</b></a></td>
+<td valign="top">CL var for DATE          (6)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.CYMDDATE"><b>CYMDDATE</b></a></td>
+<td valign="top">CL var for CYMDDATE      (7)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DATETIME"><b>DATETIME</b></a></td>
+<td valign="top">CL var for DATETIME     (20)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DAYOFWEEK"><b>DAYOFWEEK</b></a></td>
+<td valign="top">CL var for DAYOFWEEK     (4)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TIMZON"><b>TIMZON</b></a></td>
+<td valign="top">CL var for TIMZON       (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TIMZONABBR"><b>TIMZONABBR</b></a></td>
+<td valign="top">CL var for TIMZONABBR   (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TIMZONFULL"><b>TIMZONFULL</b></a></td>
+<td valign="top">CL var for TIMZONFULL   (50)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TIMOFFSET"><b>TIMOFFSET</b></a></td>
+<td valign="top">CL var for TIMOFFSET   (3 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.YEAROFS"><b>YEAROFS</b></a></td>
+<td valign="top">CL var for YEAROFS     (3 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.ACGCDE"><b>ACGCDE</b></a></td>
+<td valign="top">CL var for ACGCDE       (15)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SWS"><b>SWS</b></a></td>
+<td valign="top">CL var for SWS           (8)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.RUNPTY"><b>RUNPTY</b></a></td>
+<td valign="top">CL var for RUNPTY      (2 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TIMESLICE"><b>TIMESLICE</b></a></td>
+<td valign="top">CL var for TIMESLICE   (7 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.PURGE"><b>PURGE</b></a></td>
+<td valign="top">CL var for PURGE        (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DFTWAIT"><b>DFTWAIT</b></a></td>
+<td valign="top">CL var for DFTWAIT     (7 0)</td>
+<td valign="top"><i>Decimal number</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SBMMSGQ"><b>SBMMSGQ</b></a></td>
+<td valign="top">CL var for SBMMSGQ      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.SBMMSGQLIB"><b>SBMMSGQLIB</b></a></td>
+<td valign="top">CL var for SBMMSGQLIB   (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.DDMCNV"><b>DDMCNV</b></a></td>
+<td valign="top">CL var for DDMCNV        (5)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.TSEPOOL"><b>TSEPOOL</b></a></td>
+<td valign="top">CL var for TSEPOOL      (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.THDRSCAFN"><b>THDRSCAFN</b></a></td>
+<td valign="top">CL var for THDRSCAFN    (20)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+<tr>
+<td valign="top"><a href="#RTVJOBA.RSCAFNGRP"><b>RSCAFNGRP</b></a></td>
+<td valign="top">CL var for RSCAFNGRP    (10)</td>
+<td valign="top"><i>Character value</i></td>
+<td valign="top">Optional</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+</div>
+<div> <a name="RTVJOBA.JOB"></a>
+<h3>CL var for JOB          (10) (JOB)</h3>
+<p>Specifies the name of the CL variable that receives the name of the job.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.USER"></a>
+<h3>CL var for USER         (10) (USER)</h3>
+<p>Specifies the name of the CL variable that receives the name of the user profile associated with the job when the job was started.  The user name is the second part of the qualified job name.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.NBR"></a>
+<h3>CL var for NBR           (6) (NBR)</h3>
+<p>Specifies the name of the CL variable that receives the 6-character number assigned to the job by the system.  The job number is the first part of the qualified job name (job-number/user-name/job-name).
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.CURUSER"></a>
+<h3>CL var for CURUSER      (10) (CURUSER)</h3>
+<p>Specifies the name of the CL variable that receives the name of the current user profile.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TYPE"></a>
+<h3>CL var for TYPE          (1) (TYPE)</h3>
+<p>Specifies, the name of the CL variable that receives the 1-character value representing the environment of the job.  A character value of 0 indicates that the job is running as a batch job, and a 1 indicates an interactive job.  The variable must be a character variable with a minimum length of 1 character.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SUBTYPE"></a>
+<h3>CL var for SUBTYPE       (1) (SUBTYPE)</h3>
+<p>Specifies the name of the CL variable that receives the subtype value for the environment of the job.  The variable must be a character variable with a minimum length of 1 character.  The following values can be returned:
+</p>
+<dl>
+<dt><b>Value</b></dt>
+<dd><b> Environment
+</b></dd>
+<dt><b>*</b></dt>
+<dd>The job has no subtype
+</dd>
+<dt><b>E</b></dt>
+<dd>The job is running as an evoked job
+</dd>
+<dt><b>T</b></dt>
+<dd>The job is running as a Multiple Requester Terminal (MRT) job
+</dd>
+<dt><b>J</b></dt>
+<dd>The job is running as a prestart job
+</dd>
+<dt><b>P</b></dt>
+<dd>The job is running as a print driver
+</dd>
+</dl>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SYSLIBL"></a>
+<h3>CL var for SYSLIBL     (165) (SYSLIBL)</h3>
+<p>Specifies the name of the CL variable that receives the system portion of the thread's library list.  Each library name returned is left-justified in an 11-character field and padded on the right with blanks.  The variable must be a character variable with a minimum of 165 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.CURLIB"></a>
+<h3>CL var for CURLIB       (10) (CURLIB)</h3>
+<p>Specifies the name of a CL variable that receives the name of the current library for the thread.  The variable must be a character variable with a minimum length of ten characters.
+</p>
+<p>
+<b>Note:     </b>If the thread does not have a current library, a value of *NONE is returned in this variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.USRLIBL"></a>
+<h3>CL var for USRLIBL    (2750) (USRLIBL)</h3>
+<p>Specifies the name of the CL variable that receives the user portion of the thread's library list.  Each library name returned is left-justified in an 11-character field and padded on the right with blanks.  If the CL variable is too small for the library list, an exception is signaled and no library names are returned.  The variable must be a character variable with a minimum length of 275 characters.  A character variable with a minimum length of 2750 characters is needed when the user portion of the library list contains 250 library names.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.ASPGRP"></a>
+<h3>CL var for ASPGRP       (10) (ASPGRP)</h3>
+<p>Specifies the name of a CL variable that receives the auxiliary storage pool (ASP) group name.  The variable must be a character variable with a minimum length of 10 characters.  The special value *NONE is returned if there is no ASP group for the thread.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.LOGLVL"></a>
+<h3>CL var for LOGLVL        (1) (LOGLVL)</h3>
+<p>Specifies the name of the CL variable that receives the 1-character value, ranging from 0 through 4 that is the message logging level being used to determine the type of message information logged in the job log.  The variable must be a character variable with a minimum length of 1 character.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.LOGSEV"></a>
+<h3>CL var for LOGSEV      (2 0) (LOGSEV)</h3>
+<p>Specifies the name of the CL variable that receives the 2-digit value, ranging from 00 through 99, which is the severity level that is used in conjunction with the logging level to determine which error messages are logged in the job log.  The variable must be a 2-digit decimal variable specified with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.LOGTYPE"></a>
+<h3>CL var for LOGTYPE      (10) (LOGTYPE)</h3>
+<p>Specifies the name of the CL variable that receives the special value that indicates the level of text that appears for any message that is written to the job log.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.LOGCLPGM"></a>
+<h3>CL var for LOGCLPGM     (10) (LOGCLPGM)</h3>
+<p>Specifies the name of the CL variable that receives the special value that indicates whether processed commands in a CL program are being logged in the job log.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.LOGOUTPUT"></a>
+<h3>CL var for LOGOUTPUT    (10) (LOGOUTPUT)</h3>
+<p>Specifies the name of the CL variable that receives the special value that indicates how the job's job log is to be produced when the job completes.  The variable must be a character variable with a minimum length of 10 characters.  The special value *JOBEND, *JOBLOGSVR, or *PND is returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.JOBMSGQMX"></a>
+<h3>CL var for JOBMSGQMX   (2 0) (JOBMSGQMX)</h3>
+<p>Specifies the name of a CL variable that receives the maximum size of the job message queue.  The variable must be a 2-digit decimal variable with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.JOBMSGQFL"></a>
+<h3>CL var for JOBMSGQFL    (10) (JOBMSGQFL)</h3>
+<p>Specifies the action that should be taken when the job message queue is full.  The variable must have a minimum length of 10 characters.  The special value *NOWRAP, *WRAP, or *PRTWRAP is returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.INQMSGRPY"></a>
+<h3>CL var for INQMSGRPY    (10) (INQMSGRPY)</h3>
+<p>Specifies the name of the CL variable that receives the special value that indicates how inquiry messages are being handled by the job.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.STSMSG"></a>
+<h3>CL var for STSMSG        (7) (STSMSG)</h3>
+<p>Specifies the name of the CL variable that receives the special value indicating how status messages are handled for the job.  The variable must be a character variable with a minimum length of 7 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.BRKMSG"></a>
+<h3>CL var for BRKMSG        (7) (BRKMSG)</h3>
+<p>Specifies the name of a CL variable that receives the special value that indicates the mode for break message handling that is in effect for the job.  The variable must be a character variable with a minimum length of seven characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DEVRCYACN"></a>
+<h3>CL var for DEVRCYACN    (13) (DEVRCYACN)</h3>
+<p>Specifies the name of the CL variable that receives the special value indicating the recovery action to take for the job when an I/O error is encountered on the *REQUESTER device for interactive jobs.  The variable must be a character variable with a minimum length of 13 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.RTNCDE"></a>
+<h3>CL var for RTNCDE      (5 0) (RTNCDE)</h3>
+<p>Specifies the name of the CL variable that receives the 5-digit decimal return code of an RPG, COBOL, DFU, or sort utility program.  The return code is set by these programs before they return to the programs that call them.  The return code indicates the completion status of the last program (of these types) that has completed processing within the job, as follows:
+</p>
+<dl>
+<dt><b>0</b></dt>
+<dd>Normal return (RPG, COBOL, DFU, or Sort Utility)
+</dd>
+<dt><b>1</b></dt>
+<dd>LR (last record) indicator on (RPG)
+</dd>
+<dt><b>2</b></dt>
+<dd>Error - no halt indicator set (RPG, COBOL, DFU, or Sort Utility)
+</dd>
+<dt><b>3</b></dt>
+<dd>Halt indicator set on (one of the RPG indicators H1 through H9)
+</dd>
+</dl>
+<p>The CL variable must be a five-digit decimal variable with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.ENDSTS"></a>
+<h3>CL var for ENDSTS        (1) (ENDSTS)</h3>
+<p>Specifies the name of the CL variable that receives the cancellation status.  The single-character value indicates whether a controlled cancellation that affects the job is currently being performed.  A value of 1 indicates that either the system, the subsystem in which the job is running, or the job itself is being canceled; a 0 indicates no controlled cancellation is being performed.  The CL variable must be a character variable with a minimum length of 1 character.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.PRTDEV"></a>
+<h3>CL var for PRTDEV       (10) (PRTDEV)</h3>
+<p>Specifies the name of a CL variable that receives the name of the printer device.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.OUTQ"></a>
+<h3>CL var for OUTQ         (10) (OUTQ)</h3>
+<p>Specifies the name of the CL variable that receives the name of the output queue that is used by the job for spooled output.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.OUTQLIB"></a>
+<h3>CL var for OUTQLIB      (10) (OUTQLIB)</h3>
+<p>Specifies the name of the CL variable that receives the name of the library containing the output queue that is used by the job for spooled output.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SPLFACN"></a>
+<h3>CL var for SPLFACN      (10) (SPLFACN)</h3>
+<p>Specifies the name of a CL variable that receives the special value indicating whether spooled files are kept with the job or detached when the job ends.  The variable must be a character variable with a minimum length of 10 characters.  The special value *KEEP or *DETACH is returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.PRTTXT"></a>
+<h3>CL var for PRTTXT       (30) (PRTTXT)</h3>
+<p>Specifies the name of the CL variable that receives the print text for the job.  The variable must be a character variable with a minimum length of 30 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.PRTKEYFMT"></a>
+<h3>CL var for PRTKEYFMT    (10) (PRTKEYFMT)</h3>
+<p>Specifies the name of the CL variable that receives the print key format for the job.  The variable must have a minimum length of 10 characters.  The special value *NONE, *PRTBDR, *PRTHDR, or *PRTALL is returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SRTSEQ"></a>
+<h3>CL var for SRTSEQ       (10) (SRTSEQ)</h3>
+<p>Specifies the name of the CL variable that receives the name of the sort sequence table used for the job.  The special value *LANGIDUNQ, *LANGIDSHR, or *HEX can be returned to the variable.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SRTSEQLIB"></a>
+<h3>CL var for SRTSEQLIB    (10) (SRTSEQLIB)</h3>
+<p>Specifies the name of the CL variable that receives the name of the library containing the sort sequence table to be used for the job.  The variable must be a character variable with a minimum length of 10 characters.  If SRTSEQ is *LANGIDUNQ, *LANGIDSHR, or *HEX, blanks are returned in the variable.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.LANGID"></a>
+<h3>CL var for LANGID        (3) (LANGID)</h3>
+<p>Specifies the name of the CL variable that receives the value indicating the language identifier to be used for the job.  The variable must be a character variable with a minimum length of 3 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.CNTRYID"></a>
+<h3>CL var for CNTRYID       (2) (CNTRYID)</h3>
+<p>Specifies the name of the CL variable that receives the value indicating the country or region identifier to be used for the job.  The variable must be a character variable with a minimum length of 2 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.CCSID"></a>
+<h3>CL var for CCSID       (5 0) (CCSID)</h3>
+<p>Specifies the name of a CL variable that receives the coded character set identifier value being used.  The variable must be a 5-digit decimal variable specified with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DFTCCSID"></a>
+<h3>CL var for DFTCCSID    (5 0) (DFTCCSID)</h3>
+<p>Specifies the name of a CL variable that receives the default coded character set identifier value being used for the job.  The variable must be a 5-digit decimal variable with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.CHRIDCTL"></a>
+<h3>CL var for CHRIDCTL     (10) (CHRIDCTL)</h3>
+<p>Specifies the name of a CL variable that receives the value being used as the character identifier control for the job.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DECFMT"></a>
+<h3>CL var for DECFMT        (1) (DECFMT)</h3>
+<p>Specifies the name of a CL variable that receives the character being used as the decimal format for the job.  The variable must be a character variable with a minimum length of 1 character.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DATFMT"></a>
+<h3>CL var for DATFMT        (4) (DATFMT)</h3>
+<p>Specifies the name of a CL variable that receives the special value being used as the date format for the job.  The variable must be a character variable with a minimum length of four characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DATSEP"></a>
+<h3>CL var for DATSEP        (1) (DATSEP)</h3>
+<p>Specifies the name of a CL variable that receives the character being used as the date separator character for the job.  The variable must be a character variable with a minimum length of one character.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TIMSEP"></a>
+<h3>CL var for TIMSEP        (1) (TIMSEP)</h3>
+<p>Specifies the name of a CL variable that receives the character being used as the time separator character for the job.  The variable must be a character variable with a minimum length of one character.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DATE"></a>
+<h3>CL var for DATE          (6) (DATE)</h3>
+<p>Specifies the name of the CL variable that receives the date assigned to the job by the system when the job is started.  The variable must be a character variable with a minimum length of 6 characters.  The job date is returned in the job-date format.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.CYMDDATE"></a>
+<h3>CL var for CYMDDATE      (7) (CYMDDATE)</h3>
+<p>Specifies the name of the CL variable that receives the date assigned to the job by the system when the job was started.  The variable must be a character variable with a minimum length of 7 characters.  The job date is returned in the format CYYMMDD, where C is the century, YY is the year, MM is the month and DD is the day.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DATETIME"></a>
+<h3>CL var for DATETIME     (20) (DATETIME)</h3>
+<p>Specifies the name of a CL variable that receives the current local date and time of the job. The variable must be a character variable with a minimum length of 20 characters.  The local job date and time is returned in the format YYYYMMDDHHNNSSXXXXXX where YYYY is the year, MM is the month, DD is the day, HH is the hours, NN is the minutes, SS is the seconds, and XXXXXX is the microseconds.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DAYOFWEEK"></a>
+<h3>CL var for DAYOFWEEK     (4) (DAYOFWEEK)</h3>
+<p>Specifies the name of a CL variable that receives the current local day of the week for the job.  The variable must be a character variable with a minimum length of 4 characters.  The special value *SUN, *MON, *TUE, *WED, *THU, *FRI, or *SAT is returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TIMZON"></a>
+<h3>CL var for TIMZON       (10) (TIMZON)</h3>
+<p>Specifies the name of a CL variable that receives the name of the current time zone description used to calculate local job time. The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TIMZONABBR"></a>
+<h3>CL var for TIMZONABBR   (10) (TIMZONABBR)</h3>
+<p>Specifies the name of a CL variable that receives the current abbreviated, or short, name for the time zone used to calculate local job time. This value will contain either the Standard Time or Daylight Saving Time abbreviated name depending on whether or not Daylight Saving Time is in effect. The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TIMZONFULL"></a>
+<h3>CL var for TIMZONFULL   (50) (TIMZONFULL)</h3>
+<p>Specifies the name of a CL variable that receives the current full, or long, name for the time zone used to calculate local job time. This value will contain either the Standard Time or Daylight Saving Time full name depending on whether or not Daylight Saving Time is in effect. The variable must be a character variable with a minimum length of 50 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TIMOFFSET"></a>
+<h3>CL var for TIMOFFSET   (3 0) (TIMOFFSET)</h3>
+<p>Specifies the name of a CL variable that receives the current offset in minutes used to calculate local job time.  This value has been adjusted for Daylight Saving Time if necessary.  The variable must be a 3-digit decimal variable with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.YEAROFS"></a>
+<h3>CL var for YEAROFS     (3 0) (YEAROFS)</h3>
+<p>Specifies the name of a CL variable that receives the year offset for the job.  This value specifies the number of years between the current Gregorian year and the current year in the calendar system used by the job.  The range is -140 to 140.  The variable must be a 3-digit decimal variable with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.ACGCDE"></a>
+<h3>CL var for ACGCDE       (15) (ACGCDE)</h3>
+<p>Specifies the name of the CL variable that receives the accounting code for the job.  The variable must be a character variable with a minimum length of 15 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SWS"></a>
+<h3>CL var for SWS           (8) (SWS)</h3>
+<p>Specifies the name of the CL variable that receives the value of the eight job switches used by the job.  The job switches are retrieved as a single 8-character value with each of the characters specifying a 1 or 0 as the value of the associated switch.  The CL variable must be a character variable with a minimum length of 8 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.RUNPTY"></a>
+<h3>CL var for RUNPTY      (2 0) (RUNPTY)</h3>
+<p>Specifies the name of the CL variable that receives the 2-digit value, ranging from 1 through 99, that is the processing priority for the job in which this command is used.  This value is the highest run priority allowed for any thread within the job.  Individual threads within the job may have a lower run priority.  The variable must be a 2-digit decimal variable specified with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TIMESLICE"></a>
+<h3>CL var for TIMESLICE   (7 0) (TIMESLICE)</h3>
+<p>Specifies the name of the CL variable that receives the 7-digit value, ranging from 8 through 9999999, that is the maximum number of milliseconds that a thread within this job can run when it is given processing time.  The variable must be a 7-digit decimal variable specified with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.PURGE"></a>
+<h3>CL var for PURGE        (10) (PURGE)</h3>
+<p>Specifies the name of the CL variable that receives the special value which indicates whether this job is eligible to be moved out of main storage and placed into auxiliary storage at the end of a time slice or when entering a long wait. For additional information on job purging, refer to this parameter description under the Change Job (CHGJOB) command.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DFTWAIT"></a>
+<h3>CL var for DFTWAIT     (7 0) (DFTWAIT)</h3>
+<p>Specifies the name of the CL variable that receives the 7-digit value, ranging from 1 through 9999999 (or -1 if the value is set to *NOMAX), that is the default for the maximum number of seconds that the system waits for a machine instruction to acquire a resource.  The variable must be a 7-digit decimal variable specified with no decimal positions.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SBMMSGQ"></a>
+<h3>CL var for SBMMSGQ      (10) (SBMMSGQ)</h3>
+<p>Specifies the name of the CL variable that receives the name of a message queue.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.SBMMSGQLIB"></a>
+<h3>CL var for SBMMSGQLIB   (10) (SBMMSGQLIB)</h3>
+<p>Specifies the name of the CL variable that receives the name of the library containing the message queue described previously.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.DDMCNV"></a>
+<h3>CL var for DDMCNV        (5) (DDMCNV)</h3>
+<p>Specifies the name of a CL variable that receives the special value that indicates the action taken for distributed data management (DDM) conversations on the job.  The variable must be a character variable with a minimum length of 5 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.TSEPOOL"></a>
+<h3>CL var for TSEPOOL      (10) (TSEPOOL)</h3>
+<p>Specifies the name of the CL variable that receives the special value indicating whether interactive jobs are moved to another main storage pool when they reach the time slice end.  The variable must be a character variable with a minimum length of 10 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.THDRSCAFN"></a>
+<h3>CL var for THDRSCAFN    (20) (THDRSCAFN)</h3>
+<p>Specifies the name of a CL variable that receives the special value indicating whether or not secondary threads have affinity to the same group of system resources as the initial thread.  The special value *NOGROUP or *GROUP is returned in the first 10 characters.  The second 10 characters contain the special value indicating the level of affinity.  The special value *NORMAL or *HIGH is returned.  The variable must be a character variable with a minimum length of 20 characters.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<div> <a name="RTVJOBA.RSCAFNGRP"></a>
+<h3>CL var for RSCAFNGRP    (10) (RSCAFNGRP)</h3>
+<p>Specifies the name of a CL variable that receives the special value indicating that the job has affinity to the same group of processors and memory as other jobs using the same routing entry or prestart job entry.  The variable must be a character variable with a minimum length of 10 characters.  The special value *NO or *YES is returned.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="RTVJOBA.COMMAND.EXAMPLES">Examples</a> </h3>
+<p>
+<pre>
+RTVJOBA   NBR(&amp;JOBNBR)  DATE(&amp;JOBDATE)  DFTCCSID(&amp;DFTCSID)
+</pre>
+</p>
+<p>This command retrieves the job number, job date, and default coded character set identifier for the job in which this command is run. The 6-digit job number is copied into the CL variable &amp;JOBNBR. The job date is copied into the CL variable &amp;JOBDATE; the values for both &amp;JOBNBR and &amp;JOBDATE must be 6 characters in length. The 5-digit DFTCCSID value is copied into the CL variable &amp;DFTCCSID; this value must be 5 characters in length. The format of the date is determined by the contents of the system value QDATFMT, which controls the system date format.
+</p>
+<p>
+<pre>
+/* Declare Variables */
+DCL   &amp;LIBL *CHAR 2750
+DCL   &amp;CHGLIBL *CHAR 2760
+/*  save library list   */
+RTVJOBA   USRLIBL(&amp;LIBL)
+ :
+/*  Temporarily change library list  */
+CHGLIBL   LIBL(MYLIB QGPL)
+ :
+/*  Build command string  */
+CHGVAR   &amp;CHGLIBL  ('CHGLIBL (' *CAT &amp;LIBL *TCAT ')')
+/*  restore library list  */
+CALL QCMDEXC (&amp;CHGLIBL 2760)
+</pre>
+</p>
+<p>The above command retrieves the user portion of the library list so that it later can be restored from its temporary state, where only MYLIB and QGPL were in the user portion of the library list, to its original state.
+</p>
+<p>If there are no libraries on the user portion of the library list, blanks are returned in the variable. If a library on the library list has been deleted, the value '*DELETED' is put in the variable position for that name.
+</p>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+<hr width="100%" size="2">
+<div><h3><a name="RTVJOBA.ERROR.MESSAGES">Error messages</a> </h3>
+<p><b><u>*ESCAPE Messages</u></b>
+</p>
+<dl>
+<dt><b>CPF098A</b></dt>
+<dd>USRLIBL parameter size is too small.
+</dd>
+<dt><b>CPF9899</b></dt>
+<dd>Error occurred during processing of command.
+</dd>
+</dl>
+</div>
+<table width="100%">
+<tr><td align="right"><a href="#RTVJOBA.Top_Of_Page">Top</a></td></tr>
+</table>
+</body>
+</html>

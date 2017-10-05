@@ -9394,3 +9394,2026 @@ java.io.FileNotFoundException: http://www.ibm.com/support/knowledgecenter/SSAE4W
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
 	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-01 22:47:32.041
+!MESSAGE QSYSEditableRemoteSourceFileMember.saveMemberState: Error saving member state
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-01 22:47:32.304
+!MESSAGE RSEF1002
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-01 22:47:34.428
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-01 22:47:34.563
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-01 22:47:35.229
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+!SESSION 2017-10-02 08:45:11.911 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.jface 2 0 2017-10-02 08:45:23.986
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-02 08:45:23.986
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@28e0fa24,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e793f3d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-02 08:45:28.103
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-02 08:45:30.855
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-02 08:45:31.347
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-02 08:45:31.363
+!MESSAGE Save the stack tool properties file.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 08:46:25.615
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 08:46:49.985
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 08:46:50.313
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 08:47:03.640
+!MESSAGE RSEF1002
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-02 08:48:10.349
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-02 08:48:10.392
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-02 08:48:10.423
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+!SESSION 2017-10-02 11:36:15.060 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.jface 2 0 2017-10-02 11:36:30.935
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-02 11:36:30.935
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a7ad44b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@910483a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-02 11:36:36.013
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-02 11:36:37.997
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-02 11:36:38.513
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-02 11:36:38.576
+!MESSAGE Save the stack tool properties file.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 12:54:17.591
+!MESSAGE RSEF1310:E
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 16:44:24.482
+!MESSAGE QSYSEditableRemoteSourceFileMember.saveMemberState: Error saving member state
+!STACK 0
+java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 16:44:25.051
+!MESSAGE DisplayConnectionErrorMessage: could not get shell
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-02 16:44:25.066
+!MESSAGE EVFC9104
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-02 16:44:28.379
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-02 16:44:28.467
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-02 16:44:29.200
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+!SESSION 2017-10-04 13:14:23.023 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.jface 2 0 2017-10-04 13:14:36.158
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-04 13:14:36.158
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e62c8f1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@de94597b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-04 13:14:40.920
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-04 13:14:43.188
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-04 13:14:43.347
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-04 13:14:43.370
+!MESSAGE Save the stack tool properties file.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 16:55:24.603
+!MESSAGE QSYSObjectService.listMembers(DT433A11/QPRGLESRC(MARKSRPG) MBRTYPE(*) MBRTEXT(*))
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:00:05.548
+!MESSAGE QSYSObjectService.listObjects(BCI433LIB/* OBJTYPE(*:*))
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:05:51.849
+!MESSAGE QSYSEditableRemoteSourceFileMember.saveMemberState: Error saving member state
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:05:52.120
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:17:17.813
+!MESSAGE QSYSTempFileListener.upload trying to find editor wrapper
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:17:18.494
+!MESSAGE QSYSRemoteMemberTransfer: error putting member to server
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:17:18.503
+!MESSAGE QSYSTempFileListener.upload
+!STACK 0
+com.ibm.etools.iseries.subsystems.qsys.api.QSYSEncapsulatedException: Read timed out
+	at com.ibm.etools.iseries.subsystems.qsys.resources.QSYSRemoteMemberTransfer.upload(QSYSRemoteMemberTransfer.java:1060)
+	at com.ibm.etools.iseries.rse.ui.resources.TemporaryQSYSMember.uploadToISeries(TemporaryQSYSMember.java:450)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSEditableRemoteSourceFileMember.upload(QSYSEditableRemoteSourceFileMember.java:1039)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.upload(QSYSTempFileListener.java:354)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.doResourceSynchronization(QSYSTempFileListener.java:97)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener.synchronizeTempWithRemote(SystemTempFileListener.java:718)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener$SynchResourcesJob.run(SystemTempFileListener.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:17:18.511
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:19:36.300
+!MESSAGE QSYSTempFileListener.upload trying to find editor wrapper
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:19:36.892
+!MESSAGE QSYSRemoteMemberTransfer: error putting member to server
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:19:36.900
+!MESSAGE QSYSTempFileListener.upload
+!STACK 0
+com.ibm.etools.iseries.subsystems.qsys.api.QSYSEncapsulatedException: Read timed out
+	at com.ibm.etools.iseries.subsystems.qsys.resources.QSYSRemoteMemberTransfer.upload(QSYSRemoteMemberTransfer.java:1060)
+	at com.ibm.etools.iseries.rse.ui.resources.TemporaryQSYSMember.uploadToISeries(TemporaryQSYSMember.java:450)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSEditableRemoteSourceFileMember.upload(QSYSEditableRemoteSourceFileMember.java:1039)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.upload(QSYSTempFileListener.java:354)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.doResourceSynchronization(QSYSTempFileListener.java:97)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener.synchronizeTempWithRemote(SystemTempFileListener.java:718)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener$SynchResourcesJob.run(SystemTempFileListener.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:19:36.909
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:19:41.841
+!MESSAGE QSYSRemoteMemberTransfer: error putting member to server
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:19:41.848
+!MESSAGE QSYSTempFileListener.upload
+!STACK 0
+com.ibm.etools.iseries.subsystems.qsys.api.QSYSEncapsulatedException: Read timed out
+	at com.ibm.etools.iseries.subsystems.qsys.resources.QSYSRemoteMemberTransfer.upload(QSYSRemoteMemberTransfer.java:1060)
+	at com.ibm.etools.iseries.rse.ui.resources.TemporaryQSYSMember.uploadToISeries(TemporaryQSYSMember.java:450)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSEditableRemoteSourceFileMember.upload(QSYSEditableRemoteSourceFileMember.java:1039)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.upload(QSYSTempFileListener.java:354)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.doResourceSynchronization(QSYSTempFileListener.java:97)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener.synchronizeTempWithRemote(SystemTempFileListener.java:718)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener$SynchResourcesJob.run(SystemTempFileListener.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:19:41.856
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:20:13.167
+!MESSAGE QSYSRemoteMemberTransfer: error putting member to server
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:20:13.174
+!MESSAGE QSYSTempFileListener.upload
+!STACK 0
+com.ibm.etools.iseries.subsystems.qsys.api.QSYSEncapsulatedException: Read timed out
+	at com.ibm.etools.iseries.subsystems.qsys.resources.QSYSRemoteMemberTransfer.upload(QSYSRemoteMemberTransfer.java:1060)
+	at com.ibm.etools.iseries.rse.ui.resources.TemporaryQSYSMember.uploadToISeries(TemporaryQSYSMember.java:450)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSEditableRemoteSourceFileMember.upload(QSYSEditableRemoteSourceFileMember.java:1039)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.upload(QSYSTempFileListener.java:354)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.doResourceSynchronization(QSYSTempFileListener.java:97)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener.synchronizeTempWithRemote(SystemTempFileListener.java:718)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener$SynchResourcesJob.run(SystemTempFileListener.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 21:20:13.182
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 23:10:17.622
+!MESSAGE Error reading CL cache file: C:\Users\reeve\Downloads\4th Semester\BCI433\BCI433_JongkukLee\.metadata\.plugins\com.ibm.etools.iseries.subsystems.qsys\cache\ZEUS.SENECACOLLEGE.CA\CL\QSYS\RTVSYSVAL.HelpAnchors.txt
+!STACK 0
+java.io.FileNotFoundException: C:\Users\reeve\Downloads\4th Semester\BCI433\BCI433_JongkukLee\.metadata\.plugins\com.ibm.etools.iseries.subsystems.qsys\cache\ZEUS.SENECACOLLEGE.CA\CL\QSYS\RTVSYSVAL.HelpAnchors.txt (The system cannot find the file specified.)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:212)
+	at java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.io.FileInputStream.<init>(FileInputStream.java:104)
+	at com.ibm.etools.iseries.rse.util.clprompter.ClCacheUtilities.getCacheFileContents(ClCacheUtilities.java:116)
+	at com.ibm.etools.iseries.rse.util.clprompter.ClHelp.load(ClHelp.java:421)
+	at com.ibm.etools.iseries.rse.util.clprompter.ClCommandLineDialog.getHelpURL(ClCommandLineDialog.java:269)
+	at com.ibm.etools.iseries.rse.util.clprompter.CLPrompter.getHelpURL(CLPrompter.java:846)
+	at com.ibm.etools.iseries.parsers.ISeriesEditorCLParser.getHelpPage(ISeriesEditorCLParser.java:1011)
+	at com.ibm.lpex.alef.LpexSourceViewer.performHelp(LpexSourceViewer.java:1404)
+	at com.ibm.lpex.alef.LpexTextViewer$5.helpRequested(LpexTextViewer.java:3572)
+	at org.eclipse.jface.viewers.Viewer.fireHelpRequested(Viewer.java:144)
+	at org.eclipse.jface.viewers.Viewer.handleHelpRequest(Viewer.java:220)
+	at org.eclipse.jface.viewers.Viewer$1.helpRequested(Viewer.java:118)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:153)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-04 23:10:17.634
+!MESSAGE Error reading CL cache file: C:\Users\reeve\Downloads\4th Semester\BCI433\BCI433_JongkukLee\.metadata\.plugins\com.ibm.etools.iseries.subsystems.qsys\cache\ZEUS.SENECACOLLEGE.CA\CL\QSYS\RTVSYSVAL.Help.html
+!STACK 0
+java.io.FileNotFoundException: C:\Users\reeve\Downloads\4th Semester\BCI433\BCI433_JongkukLee\.metadata\.plugins\com.ibm.etools.iseries.subsystems.qsys\cache\ZEUS.SENECACOLLEGE.CA\CL\QSYS\RTVSYSVAL.Help.html (The system cannot find the file specified.)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:212)
+	at java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.io.FileInputStream.<init>(FileInputStream.java:104)
+	at com.ibm.etools.iseries.rse.util.clprompter.ClCacheUtilities.getCacheFileContents(ClCacheUtilities.java:116)
+	at com.ibm.etools.iseries.rse.util.clprompter.ClHelp.load(ClHelp.java:422)
+	at com.ibm.etools.iseries.rse.util.clprompter.ClCommandLineDialog.getHelpURL(ClCommandLineDialog.java:269)
+	at com.ibm.etools.iseries.rse.util.clprompter.CLPrompter.getHelpURL(CLPrompter.java:846)
+	at com.ibm.etools.iseries.parsers.ISeriesEditorCLParser.getHelpPage(ISeriesEditorCLParser.java:1011)
+	at com.ibm.lpex.alef.LpexSourceViewer.performHelp(LpexSourceViewer.java:1404)
+	at com.ibm.lpex.alef.LpexTextViewer$5.helpRequested(LpexTextViewer.java:3572)
+	at org.eclipse.jface.viewers.Viewer.fireHelpRequested(Viewer.java:144)
+	at org.eclipse.jface.viewers.Viewer.handleHelpRequest(Viewer.java:220)
+	at org.eclipse.jface.viewers.Viewer$1.helpRequested(Viewer.java:118)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:153)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 02:14:24.369
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-05 02:14:24.489
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-05 02:14:25.271
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.core.resources 4 2 2017-10-05 02:14:26.525
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:983)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReferences(BundleContextImpl.java:529)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getAgent(P2TargetUtils.java:289)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getProfileRegistry(P2TargetUtils.java:803)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.cleanOrphanedTargetDefinitionProfiles(P2TargetUtils.java:161)
+	at org.eclipse.pde.internal.core.PDECore$1.saving(PDECore.java:293)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:386)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:195)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:198)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1144)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.shutdown(SaveManager.java:1427)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:587)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:423)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+!SESSION 2017-10-05 02:14:35.178 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-10-05 02:14:43.206
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2017-10-05 02:14:49.220
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-05 02:14:49.220
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@945b5a88,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b205c7b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-05 02:14:54.336
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-05 02:14:57.616
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 02:14:57.772
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 02:14:57.796
+!MESSAGE Save the stack tool properties file.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 02:15:17.761
+!MESSAGE QSYSJobService.getEditDescriptions
+!STACK 0
+java.net.UnknownHostException: ZEUS.SENECAC.CA
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:214)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:183)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.ibm.as400.access.PortMapper.getSocketConnection(PortMapper.java:266)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:161)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:2465)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:2380)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3181)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:2745)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4076)
+	at com.ibm.as400.access.ProgramCall.chooseImpl(ProgramCall.java:403)
+	at com.ibm.as400.access.ServiceProgramCall.run(ServiceProgramCall.java:318)
+	at com.ibm.etools.iseries.comm.ISeriesListEditDescriptions.getEditCodeInformation(ISeriesListEditDescriptions.java:109)
+	at com.ibm.etools.iseries.services.qsys.jobs.QSYSJobService.getEditDescriptions(QSYSJobService.java:959)
+	at com.ibm.etools.iseries.subsystems.qsys.jobs.QSYSJobSubSystem.getEditDescriptions(QSYSJobSubSystem.java:500)
+	at com.ibm.etools.iseries.subsystems.qsys.api.IBMiConnection.getEditDescriptions(IBMiConnection.java:1475)
+	at com.ibm.etools.iseries.dds.dom.impl.HostJobInfo.initialize(HostJobInfo.java:149)
+	at com.ibm.etools.iseries.dds.dom.impl.HostJobInfo.getDateFormat(HostJobInfo.java:216)
+	at com.ibm.etools.iseries.dds.dom.dev.dspkwd.impl.DATEImpl.getDisplayedText(DATEImpl.java:172)
+	at com.ibm.etools.iseries.dds.dom.dev.impl.ConstantFieldImpl.getDisplayedText(ConstantFieldImpl.java:510)
+	at com.ibm.etools.iseries.dds.dom.dev.impl.DspfConstantImpl.getDisplayedText(DspfConstantImpl.java:142)
+	at com.ibm.etools.iseries.dds.tui.adapters.AdapterConstantDecorator.getDisplayText(AdapterConstantDecorator.java:80)
+	at com.ibm.etools.iseries.dds.tui.adapters.AdapterConstantDecorator.getDisplayLength(AdapterConstantDecorator.java:61)
+	at com.ibm.etools.iseries.dds.tui.adapters.SdAdapterConstant.getDisplayLength(SdAdapterConstant.java:93)
+	at com.ibm.etools.iseries.dds.tui.editparts.SdEditPartField.refreshVisuals(SdEditPartField.java:140)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:725)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refresh(TuiEditPart.java:216)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refreshChildren(TuiEditPart.java:354)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refresh(TuiEditPart.java:216)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refreshChildren(TuiEditPart.java:354)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refresh(TuiEditPart.java:216)
+	at com.ibm.etools.tui.ui.editparts.TuiRootEditPart.refreshChildren(TuiRootEditPart.java:272)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiRootEditPart.refresh(TuiRootEditPart.java:262)
+	at com.ibm.etools.iseries.dds.tui.editparts.DesignerEditPartRoot.refresh(DesignerEditPartRoot.java:71)
+	at com.ibm.etools.iseries.dds.tui.design.SdDesignPage.refresh(SdDesignPage.java:1105)
+	at com.ibm.etools.iseries.dds.tui.design.SdDesignPage.showSelectedAdapter(SdDesignPage.java:1346)
+	at com.ibm.etools.iseries.dds.tui.design.SdDesignPage.setSelection(SdDesignPage.java:1176)
+	at com.ibm.etools.iseries.dds.tui.editor.DesignerSelectionManager.notifyViews(DesignerSelectionManager.java:714)
+	at com.ibm.etools.iseries.dds.tui.editor.DesignerSelectionManager.handleSelection(DesignerSelectionManager.java:586)
+	at com.ibm.etools.iseries.dds.tui.editor.DesignerSelectionManager.selectionChanged(DesignerSelectionManager.java:914)
+	at com.ibm.etools.iseries.dds.tui.editor.SdEditor.refresh(SdEditor.java:1784)
+	at com.ibm.etools.iseries.edit.language.model.DdsCursorListener.notifyParserListenerOfRefresh(DdsCursorListener.java:209)
+	at com.ibm.etools.iseries.edit.language.model.DdsCursorListener.notifyParserListenerOfRefresh(DdsCursorListener.java:193)
+	at com.ibm.etools.iseries.edit.language.model.DdsModelLpexAdapter.notifyListenersOfModelRefresh(DdsModelLpexAdapter.java:1296)
+	at com.ibm.etools.iseries.edit.language.model.DdsModelLpexAdapter.access$3(DdsModelLpexAdapter.java:1294)
+	at com.ibm.etools.iseries.edit.language.model.DdsModelLpexAdapter$ParseDdsModelJob$1.run(DdsModelLpexAdapter.java:1268)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:167)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:165)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.rse.ui.subsystems.StandardCredentialsProvider$PromptForCredentials.run(StandardCredentialsProvider.java:101)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.rse.ui.subsystems.StandardCredentialsProvider.promptForCredentials(StandardCredentialsProvider.java:420)
+	at org.eclipse.rse.ui.subsystems.StandardCredentialsProvider.acquireCredentials(StandardCredentialsProvider.java:233)
+	at org.eclipse.rse.core.subsystems.AuthenticatingConnectorService.acquireCredentials(AuthenticatingConnectorService.java:210)
+	at org.eclipse.rse.core.subsystems.SubSystem.promptForPassword(SubSystem.java:2660)
+	at org.eclipse.rse.core.subsystems.SubSystem$1.run(SubSystem.java:2554)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:167)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:165)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:175)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:390)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:527)
+	at com.ibm.cic.licensing.common.ui.EarlyLicenseCheck.checkLicenses(EarlyLicenseCheck.java:57)
+	at com.ibm.cic.licensing.common.ui.Activator$1.run(Activator.java:117)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 02:18:57.777
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-05 02:18:57.851
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-05 02:18:57.896
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.core.resources 4 2 2017-10-05 02:18:58.479
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:983)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReferences(BundleContextImpl.java:529)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getAgent(P2TargetUtils.java:289)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getProfileRegistry(P2TargetUtils.java:803)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.cleanOrphanedTargetDefinitionProfiles(P2TargetUtils.java:161)
+	at org.eclipse.pde.internal.core.PDECore$1.saving(PDECore.java:293)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:386)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:195)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:198)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1144)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.shutdown(SaveManager.java:1427)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:587)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:423)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+!SESSION 2017-10-05 07:08:42.687 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-10-05 07:11:49.331
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2017-10-05 07:11:57.745
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-05 07:11:57.745
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@af737427,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d8d8dddd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-05 07:12:03.912
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-05 07:12:07.823
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 07:12:08.013
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 07:12:08.033
+!MESSAGE Save the stack tool properties file.
+!SESSION 2017-10-05 07:14:46.218 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-10-05 07:14:51.423
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2017-10-05 07:14:53.802
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-05 07:14:53.802
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45788ee3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2fa7318,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-05 07:14:56.375
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 07:14:58.496
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 07:14:58.510
+!MESSAGE Save the stack tool properties file.
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-05 07:14:58.689
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:28:40.556
+!MESSAGE QSYSObjectService.listMembers(DT433A11/QDDSSRC(LAB4CL1) MBRTYPE(*) MBRTEXT(*))
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:01.306
+!MESSAGE QSYSTempFileListener.upload
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:01.316
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:11.157
+!MESSAGE QSYSTempFileListener.upload
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:11.166
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:31.742
+!MESSAGE QSYSCommandService::getUserPreferencesIFSDirectory exception 
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.ClientAccessDataStream.construct(ClientAccessDataStream.java:58)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:357)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:36.014
+!MESSAGE QSYSTempFileListener.upload
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:39.547
+!MESSAGE QSYSEditableRemoteSourceFileMember.saveMemberState: Error saving member state
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:39.558
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:39.623
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:42.145
+!MESSAGE QSYSEditableRemoteSourceFileMember.saveMemberState: Error saving member state
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:42.152
+!MESSAGE RSEF1002
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:42.686
+!MESSAGE QSYSEditableRemoteSourceFileMember.saveMemberState: Error saving member state
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:127)
+	at java.net.SocketInputStream.read(SocketInputStream.java:181)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at com.ibm.as400.access.DataStream.readFromStream(DataStream.java:52)
+	at com.ibm.as400.access.DDMDataStream.construct(DDMDataStream.java:89)
+	at com.ibm.as400.access.ClassDecoupler.constructDDMDataStream(ClassDecoupler.java:128)
+	at com.ibm.as400.access.AS400ThreadedServer.run(AS400ThreadedServer.java:361)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:29:42.695
+!MESSAGE RSEF1002
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 09:29:43.911
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-05 09:29:44.024
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-05 09:29:44.779
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+!SESSION 2017-10-05 09:29:52.055 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.jface 2 0 2017-10-05 09:30:06.397
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-05 09:30:06.397
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b20cda,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@426a95cf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-05 09:30:10.527
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-05 09:30:13.127
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 09:30:13.294
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 09:30:13.328
+!MESSAGE Save the stack tool properties file.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:36:33.202
+!MESSAGE EVFF5008
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-05 09:36:33.210
+!MESSAGE QSYSTempFileListener.upload trying to find editor wrapper
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:283)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:375)
+	at org.eclipse.jface.window.Window.createShell(Window.java:491)
+	at org.eclipse.jface.window.Window.create(Window.java:434)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1101)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.jface.dialogs.ErrorDialog.open(ErrorDialog.java:372)
+	at org.eclipse.rse.ui.messages.SystemMessageDialog.open(SystemMessageDialog.java:460)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.upload(QSYSTempFileListener.java:312)
+	at com.ibm.etools.iseries.rse.ui.resources.QSYSTempFileListener.doResourceSynchronization(QSYSTempFileListener.java:97)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener.synchronizeTempWithRemote(SystemTempFileListener.java:718)
+	at org.eclipse.rse.files.ui.resources.SystemTempFileListener$SynchResourcesJob.run(SystemTempFileListener.java:313)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-05 10:11:28.973
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-05 10:11:29.044
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-05 10:11:29.090
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)

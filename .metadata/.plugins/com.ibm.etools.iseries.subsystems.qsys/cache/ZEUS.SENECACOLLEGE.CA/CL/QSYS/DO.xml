@@ -1,0 +1,1 @@
+<QcdCLCmd DTDVersion="1.0"><Cmd CmdName="DO" CmdLib="__LIBL" CCSID="37" HlpPnlGrp="QHCLCMD" HlpPnlGrpLib="__LIBL" HlpID="DO" MaxPos="0" Prompt="Do Group" MsgF="QCPFMSG" MsgFLib="__LIBL" ExecBatch="NO" ChgCmdExit="NO" RtvCmdExit="NO"></Cmd></QcdCLCmd>

@@ -1,0 +1,83 @@
+000100121001 Another source of information is in the IFS
+000200121001
+000300121001    Open   IFS
+000400121001           Root File System
+000500170905           BCI433
+000600121001                Labs, powerpoint and word documents like UserProfiles.docx
+000700121001                are available here.
+000800120918  1.  Lab 1.
+000900120918        How do I create a second CLLE program?
+001000120918           In Client Access
+001100120918              Type WRKMBRPDM QCLLESRC at the command line
+001200120918              Press F6 to create a new member
+001300120918                   Provide a name for your program and set the type as CLLE
+001400120918              Enter your code
+001500120918              Press F3 to exit
+001600120918              Use option 14 to compile.
+001700120918              Type WRKSPLF at the command line to check your listing or type SP beside a
+001800120918              member name.
+001900120918
+002000130128  2.  I can't run my program after compiling it.  I also can not debug it.
+002100130128
+002200130128  >I took a look in your library.  You used the wrong compile command for MARKSRPG (CRTRPGMOD)
+002300130128
+002400130128   You did use the correct compile command for STUDENT. (CRTBNDRPG)
+002500130128
+002600130128   Notice how they look different after being compiled:
+002700130128
+002800130128   STUDENTS    *PGM        RPGLE
+002900130128
+003000130128   MARKSRPG    *MODULE     RPGLE
+003100130201
+003200130201   3.  I get an errorr message when running the STUDENT RPGLE program.
+003300130201
+003400130201                              Display Program Messages
+003500130201
+003600130201    Job 580995/DM233D40/QPADEV000R started on 02/01/13 at 10:11:36 in subsystem
+003700130201
+003800130201
+003900130201
+004000130201  Type reply, press Enter.
+004100130201    Reply . . .  _________________________________________________________________
+004200130201
+004300130201  > You need to learn how to deal with error messages.
+004400130201
+004500130201    First you put your curosr on the message and press F1.  You get a screenful of information
+004600130201    and the best thing to do is to press F10 to see the job log.
+004700130201
+004800130201   F1 PRESSED ON MESSAGE SHOWS:
+004900130201
+005000130201                          Additional Message Information
+005100130201
+005200130201  Message ID . . . . . . :   RNQ1216       Severity . . . . . . . :   99
+005300130201  Message type . . . . . :   Inquiry
+005400130201  Date sent  . . . . . . :   02/01/13      Time sent  . . . . . . :   10:14:36
+005500130201
+005600130201  Message . . . . :   Error message CPF4101 appeared during OPEN for file
+005700130201    STUDACCTS (C S D F).
+005800130201  Cause . . . . . :   RPG procedure STUDENTS in program DM233D40/STUDENTS
+005900130201    received the message CPF4101 while performing an implicit OPEN operation on
+006000130201    file STUDACCTS. The actual file is STUDACCTS.
+006100130201
+006200130201   F10 PRESSED SHOWS:
+006300130201
+006400130201                                 Display All Messages
+006500130201                                                                System:   SENM25
+006600130201    Job . . :   QPADEV000R    User . . :   DM233D40      Number . . . :   580995
+006700130201
+006800130201    3>> call students
+006900130201        File STUDACCTS in library *LIBL not found or inline data file missing.
+007000130201        Error message CPF4101 appeared during OPEN for file STUDACCTS.
+007100130201        Function check. RNX1216 unmonitored by STUDENTS at statement 0001000001,
+007200130201          instruction X'0000'.
+007300130201        Error message CPF4101 appeared during OPEN for file STUDACCTS (C S D F).
+007400130201        Error message CPF4101 appeared during OPEN for file STUDACCTS (C S D F).
+007500130201        Option  ! not correct.
+007600130201
+007700130201    Hopefully you can see the problem from this.
+007800130201
+007900130201    Basically the program expects to process a file called STUDACCTS and has searched
+008000130201    your library list and not found that file.
+008100130201
+008200130201    Solved by running ADDLIBLE IBC233LIB before running your program.
+008300130201
