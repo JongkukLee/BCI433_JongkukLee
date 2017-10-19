@@ -28,17 +28,12 @@ QBFCPRCED
 CLE
 QUSRSYS
 
-QVPN0127
-*JRNRCV
-
-QUSRSYS
-Journal receiver for VPN management
-QVPN0128
-*JRNRCV
-
-QUSRSYS
-Journal receiver for VPN management
 QVPN0129
+*JRNRCV
+
+QUSRSYS
+Journal receiver for VPN management
+QVPN0130
 *JRNRCV
 
 QUSRSYS

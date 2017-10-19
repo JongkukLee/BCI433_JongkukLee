@@ -1,0 +1,87 @@
+000100171011             PGM
+000101171011             DCLF       TAXDSP
+000102171011             SNDRCVF
+000103171011             DOWHILE    (*IN = 0)
+000104171011                CALLSUBR   DETERMINETAX
+000105171011                SNDRCVF
+000106171011                CHGVAR     &IN99 '0'
+000107171011                CHGVAR     &VALUE 0
+000108171011                CHGVAR     &OWNERTYPE ' '
+000109171011                CHGVAR     &TAXAMT 0
+000110171011                PGM
+000111171011                DCLF       TAXDSP
+000112171011                SNDRCVF
+000113171011                DOWHILE    (*IN = 0)
+000114171011                   CALLSUBR   DETERMINETAX
+000115171011                   SNDRCVF
+000116171011                   CHGVAR     &IN99 '0'
+000117171011                   CHGVAR     &VALUE 0
+000118171011                   CHGVAR     &OWNERTYPE ' '
+000119171011                   CHGVAR     &TAXAMT 0
+000120171011                ENDDO
+000121171011                SUBR       DETERMINETAX
+000122171011                   SELECT
+000123171011                      WHEN       (OWNERTYPE = 'C')
+000124171011                      &PROPTYPE  'Commercial'
+000125171011                      SELECT
+000126171011                         WHEN       (VALUE >= 500000)
+000127171011                         &TAXAMT    .025 * VALUE + 150
+000128171011                         WHEN       (VALUE >= 375000)
+000129171011                         &TAXAMT    .02 * VALUE + 90
+000130171011                         WHEN       (VALUE >= 250000)
+000131171011                         &TAXAMT    .016 * VALUE + 75
+000132171011                         WHEN       (VALUE >= 1)
+000133171011                         &TAXAMT    .0125 * VALUE
+000134171011                      ENDSELECT
+000135171011                      WHEN       (OWNERTYPE = 'R')
+000136171011                      &PROPTYPE  'Residential'
+000137171011                      SELECT
+000138171011                         WHEN       (VALUE >= 500000)
+000139171011                         &TAXAMT    .02 * VALUE + 100
+000140171011                         WHEN       (VALUE >= 375000)
+000141171011                         &TAXAMT    .015 * VALUE + 70
+000142171011                         WHEN       (VALUE >= 250000)
+000143171011                         &TAXAMT    .014 * VALUE + 50
+000144171011                         WHEN       (VALUE >= 1)
+000145171011                         &TAXAMT    .01 * VALUE
+000146171011                      ENDSELECT
+000147171011                   ENDSELECT
+000148171011                ENDSUBR
+000149171011                ENDPGM
+000150171011
+000151171011             ENDDO
+000152171011
+000153171011             SUBR       DETERMINETAX
+000154171011                SELECT
+000155171011                   WHEN       (OWNERTYPE = 'C')
+000156171011                   &PROPTYPE  'Commercial'
+000157171011                   SELECT
+000158171011                      WHEN       (VALUE >= 500000)
+000159171011                      &TAXAMT    .025 * VALUE + 150
+000160171011                      WHEN       (VALUE >= 375000)
+000161171011                      &TAXAMT    .02 * VALUE + 90
+000162171011                      WHEN       (VALUE >= 250000)
+000163171011                      &TAXAMT    .016 * VALUE + 75
+000164171011                      WHEN       (VALUE >= 1)
+000165171011                      &TAXAMT    .0125 * VALUE
+000166171011                      OTHER;
+000167171011                      &TAXAMT    0
+000168171011                      ENDSL
+000169171011                      WHEN       (OWNERTYPE = 'R')
+000170171011                      &PROPTYPE  'Residential'
+000171171011                      SELECT;
+000172171011                         WHEN       (VALUE >= 500000)
+000173171011                         &TAXAMT    .02 * VALUE + 100
+000174171011                         WHEN       (VALUE >= 375000)
+000175171011                         &TAXAMT    .015 * VALUE + 70
+000176171011                         WHEN       (VALUE >= 250000)
+000177171011                         &TAXAMT    .014 * VALUE + 50
+000178171011                         WHEN       (VALUE >= 1)
+000179171011                         &TAXAMT    .01 * VALUE
+000180171011                         OTHER;
+000181171011                         &TAXAMT    0
+000182171011                         ENDSL;
+000183171011                         ENDSL;
+000184171011             ENDSUBR
+000185171011             ENDPGM
+000186171011

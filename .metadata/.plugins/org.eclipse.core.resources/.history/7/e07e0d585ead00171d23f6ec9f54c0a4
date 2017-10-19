@@ -1,0 +1,48 @@
+000100171009    FTAXDSP  CF   E             WORKSTN
+000104171009     /FREE
+000105171009      EXFMT      GETVALUE;
+000106171009
+000107171009             DOW        NOT (*INT03);
+000108171009             EXAR       DETERMINETAX;
+000109171009             *IN99      = *ON;
+000110171009             WRITE      GETVALUE;
+000111171009             EXFMT      SHOWTAX;
+000112171009             *IN99      = *OFF;
+000113171009             IF         *IN03 = *OFF;
+000114171009             EXSR       CLEAR;
+000115171009             EXFMT      GETVALUE;
+000116171009             ENDIF;
+000117171009             ENDOD;
+000118171009             *INLR      = *ON;
+000119171009             RETURN;
+000120171009
+000121171009             SELECT;
+000122171009                WHEN       OWNERTYPE = 'C'
+000123171009             PROPTYPE   = 'COMMERCIAL';
+000124171009
+000125171009             SELECT;
+000126171009                WHEN       (VALUE >= 500000);
+000127171009                TAXAmt     = .025 * Value + 150;
+000128171009                WEHN       (VALUE >= 375000); // Don't need to check < 500000
+000129171009                TAXAmt     = .02 * Value + 90;
+000130171009
+000131171009
+000132171009
+000133171009                Other;
+000134171009                TAXAmt     = 0;
+000135171009                ENDSL;
+000136171009                WHEN       OWNERTYPE = 'R';
+000137171009                PROPTYPE   = 'Residential';
+000138171009                SELECT;
+000139171009                   WHEN       (VALUE >= 500000);
+000140171009                   TAXAmt     = .025 * Value + 150;
+000141171009                   WEHN       (VALUE >= 375000); // Don't need to check < 500000
+000142171009                   TAXAmt     = .02 * Value + 90;
+000143171009
+000144171009
+000145171009
+000146171009                   Other;
+000147171009                   TAXAmt     = 0;
+000148171009                   endsl;
+000149171009                   endsl;
+000150171009

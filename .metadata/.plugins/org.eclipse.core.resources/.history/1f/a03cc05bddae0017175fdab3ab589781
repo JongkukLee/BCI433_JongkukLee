@@ -1,0 +1,57 @@
+000100171011             PGM
+000101171011             DCLF       TAXDSP
+000102171011             /FREE
+000103171011             EXFMT      GETVALUE;
+000104171011             DOW        NOT(*IN03);
+000105171011             EXSR       DETERMINETAX;
+000106171011             //*IN99    = *ON;
+000107171011             WRITE      GETVALUE;
+000108171011             EXFMT      SHOWTAX;
+000109171011             //*IN99    = *OFF;
+000110171011             IF         *IN03 = *OFF;
+000111171011             EXSR       CLEAR;
+000112171011             EXFMT      GETVALUE;
+000113171011             ENDIF;
+000114171011             ENDDO;
+000115171011             *INLR      = *ON;
+000116171011             RETURN;
+000117171011
+000118171011             BEGSR      DETERMINETAX;
+000119171011             SELECT;
+000120171011                WHEN       (OWNERTYPE = 'C');
+000121171011                PROPTYPE   = 'Commercial';
+000122171011                SELECT;
+000123171011                   WHEN       (VALUE >= 500000);
+000124171011                   TAXAMT     = .025 * VALUE + 150;
+000125171011                   WHEN       (VALUE >= 375000);
+000126171011                   TAXAMT     = .02 * VALUE + 90;
+000127171011                   WHEN       (VALUE >= 250000);
+000128171011                   TAXAMT     = .016 * VALUE + 75;
+000129171011                   WHEN       (VALUE >= 1);
+000130171011                   TAXAMT     = .0125 * VALUE;
+000131171011                   OTHER;
+000132171011                   TAXAMT     = 0;
+000133171011                   ENDSL;
+000134171011                   WHEN       (OWNERTYPE = 'R');
+000135171011                   PROPTYPE   = 'Residential';
+000136171011                   SELECT;
+000137171011                      WHEN       (VALUE >= 500000);
+000138171011                      TAXAMT     = .02 * VALUE + 100;
+000139171011                      WHEN       (VALUE >= 375000);
+000140171011                      TAXAMT     = .015 * VALUE + 70;
+000141171011                      WHEN       (VALUE >= 250000);
+000142171011                      TAXAMT     = .014 * VALUE + 50;
+000143171011                      WHEN       (VALUE >= 1);
+000144171011                      TAXAMT     = .01 * VALUE;
+000145171011                      OTHER;
+000146171011                      TAXAMT     = 0;
+000147171011                      ENDSL;
+000148171011                      ENDSL;
+000149171011                      ENDSR;
+000150171011
+000151171011                      //         initialize
+000152171011                      BEGSR      CLEAR;
+000153171011                      VALUE      = 0;
+000154171011                      OWNERTYPE  = ' ';
+000155171011                      TAXAMT     = 0;
+000156171011                      ENDSR;

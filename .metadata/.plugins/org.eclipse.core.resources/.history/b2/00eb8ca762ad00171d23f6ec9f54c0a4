@@ -1,0 +1,19 @@
+000100171009     A          R GETVALUE
+000101171009     A                                  2  4USER
+000102171009     A                                  2 29'Property Tax Calculator'
+000103171009     A                                  2 65DATE
+000104171009     A                                      EDTCDE(Y)
+000105171009     A                                  3  4SYSNAME
+000106171009     A                                  3 65TIME
+000107171009     A                                  5 19'Property Value:'
+000108171009     A            VALUE          7S 0B  5 28
+000111171009     A                                  6 19'Owner Type:'
+000112171009     A            OWNERTYPE      1A  B  6 28VALUES('R', 'C')
+000113171009     A                                  7 19'(C-Commercial R-Residential)'
+000114171009     A          R SHOWTAX                   CA03(03 'Exit')
+000124171009     A                                      OVERLAY
+000125171009     A                                 11 15'The Tax charged on a'
+000126171009     A            PROPTYPE      11A  O 11 28
+000127171009     A                                 13 15'property is:'
+000128171009     A            TAXAMT         8  2O 11 28
+000130171009
