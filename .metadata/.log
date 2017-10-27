@@ -913,3 +913,893 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
 	at java.lang.Thread.run(Thread.java:785)
+!SESSION 2017-10-27 05:02:53.870 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.jface 2 0 2017-10-27 05:03:08.695
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-27 05:03:08.695
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21e085d4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c99bd6e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-27 05:03:14.658
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-27 05:03:17.848
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-27 05:03:18.026
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-27 05:03:18.043
+!MESSAGE Save the stack tool properties file.
+!SESSION 2017-10-27 05:03:58.026 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Home amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.ibm.rational.developer.ibmi.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.developer.ibmi.product.ide
+
+!ENTRY org.eclipse.jface 2 0 2017-10-27 05:04:05.177
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-10-27 05:04:05.177
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@772eaa58,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.iseries.rse.ui.keybinding.openmbr,Open an IBM i member in editor ,
+		,
+		Category(com.ibm.etools.iseries.rse.ui.keybinding,IBM i,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b121512e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-10-27 05:04:07.613
+!MESSAGE Invalid preference category path: modeling.diagram.appearance.misc (bundle: com.ibm.xtools.rmp.ui.diagram, page: com.ibm.xtools.rmp.ui.preferences.SelectionFeedbackPreferencePage)
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-27 05:04:09.589
+!MESSAGE plugin is  early starting...
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-27 05:04:09.609
+!MESSAGE Save the stack tool properties file.
+
+!ENTRY org.eclipse.rse.core 1 0 2017-10-27 05:04:09.808
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-27 05:04:35.424
+!MESSAGE QSYSJobService.getEditDescriptions
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:90)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:375)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:236)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:218)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:183)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.net.Socket.connect(Socket.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.ibm.as400.access.PortMapper.getSocketConnection(PortMapper.java:266)
+	at com.ibm.as400.access.PortMapper.getServerSocket(PortMapper.java:161)
+	at com.ibm.as400.access.AS400ImplRemote.signonConnect(AS400ImplRemote.java:2465)
+	at com.ibm.as400.access.AS400ImplRemote.signon(AS400ImplRemote.java:2380)
+	at com.ibm.as400.access.AS400.sendSignonRequest(AS400.java:3181)
+	at com.ibm.as400.access.AS400.promptSignon(AS400.java:2745)
+	at com.ibm.as400.access.AS400.signon(AS400.java:4076)
+	at com.ibm.as400.access.ProgramCall.chooseImpl(ProgramCall.java:403)
+	at com.ibm.as400.access.ServiceProgramCall.run(ServiceProgramCall.java:318)
+	at com.ibm.etools.iseries.comm.ISeriesListEditDescriptions.getEditCodeInformation(ISeriesListEditDescriptions.java:109)
+	at com.ibm.etools.iseries.services.qsys.jobs.QSYSJobService.getEditDescriptions(QSYSJobService.java:959)
+	at com.ibm.etools.iseries.subsystems.qsys.jobs.QSYSJobSubSystem.getEditDescriptions(QSYSJobSubSystem.java:500)
+	at com.ibm.etools.iseries.subsystems.qsys.api.IBMiConnection.getEditDescriptions(IBMiConnection.java:1475)
+	at com.ibm.etools.iseries.dds.dom.impl.HostJobInfo.initialize(HostJobInfo.java:149)
+	at com.ibm.etools.iseries.dds.dom.impl.HostJobInfo.getDateFormat(HostJobInfo.java:216)
+	at com.ibm.etools.iseries.dds.dom.dev.dspkwd.impl.DATEImpl.getDisplayedText(DATEImpl.java:172)
+	at com.ibm.etools.iseries.dds.dom.dev.impl.ConstantFieldImpl.getDisplayedText(ConstantFieldImpl.java:510)
+	at com.ibm.etools.iseries.dds.dom.dev.impl.DspfConstantImpl.getDisplayedText(DspfConstantImpl.java:142)
+	at com.ibm.etools.iseries.dds.tui.adapters.AdapterConstantDecorator.getDisplayText(AdapterConstantDecorator.java:80)
+	at com.ibm.etools.iseries.dds.tui.adapters.AdapterConstantDecorator.getDisplayLength(AdapterConstantDecorator.java:61)
+	at com.ibm.etools.iseries.dds.tui.adapters.SdAdapterConstant.getDisplayLength(SdAdapterConstant.java:93)
+	at com.ibm.etools.iseries.dds.tui.editparts.SdEditPartField.refreshVisuals(SdEditPartField.java:140)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:725)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refresh(TuiEditPart.java:216)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refreshChildren(TuiEditPart.java:354)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refresh(TuiEditPart.java:216)
+	at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java:253)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java:223)
+	at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java:212)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:781)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refreshChildren(TuiEditPart.java:354)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiEditPart.refresh(TuiEditPart.java:216)
+	at com.ibm.etools.tui.ui.editparts.TuiRootEditPart.refreshChildren(TuiRootEditPart.java:272)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at com.ibm.etools.tui.ui.editparts.TuiRootEditPart.refresh(TuiRootEditPart.java:262)
+	at com.ibm.etools.iseries.dds.tui.editparts.DesignerEditPartRoot.refresh(DesignerEditPartRoot.java:71)
+	at com.ibm.etools.iseries.dds.tui.design.SdDesignPage.refresh(SdDesignPage.java:1105)
+	at com.ibm.etools.iseries.dds.tui.design.SdDesignPage.showSelectedAdapter(SdDesignPage.java:1346)
+	at com.ibm.etools.iseries.dds.tui.design.SdDesignPage.setSelection(SdDesignPage.java:1176)
+	at com.ibm.etools.iseries.dds.tui.editor.DesignerSelectionManager.notifyViews(DesignerSelectionManager.java:714)
+	at com.ibm.etools.iseries.dds.tui.editor.DesignerSelectionManager.handleSelection(DesignerSelectionManager.java:586)
+	at com.ibm.etools.iseries.dds.tui.editor.DesignerSelectionManager.selectionChanged(DesignerSelectionManager.java:914)
+	at com.ibm.etools.iseries.dds.tui.editor.SdEditor.refresh(SdEditor.java:1784)
+	at com.ibm.etools.iseries.edit.language.model.DdsCursorListener.notifyParserListenerOfRefresh(DdsCursorListener.java:209)
+	at com.ibm.etools.iseries.edit.language.model.DdsCursorListener.notifyParserListenerOfRefresh(DdsCursorListener.java:193)
+	at com.ibm.etools.iseries.edit.language.model.DdsModelLpexAdapter.notifyListenersOfModelRefresh(DdsModelLpexAdapter.java:1296)
+	at com.ibm.etools.iseries.edit.language.model.DdsModelLpexAdapter.access$3(DdsModelLpexAdapter.java:1294)
+	at com.ibm.etools.iseries.edit.language.model.DdsModelLpexAdapter$ParseDdsModelJob$1.run(DdsModelLpexAdapter.java:1268)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:167)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:165)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.rse.ui.subsystems.StandardCredentialsProvider$PromptForCredentials.run(StandardCredentialsProvider.java:101)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.rse.ui.subsystems.StandardCredentialsProvider.promptForCredentials(StandardCredentialsProvider.java:420)
+	at org.eclipse.rse.ui.subsystems.StandardCredentialsProvider.acquireCredentials(StandardCredentialsProvider.java:233)
+	at org.eclipse.rse.core.subsystems.AuthenticatingConnectorService.acquireCredentials(AuthenticatingConnectorService.java:210)
+	at org.eclipse.rse.core.subsystems.SubSystem.promptForPassword(SubSystem.java:2660)
+	at org.eclipse.rse.core.subsystems.SubSystem$1.run(SubSystem.java:2554)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:167)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:165)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:175)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:390)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:527)
+	at com.ibm.cic.licensing.common.ui.EarlyLicenseCheck.checkLicenses(EarlyLicenseCheck.java:57)
+	at com.ibm.cic.licensing.common.ui.Activator$1.run(Activator.java:117)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-27 05:04:35.951
+!MESSAGE EVFC9104
+
+!ENTRY org.eclipse.help.base 4 0 2017-10-27 05:15:38.461
+!MESSAGE I/O error while trying to contact the remote help server
+!STACK 0
+java.io.FileNotFoundException: http://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/extension
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1850)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1455)
+	at org.eclipse.help.internal.base.util.ProxyUtil.getStream(ProxyUtil.java:130)
+	at org.eclipse.help.internal.base.remote.RemoteExtensionProvider.getContentExtensions(RemoteExtensionProvider.java:56)
+	at org.eclipse.help.internal.extension.ContentExtensionManager.loadExtensions(ContentExtensionManager.java:100)
+	at org.eclipse.help.internal.extension.ContentExtensionManager.getExtensions(ContentExtensionManager.java:68)
+	at org.eclipse.help.internal.dynamic.ExtensionResolver.resolveExtension(ExtensionResolver.java:61)
+	at org.eclipse.help.internal.dynamic.ExtensionHandler.handleExtension(ExtensionHandler.java:62)
+	at org.eclipse.help.internal.dynamic.ExtensionHandler.handle(ExtensionHandler.java:43)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:44)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:57)
+	at org.eclipse.help.internal.toc.TocAssembler.process(TocAssembler.java:250)
+	at org.eclipse.help.internal.toc.TocAssembler.hasAnchor(TocAssembler.java:189)
+	at org.eclipse.help.internal.toc.TocAssembler.hasValidLinkTo(TocAssembler.java:213)
+	at org.eclipse.help.internal.toc.TocAssembler.getBooks(TocAssembler.java:100)
+	at org.eclipse.help.internal.toc.TocAssembler.assemble(TocAssembler.java:75)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:309)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.webapp.data.TocData.loadTocs(TocData.java:230)
+	at org.eclipse.help.internal.webapp.data.TocData.<init>(TocData.java:120)
+	at org.eclipse.help.internal.webapp.data.LayoutData.getContentURL(LayoutData.java:126)
+	at org.apache.jsp.advanced.content_jsp._jspService(org.apache.jsp.advanced.content_jsp:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.jsp.jasper.JspServlet.service(JspServlet.java:155)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.help.base 4 0 2017-10-27 05:15:38.679
+!MESSAGE I/O error while trying to contact the remote help server
+!STACK 0
+java.io.FileNotFoundException: http://www.ibm.com/support/knowledgecenter/SSAE4W_9.5.0/extension
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1850)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1455)
+	at org.eclipse.help.internal.base.util.ProxyUtil.getStream(ProxyUtil.java:130)
+	at org.eclipse.help.internal.base.remote.RemoteExtensionProvider.getContentExtensions(RemoteExtensionProvider.java:56)
+	at org.eclipse.help.internal.extension.ContentExtensionManager.loadExtensions(ContentExtensionManager.java:100)
+	at org.eclipse.help.internal.extension.ContentExtensionManager.getExtensions(ContentExtensionManager.java:68)
+	at org.eclipse.help.internal.dynamic.ExtensionResolver.resolveExtension(ExtensionResolver.java:61)
+	at org.eclipse.help.internal.dynamic.ExtensionHandler.handleExtension(ExtensionHandler.java:62)
+	at org.eclipse.help.internal.dynamic.ExtensionHandler.handle(ExtensionHandler.java:43)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:44)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:57)
+	at org.eclipse.help.internal.toc.TocAssembler.process(TocAssembler.java:250)
+	at org.eclipse.help.internal.toc.TocAssembler.hasAnchor(TocAssembler.java:189)
+	at org.eclipse.help.internal.toc.TocAssembler.hasValidLinkTo(TocAssembler.java:213)
+	at org.eclipse.help.internal.toc.TocAssembler.getBooks(TocAssembler.java:100)
+	at org.eclipse.help.internal.toc.TocAssembler.assemble(TocAssembler.java:75)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:309)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.webapp.data.TocData.loadTocs(TocData.java:230)
+	at org.eclipse.help.internal.webapp.data.TocData.<init>(TocData.java:120)
+	at org.eclipse.help.internal.webapp.data.LayoutData.getContentURL(LayoutData.java:126)
+	at org.apache.jsp.advanced.content_jsp._jspService(org.apache.jsp.advanced.content_jsp:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.jsp.jasper.JspServlet.service(JspServlet.java:155)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.help.base 4 0 2017-10-27 05:16:07.609
+!MESSAGE Help index declared, but missing for plugin org.eclipse.wst.jsdt.doc.
+
+!ENTRY org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/project/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_debug_core_launchingConnectors.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/overview-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/util/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_codeFormatter.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/refactoring/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/core/model/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_javaCompletionProposalSorters.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_javadocCompletionProcessor.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_documentationProvider.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_javaCompletionProposalComputer.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/dom/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/text/java/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/manipulation/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/compiler/libraries/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/actions/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/rhino/debugger/shell/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/search/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/formatter/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/ast/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_quickFixProcessors.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_inferrenceSupport.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/refactoring/descriptors/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_debug_core_breakpointParticipants.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/core/jsdi/event/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/core/jsdi/connect/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_JsGlobalScopeVariableInitializer.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_sourcePathProvider.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_foldingStructureProviders.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/dom/rewrite/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_JsGlobalScopeContainerPage.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/libraries/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/search/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/compiler/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/text/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/infer/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/core/jsdi/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_JsGlobalScopeContainerInitializer.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/eval/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_javaEditorTextHovers.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/jsdoc/msdn/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/core/refactoring/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/text/java/hover/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_quickAssistProcessors.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_classpathAttributeConfiguration.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/wizards/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_JsGlobalScopeUIInitializer.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/jsdoc/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_queryParticipants.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.724
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/core/jsdi/request/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.725
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/launching/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.725
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_core_validationParticipant.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.725
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/core/breakpoints/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.725
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/extension-points/org_eclipse_wst_jsdt_ui_javaElementFilters.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.725
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/dialogs/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.725
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/ui/text/folding/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2017-10-27 05:16:26.725
+!MESSAGE Help document /org.eclipse.wst.jsdt.doc/reference/api/org/eclipse/wst/jsdt/debug/rhino/debugger/package-summary.html cannot be opened.
+
+!ENTRY org.eclipse.rse.ui 4 0 2017-10-27 05:21:37.117
+!MESSAGE Incremental updating of model failed
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.etools.iseries.dds.dom.impl.DdsLineImpl.setDataArea(DdsLineImpl.java:322)
+	at com.ibm.etools.iseries.dds.dom.impl.DdsLineImpl.setNameArea(DdsLineImpl.java:1002)
+	at com.ibm.etools.iseries.dds.dom.impl.RecordImpl.generateStatement(RecordImpl.java:606)
+	at com.ibm.etools.iseries.dds.dom.impl.DdsStatementImpl.generateSource(DdsStatementImpl.java:716)
+	at com.ibm.etools.iseries.dds.dom.synch.AbstractSourceMaintainer.generateSource(AbstractSourceMaintainer.java:55)
+	at com.ibm.etools.iseries.dds.dom.synch.AbstractSourceMaintainer.objectAdded(AbstractSourceMaintainer.java:323)
+	at com.ibm.etools.iseries.dds.dom.synch.AbstractSourceMaintainer.notifyChanged(AbstractSourceMaintainer.java:236)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.common.notify.impl.NotificationImpl.dispatch(NotificationImpl.java:1027)
+	at com.ibm.etools.iseries.dds.dom.impl.RecordImpl.setFile(RecordImpl.java:263)
+	at com.ibm.etools.iseries.dds.parser.assembler.dom.RecordLineAssembler.workOnDds(RecordLineAssembler.java:66)
+	at com.ibm.etools.iseries.dds.parser.assembler.dom.DdsAssembler.workOn(DdsAssembler.java:99)
+	at com.ibm.etools.iseries.parse.Parser.assemble(Parser.java:148)
+	at com.ibm.etools.iseries.parse.Parser.matchAndAssemble(Parser.java:127)
+	at com.ibm.etools.iseries.parse.Sequence.matchAndAssembleOperation(Sequence.java:68)
+	at com.ibm.etools.iseries.parse.Parser.matchAndAssemble(Parser.java:127)
+	at com.ibm.etools.iseries.dds.parser.DdsParser.parseComponent(DdsParser.java:418)
+	at com.ibm.etools.iseries.dds.parser.DdsParser.reparseKeywords(DdsParser.java:314)
+	at com.ibm.etools.iseries.dds.dom.impl.DdsModelImpl.incrementalCompile(DdsModelImpl.java:1249)
+	at com.ibm.etools.iseries.edit.language.model.DdsModelLpexAdapter.incrementallyUpdateModel(DdsModelLpexAdapter.java:945)
+	at com.ibm.etools.iseries.edit.language.model.DdsDocumentListener$DdsChangeList.processChanges(DdsDocumentListener.java:493)
+	at com.ibm.etools.iseries.edit.language.model.DdsDocumentListener$DdsChangeList$DdsChangeProcessor$1.run(DdsDocumentListener.java:162)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY com.ibm.etools.iseries.services.ifs 4 0 2017-10-27 05:42:45.461
+!MESSAGE IFSFileServiceinternalFetch
+!STACK 0
+com.ibm.as400.access.ExtendedIOException: /IBC233Labs: Access to request was denied. rc=5
+	at com.ibm.as400.access.IFSFile.listFiles(IFSFile.java:2496)
+	at com.ibm.as400.access.IFSFile.listFiles(IFSFile.java:2450)
+	at com.ibm.etools.iseries.services.ifs.files.IFSFileService.internalFetch(IFSFileService.java:1353)
+	at org.eclipse.rse.services.files.AbstractFileService.list(AbstractFileService.java:104)
+	at org.eclipse.rse.subsystems.files.core.servicesubsystem.FileServiceSubSystem.internalList(FileServiceSubSystem.java:388)
+	at org.eclipse.rse.subsystems.files.core.servicesubsystem.FileServiceSubSystem.list(FileServiceSubSystem.java:580)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.list(RemoteFileSubSystem.java:997)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.internalResolveOneFilterString(RemoteFileSubSystem.java:879)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.internalResolveFilterString(RemoteFileSubSystem.java:850)
+	at org.eclipse.rse.core.subsystems.SubSystem.resolveFilterString(SubSystem.java:2377)
+	at org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter.internalGetChildren(SystemViewRemoteFileAdapter.java:904)
+	at org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter.getChildren(SystemViewRemoteFileAdapter.java:756)
+	at org.eclipse.rse.ui.operations.SystemFetchOperation.execute(SystemFetchOperation.java:441)
+	at org.eclipse.rse.ui.operations.SystemFetchOperation.run(SystemFetchOperation.java:182)
+	at org.eclipse.rse.ui.view.AbstractSystemViewAdapter.fetchDeferredChildren(AbstractSystemViewAdapter.java:2290)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.ibm.etools.iseries.services.ifs 4 0 2017-10-27 05:42:47.861
+!MESSAGE IFSFileServiceinternalFetch
+!STACK 0
+com.ibm.as400.access.ExtendedIOException: /IBC233Notes: Access to request was denied. rc=5
+	at com.ibm.as400.access.IFSFile.listFiles(IFSFile.java:2496)
+	at com.ibm.as400.access.IFSFile.listFiles(IFSFile.java:2450)
+	at com.ibm.etools.iseries.services.ifs.files.IFSFileService.internalFetch(IFSFileService.java:1353)
+	at org.eclipse.rse.services.files.AbstractFileService.list(AbstractFileService.java:104)
+	at org.eclipse.rse.subsystems.files.core.servicesubsystem.FileServiceSubSystem.internalList(FileServiceSubSystem.java:388)
+	at org.eclipse.rse.subsystems.files.core.servicesubsystem.FileServiceSubSystem.list(FileServiceSubSystem.java:580)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.list(RemoteFileSubSystem.java:997)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.internalResolveOneFilterString(RemoteFileSubSystem.java:879)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.internalResolveFilterString(RemoteFileSubSystem.java:850)
+	at org.eclipse.rse.core.subsystems.SubSystem.resolveFilterString(SubSystem.java:2377)
+	at org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter.internalGetChildren(SystemViewRemoteFileAdapter.java:904)
+	at org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter.getChildren(SystemViewRemoteFileAdapter.java:756)
+	at org.eclipse.rse.ui.operations.SystemFetchOperation.execute(SystemFetchOperation.java:441)
+	at org.eclipse.rse.ui.operations.SystemFetchOperation.run(SystemFetchOperation.java:182)
+	at org.eclipse.rse.ui.view.AbstractSystemViewAdapter.fetchDeferredChildren(AbstractSystemViewAdapter.java:2290)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.ibm.etools.iseries.services.ifs 4 0 2017-10-27 05:43:10.041
+!MESSAGE IFSFileServiceinternalFetch
+!STACK 0
+com.ibm.as400.access.ExtendedIOException: /IBC_software: Access to request was denied. rc=5
+	at com.ibm.as400.access.IFSFile.listFiles(IFSFile.java:2496)
+	at com.ibm.as400.access.IFSFile.listFiles(IFSFile.java:2450)
+	at com.ibm.etools.iseries.services.ifs.files.IFSFileService.internalFetch(IFSFileService.java:1353)
+	at org.eclipse.rse.services.files.AbstractFileService.list(AbstractFileService.java:104)
+	at org.eclipse.rse.subsystems.files.core.servicesubsystem.FileServiceSubSystem.internalList(FileServiceSubSystem.java:388)
+	at org.eclipse.rse.subsystems.files.core.servicesubsystem.FileServiceSubSystem.list(FileServiceSubSystem.java:580)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.list(RemoteFileSubSystem.java:997)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.internalResolveOneFilterString(RemoteFileSubSystem.java:879)
+	at org.eclipse.rse.subsystems.files.core.subsystems.RemoteFileSubSystem.internalResolveFilterString(RemoteFileSubSystem.java:850)
+	at org.eclipse.rse.core.subsystems.SubSystem.resolveFilterString(SubSystem.java:2377)
+	at org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter.internalGetChildren(SystemViewRemoteFileAdapter.java:904)
+	at org.eclipse.rse.internal.files.ui.view.SystemViewRemoteFileAdapter.getChildren(SystemViewRemoteFileAdapter.java:756)
+	at org.eclipse.rse.ui.operations.SystemFetchOperation.execute(SystemFetchOperation.java:441)
+	at org.eclipse.rse.ui.operations.SystemFetchOperation.run(SystemFetchOperation.java:182)
+	at org.eclipse.rse.ui.view.AbstractSystemViewAdapter.fetchDeferredChildren(AbstractSystemViewAdapter.java:2290)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-10-27 05:46:20.917
+!MESSAGE Error disposing widget for : org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl Data Table
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.etools.iseries.rse.ui.view.datatable.ISeriesDataTableViewProvider.dispose(ISeriesDataTableViewProvider.java:303)
+	at org.eclipse.jface.viewers.ContentViewer.handleDispose(ContentViewer.java:182)
+	at org.eclipse.jface.viewers.StructuredViewer.handleDispose(StructuredViewer.java:2310)
+	at org.eclipse.jface.viewers.ColumnViewer.handleDispose(ColumnViewer.java:661)
+	at org.eclipse.jface.viewers.AbstractTableViewer.handleDispose(AbstractTableViewer.java:222)
+	at org.eclipse.jface.viewers.ContentViewer$2.widgetDisposed(ContentViewer.java:225)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:816)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:874)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:819)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:454)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:175)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:266)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:933)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:118)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:933)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:887)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:887)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:887)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1938)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1561)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1528)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1593)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1590)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1557)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1528)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1593)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1590)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1604)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:522)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1696)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4612)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY com.ibm.etools.stacktool 0 0 2017-10-27 05:46:22.480
+!MESSAGE plugin is  stopped and cleaned up the stack tool properties file.
+
+!ENTRY org.eclipse.core.runtime 4 2 2017-10-27 05:46:22.562
+!MESSAGE Problems encountered starting up plug-in: "org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.".
+!STACK 0
+org.osgi.framework.BundleException: Cannot transiently start a module whose start level is not met.
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:393)
+	at org.eclipse.core.internal.runtime.InternalPlatform.start(InternalPlatform.java:919)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.doPluginActivation(PluginDescriptor.java:360)
+	at org.eclipse.core.internal.plugins.PluginDescriptor.getPlugin(PluginDescriptor.java:340)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:743)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:44)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:147)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:28)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:221)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:274)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:670)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:812)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:76)
+	at org.eclipse.pde.internal.core.PDEPreferencesManager.<init>(PDEPreferencesManager.java:34)
+	at org.eclipse.pde.internal.core.PDECore.getPreferencesManager(PDECore.java:86)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:317)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.pde.core 4 0 2017-10-27 05:46:23.427
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.resolveVariables(AbstractBundleContainer.java:60)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.resolveHomeLocation(ProfileBundleContainer.java:224)
+	at org.eclipse.pde.internal.core.target.ProfileBundleContainer.getLocation(ProfileBundleContainer.java:76)
+	at org.eclipse.pde.internal.core.target.AbstractBundleContainer.getVMArguments(AbstractBundleContainer.java:231)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.newDefaultTarget(TargetPlatformService.java:607)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.initDefaultTargetPlatformDefinition(TargetPlatformService.java:325)
+	at org.eclipse.pde.internal.core.target.TargetPlatformService.getWorkspaceTargetDefinition(TargetPlatformService.java:281)
+	at org.eclipse.pde.internal.core.TargetPlatformHelper.getWorkspaceTargetResolved(TargetPlatformHelper.java:445)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:604)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:484)
+	at org.eclipse.pde.internal.core.PluginModelManager.findEntry(PluginModelManager.java:932)
+	at org.eclipse.pde.internal.core.PluginModelManager.findModel(PluginModelManager.java:956)
+	at org.eclipse.pde.core.plugin.PluginRegistry.findModel(PluginRegistry.java:97)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.save(JavaElementChangeListener.java:131)
+	at org.eclipse.pde.internal.core.JavaElementChangeListener.shutdown(JavaElementChangeListener.java:43)
+	at org.eclipse.pde.internal.core.PDECore.stop(PDECore.java:331)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Thread.java:785)
